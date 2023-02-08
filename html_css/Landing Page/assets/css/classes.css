@@ -1,0 +1,33 @@
+.bg0 {
+    background-color: white;
+}
+
+
+.bg1 {
+    background-image: url(../img/bg1.svg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.sect1 {
+    min-height: 100vh;
+}
+
+.cont1 {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.spacing1 {
+    height: 6.5rem;
+}
+
+.what {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: var(--gap);
+}

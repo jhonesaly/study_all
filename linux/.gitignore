@@ -1,0 +1,9 @@
+# Pastas
+
+verification/
+distros/
+
+# Tipos de arquivos:
+
+*.pem
+*.ppk
