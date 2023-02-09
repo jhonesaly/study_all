@@ -18,3 +18,9 @@ crie o que quiser para página inicial
 
 Esse site já está disponível para qual quer dispositivo conectado na rede local.
 
+para torná-lo disponível globalmente, você pode precisa de um ip público. Você pode conseguir isso por meio de uma instância na AWS.
+
+Para habilitar o acesso na AWS, é necessário habilitar o firewall para permitir requisições HTTP. Isso é feito no menu:
+
+    > Security Groups > Instância >  Edit inbound rules
+
