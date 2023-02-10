@@ -34,3 +34,9 @@ Consiste em computadores ligados que trabalham em conjunto, de modo que, em muit
 Swarm é um recurso do docker que fornece funcionalidades de orquestração de contêiner, incluindo clustering nativo de hosts do Docker e agendamento de cargas de trabalho de contêineres.
 
 Se tiver problema de hardware em um dos nós, o container automaticamente passa para outro nó.
+
+# Docker Hub
+
+repositório onde estão as imagens dos ambientes rodando determinada aplicação. <https://hub.docker.com/search?q=mysql>
+
+Criando container MySQL...
