@@ -400,3 +400,18 @@ Os sistemas de arquivos mais comuns em Linux são:
 - NTFS - É o sistema de arquivos padrão utilizado no Windows. Ele é compatível com o Linux, mas não possui todas as funcionalidades avançadas de outros sistemas de arquivos do Linux.
 
 Cada sistema de arquivos tem suas próprias vantagens e desvantagens e o usuário pode escolher o que melhor se adequa às suas necessidades.
+
+---
+# Segurança
+
+Por padrão, o acesso direto como "root" via SSH está desabilitado em sistemas Ubuntu para questões de segurança. Você precisa primeiro fazer login como um usuário comum, depois usar o comando "su" para se tornar o usuário "root".
+
+Se você deseja habilitar o acesso direto como "root" via SSH, você pode fazer o seguinte:
+
+- Acesse o sistema como um usuário com permissões administrativas.
+- Abra o arquivo "/etc/ssh/sshd_config" usando um editor de texto.
+- Encontre a linha "PermitRootLogin" e verifique se está configurada como "no".
+- Altere a configuração para "yes" e salve as alterações.
+- Reinicie o serviço SSH com o comando "sudo service ssh restart".
+
+Depois disso, você deverá ser capaz de se conectar ao servidor como "root" usando o Putty. No entanto, é importante destacar que habilitar o acesso direto como "root" via SSH é uma má prática de segurança e pode ser potencialmente perigoso. É recomendável usar sempre uma conta de usuário comum e elevar privilégios somente quando necessário, ao invés de fazer login como "root".
