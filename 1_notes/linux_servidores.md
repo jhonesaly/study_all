@@ -1,5 +1,7 @@
 # Remote Server
 
+Idealmente, cada máquina é para um tipo de servidor. Claro que, em empreendimentos de menor escala, colocar tudo no mesmo aparelho é ok, mas em grandes estruturas, compensa a especialização.
+
 # Server linux na própria máquina (Virtual Machine)
 
 configure a virtual machine criada para a conexão estar em modo brige, como na imagem:
@@ -106,3 +108,45 @@ Para habilitar o acesso na AWS, é necessário habilitar o firewall para permiti
     > Security Groups > Instância >  Edit inbound rules
 
 Você pode fazer um site, por exemplo, em um ambiente controlado e depois colocá-lo dentro da pasta apache.
+
+# Servidores de banco de dados
+
+Aqui usaremos o MySQL, mas poderia ser outros serviços.
+
+    > apt search mysql server (verifique qual a versão mais recente do MySQL server)
+    > apt install mysql-server-8.0
+    > mysql -u root -p (para acessar o banco de dados como root, necessário senha)
+
+Principais comandos para o mysql
+
+- SHOW DATABASES; - Mostrar todas as bases de dados
+- USE nome_da_base_de_dados; - Selecionar uma base de dados específica
+- SHOW TABLES; - Mostrar todas as tabelas em uma base de dados
+- CREATE DATABASE nome_da_base_de_dados; - Criar uma nova base de dados
+- DROP DATABASE nome_da_base_de_dados; - Excluir uma base de dados
+- CREATE TABLE nome_da_tabela (coluna1 tipo_de_dado, coluna2 tipo_de_dado, ...); - Criar uma nova tabela
+- DROP TABLE nome_da_tabela; - Excluir uma tabela
+- INSERT INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...); - Adicionar dados a uma tabela
+- SELECT coluna1, coluna2, ... FROM nome_da_tabela; - Selecionar dados de uma tabela
+
+Você pode importar um banco de dados MySQL existente usando o seguinte comando no terminal:
+
+    mysql -u usuario -p nome_da_base_de_dados < nome_do_arquivo.sql
+
+Onde:
+
+- usuario é o nome de usuário com permissão de acesso à base de dados.
+- nome_da_base_de_dados é o nome da base de dados para a qual você deseja importar os dados.
+- nome_do_arquivo.sql é o nome do arquivo SQL que contém a estrutura e os dados do banco de dados que você deseja importar.
+- Você será solicitado a inserir a senha do usuário MySQL antes de o comando ser executado. Uma vez que o comando tenha sido executado com sucesso, o banco de dados importado estará disponível para uso.
+
+> Observação: certifique-se de que o banco de dados alvo esteja vazio antes de importar os dados. Caso contrário, os dados existentes serão sobrescritos.
+
+O comando **DROP DATABASE nome_do_banco** exclui permanentemente uma base de dados existente do servidor MySQL. Após a execução desse comando, a base de dados e todos os dados nela contidos serão perdidos e não poderão ser recuperados. Já o comando **rm nome_do_banco.sql** exclui um arquivo do sistema operacional (no caso, um arquivo SQL que representa o backup de uma base de dados). Esse arquivo pode ser recuperado a partir de backups ou pode ser gerado novamente a partir da base de dados original.
+
+O arquivo .sql é uma representação em formato de texto da estrutura e dos dados de uma base de dados MySQL. Ele contém instruções em linguagem SQL que, quando executadas, recriam a estrutura e os dados da base de dados. O banco de dados em si é armazenado em um servidor MySQL e pode ser acessado por meio de uma aplicação cliente (como o próprio terminal, por exemplo). O arquivo .sql é apenas um backup da base de dados, e não a base de dados propriamente dita.
+
+Para sair do mysql:
+
+    mysql> exit
+
