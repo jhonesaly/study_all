@@ -12,7 +12,7 @@ done
 echo "Excluindo grupos"
 for group in $(cut -d: -f1 /etc/group); do
   id=$(getent group $group | cut -d: -f3)
-  if [ $id -gt 999 ] && [ $id -lt 1100 ]; then
+  if [ $id -gt 1000 ] && [ $id -lt 1100 ]; then
     if [ $group != "sync" ]; then
       sudo groupdel $group
     fi
