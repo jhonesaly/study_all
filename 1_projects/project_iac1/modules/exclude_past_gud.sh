@@ -1,7 +1,7 @@
 # Excluir diretórios, arquivos, grupos e usuários criados anteriormente
 
 ## Excluir todos os usuários, exceto o usuário root
-echo "Excluindo usuários"
+echo "Excluindo usuários..."
 for user in $(ls /home); do
   if [ $user != "root" ]; then
     sudo userdel -r $user
