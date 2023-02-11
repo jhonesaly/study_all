@@ -134,29 +134,27 @@ Comandos lógicos para script:
 - if, elif, else:
     
     if [ "$var" == "value" ]; then
-        #
+        # comandos
     elif [ "$var" == "value" ]; then
-        #
+        # comandos
     else
-        #
+        # comandos
     fi
 
 - while:
 
     while [ "$exit" != true ]; do
-    read -p "Digite um comando: " comando
-
-    if [ "$comando" == "comando válido" ]; then
-        # executar o comando válido aqui
-    else
-        echo "Comando inválido"
-        continue
-    fi
-
-    if [ "$exit" == true ]; then
-        break
-    fi
-done
+        
+        if ...; then
+            #
+        elif ...; then
+            #
+            continue
+        else
+            exir = true
+            break
+        fi
+    done
 
 Gerenciamento de arquivos e diretórios:
 
