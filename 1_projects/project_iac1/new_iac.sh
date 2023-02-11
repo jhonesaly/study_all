@@ -1,6 +1,14 @@
 #!/bin/bash
 
-echo "Starting..."
+echo "Iniciando protocolo new_iac..."
+
+echo "Em caso de dúvida, consulte a documentação disponível em ..."
+
+read -n 1 -p "Deseja que o programa siga estritamente aquilo que foi proposto no projeto? [y/n]" answer_1
+
+if [ "" == ""]; then
+elif [ "" == ""]; then
+else
 
 # ---
 # Chama o script que exclui antigos diretórios, arquivos, grupos e usuários anteriores

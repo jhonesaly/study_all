@@ -95,6 +95,13 @@ Segurança/Penetração de testes:
 - sudo: executar como super usuário
 - date: informa a data e hora
 - man cmd: indica o manual do comando (man ls)
+- read [options]
+    - [-p] prompt: exibe a string prompt como uma mensagem antes de ler a entrada do usuário.
+    - [-t] timeout: define um tempo limite timeout em segundos para a entrada do usuário.
+    - [-n] nchars: lê somente os nchars primeiros caracteres da linha de entrada.
+    - [-s] faz com que a entrada do usuário seja silenciosa, ou seja, os caracteres digitados não são exibidos na tela.
+
+-a array: lê a entrada do usuário em um array em vez de uma variável.
 - cmd --help: mostra resumo do comando e parâmetros cabíveis (ls --help)
 - export: altera variáveis de ambiente
 - lsblk - lista todos os discos
