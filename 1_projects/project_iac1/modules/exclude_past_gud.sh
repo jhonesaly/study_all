@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Excluir diretórios, arquivos, grupos e usuários criados anteriormente
 
 ## Excluir todos os usuários, exceto o usuário root
@@ -24,3 +26,19 @@ echo "Excluindo pastas"
 for user in $(ls /home); do
   sudo rm -rf /home/$user
 done
+
+## Adicionando novo usuário administrador
+
+read -p "Deseja adicionar um novo usuário administrador? [y/n]" answer
+
+if [ $answer == "y" ] then;
+  echo "Adicionando novo usuário administrador"
+
+  read -p "Digite o nome do novo usuário administrador: " user_adm
+  adduser $user_adm
+  usermod -aG sudo $user_adm
+
+fi
+
+
+
