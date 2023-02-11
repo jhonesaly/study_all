@@ -131,7 +131,7 @@ Comandos lógicos para script:
     - [-s] faz com que a entrada do usuário seja silenciosa, ou seja, os caracteres digitados não são exibidos na tela.
     - [-a] array: lê a entrada do usuário em um array em vez de uma variável.
 
-- if, elif, else:
+- if, else:
     
     if [ "$var" == "value" ]; then
         # comandos
@@ -154,6 +154,12 @@ Comandos lógicos para script:
             exir = true
             break
         fi
+    done
+
+- for:
+
+    for i in $var; do
+        # comandos
     done
 
 Gerenciamento de arquivos e diretórios:
