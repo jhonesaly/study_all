@@ -162,6 +162,12 @@ Comandos lógicos para script:
         # comandos
     done
 
+- len(var) = ((${#var[@]}))
+    - O [@] é uma expansão de parâmetro que diz ao Bash para expandir cada elemento do array var como um item separado, em vez de expandir todo o array como uma única string.
+    - O uso de $(()) é uma sintaxe de expressão aritmética do Bash, que permite realizar cálculos com números inteiros.
+- range(x) = seq 0 $x
+    
+
 Gerenciamento de arquivos e diretórios:
 
 - ls [opções] <diretório>: exibe o conteúdo de um diretório. (ex: ls -l /etc)
