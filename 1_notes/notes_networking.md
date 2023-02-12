@@ -21,3 +21,5 @@ pontos a serem observados no linkedin:
 - Recomendações
 
 ## DIO
+
+- Talent match
