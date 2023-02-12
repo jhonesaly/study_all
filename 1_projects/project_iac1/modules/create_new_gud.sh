@@ -1,44 +1,36 @@
 #!/bin/bash
 
-printf "\nCriando diretórios...\n"
-
-mkdir /company
+printf "\nComeçando criação da nova infraestrutura...\n"
 
 read -p "Digite o nome da empresa dona do sistema: " company
 
-mkdir /company/${company}_publico
-mkdir /company/${company}_adm
-mkdir /company/${company}_ven
-mkdir /company/${company}_sec
+mkdir /${company}_directories
 
-printf "\nCriando grupos de usuários...\n"
+##v##
+printf "\nCriando diretório público e configurando...\n"
 
-groupadd GRP_ADM
-groupadd GRP_VEN
-groupadd GRP_SEC
+mkdir /${company}_directories/public
+chown root:root /${company}_directories/public
+chmod 777 /${company}_directories/public
 
-printf "\nCriando usuários e os adicionando nos grupos...\n"
+read -p "Digite o nome das equipes separadas por espaço: " -a groups
 
-useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_ADM
-useradd maria -c "Maria" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_ADM
-useradd joão -c "João" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_ADM
+##v##
+printf "\nCriando grupos, seus diretórios e configurando...\n"
 
-useradd debora -c "Debora" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_VEN
-useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_VEN
-useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_VEN
+for group in "${groups[@]}"; do
+    mkdir /${company}_directories/$group
+    groupadd GRP_${group}
+    chown root:GRP_${group} /${company}_directories/$group
+    chmod 770 /${company}_directories/$group
+done
 
-useradd josefina -c "Josefina" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
-useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
-useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
+##v##
+printf "\nCriando usuários...\n"
 
-printf "\nEspecificando permissões dos diretórios...\n"
-
-chown root:GRP_ADM /company/${company}_adm
-chown root:GRP_VEN /company/${company}_ven
-chown root:GRP_SEC /company/${company}_sec
-chown root:root /company/${company}_publico
-
-chmod 770 /company/${company}_adm
-chmod 770 /company/${company}_ven
-chmod 770 /company/${company}_sec
-chmod 777 /company/${company}_publico
+for group in "${groups[@]}"; do
+    read -p "Digite o nome dos colaboradores da equipe ${group} separandos por espaço: " -a users
+    for user in "${users[@]}"; do
+        useradd ${user} -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_${group}
+    done
+done

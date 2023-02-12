@@ -26,7 +26,16 @@ done
 ## Excluir todas as pastas
 printf "\nExcluindo pastas...\n"
 
-sudo rm -rf /company
+### Procurar diretório com nome que contém "directories"
+dir=$(find / -type d -name "*_directories" 2>/dev/null)
+
+### Verificar se o diretório foi encontrado
+if [ -z "$dir" ]; then
+  printf "\nDiretório de empresa anterior não encontrado.\n"
+else
+  ### Excluir o diretório
+  sudo rm -rf $dir
+fi
 
 for user in $(ls /home); do
   sudo rm -rf /home/$user
