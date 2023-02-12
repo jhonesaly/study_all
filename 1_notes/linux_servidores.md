@@ -74,7 +74,7 @@ guest ok = yes
 guest only = yes
 
     > systemctl restart smbd
-    > systemctl status smdb
+    > systemctl status smbd
     > systemctl enable smbd
 
 Com isso, você deve ser capaz de acessar a pasta /publica por meio do seu explorador de arquivos. Para tal, use o comando 'ip a' (ex: 192.168.0.0) para descobrir o ip da máquina e então coloque no endereço:
