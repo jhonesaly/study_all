@@ -2,10 +2,14 @@
 
 printf "\nCriando diretórios...\n"
 
-mkdir /publico
-mkdir /adm
-mkdir /ven
-mkdir /sec
+mkdir /company
+
+read -p "Digite o nome da empresa dona do sistema: " company
+
+mkdir /company/${company}_publico
+mkdir /company/${company}_adm
+mkdir /company/${company}_ven
+mkdir /company/${company}_sec
 
 printf "\nCriando grupos de usuários...\n"
 
@@ -27,16 +31,14 @@ useradd josefina -c "Josefina" -m -s /bin/bash -p $(openssl passwd -6 123) -G GR
 useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
 useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
 
-printf "\nEspecificando permissões do diretórios...\n"
+printf "\nEspecificando permissões dos diretórios...\n"
 
-chown root:GRP_ADM /adm
-chown root:GRP_VEN /ven
-chown root:GRP_SEC /sec
-chown root:root /publico
+chown root:GRP_ADM /company/${company}_adm
+chown root:GRP_VEN /company/${company}_ven
+chown root:GRP_SEC /company/${company}_sec
+chown root:root /company/${company}_publico
 
-chmod 770 /adm
-chmod 770 /ven
-chmod 770 /sec
-chmod 777 /publico
-
-printf "\nFinalizando...\n"
+chmod 770 /company/${company}_adm
+chmod 770 /company/${company}_ven
+chmod 770 /company/${company}_sec
+chmod 777 /company/${company}_publico

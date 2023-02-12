@@ -19,7 +19,7 @@ done
 # ---
 # Chama o script que criar novos diretórios, grupos e usuários
 while true; do
-    read -n 1 -p "Deseja Deseja criar novos diretórios, grupos e usuários anteriores? [y/n] " ans_b2
+    read -n 1 -p "Deseja criar novos diretórios, grupos e usuários? [y/n] " ans_b2
     if [ $ans_b2 = "y" ]; then
         ./modules/create_new_gud.sh
         break

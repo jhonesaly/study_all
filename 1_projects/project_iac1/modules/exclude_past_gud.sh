@@ -23,11 +23,12 @@ for group in $(cut -d: -f1 /etc/group); do
   fi
 done
 
-## Excluir todas as pastas dos usuários
+## Excluir todas as pastas
 printf "\nExcluindo pastas...\n"
 
 for user in $(ls /home); do
   sudo rm -rf /home/$user
+  sudo rm -rf /company
 done
 
 ## Adicionando novo usuário administrador
