@@ -26,9 +26,10 @@ done
 ## Excluir todas as pastas
 printf "\nExcluindo pastas...\n"
 
+sudo rm -rf /company
+
 for user in $(ls /home); do
   sudo rm -rf /home/$user
-  sudo rm -rf /company
 done
 
 ## Adicionando novo usuário administrador
