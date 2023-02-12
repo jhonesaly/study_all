@@ -1,19 +1,19 @@
 #!/bin/bash
 
-echo "Criando diretórios..."
+printf "\nCriando diretórios...\n"
 
 mkdir /publico
 mkdir /adm
 mkdir /ven
 mkdir /sec
 
-echo "Criando grupos de usuários..."
+printf "\nCriando grupos de usuários...\n"
 
 groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
-echo "Criando usuários e os adicionando nos grupos..."
+printf "\nCriando usuários e os adicionando nos grupos...\n"
 
 useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_ADM
 useradd maria -c "Maria" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_ADM
@@ -27,7 +27,7 @@ useradd josefina -c "Josefina" -m -s /bin/bash -p $(openssl passwd -6 123) -G GR
 useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
 useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd -6 123) -G GRP_SEC
 
-echo "Especificando permissões do diretórios..."
+printf "\nEspecificando permissões do diretórios...\n"
 
 chown root:GRP_ADM /adm
 chown root:GRP_VEN /ven
@@ -39,4 +39,4 @@ chmod 770 /ven
 chmod 770 /sec
 chmod 777 /publico
 
-echo "Fim..."
+printf "\nFinalizando...\n"

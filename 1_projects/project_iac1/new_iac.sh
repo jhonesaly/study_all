@@ -1,31 +1,31 @@
 #!/bin/bash
 
-echo "Iniciando protocolo new_iac..."
+printf "\nIniciando protocolo new_iac..."
 
-echo "Em caso de dúvida, consulte a documentação disponível em ..."
+printf "\nEm caso de dúvida, consulte a documentação disponível em ...\n"
 
 while true; do
 
-    read -n 1 -p "Deseja que o programa siga estritamente aquilo que foi proposto no projeto? [y/n]" answer_1
+    read -n 1 -p "Deseja que o programa siga estritamente aquilo que foi proposto no projeto? [y/n] " answer_1
 
     if [ "$answer_1" == "e" ]; then
-        echo "Finalizando..."
+        printf "\nFinalizando...\n"
         break
 
     elif [ "$answer_1" == "y" ]; then
-        echo "Seguindo para protocolo simplificado..."
+        printf "\nSeguindo para protocolo simplificado...\n"
         # Caminho do new_iac1a.sh 
         ./.new_iac1a.sh
         break
         
     elif [ "$answer_1" == "n" ]; then
-        echo "Seguindo para protocolo avançado..."
+        printf "\nSeguindo para protocolo avançado...\n"
         # Caminho do new_iac1b.sh
         ./.new_iac1b.sh
         break
         
     else
-        echo "Opção inválida. Por favor, escolha 'y' para sim, 'n' para não ou 'e' para sair."
+        printf "\nOpção inválida. Por favor, escolha 'y' para sim, 'n' para não ou 'e' para sair.\n"
         continue
     fi
 
@@ -33,4 +33,4 @@ done
 
 # ---
 
-echo "Finalizado"
+printf "\nFinalizado.\n"
