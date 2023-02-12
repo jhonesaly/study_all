@@ -7,7 +7,7 @@ echo "Excluindo usuários..."
 
 for user in $(ls /home); do
   if [ $user != "root" ]; then
-    sudo userdel -rf $user
+    sudo userdel -rf $user 2> /dev/null
   fi
 done
 
