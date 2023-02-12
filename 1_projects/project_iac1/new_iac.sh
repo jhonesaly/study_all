@@ -4,15 +4,12 @@ echo "Iniciando protocolo new_iac..."
 
 echo "Em caso de dúvida, consulte a documentação disponível em ..."
 
-exit = false
-
-while [ "$exit" != true]; do
+while true; do
 
     read -n 1 -p "Deseja que o programa siga estritamente aquilo que foi proposto no projeto? [y/n]" answer_1
 
     if [ "$answer_1" == "e"]; then
         echo "Finalizando..."
-        exit = true
         break
 
     elif [ "$answer_1" == "y"]; then
@@ -27,6 +24,7 @@ while [ "$exit" != true]; do
         
     else
         echo "Opção inválida. Por favor, escolha 'y' para sim, 'n' para não ou 'e' para sair."
+        continue
     fi
 
 done
