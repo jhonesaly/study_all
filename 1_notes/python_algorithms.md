@@ -1,70 +1,6 @@
-# Bibliotecas
+# Algoritmos
 
-Tempo:
-
-- import datetime
-- import dateutil
-- import calendar
-
-Cálculos/números
-
-- import itertools
-- import math
-- import random
-
-Segurança
-
-- import secrets
-- import crypto
-
-DataScience
-
-- import pandas as pd
-- import numpy as np
-- import matplotlib.pyplot as plt
-- import seaborn as sns
-- import statsmodels.api as sm
-- import statsmodels.formula.api as smf
-
-
-Tradução/Palavras
-
-- import locale
-- import string
-
-Comunicação com o Sistema Operacional
-
-- import os
-- import shutil
-- import sys
-- import pathlib
-
-Planilhas/dados
-
-- import csv
-- import json
-- import pickle
-- import xlrd
-- import xlwt
-- import xlsxwriter
-- import openpyxl
-- import xlrd
-- import openpyxl
-- import xlsxwriter
-
-Scraping
-
-- import request
-- import beaultifulsoup4
-
-Navegador
-
-- import selenium
-
-Music from image: <https://github.com/victormurcia/Making-Music-From-Images>
-
-
-# Gerando números aleatórios em Python
+## Gerando números aleatórios em Python
 
 Você pode gerar números aleatórios usando a biblioteca "random" do Python.
 
@@ -94,7 +30,7 @@ Para gerar listas de números aleatórios, você pode usar:
 > list_size é o número de elementos aleatórios que queremos na lista.
 
 
-# Ordenando lista em python
+## Ordenando lista em python
 
 Usando o método sorted() ou o método sort() dos objetos lista. Aqui estão 
 
@@ -115,7 +51,7 @@ Por padrão, ambos os métodos ordenam a lista em ordem crescente. Se você dese
 
     lista.sort(reverse=True)
 
-# Fazendo variáveis em funções serem globais
+## Fazendo variáveis em funções serem globais
 
 Para tornar mais de uma variável global, basta usar a palavra-chave "global" antes de cada variável. Por exemplo:
 
@@ -129,6 +65,15 @@ Para tornar mais de uma variável global, basta usar a palavra-chave "global" an
 
     foo()
     print(x)  # Output: 11
+
+## Separando String maior
+
+Você pode separar a string em uma lista de caracteres usando o método "list" e a função "list comprehensions". Aqui está um exemplo:
+
+    string_gigante = "Minha string gigante"
+    lista_de_letras = [letra for letra in string_gigante]
+
+Agora, a variável "lista_de_letras" contém uma lista de caracteres como elementos, separados da string original.
 
 # Modularização
 
@@ -159,12 +104,3 @@ Isso fará com que todas as funções, classes e variáveis definidas no módulo
 Se você deseja usar um apelido para o módulo importado, pode fazer isso adicionando "as apelido" ao final da instrução de importação. Por exemplo:
 
     import nome_do_modulo as apelido
-
-# Separando String maior
-
-Você pode separar a string em uma lista de caracteres usando o método "list" e a função "list comprehensions". Aqui está um exemplo:
-
-    string_gigante = "Minha string gigante"
-    lista_de_letras = [letra for letra in string_gigante]
-
-Agora, a variável "lista_de_letras" contém uma lista de caracteres como elementos, separados da string original.
