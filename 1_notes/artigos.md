@@ -25,3 +25,9 @@ Escreva: escrita é um conhecimento prático. Portanto, pratique!
 
 Revise: após o texto estar pronto, faça o polimento. Verifique o português, se as ideias estão sendo passadas, se algo não ficou claro e reescreva tudo que for necessário até o texto ficar agradável. Ao mesmo tempo, não existe texto perfeito etão não queira ficar polindo indeterminadamente. Estipule um prazo e encerre.
 
+- idealmente, texto deve ter menos que 3000 palavras.
+- Título com captalize
+
+
+
+
