@@ -2,9 +2,7 @@
 
 ## Comandos
  
-    git init 
-
-> Cria a pasta .git e torna a pasta atual um repositório
+    git init : Cria a pasta .git e torna a pasta atual um repositório
 > No vscode o git init pode ser criado em source control
 
     git config --list
@@ -20,38 +18,32 @@
 
 > atribui um e-mail e apelido para o usuário do git
 
-    git add *
+    git add * : Muda o atributo de um arquivo para Staged
 
-> Muda o atributo de um arquivo para Staged
 > selecionar todos os arquivos: '*','.' e '-A'
 
-    git commit -m "anotações"
+    git commit -m "anotações" : Cria snapshot (como checkpoint) dos arquivos Staged
 
-> Cria snapshot (como checkpoint) dos arquivos Staged 
 > Modifica atributos para Unmodified
 > Nomeia snapshot
 > Arquivos do Commit passam a integrar o Local Repository
 > Local Repository pode ser empurrado para um Remote Repository (GitHub)
 
-    git status
+    git status : Mostra a situação atual da branch
 
-> Mostra a situação atual da branch
+    git log : Monstra commits do repositório
 
-    git log
+    git clone https://github.com/username/remoterepository :clona para o repositório local um repositório no github
 
-> Monstra commits do repositório
-
-    git clone https://github.com/username/remoterepository
-
-> clona para o repositório local um repositório no github
 > pode ser feito com o Git bash
 
-    git push -u origin main
+    git push -u origin main: empurra as alterações 'staged' para a nuvem
 
-> empurra as alterações 'staged' para a nuvem
 > A opção "-u" é usada para estabelecer a associação entre o ramo local e o ramo remoto. Isso significa que, ao usar "git push -u origin main", você está informando ao Git que deseja que o ramo "main" no repositório remoto "origin" seja o destino padrão para futuros "git push" no seu ramo local "main".
 > "Origin" é o nome padrão que o Git dá ao repositório remoto quando você clona um repositório pela primeira vez usando "git clone". No entanto, você pode dar a ele outro nome, se desejar. Para fazer isso, você pode usar o comando "git remote rename"
 > Você pode verificar qual nome está sendo usado para o ramo principal de um repositório Git usando o seguinte comando: git branch -a
+
+    git branch: mostra as branches disponíveis no repositório local.
 
 ## Atributos Git
 
