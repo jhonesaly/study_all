@@ -24,6 +24,7 @@
 > selecionar todos os arquivos: '*','.' e '-A'
 
 - git commit -m "anotações" : Cria snapshot (como checkpoint) dos arquivos Staged
+    git commit -m "Closes #x" : se tiver uma issue com o número x aberta, será fechada
 
 > Modifica atributos para Unmodified
 > Nomeia snapshot
@@ -37,6 +38,7 @@
 > pode ser feito com o Git bash
 
 - git push -u origin main: empurra as alterações 'staged' para a nuvem
+- git push --set-upstream origin new_branch : exporta a branch criada no repositório local para a nuvem
 
 > A opção "-u" é usada para estabelecer a associação entre o ramo local e o ramo remoto. Isso significa que, ao usar "git push -u origin main", você está informando ao Git que deseja que o ramo "main" no repositório remoto "origin" seja o destino padrão para futuros "git push" no seu ramo local "main".
 > "Origin" é o nome padrão que o Git dá ao repositório remoto quando você clona um repositório pela primeira vez usando "git clone". No entanto, você pode dar a ele outro nome, se desejar. Para fazer isso, você pode usar o comando "git remote rename"
@@ -48,7 +50,7 @@
 - git fetch: faz o download de tudo que está no reposótio remoto e não está no local.
 - git merge: exclui arquivos duplicados ou que foram substituídos por novos no fetch.
 - git pull: faz o fetch e depois o merge de uma vez.
-- git push --set-upstream origin issue1
+
 
 ## Atributos Git
 
