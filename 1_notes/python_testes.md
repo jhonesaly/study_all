@@ -18,6 +18,28 @@ rodando o arquivo com a flag [-O] faz as assertions serem desconsideradas, rodan
     python -O testes.py
     TypeError: can only concatenate str (not "int") to str
 
+Aqui vai uma lista dos principais tipos de assertion
+
+- assert expression: Verifica se a expressão é verdadeira e, se não for, gera um AssertionError com uma mensagem padrão.
+- assert expression, message: Verifica se a expressão é verdadeira e, se não for, gera um AssertionError com a mensagem personalizada fornecida.
+- assertEqual(a, b): Verifica se os valores de a e b são iguais.
+- assertNotEqual(a, b): Verifica se os valores de a e b são diferentes.
+- assertTrue(expression): Verifica se a expressão é verdadeira.
+- assertFalse(expression): Verifica se a expressão é falsa.
+- assertIn(item, lista): Verifica se o item está na lista.
+- assertNotIn(item, lista): Verifica se o item não está na lista.
+- assertIs(a, b): Verifica se a é idêntico a b.
+- assertIsNot(a, b): Verifica se a não é idêntico a b.
+- assertIsNone(expression): Verifica se a expressão é None.
+- assertIsNotNone(expression): Verifica se a expressão não é None.
+- assertAlmostEqual(a, b): Verifica se os valores de a e b são quase iguais (dentro de uma certa tolerância).
+- assertNotAlmostEqual(a, b): Verifica se os valores de a e b não são quase iguais (dentro de uma certa tolerância).
+- assertGreater(a, b): Verifica se a é maior que b.
+- assertGreaterEqual(a, b): Verifica se a é maior ou igual a b.
+- assertLess(a, b): Verifica se a é menor que b.
+- assertLessEqual(a, b): Verifica se a é menor ou igual a b.
+
+
 ## Doctests
 
 Veja o seguinte algoritmo:
@@ -88,3 +110,13 @@ Se você já espera um determinado tipo de erro, você pode deixar o "expected" 
 
 A desvantagem do doctest é que ele fica no mesmo script do algoritmo, o que pode deixá-lo muito grande ou confuso. Por isso recomenda-se usá-lo somente em situações que hajam poucos e simples testes. Para soluções mais complexas, recomenda-se a solução a seguir.
 
+## unittest
+
+Para criar um teste em um script separado, utiliza-se o algoritmo:
+
+    import unittest
+
+    class TestName(unittest.TestCase):
+        pass
+
+    unittest.main()
