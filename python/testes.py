@@ -4,7 +4,8 @@ def soma(a, b):
     """TEST
     
     >>> soma(5,5)
-    11
+    10
+    >>> 
     
     """
     assert isinstance(a, (int, float)) , 'primeira variável precisa ser int ou float'
@@ -19,4 +20,4 @@ def soma(a, b):
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
