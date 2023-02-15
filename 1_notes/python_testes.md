@@ -1,5 +1,7 @@
 # Testes com python
 
+O trabalho de testes é volumoso, por isso considera-se uma boa prática definir funções que façam apenas uma atividade. Se ela fizer várias coisas, o teste vai ficar excessivamente complexo. Por isso é fundamental modularizar.
+
 ## Assertions
 
 A primeira forma de teste é por meio de 'assertions', que são direcionada para o desenvolvedor, não para o usuário final.
@@ -69,4 +71,20 @@ trocando o valor esperado por 10 e colocando como parâmetro no doctest (doctest
     1 tests in 2 items.        
     1 passed and 0 failed.     
     Test passed.
+
+Se você já espera um determinado tipo de erro, você pode deixar o "expected" vazio para pegar o retorno do prompt e permitir que esse teste passe.
+
+    def soma(a, b):
+    """TEST
+
+        >>> soma('5',5)
+        Traceback (most recent call last):
+        ...
+        AssertionError: primeira variável precisa ser int ou float
+        """
+        assert isinstance(a, (int, float)) , 'primeira variável precisa ser int ou float'
+        assert isinstance(b, (int, float)) , 'segunda variável precisa ser int ou float'
+        return a + b
+
+A desvantagem do doctest é que ele fica no mesmo script do algoritmo, o que pode deixá-lo muito grande ou confuso. Por isso recomenda-se usá-lo somente em situações que hajam poucos e simples testes. Para soluções mais complexas, recomenda-se a solução a seguir.
 
