@@ -120,3 +120,27 @@ Para criar um teste em um script separado, utiliza-se o algoritmo:
         pass
 
     unittest.main()
+
+Digamos que agora a soma retorna a + b + 1, vamos executar o seguinte teste:
+
+    class TestTestes(unittest.TestCase):
+    def test_soma_5_e_5_deve_retornar_10(self):
+        self.assertEqual(soma(5,5), 10)
+    
+    unittest.main(verbosity=2)
+
+o prompt:
+
+    test_soma_5_e_5_deve_retornar_10 (__main__.TestTestes.test_soma_5_e_5_deve_retornar_10) ... FAIL
+
+    ======================================================================
+    FAIL: test_soma_5_e_5_deve_retornar_10 (__main__.TestTestes.test_soma_5_e_5_deve_retornar_10)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+    File "c:\Users\Cougar_Gamer\Desktop\dev_lif\study_all\python\tests\test_testes.py", line 6, in test_soma_5_e_5_deve_retornar_10
+        self.assertEqual(soma(5,5), 10)
+    AssertionError: 11 != 10
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.002s
+
