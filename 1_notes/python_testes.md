@@ -53,4 +53,20 @@ Veja o seguinte algoritmo:
 
 A primeira coisa a se notar é o 'if' no final, muito comum em vários scripts. Ele é fundamental para para testes porque ele indica que o teste só deve ser realizado se o script estiver sendo executado diretamente. Em geral, os softwares são esritos de maneira modularizada com um script principal que chama os módulos, impedindo que esses testes sejam executados pelo usuário final.
 
-Em segundo lugar, veja que, por meio da biblioteca doctest, aquilo que 
+Em segundo lugar, veja que, por meio da biblioteca doctest, aquilo que estiver escrito entre """ será testado, como indicado no código. Aqui foi colocado um resultado esperado errado de propósito para ver uma falha. Se não houver erro, o test não mostrará nada no prompt.
+
+trocando o valor esperado por 10 e colocando como parâmetro no doctest (doctest.testmod(verbose=True)) obtemos o seguinte prompt:
+
+    Trying:      
+        soma(5,5)
+    Expecting:   
+        10       
+    ok
+    1 items had no tests:      
+        __main__
+    1 items passed all tests:  
+    1 tests in __main__.soma
+    1 tests in 2 items.        
+    1 passed and 0 failed.     
+    Test passed.
+
