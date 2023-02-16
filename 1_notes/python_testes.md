@@ -144,3 +144,50 @@ o prompt:
     ----------------------------------------------------------------------
     Ran 1 test in 0.002s
 
+Para fazer vários testes do mesmo tipo de uma vez:
+
+    def test_varias_entradas(self):
+        a_b_saidas = (
+            (10, 10, 20),
+            (10, 15, 25),
+            (20, 25, 45),
+            (20, 20, 40),           
+        )
+
+        for a_b_saida in a_b_saidas:
+            with self.subTest(a_b_saida=a_b_saida):
+                a, b, saida = a_b_saida
+                self.assertEqual(soma(a,b), saida)
+
+Para fazer tete de erro:
+
+    def test_soma_sem_a_int_ou_float_retorna_erro(self):
+        with self.assertRaises(AssertionError):
+            soma('11',0)
+
+    def test_soma_sem_b_int_ou_float_retorna_erro(self):
+        with self.assertRaises(AssertionError):
+            soma(2,'4')
+
+    def test_soma_sem_a_int_ou_float_retorna_erro(self):
+        with self.assertRaises(AssertionError):
+            soma('11',0)
+
+    def test_soma_sem_b_int_ou_float_retorna_erro(self):
+        with self.assertRaises(AssertionError):
+            soma(2,'4')
+
+# TDD
+
+O TDD (Desenvolvimento Orientado a Testes) é uma prática de desenvolvimento de software que enfatiza a escrita de testes antes de escrever o código de produção. Em Python, o TDD é suportado por várias bibliotecas de testes, sendo a mais comum a unittest.
+
+O processo de TDD geralmente segue as seguintes etapas:
+
+- o primeiro passo é escrever um teste que valide o comportamento esperado do código. Este teste deve falhar inicialmente, pois o código de produção ainda não foi escrito.
+- após escrever o teste, o próximo passo é escrever o código mínimo necessário para fazê-lo passar. Isso significa que o código deve ser escrito de forma incremental e testado a cada passo.
+- uma vez que o teste tenha passado, é hora de refatorar o código para melhorar sua qualidade e legibilidade.
+- o processo é então repetido para o próximo teste, e assim por diante, até que todos os requisitos do software tenham sido atendidos.
+
+O Python oferece suporte nativo para testes com a biblioteca unittest, que permite escrever e executar testes unitários, de integração e funcionais. Outras bibliotecas populares para TDD em Python incluem pytest e nose.
+
+Em resumo, TDD é uma prática de desenvolvimento que ajuda a garantir que o código seja testado e funcionando corretamente desde o início. Em Python, é suportado por várias bibliotecas de testes, e a prática pode levar a um código mais seguro, limpo e de fácil manutenção.
