@@ -46,7 +46,7 @@
 
 - git branch: mostra as branches disponíveis no repositório local.
 - git checkout [option] branch_name: muda para branch_name.
-    [-b]: se não houver branch destino, cria e muda
+    - [-b]: se não houver branch destino, cria e muda
 - git fetch: faz o download de tudo que está no reposótio remoto e não está no local.
 - git merge: exclui arquivos duplicados ou que foram substituídos por novos no fetch.
 - git pull: faz o fetch e depois o merge de uma vez.

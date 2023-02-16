@@ -71,4 +71,3 @@ Para fazer o pull e push de maneira simplificada no vscode, basta ir na barra ve
 ## Apagando repositório
 
 Para apagar um repositório no GitHub, você precisa navegar até a página do repositório que deseja excluir. Em seguida, clique no botão "Settings" (Configurações) no menu à direita. Na seção "Danger Zone" (Zona de Perigo), clique em "Delete this repository" (Excluir este repositório). Isso abrirá uma caixa de diálogo pedindo a confirmação da exclusão. Digite o nome do repositório e clique em "I understand the consequences, delete this repository" (Eu entendo as consequências, excluir este repositório). Lembre-se de que essa ação é irreversível e que todo o histórico de commits e arquivos do repositório serão perdidos.
-
