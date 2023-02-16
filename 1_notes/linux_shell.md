@@ -9,6 +9,14 @@ Comandos lógicos para script:
     - [-s] faz com que a entrada do usuário seja silenciosa, ou seja, os caracteres digitados não são exibidos na tela.
     - [-a] array: lê a entrada do usuário em um array em vez de uma variável.
 
+você pode definir um valor padrão para a variável (ex: ans_a1) usando o operador ':-'. 
+
+    read -n 1 -p "Deseja atualizar servidor? [y/n] " ans_a1
+    ans_a1=${ans_a1:-y}
+
+
+Se a variável ans_a1 estiver vazia, o valor padrão "y" será atribuído a ela. Caso contrário, o valor que o usuário digitou será atribuído a ans_a1. 
+
 - if, else:
     
     if [ "$var" == "value" ]; then
@@ -44,6 +52,31 @@ Comandos lógicos para script:
     - O [@] é uma expansão de parâmetro que diz ao Bash para expandir cada elemento do array var como um item separado, em vez de expandir todo o array como uma única string.
     - O uso de $(()) é uma sintaxe de expressão aritmética do Bash, que permite realizar cálculos com números inteiros.
 - range(x) = seq 0 $x
+
+## Funções
+
+Para declarar uma função em shell script, faça como no exemplo:
+
+    function welcome() {
+        echo "Bem-vindo ao Ubuntu Server!"
+    }
+
+Para usá-la direto no prompt:
+
+    $ source minhas_funcoes.sh
+    $ welcome
+    Bem-vindo ao Ubuntu Server!
+
+Para usá-la em outro script:
+
+    #!/bin/bash
+
+    # Importa o arquivo com as funções
+    . minhas_funcoes.sh
+
+    # Chama a função welcome
+    welcome
+    
 
 # Testes
 
