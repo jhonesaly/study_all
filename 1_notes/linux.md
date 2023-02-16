@@ -120,53 +120,7 @@ Para ver somente os usuários criados pelo administrador ou outros usuários, us
     getent passwd | awk -F: '$3 >= 1000 {print $1}'
 
 > Este comando usa o comando awk para filtrar as entradas em que o terceiro campo (o ID de usuário, ou UID) é maior ou igual a 1000. Em muitos sistemas Linux, os usuários criados pelo administrador/usuários da máquina têm UIDs maiores ou iguais a 1000.
-
-
-Comandos lógicos para script:
-
-- read [options]
-    - [-p] prompt: exibe a string prompt como uma mensagem antes de ler a entrada do usuário.
-    - [-t] timeout: define um tempo limite timeout em segundos para a entrada do usuário.
-    - [-n] nchars: lê somente os nchars primeiros caracteres da linha de entrada.
-    - [-s] faz com que a entrada do usuário seja silenciosa, ou seja, os caracteres digitados não são exibidos na tela.
-    - [-a] array: lê a entrada do usuário em um array em vez de uma variável.
-
-- if, else:
-    
-    if [ "$var" == "value" ]; then
-        # comandos
-    elif [ "$var" == "value" ]; then
-        # comandos
-    else
-        # comandos
-    fi
-
-- while:
-
-    while [ "$exit" != true ]; do
-        
-        if ...; then
-            #
-        elif ...; then
-            #
-            continue
-        else
-            exir = true
-            break
-        fi
-    done
-
-- for:
-
-    for i in $var; do
-        # comandos
-    done
-
-- len(var) = ((${#var[@]}))
-    - O [@] é uma expansão de parâmetro que diz ao Bash para expandir cada elemento do array var como um item separado, em vez de expandir todo o array como uma única string.
-    - O uso de $(()) é uma sintaxe de expressão aritmética do Bash, que permite realizar cálculos com números inteiros.
-- range(x) = seq 0 $x
-    
+  
 
 Gerenciamento de arquivos e diretórios:
 
