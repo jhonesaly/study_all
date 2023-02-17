@@ -53,6 +53,15 @@ Se a variável ans_a1 estiver vazia, o valor padrão "y" será atribuído a ela.
     - O uso de $(()) é uma sintaxe de expressão aritmética do Bash, que permite realizar cálculos com números inteiros.
 - range(x) = seq 0 $x
 
+## Diferença entre "$ans_w1" e ${ans_w1}?
+
+Ambas as formas de referenciar a variável ans_w1 são válidas no Bash. No entanto, o uso de aspas duplas ("$ans_w1") tem a vantagem de permitir a expansão de variáveis e caracteres especiais, enquanto ainda mantém a integridade da string.
+
+Por exemplo, se ans_w1 contém um valor com espaços em branco, como "meu repositório", a expansão ${ans_w1} seria interpretada como duas palavras distintas ("meu" e "repositório"), enquanto "$ans_w1" seria interpretada como uma única string ("meu repositório"). Da mesma forma, se ans_w1 contém um caractere especial que precisa ser interpretado pelo Bash, como um asterisco (*), a expansão ${ans_w1} seria interpretada como uma lista de arquivos que correspondem ao padrão, enquanto "$ans_w1" seria interpretada como uma string contendo o próprio asterisco.
+
+Em resumo, o uso de aspas duplas pode ajudar a evitar erros de interpretação de caracteres especiais e garantir que as variáveis sejam expandidas corretamente.
+
+
 ## Funções
 
 Para declarar uma função em shell script, faça como no exemplo:
@@ -77,6 +86,22 @@ Para usá-la em outro script:
     # Chama a função welcome
     welcome
     
+# Baixar e descompactar
+
+renomeação do arquivo durante o download e descompactação, você pode adicionar o nome desejado ao usar o comando wget com a opção -O, e especificar um nome diferente durante a descompactação usando a opção -d do comando unzip. Por exemplo:
+
+    read -p "coloque o endereço do repositório para fazer o download: " ans_w1
+    wget "$ans_w1" -O my_app.zip
+    unzip my_app.zip -d my_app_folder
+
+
+# Scipr para atualizar servidor sem usuário
+
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update -y
+    apt-get upgrade -y -qq
+    systemctl daemon-reexec
+
 
 # Testes
 
