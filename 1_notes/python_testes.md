@@ -177,6 +177,26 @@ Para fazer tete de erro:
         with self.assertRaises(AssertionError):
             soma(2,'4')
 
+Para se executar todos os testes presentes na pasta atual, se utilzia o comando:
+
+    python -m unittest -v
+
+Caso os arquivos de testes estejam situados em outra pasta, é necessário adicioná-los ao path do interpretador por meio de:
+
+    try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../tests'
+            )
+        )
+    )
+
+
 # TDD
 
 O TDD (Desenvolvimento Orientado a Testes) é uma prática de desenvolvimento de software que enfatiza a escrita de testes antes de escrever o código de produção. Em Python, o TDD é suportado por várias bibliotecas de testes, sendo a mais comum a unittest.
