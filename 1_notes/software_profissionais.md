@@ -10,6 +10,8 @@ full-stack pode desempenhar funções tanto de desenvolvimento de front-end quan
 
 DevOps: são profissionais que trabalham na integração e implantação contínuas de software, garantindo que o software seja entregue de forma rápida e segura. Eles usam ferramentas e tecnologias de automação para criar e gerenciar fluxos de trabalho de desenvolvimento, teste e implementação.
 
+Engenheiro de software: é responsável por projetar e desenvolver sistemas de software complexos, e pode trabalhar em todas as fases do ciclo de vida do software, desde a definição dos requisitos até a manutenção do software. Um engenheiro de software tem uma visão mais abrangente do sistema e precisa entender a interação entre as diferentes partes do sistema. Ele ou ela é responsável por garantir que o software seja seguro, escalável, robusto e fácil de manter.
+
 Arquitetos de software: são responsáveis por projetar a estrutura geral do software, incluindo a seleção de tecnologias e ferramentas adequadas, definindo padrões e práticas de codificação, e identificando áreas de risco e oportunidades para inovação.
 
 Gerentes de projeto: são responsáveis por garantir que o projeto de desenvolvimento de software atenda aos objetivos do negócio e que seja entregue dentro do prazo e orçamento estabelecidos. Eles coordenam as atividades de todos os profissionais envolvidos, comunicam o progresso e gerenciam os riscos.
