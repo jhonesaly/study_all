@@ -12,46 +12,46 @@ Vale destacar que a arquitetura de software não é algo que possa ser definido 
 
 Monolítico: todas as funções estejam em um único processo. O desenvolvimento é mais ágil e é possível subir uma primeira versão (Minimum Viable Product, ou MVP) mais facilmente, permitindo a execução por uma equipe menor e com menos qualificação.
 
-Baseada em microsserviços (Microservices architecture): Uma arquitetura que divide o sistema em pequenos serviços independentes, cada um executando uma função específica. Cada serviço é autônomo e pode ser atualizado, implantado e dimensionado independentemente dos outros serviços. desenvolvimento especializado de acordo com a função, que fica bem-delimitada e serve a um propósito específico. Por ser uma estrutura mais complexa, exige um maior nível de automação das implementações. Além disso, orquestrar todos os microsserviços é essencial para que tudo funcione, exigindo desenvolvedores com qualificação maior ou, ao menos, uma boa coordenação de DevOps.
+Baseada em microsserviços (Microservices architecture): Uma arquitetura que divide o sistema em pequenos serviços independentes, cada um executando uma função específica. Cada serviço é autônomo e pode ser atualizado, implantado e dimensionado independentemente dos outros serviços. desenvolvimento especializado de acordo com a função, que fica bem-delimitada e serve a um propósito específico. Por ser uma estrutura mais complexa, exige um maior nível de automação das implementações. Além disso, orquestrar todos os microsserviços é essencial para que tudo funcione, exigindo desenvolvedores com qualificação maior ou, ao menos, uma boa coordenação de DevOps. Esta arquitetura é utilizada em sistemas que são compostos por um conjunto de microsserviços independentes, cada um responsável por uma funcionalidade específica. Um exemplo de empresa que utiliza essa arquitetura é o Netflix, que usa microsserviços para gerenciar seu catálogo de filmes e séries.
 
-Em camadas (layered): Uma arquitetura que organiza o sistema em camadas, em que cada camada é responsável por uma funcionalidade específica. As camadas se comunicam somente com as camadas adjacentes, criando um alto grau de modularidade.
+Em camadas (layered): Uma arquitetura que organiza o sistema em camadas, em que cada camada é responsável por uma funcionalidade específica. As camadas se comunicam somente com as camadas adjacentes, criando um alto grau de modularidade. Esta arquitetura é comum em aplicativos empresariais, onde a camada de apresentação (interface do usuário) é separada das camadas de lógica de negócios e de dados. Um exemplo de aplicativo que utiliza essa arquitetura é o Microsoft Office.
 
-Cliente-servidor (Client-server architecture): Uma arquitetura que divide o sistema em dois tipos de componentes: um cliente, que solicita serviços, e um servidor, que fornece os serviços. O cliente envia solicitações para o servidor, que processa e retorna os resultados.
+Cliente-servidor (Client-server architecture): Uma arquitetura que divide o sistema em dois tipos de componentes: um cliente, que solicita serviços, e um servidor, que fornece os serviços. O cliente envia solicitações para o servidor, que processa e retorna os resultados. Esta arquitetura é utilizada em sistemas em que há uma separação clara entre o cliente (interface do usuário) e o servidor (lógica de negócios e armazenamento de dados). Um exemplo de sistema que utiliza essa arquitetura é o sistema bancário online.
 
-Orientada a serviços (Service-oriented architecture - SOA): Uma arquitetura que se concentra na criação de serviços independentes, que podem ser reutilizados em vários aplicativos. Esses serviços podem ser acessados ​​por meio de uma interface comum, tornando o sistema altamente modular.
+Orientada a serviços (Service-oriented architecture - SOA): Uma arquitetura que se concentra na criação de serviços independentes, que podem ser reutilizados em vários aplicativos. Esses serviços podem ser acessados ​​por meio de uma interface comum, tornando o sistema altamente modular. Esta arquitetura é comum em sistemas distribuídos em que diferentes componentes se comunicam por meio de serviços web. Um exemplo de empresa que utiliza essa arquitetura é a Amazon, que utiliza serviços web como o Amazon S3 e o Amazon EC2.
 
-Orientada a eventos (Event-driven architecture): Uma arquitetura que se concentra em eventos, como ações do usuário ou mensagens recebidas de outros sistemas. Os componentes do sistema se comunicam por meio de eventos, permitindo que o sistema seja altamente escalável e resiliente.
+Orientada a eventos (Event-driven architecture): Uma arquitetura que se concentra em eventos, como ações do usuário ou mensagens recebidas de outros sistemas. Os componentes do sistema se comunicam por meio de eventos, permitindo que o sistema seja altamente escalável e resiliente. Esta arquitetura é comum em sistemas que envolvem a troca de mensagens ou eventos entre diferentes componentes. Um exemplo de sistema que utiliza essa arquitetura é o sistema de reservas de passagens aéreas.
 
-Baseada em contêineres (Container-based architecture): Uma arquitetura que usa contêineres para isolar e gerenciar aplicativos e serviços. Os contêineres são implantados e gerenciados em uma plataforma de orquestração de contêineres, como Kubernetes.
+Baseada em contêineres (Container-based architecture): Uma arquitetura que usa contêineres para isolar e gerenciar aplicativos e serviços. Os contêineres são implantados e gerenciados em uma plataforma de orquestração de contêineres, como Kubernetes. Existem muitos softwares que usam arquitetura baseada em contêineres, como Dicker, Kubernetes, Google Cloud Platform, AWS Fargate, Microsoft Azure, Apache mesos.
 
 # Principais bibliografias
 
-Arquitetura em camadas (Layered architecture):
+Em camadas (Layered architecture):
 
 - "Software Architecture in Practice" de Len Bass, Paul Clements e Rick Kazman
 - "Patterns of Enterprise Application Architecture" de Martin Fowler
 
-Arquitetura cliente-servidor (Client-server architecture):
+Cliente-servidor (Client-server architecture):
 
 - "Distributed Systems: Principles and Paradigms" de Andrew S. Tanenbaum e Maarten Van Steen
 - "TCP/IP Illustrated, Volume 1: The Protocols" de W. Richard Stevens
 
-Arquitetura orientada a serviços (Service-oriented architecture - SOA):
+Orientada a serviços (Service-oriented architecture - SOA):
 
 - "SOA Principles of Service Design" de Thomas Erl
 - "Service-Oriented Architecture (SOA) For Dummies" de Judith Hurwitz e Robin Bloor
 
-Arquitetura baseada em microsserviços (Microservices architecture):
+Baseada em microsserviços (Microservices architecture):
 
 - "Building Microservices" de Sam Newman
 - "Microservices Patterns: With examples in Java" de Chris Richardson
 
-Arquitetura orientada a eventos (Event-driven architecture):
+Orientada a eventos (Event-driven architecture):
 
 - "Event-Driven Architecture: How SOA Enables the Real-Time Enterprise" de Hugh Taylor, Angela Yochem e Les Phillips
 - "Building Event-Driven Microservices: Leveraging Organizational Data at Scale" de Adam Bellemare
 
-Arquitetura baseada em contêineres (Container-based architecture):
+Baseada em contêineres (Container-based architecture):
 
 - "Kubernetes: Up and Running: Dive into the Future of Infrastructure" de Kelsey Hightower, Brendan Burns e Joe Beda
 - "Docker: Up & Running: Shipping Reliable Containers in Production" de Sean P. Kane e Karl Matthias
