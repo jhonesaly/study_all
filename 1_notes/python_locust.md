@@ -46,6 +46,8 @@ Você pode personalizar seu teste de carga usando as seguintes opções de linha
 - [--web-port]: A porta da interface web.
 - [--csv]: Salva os resultados do teste em um arquivo CSV.
 
+## Test MySQL
+
 Para realizar um teste de carga em um servidor de banco de dados MySQL usando o Locust, você pode usar a biblioteca mysql-connector-python para se conectar ao banco de dados e executar consultas. Segue abaixo um exemplo de como criar um teste de carga para um servidor de banco de dados MySQL usando o Locust:
 
 Instale a biblioteca mysql-connector-python com o seguinte comando:
@@ -103,9 +105,10 @@ Execute o teste de carga com o seguinte comando:
 
 Este comando inicia o Locust em modo de console e define o URL do seu servidor web, o número máximo de usuários virtuais, a taxa de criação de usuários virtuais e a duração do teste. Note que neste exemplo o endereço http://localhost:8080 é utilizado apenas como referência, visto que estamos acessando diretamente o banco de dados MySQL, e não o servidor web.
 
+
+# Conclusion
+
 Enfim, o Locust é uma ferramenta de teste de carga poderosa e fácil de usar que permite simular o tráfego do mundo real em seu site ou aplicativo. Com o Locust, você pode identificar gargalos de desempenho, testar a escalabilidade e a capacidade de resposta do seu sistema, e fazer melhorias antes de lançá-lo em produção. Neste tutorial, vimos como instalar o Locust, criar um arquivo Python para teste de carga, executar o teste e monitorar os resultados. Agora que você tem uma compreensão básica de como usar o Locust, você pode explorar ainda mais os recursos avançados, como testes de carga distribuídos, testes com diferentes cenários e configurações personalizadas. Para mais informações, você pode consultar a documentação oficial do Locust em https://docs.locust.io/en/stable/.
 
 Lembre-se de que o teste de carga é uma atividade intensiva em recursos e pode afetar negativamente o desempenho do seu sistema. Certifique-se de executar o teste em um ambiente de teste separado e ter as configurações de recursos adequadas antes de iniciar o teste. Além disso, monitore cuidadosamente os resultados do teste para identificar e corrigir problemas de desempenho.
-
-## Teste prático
 
