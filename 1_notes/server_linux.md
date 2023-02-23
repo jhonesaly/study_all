@@ -1,7 +1,3 @@
-# Remote Server
-
-Idealmente, cada máquina é para um tipo de servidor. Claro que, em empreendimentos de menor escala, colocar tudo no mesmo aparelho é ok, mas em grandes estruturas, compensa a especialização.
-
 # Server linux na própria máquina (Virtual Machine)
 
 configure a virtual machine criada para a conexão estar em modo brige, como na imagem:
