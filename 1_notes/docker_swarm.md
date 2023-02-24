@@ -16,16 +16,14 @@ Para criar um cluster de Docker Swarm usando Vms, você precisará seguir os seg
 - Clone a VM existente que contém o contêiner do MySQL.
 - Inicie a VM clonada e certifique-se de que ela esteja conectada à mesma rede que a VM original.
 - Certifique-se de que a instalação do Docker Engine esteja funcionando corretamente na VM clonada.
-- Pare o contêiner do MySQL na VM original usando o comando "docker stop".
 - Inicie o contêiner do MySQL na VM clonada usando o mesmo comando usado na VM original.
-- Execute o comando "docker swarm init" na VM clonada para iniciar o cluster Docker Swarm.
+- Execute o comando "docker swarm init" na VM original para iniciar o cluster Docker Swarm.
+- copie o comando "docker swarm join --token ... 192.168.0.9:2377"
 
-Ao clonar a VM e iniciar o contêiner do MySQL na VM clonada, o contêiner terá um novo ID e não entrará em conflito com o contêiner original na VM original.
+## Comandos
 
-No entanto, ao iniciar o cluster de Docker Swarm, pode haver alguns problemas que podem surgir. Alguns deles incluem:
-
-- Configurações de rede: certifique-se de que a rede da VM clonada esteja configurada corretamente para permitir que os contêineres se comuniquem entre si.
-- Nomes de host: certifique-se de que os nomes de host das VMs clonadas sejam diferentes, pois isso pode causar conflitos no cluster.
-- Configurações do Docker Swarm: certifique-se de que todas as configurações do Docker Swarm sejam definidas corretamente para permitir que o cluster funcione corretamente.
-
-Para evitar problemas de configuração, pode ser útil criar uma imagem personalizada da VM original que já inclua todas as configurações necessárias para o cluster de Docker Swarm. Isso pode ajudar a simplificar o processo de criação do cluster e reduzir a chance de erros de configuração.
+    docker swarm init
+    docker swarm join --token ... 192.
+    docker stack deploy -c docker-compose.yml <nome_da_stack>
+    docker stack rm <nome_da_stack>
+    docker swarm leave --force

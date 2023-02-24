@@ -68,12 +68,20 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 --------------
 # Comandos
 
-    docker ps
-    docker run
-    docker exec
-    inspect conteiner-name
+    docker ps : mostra os conteiners em execução
+    docker run : cria um container
+    docker exec : entra no conteiner
+    inspect <conteiner-name> : dá as informações do conteiner-name especificado
+    docker image ls : lista as imagens na máquina
+    docker stop <id_container> : para o container
+    docker kill <id_container> : força a parada do container
+    docker rm <id_container> : apaga container
+    docker container prune -f : Remove todos os containers parados
+    docker kill $(docker ps -q) : Remove todos os containers em execução
+    docker rm -f $(docker ps -aq) : Remove todos os containers (parados e em execução)
+    docker image prune -f : Remove todas as imagens
+    docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
+    docker network prune -f : Remove todas as redes não utilizadas
+    docker volume prune -f : Remove todos os volumes não utilizados
+ 
 
-- ps: mostra os conteiners em execução
-- run: cria um container
-- exec: entra no conteiner
-- inspect conteiner-name: dá as informações do conteiner-name especificado
