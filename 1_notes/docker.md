@@ -31,16 +31,25 @@ Consiste em computadores ligados que trabalham em conjunto, de modo que, em muit
 
 ## Docker Swarm
 
-Swarm é um recurso do docker que fornece funcionalidades de orquestração de contêiner, incluindo clustering nativo de hosts do Docker e agendamento de cargas de trabalho de contêineres.
+O Docker Swarm é uma ferramenta que permite orquestrar a implantação e gerenciamento de aplicativos distribuídos em um ambiente de contêiner. Ele permite que você agrupe um conjunto de hosts Docker em um cluster, o que permite que os aplicativos sejam executados em vários contêineres em vários hosts.
 
-Se tiver problema de hardware em um dos nós, o container automaticamente passa para outro nó.
+Um cluster do Docker Swarm pode ser composto por várias máquinas, cada uma executando o Docker Engine. Cada máquina no cluster é chamada de "nó" e é capaz de executar contêineres. No entanto, o Docker Swarm abstrai a complexidade de gerenciamento de múltiplos hosts e os apresenta como um único host virtual para o usuário.
+
+Os contêineres são as unidades básicas de implantação no Docker Swarm. Eles podem ser implantados em qualquer nó no cluster, e o Swarm garante que haja um número específico de contêineres em execução a qualquer momento para garantir a disponibilidade do aplicativo. Os contêineres são agrupados em serviços, que são uma definição lógica do aplicativo a ser implantado. Os serviços podem ser escalados horizontalmente (adicionando ou removendo contêineres), atualizados, removidos e gerenciados de maneira transparente pelo Docker Swarm.
+
+Portanto, um cluster do Docker Swarm é composto por máquinas que executam o Docker Engine e essas máquinas hospedam contêineres que executam os aplicativos. O Swarm abstrai a complexidade de gerenciamento de múltiplos hosts e contêineres e apresenta uma única interface para o usuário gerenciar o aplicativo distribuído.
 
 # Docker Hub
 
+O Docker Hub é um registro de imagens de contêineres mantido pela Docker, Inc. É um serviço baseado na nuvem que permite que os desenvolvedores compartilhem e gerenciem imagens de contêineres. Os usuários podem enviar suas próprias imagens de contêineres para o Docker Hub e também podem baixar imagens de contêineres de outras pessoas.
+
+O Docker Hub é uma plataforma central para encontrar e compartilhar imagens de contêineres. Ele permite que os desenvolvedores compartilhem imagens de contêineres publicamente ou as mantenham privadas, exigindo autenticação para acessá-las. O Docker Hub também fornece recursos para integração contínua e entrega contínua (CI/CD) e colaboração em equipe.
+
+Os desenvolvedores podem usar o Docker Hub para hospedar suas próprias imagens de contêineres ou podem usar as imagens públicas disponíveis no registro para executar aplicativos. Ao usar imagens de contêineres do Docker Hub, os desenvolvedores podem reduzir o tempo e o esforço necessários para configurar um ambiente de desenvolvimento ou produção, pois as imagens contêm tudo o que é necessário para executar o aplicativo, incluindo o sistema operacional, bibliotecas e dependências.
+
+O Docker Hub é uma plataforma importante para a comunidade de contêineres, pois ajuda a promover a adoção de contêineres ao fornecer uma maneira fácil de compartilhar e distribuir imagens de contêineres.
+
 repositório onde estão as imagens dos ambientes rodando determinada aplicação. <https://hub.docker.com/search?q=mysql>
-
-Criando container MySQL...
-
 
 # Arquitetura
 
