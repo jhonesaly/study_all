@@ -76,34 +76,54 @@ Crie uma classe de usuário no arquivo Python que define as ações que o client
 
     from locust import HttpUser, task, between
     import mysql.connector
+    import time
 
+    # Define o teste
+    def get_data(self):
+        time_init = time.perf_counter()
+        cnx = mysql.connector.connect(user='user', password='password',
+                            host='localhost',
+                            database='database'
+                            port=port)
+        cursor = cnx.cursor()
+        query = ("SELECT * FROM table")
+        cursor.execute(query)
+        result = cursor.fetchall()
+        
+        print(result)
+        
+        cursor.close()
+        cnx.close()
+        time_fin = time.perf_counter()
+        return time_init, time_fin
+
+    # Cria o bot que fará o teste
     class MyUser(HttpUser):
-        wait_time = between(1, 2.5)
+        wait_time = between(1, 2)
 
         @task
         def my_task(self):
-            data = get_data()
-            self.client.post("/api", data=data)
-
-        def get_data(self):
-            cnx = mysql.connector.connect(user='user', password='password',
-                                host='localhost',
-                                database='database')
-            cursor = cnx.cursor()
-            query = ("SELECT * FROM table")
-            cursor.execute(query)
-            result = cursor.fetchall()
-            cursor.close()
-            cnx.close()
-            return result
+            time_init, time_fin = get_data()
+            events.request.fire(
+                request_type="MySQL",
+                name="get_data",
+                response_time=(time_init - time_fin) * 1000,
+                response_length=response_length,
+                context=None,
+                exception=None,
+                )
 
 Este exemplo usa a classe HttpUser do Locust para definir uma sessão HTTP para o cliente virtual e a classe MyUser para definir o método de tarefa my_task, que executa uma consulta no servidor de banco de dados MySQL e envia os dados para a API. O método get_data se conecta ao servidor de banco de dados MySQL e executa a mesma consulta definida anteriormente.
 
+O port em cnx é para o caso de a conexão ser feita com um container, sendo necessária a especificação da porta.
+
+Para que o eventos sejam registrados na interface do locust, é necessária a configuração do events.request.fire, como demonstrado.
+
 Execute o teste de carga com o seguinte comando:
 
-    locust --host=http://localhost:8080 --users 100 --spawn-rate 10 --run-time 60
+    locust -f caminho/para/arquivo/locust.py --users 30 --spawn-rate 1 --run-time 30s --host=ip_do_server:porta
 
-Este comando inicia o Locust em modo de console e define o URL do seu servidor web, o número máximo de usuários virtuais, a taxa de criação de usuários virtuais e a duração do teste. Note que neste exemplo o endereço http://localhost:8080 é utilizado apenas como referência, visto que estamos acessando diretamente o banco de dados MySQL, e não o servidor web.
+Este comando inicia o Locust em modo de console e define o URL do seu servidor web, o número máximo de usuários virtuais, a taxa de criação de usuários virtuais e a duração do teste. Note que neste exemplo o endereço http://localhost:8089 é utilizado apenas como referência, visto que estamos acessando diretamente o banco de dados MySQL, e não o servidor web.
 
 
 # Conclusion
