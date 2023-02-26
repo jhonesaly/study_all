@@ -102,12 +102,6 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
     > docker kill <id_container> : força a parada do container
     > docker kill $(docker ps -q) : Remove todos os containers em execução
 
-    > docker image build [option] <image_name> .
-        [-t name:version] : cria tags para imagem (ex: -t app_name:1.0)
-        . : indica que o Dockerfile está nesse nível
-    > docker image ls : lista as imagens na máquina
-    > docker image prune -f : Remove todas as imagens
-    > docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
     
     > docker network prune -f : Remove todas as redes não utilizadas
     
@@ -115,6 +109,13 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
     > docker volume ls : lista volumes
     > docker volume inspect <volume_name> : 
     > docker volume prune -f : Remove todos os volumes não utilizados
+
+    > docker image build [option] <image_name> .
+        [-t name:version] : cria tags para imagem (ex: -t app_name:1.0)
+        . : indica que o Dockerfile está nesse nível
+    > docker image ls : lista as imagens na máquina
+    > docker image prune -f : Remove todas as imagens
+    > docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
 
 ## Dockerfile
 
@@ -125,3 +126,5 @@ Arquivo utilizado na hora da criação do container via docker image build.
 - ENV : variáveis de ambiente
 - RUN : comandos executados durante a criação do container
 - CMD : comando a ser executado pela imagem
+- EXPOSE : porta que ficará exposta
+- VOLUME : cria uma pasta dentro do container e uma pasta com nome horrível no host
