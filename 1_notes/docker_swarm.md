@@ -24,31 +24,31 @@ Tenha em mente que o cluster precisa ter 51% das máquinas manager disponíveis 
 
 ## Comandos
 
-    docker swarm init : cria o cluster
-    docker swarm join --token ... 192. : comando para adicionar nó
-    docker swarm join-token [option] <hostname> : revela comando para adicionar nó 
+    > docker swarm init : cria o cluster
+    > docker swarm join --token ... 192. : comando para adicionar nó
+    > docker swarm join-token [option] <hostname> : revela comando para adicionar nó 
         <manager> : do tipo manager
         <worker> : do tipo worker
         [--rotate] : muda token
-    docker swarm leave [option] : remove nó do cluster
+    > docker swarm leave [option] : remove nó do cluster
         [-f] : remove nó manager do cluster
 
-    docker node ls : mostra todos os nós do swarm
-    docker node inspect <hostname> : mostra todas as informações do nó
-    docker node promote <hostname> : torna um nó worker em reachable (elegível para ser líder)
-    docker node demote <hostname> : torna um nó manager em worker
-    docker node update --availability {value} <hostname> :
+    > docker node ls : mostra todos os nós do swarm
+    > docker node inspect <hostname> : mostra todas as informações do nó
+    > docker node promote <hostname> : torna um nó worker em reachable (elegível para ser líder)
+    > docker node demote <hostname> : torna um nó manager em worker
+    > docker node update --availability {value} <hostname> :
         {pause} : bloqueia nó de receber novos containers
         {drain} : desliga nó e move containers automaticamente
         {active} : religa o nó
     
-    docker stack deploy -c docker-compose.yml <nome_da_stack>
-    docker stack rm <stack_name>
+    > docker stack deploy -c docker-compose.yml <nome_da_stack>
+    > docker stack rm <stack_name>
 
-    docker service create --name <service_name> --replicas <service_n> -p <porta:porta> <image> 
-    docker service ps : mostra cada container do service em cada nó
-    docker service inspect <service_name> [option]: mostra os detalhes e configurações do service 
+    > docker service create --name <service_name> --replicas <service_n> -p <porta:porta> <image> 
+    > docker service ps : mostra cada container do service em cada nó
+    > docker service inspect <service_name> [option]: mostra os detalhes e configurações do service 
         [--pretty] : configura para sair mais legível
-    docker service logs -f <service_name> : traz os logs de todos os containers do serviço
-    docker service scale <service_name>=<service_n> : muda a quantidade de containers do serviço
-    docker service rm <service_name> : remove serviço
+    > docker service logs -f <service_name> : traz os logs de todos os containers do serviço
+    > docker service scale <service_name>=<service_n> : muda a quantidade de containers do serviço
+    > docker service rm <service_name> : remove serviço
