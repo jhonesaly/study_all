@@ -70,12 +70,17 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 
     > docker container ls [option]: mostra os conteiners em execução
         [-a] : mostra containers que já não estão mais em execução
-    > docker container run [option] : cria um container
-        [-ti] : cria terminal com interatividade
-    > exit : sai de dentro do container
+    > docker container run [option] <image>: cria um container da imagem especificada
+        [-ti] : roda como terminal com interatividade
+        [-d] : roda como daemon
     > docker container attach <container_id> : entra no container
-    > docker exec : entra no conteiner
-    > docker nspect <conteiner-name> : dá as informações do conteiner-name especificado
+    > exit : sai de dentro do container
+    > docker container exec [option] <container_id> {command}: faz ações dentro do container
+        [-ti]
+    > docker container stop <container_id> : para o container especificado
+    > docker container star <container_id> : recomeça o container especificado
+    > docker container restart <container_id> : reinicia o container especificado
+    > docker constainer inspect <container_name> : dá as informações do conteiner especificado
     > docker image ls : lista as imagens na máquina
     > docker stop <id_container> : para o container
     > docker kill <id_container> : força a parada do container
