@@ -20,10 +20,21 @@ Para criar um cluster de Docker Swarm usando Vms, você precisará seguir os seg
 - Execute o comando "docker swarm init" na VM original para iniciar o cluster Docker Swarm.
 - copie o comando "docker swarm join --token ... 192.168.0.9:2377"
 
+Tenha em mente que o cluster precisa ter 51% das máquinas manager disponíveis para funcionar, por isso é interessante sempre ter um número ímpar das mesmas. ex: tanto para 3 quanto para 4 managers, basta 2 máquinas caírem que o cluster todo cai, por isso é mais econômico usar 3.
+
 ## Comandos
 
-    docker swarm init
-    docker swarm join --token ... 192.
+    docker swarm init : cria o cluster
+    docker node ls : mostra todos os nós do swarm
+    docker node promote <hostname> : torna um nó worker em reachable (elegível para ser líder)
+    docker node demote <hostname> : torna um nó manager em worker
+    docker node update : 
+    docker swarm join --token ... 192. : comando para adicionar nó
+    docker swarm join-token [option] <alvo> : revela comando para adicionar nó 
+        <manager> : do tipo manager
+        <worker> : do tipo worker
+        [--rotate] : muda token
     docker stack deploy -c docker-compose.yml <nome_da_stack>
     docker stack rm <nome_da_stack>
-    docker swarm leave --force
+    docker swarm leave [option] : remove nó do cluster
+        [-f] : remove nó manager do cluster
