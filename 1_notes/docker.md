@@ -70,11 +70,16 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 
     > docker container ls [option]: mostra os conteiners em execução
         [-a] : mostra containers que já não estão mais em execução também
-    > docker container run [option] <image>: cria um container da imagem especificada
+    > docker container create [option] <image>: cria um container da imagem especificada sem executá-lo
+    > docker container run [option] <image>: cria um container da imagem especificada e executa
         [-ti] : roda como terminal com interatividade
         [-d] : roda como daemon
         [-m] : especifica uma quantidade de memória que pode ser utilizada pelo container (ex: 128M)
         [--cpus] : quantos % de 1 core pode ser usado (ex: 1.5 = 1 core e meio, se tiver)
+        [--mount type={type},src=<path source>,dst=<path destiny>,[ro]] : torna arquivos do container persistentes, ainda que o container seja apagado.
+            {bind} : conecta a pastas fora da pasta docker
+            {volume} : conecta a arquivos específicos dentro da pasta /var/lib/docker/volumes (ex: type=volume,src=volume1,dst=/volume1)
+            [ro] : faz o mount ser do tipo "read only", o que impede alterações  
     > docker container attach <container_id> : entra no container
     > exit : sai de dentro do container
     > docker container exec [option] <container_id> {command}: faz ações dentro do container
@@ -100,14 +105,16 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
     > docker image build [option] <image_name> .
         [-t name:version] : cria tags para imagem (ex: -t app_name:1.0)
         . : indica que o Dockerfile está nesse nível
-
     > docker image ls : lista as imagens na máquina
-
     > docker image prune -f : Remove todas as imagens
     > docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
     
-    docker network prune -f : Remove todas as redes não utilizadas
-    docker volume prune -f : Remove todos os volumes não utilizados
+    > docker network prune -f : Remove todas as redes não utilizadas
+    
+    > docker volume create <volume_name> : cria volume persistente na pasta /var/lib/docker/volumes
+    > docker volume ls : lista volumes
+    > docker volume inspect <volume_name> : 
+    > docker volume prune -f : Remove todos os volumes não utilizados
 
 ## Dockerfile
 
