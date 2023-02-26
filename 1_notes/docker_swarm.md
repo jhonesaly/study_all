@@ -46,4 +46,9 @@ Tenha em mente que o cluster precisa ter 51% das máquinas manager disponíveis 
     docker stack rm <stack_name>
 
     docker service create --name <service_name> --replicas <service_n> -p <porta:porta> <image> 
+    docker service ps : mostra cada container do service em cada nó
+    docker service inspect <service_name> [option]: mostra os detalhes e configurações do service 
+        [--pretty] : configura para sair mais legível
+    docker service logs -f <service_name> : traz os logs de todos os containers do serviço
     docker service scale <service_name>=<service_n> : muda a quantidade de containers do serviço
+    docker service rm <service_name> : remove serviço
