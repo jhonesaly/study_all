@@ -69,10 +69,11 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 # Comandos
 
     > docker container ls [option]: mostra os conteiners em execução
-        [-a] : mostra containers que já não estão mais em execução
+        [-a] : mostra containers que já não estão mais em execução também
     > docker container run [option] <image>: cria um container da imagem especificada
         [-ti] : roda como terminal com interatividade
         [-d] : roda como daemon
+        [-m] : especifica uma quantidade de memória que pode ser utilizada pelo container (ex: 128M)
     > docker container attach <container_id> : entra no container
     > exit : sai de dentro do container
     > docker container exec [option] <container_id> {command}: faz ações dentro do container
@@ -80,7 +81,16 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
     > docker container stop <container_id> : para o container especificado
     > docker container star <container_id> : recomeça o container especificado
     > docker container restart <container_id> : reinicia o container especificado
-    > docker constainer inspect <container_name> : dá as informações do conteiner especificado
+    > docker container pause <container_id> : trava o container especificado
+    > docker container unpause <container_id> : destrava o container especificado
+    > docker container inspect <container_name> : dá as informações do container especificado
+    > docker container logs -f <container_id> : mostra todos os logs do container
+    > docker container rm [option] <container_id> : apaga o container
+        [-f] : executa forçadamente
+    > docker container stats <container_id> : mostra o gasto de cpu, memória e etc do containers (se não informar o container, mostra de todos)
+    > docker container top <container_id> : mostra os processos do container
+
+
     > docker image ls : lista as imagens na máquina
     > docker stop <id_container> : para o container
     > docker kill <id_container> : força a parada do container
