@@ -68,8 +68,12 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 --------------
 # Comandos
 
-    > docker ps : mostra os conteiners em execução
-    > docker run : cria um container
+    > docker container ls [option]: mostra os conteiners em execução
+        [-a] : mostra containers que já não estão mais em execução
+    > docker container run [option] : cria um container
+        [-ti] : cria terminal com interatividade
+    > exit : sai de dentro do container
+    > docker container attach <container_id> : entra no container
     > docker exec : entra no conteiner
     > docker nspect <conteiner-name> : dá as informações do conteiner-name especificado
     > docker image ls : lista as imagens na máquina
