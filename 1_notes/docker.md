@@ -74,6 +74,7 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
         [-ti] : roda como terminal com interatividade
         [-d] : roda como daemon
         [-m] : especifica uma quantidade de memória que pode ser utilizada pelo container (ex: 128M)
+        [--cpus] : quantos % de 1 core pode ser usado (ex: 1.5 = 1 core e meio, se tiver)
     > docker container attach <container_id> : entra no container
     > exit : sai de dentro do container
     > docker container exec [option] <container_id> {command}: faz ações dentro do container
@@ -87,19 +88,33 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
     > docker container logs -f <container_id> : mostra todos os logs do container
     > docker container rm [option] <container_id> : apaga o container
         [-f] : executa forçadamente
+    > docker rm -f $(docker ps -aq) : Remove todos os containers (parados e em execução)    
     > docker container stats <container_id> : mostra o gasto de cpu, memória e etc do containers (se não informar o container, mostra de todos)
     > docker container top <container_id> : mostra os processos do container
+    > docker container update [options] <container_id> : atualiza configuração do container
+    > docker container prune -f : Remove todos os containers parados
+    
+    > docker kill <id_container> : força a parada do container
+    > docker kill $(docker ps -q) : Remove todos os containers em execução
 
+    > docker image build [option] <image_name> .
+        [-t name:version] : cria tags para imagem (ex: -t app_name:1.0)
+        . : indica que o Dockerfile está nesse nível
 
     > docker image ls : lista as imagens na máquina
-    > docker stop <id_container> : para o container
-    > docker kill <id_container> : força a parada do container
-    > docker rm <id_container> : apaga container
-    > docker container prune -f : Remove todos os containers parados
-    > docker kill $(docker ps -q) : Remove todos os containers em execução
-    > docker rm -f $(docker ps -aq) : Remove todos os containers (parados e em execução)
+
     > docker image prune -f : Remove todas as imagens
     > docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
     
     docker network prune -f : Remove todas as redes não utilizadas
     docker volume prune -f : Remove todos os volumes não utilizados
+
+## Dockerfile
+
+Arquivo utilizado na hora da criação do container via docker image build.
+
+- FROM : imagem de origem
+- LABEL : metadados da imagem
+- ENV : variáveis de ambiente
+- RUN : comandos executados durante a criação do container
+- CMD : comando a ser executado pela imagem
