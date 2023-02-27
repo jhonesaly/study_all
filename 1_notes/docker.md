@@ -122,22 +122,22 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 
 Arquivo utilizado na hora da criação do container via docker image build.
 
-- FROM : imagem de origem (dockerfile pode ter mais de um from, que separa o arquivo em duas partes)
-- LABEL : metadados da imagem
-- ENV : variáveis de ambiente
-- RUN : comandos executados durante a criação do container
-- CMD : comando a ser executado pela imagem
-- EXPOSE : porta que ficará exposta
-- VOLUME : cria uma pasta dentro do container e uma pasta com nome horrível no host
-- ENTRYPOINT : Principal processo do container, que se for encerrado, o container morre junto
-- COPY : copia algo para dentro do container
-- ADD : faz uma cópia mais completa (?)
-- USER : define usuário do container (pode ser o root)
-- ARG : define uma variável que pode ser passada como argumento no momento da construção da imagem, por exemplo, para especificar a versão de um software a ser instalado
-- WORKDIR : define o diretório de trabalho para os comandos subsequentes no Dockerfile
-- HEALTHCHECK : define um comando para verificar se o container está saudável
-- SHELL : define o shell padrão a ser usado para execução dos comandos no Dockerfile
-- STOPSIGNAL : especifica o sinal que deve ser enviado para o processo principal quando o container for parado
-- MAINTAINER : define o nome e o endereço de email do mantenedor da imagem (obs: essa tag está obsoleta, e é substituída pela LABEL)
-- ONBUILD : especifica um comando a ser executado em uma imagem filha após a construção da imagem atual
-- LABEL-schema : uma convenção para definir metadados sobre a imagem, como versão, descrição, mantenedor, etc. Essa convenção segue o formato "LABEL-schema.<chave>=<valor>" e é usada por ferramentas como o Docker Hub e o Google Container Registry para indexar e buscar imagens
+- FROM : Define a imagem de origem para a construção da nova imagem. Por exemplo, FROM ubuntu:latest.
+- LABEL : Define metadados para a imagem. Por exemplo, LABEL version="1.0" maintainer="Meu nome".
+- ENV : Define variáveis de ambiente para o container. Por exemplo, ENV PORT=8080.
+- RUN : Executa comandos durante a construção da imagem. Por exemplo, RUN apt-get update && apt-get install -y nginx.
+- CMD : Define o comando padrão a ser executado quando o container for iniciado. Por exemplo, CMD ["nginx", "-g", "daemon off;"].
+- EXPOSE : Expõe uma porta do container para a rede host. Por exemplo, EXPOSE 80.
+- VOLUME : Cria um ponto de montagem para armazenar dados persistentes. Por exemplo, VOLUME /var/lib/mysql.
+- ENTRYPOINT : Define o comando principal do container. Por exemplo, ENTRYPOINT ["java", "-jar", "myapp.jar"].
+- COPY : Copia um arquivo ou diretório do host para o container. Por exemplo, COPY app.jar /app/.
+- ADD : Similar ao COPY, mas permite a extração de arquivos compactados no processo. Por exemplo, ADD app.tar.gz /app/.
+- USER : Define o usuário padrão a ser usado dentro do container. Por exemplo, USER nginx.
+- ARG : Define variáveis que podem ser passadas para o Dockerfile na linha de comando. Por exemplo, ARG VERSION=latest.
+- WORKDIR : Define o diretório de trabalho para os comandos subsequentes no Dockerfile. Por exemplo, WORKDIR /app.
+- HEALTHCHECK : Define um comando para verificar se o container está saudável. Por exemplo, HEALTHCHECK CMD curl --fail http://localhost:8080/ || exit 1.
+- SHELL : Define o shell padrão a ser usado para execução dos comandos no Dockerfile. Por exemplo, SHELL ["/bin/bash", "-c"].
+- STOPSIGNAL : Especifica o sinal que deve ser enviado para o processo principal quando o container for parado. Por exemplo, STOPSIGNAL SIGTERM.
+- MAINTAINER : Define o nome e o endereço de email do mantenedor da imagem. Por exemplo, MAINTAINER "Meu nome" meu.email@exemplo.com.
+- ONBUILD : Especifica um comando a ser executado em uma imagem filha após a construção da imagem atual. Por exemplo, ONBUILD COPY . /app/.
+- LABEL-schema : Uma convenção para definir metadados sobre a imagem. Por exemplo, LABEL-schema.version="1.0" LABEL-schema.maintainer="Meu nome".
