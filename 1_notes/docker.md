@@ -121,10 +121,14 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 
 Arquivo utilizado na hora da criação do container via docker image build.
 
-- FROM : imagem de origem
+- FROM : imagem de origem (dockerfile pode ter mais de um from, que separa o arquivo em duas partes)
 - LABEL : metadados da imagem
 - ENV : variáveis de ambiente
 - RUN : comandos executados durante a criação do container
 - CMD : comando a ser executado pela imagem
 - EXPOSE : porta que ficará exposta
 - VOLUME : cria uma pasta dentro do container e uma pasta com nome horrível no host
+- ENTRYPOINT : Principal processo do container, que se for encerrado, o container morre junto
+- COPY : copia algo para dentro do container
+- ADD : faz uma cópia mais completa (?)
+- USER : define usuário do container (pode ser o root)
