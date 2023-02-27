@@ -18,16 +18,15 @@ Servidor bare metal: um servidor físico dedicado a um único inquilino.
 - escalabilidade
 - performance
 
-# Microsserviços
+## Microsserviços
 
 arquitetura de software, que consiste em construir aplicações desmembrando-as em serviços independentes. Estes serviços se comunicam entre si usando APIs e promovem grande agilidade e escalabilidade em times de desenvolvimento.
 
 Quando há uma aplicação monolítica e ela roda na máquina de vários clientes, é desperdiçada muito processamento enviando informações que não serão utilizadas, pois nem tudo no código o cliente irá usar. Mas quando um grande software é quebra de em microsserviços, pode-se dar mais processamento para os que efetivamente necessitam de mais.
 
-# Cluster
+## Cluster
 
 Consiste em computadores ligados que trabalham em conjunto, de modo que, em muitos aspectos, podem ser considerados como um único sistema. Cada máquina presente em um cluster é conhecido como nó (node).
-
 
 ## Docker Swarm
 
@@ -39,7 +38,7 @@ Os contêineres são as unidades básicas de implantação no Docker Swarm. Eles
 
 Portanto, um cluster do Docker Swarm é composto por máquinas que executam o Docker Engine e essas máquinas hospedam contêineres que executam os aplicativos. O Swarm abstrai a complexidade de gerenciamento de múltiplos hosts e contêineres e apresenta uma única interface para o usuário gerenciar o aplicativo distribuído.
 
-# Docker Hub
+## Docker Hub
 
 O Docker Hub é um registro de imagens de contêineres mantido pela Docker, Inc. É um serviço baseado na nuvem que permite que os desenvolvedores compartilhem e gerenciem imagens de contêineres. Os usuários podem enviar suas próprias imagens de contêineres para o Docker Hub e também podem baixar imagens de contêineres de outras pessoas.
 
@@ -51,7 +50,7 @@ O Docker Hub é uma plataforma importante para a comunidade de contêineres, poi
 
 repositório onde estão as imagens dos ambientes rodando determinada aplicação. <https://hub.docker.com/search?q=mysql>
 
-# Arquitetura
+## Arquitetura
 
 - Container image: pacote com todas as dependências que criam o contêiner. A imagem é como classe e o conteiner é o objeto instanciado
 - Dockerfile: arqiovo de texto que contém todas as intruções para fazer o build da imagem (container image)
@@ -66,7 +65,8 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
 - Compose: metadata que permite criar múltiplos contêiners com um único comando
 
 --------------
-# Comandos
+
+## Comandos
 
     > docker container ls [option]: mostra os conteiners em execução
         [-a] : mostra containers que já não estão mais em execução também
@@ -114,6 +114,7 @@ repositório onde estão as imagens dos ambientes rodando determinada aplicaçã
         [-t name:version] : cria tags para imagem (ex: -t app_name:1.0)
         . : indica que o Dockerfile está nesse nível
     > docker image ls : lista as imagens na máquina
+    > docker image tag <image_id> tag:tag : muda tags da imagem especificada
     > docker image prune -f : Remove todas as imagens
     > docker container prune --force --filter "label!=com.docker.stack.namespace" : Remove containers órfãos (não associados a nenhum serviço ou stack)
 
@@ -132,3 +133,11 @@ Arquivo utilizado na hora da criação do container via docker image build.
 - COPY : copia algo para dentro do container
 - ADD : faz uma cópia mais completa (?)
 - USER : define usuário do container (pode ser o root)
+- ARG : define uma variável que pode ser passada como argumento no momento da construção da imagem, por exemplo, para especificar a versão de um software a ser instalado
+- WORKDIR : define o diretório de trabalho para os comandos subsequentes no Dockerfile
+- HEALTHCHECK : define um comando para verificar se o container está saudável
+- SHELL : define o shell padrão a ser usado para execução dos comandos no Dockerfile
+- STOPSIGNAL : especifica o sinal que deve ser enviado para o processo principal quando o container for parado
+- MAINTAINER : define o nome e o endereço de email do mantenedor da imagem (obs: essa tag está obsoleta, e é substituída pela LABEL)
+- ONBUILD : especifica um comando a ser executado em uma imagem filha após a construção da imagem atual
+- LABEL-schema : uma convenção para definir metadados sobre a imagem, como versão, descrição, mantenedor, etc. Essa convenção segue o formato "LABEL-schema.<chave>=<valor>" e é usada por ferramentas como o Docker Hub e o Google Container Registry para indexar e buscar imagens
