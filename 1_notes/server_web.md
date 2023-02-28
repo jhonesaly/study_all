@@ -4,6 +4,16 @@ Um web server é um software de servidor responsável por atender solicitações
 
 O web server pode executar em diferentes sistemas operacionais, como Windows, Linux e Mac OS X. Ele é usado por empresas e organizações para hospedar seus sites na internet, bem como por desenvolvedores que desejam criar e testar aplicativos web em seus computadores locais. Alguns exemplos de servidores web populares são o Apache, o Nginx e o Microsoft IIS.
 
+## Proxy reverso
+
+Um proxy reverso é um servidor intermediário que recebe solicitações de clientes e encaminha essas solicitações para um ou mais servidores de origem. Diferentemente de um proxy normal, que encaminha solicitações para um cliente, um proxy reverso encaminha solicitações para um servidor, funcionando como um intermediário entre os clientes e os servidores de origem.
+
+Um servidor web pode ser configurado como um proxy reverso para melhorar o desempenho e a escalabilidade de um site. Isso é feito redirecionando as solicitações do cliente para diferentes servidores web, permitindo que várias solicitações sejam tratadas simultaneamente e distribuindo a carga entre vários servidores. O proxy reverso também pode fornecer serviços adicionais, como autenticação, balanceamento de carga e caching.
+
+Um exemplo comum de uso de proxy reverso é o balanceamento de carga. Quando vários servidores web são executados em um cluster, um proxy reverso pode distribuir as solicitações entre os servidores para garantir que a carga seja equilibrada e que cada servidor receba uma carga razoável.
+
+Em resumo, um proxy reverso é um servidor intermediário que encaminha solicitações de clientes para um ou mais servidores de origem, enquanto um servidor web pode ser configurado como um proxy reverso para melhorar o desempenho e a escalabilidade de um site. O uso de um proxy reverso pode ajudar a distribuir a carga entre vários servidores e fornecer serviços adicionais, como autenticação, balanceamento de carga e caching.
+
 ## Aplicações de Web Server
 
 ### Apache
