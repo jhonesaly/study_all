@@ -33,6 +33,25 @@ Para criar um dispositivo de IoT, como uma geladeira inteligente, são necessár
 - Habilidade em soldagem de componentes eletrônicos em placas de circuito impresso (PCBs).
 - Conhecimento em eletrônica digital, incluindo microcontroladores, sensores e atuadores.
 
+#### PCB
+
+PCB significa "Printed Circuit Board" (Placa de Circuito Impresso) em inglês, e é uma placa que é usada para conectar componentes eletrônicos em um circuito eletrônico. PCBs são feitas de um material isolante, como resina epóxi ou fibra de vidro, com camadas de cobre dispostas em um padrão que cria trilhas condutoras que permitem a conexão elétrica entre componentes eletrônicos.
+
+As PCBs são projetadas usando software de design eletrônico, que permite que o designer desenhe o circuito e posicione os componentes eletrônicos na placa. O software converte o desenho do circuito em um arquivo de produção, que é enviado para uma fábrica para ser produzido.
+
+As PCBs são amplamente utilizadas em dispositivos eletrônicos de todos os tipos, desde eletrônicos de consumo até equipamentos industriais complexos. Elas fornecem uma solução eficiente para a conexão de componentes eletrônicos em um circuito, permitindo que os dispositivos eletrônicos funcionem de maneira confiável e eficiente.
+
+#### Softwares PCB Open Source
+
+há vários softwares de design de circuitos eletrônicos de código aberto (open source) disponíveis. Alguns exemplos incluem:
+
+- KiCAD: é um software de design eletrônico de código aberto que permite criar esquemas de circuitos, projetar placas de circuito impresso e criar listas de materiais. É uma das ferramentas de design eletrônico mais populares e possui uma comunidade de usuários ativa.
+- gEDA: é um conjunto de ferramentas de software de design eletrônico de código aberto que inclui um editor de esquemas, um editor de layout de PCB e ferramentas de simulação de circuitos. É compatível com Linux e outros sistemas operacionais baseados em Unix.
+- FreePCB: é um software de design eletrônico de código aberto que permite criar placas de circuito impresso simples e de tamanho médio. Ele é projetado para ser fácil de usar e é compatível com Windows.
+- CircuitMaker: é um software de design eletrônico de código aberto desenvolvido pela Altium. Ele permite criar esquemas de circuitos e projetar placas de circuito impresso e inclui uma grande biblioteca de componentes eletrônicos.
+
+Todos esses softwares são gratuitos para uso pessoal e comercial e possuem uma comunidade de usuários ativa que pode fornecer suporte e recursos adicionais. Eles exigem um conhecimento sólido em eletrônica e habilidades em design de circuito para usá-los de forma eficaz, mas podem ser uma ótima alternativa aos softwares comerciais de design eletrônico.
+
 ### Programação
 
 - Conhecimento em programação de baixo nível, como linguagem C e Assembly, para programar microcontroladores.
