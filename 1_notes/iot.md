@@ -6,7 +6,7 @@ Esses objetos e dispositivos podem incluir desde eletrodomésticos inteligentes,
 
 Com o IoT, é possível criar uma série de aplicações e soluções inovadoras, como a monitoração remota de equipamentos, o controle automatizado de processos industriais, a gestão inteligente de cidades e edifícios, entre outras. Além disso, o IoT também tem o potencial de transformar a maneira como as pessoas interagem com os objetos do seu cotidiano, tornando-os mais eficientes e personalizados.
 
-## Equipamentos de IoT
+## Equipamentos com IoT
 
 Existem muitos tipos diferentes de equipamentos que podem ser considerados dispositivos de IoT, desde objetos domésticos inteligentes até sensores industriais e veículos conectados. Aqui estão alguns exemplos comuns:
 
@@ -15,3 +15,41 @@ Existem muitos tipos diferentes de equipamentos que podem ser considerados dispo
 - Dispositivos de saúde e fitness: como pulseiras e relógios inteligentes que monitoram a atividade física, a frequência cardíaca e outros dados de saúde.
 - Equipamentos industriais: como sensores de monitoramento de máquinas, robôs industriais e outros equipamentos que podem ser conectados para melhorar a eficiência e a produtividade.
 - Veículos conectados: como carros e caminhões equipados com sensores que podem coletar dados sobre o desempenho, a localização e outros aspectos do veículo.
+
+### Ferramentas
+
+Para desenvolver um dispositivo de IoT, é necessário adquirir e utilizar ferramentas como placas de desenvolvimento como Arduino e Raspberry Pi, sensores, módulos de comunicação (como Wi-Fi e Bluetooth), software de desenvolvimento integrado (IDE) para programação de microcontroladores e ambientes de desenvolvimento de aplicativos móveis, como o Android Studio ou o Xcode.
+
+------
+
+## Habilidades
+
+Para criar um dispositivo de IoT, como uma geladeira inteligente, são necessárias habilidades em várias áreas, incluindo eletrônica, programação, design de software e engenharia de sistemas. Aqui estão alguns exemplos específicos de conhecimentos e ferramentas necessários em cada área
+
+### Eletrônica
+
+- Conhecimento em eletrônica básica, incluindo circuitos elétricos e componentes eletrônicos como resistores, capacitores, diodos e transistores.
+- Habilidade em projetar circuitos eletrônicos complexos usando ferramentas como o software de design de circuito Eagle PCB ou o software Altium Designer.
+- Habilidade em soldagem de componentes eletrônicos em placas de circuito impresso (PCBs).
+- Conhecimento em eletrônica digital, incluindo microcontroladores, sensores e atuadores.
+
+### Programação
+
+- Conhecimento em programação de baixo nível, como linguagem C e Assembly, para programar microcontroladores.
+- Habilidade em desenvolvimento de software para a plataforma escolhida (por exemplo, Linux ou Android) usando linguagens de programação como C++, Python ou Java.
+- Habilidade em desenvolvimento de aplicativos móveis para dispositivos iOS e Android usando as linguagens Swift e Kotlin, respectivamente.
+- Conhecimento em bancos de dados, como o MySQL ou o MongoDB, para armazenar dados coletados pelos sensores do dispositivo.
+
+### Design de Software
+
+- Habilidade em arquitetura de software para projetar e implementar um software robusto e escalável.
+- Conhecimento em design orientado a objetos para criar um software modular e reutilizável.
+- Habilidade em teste de software para garantir que o software funcione corretamente e cumpra os requisitos de negócios.
+
+### Engenharia de Sistemas
+
+- Habilidade em design de sistemas para projetar e implementar sistemas complexos que integram hardware, software e rede.
+- Habilidade em gerenciamento de projeto para coordenar equipes de desenvolvimento e garantir que o projeto seja entregue no prazo e dentro do orçamento.
+- Conhecimento em normas e padrões de segurança, como as normas ISO 27001 e NIST, para garantir a segurança do sistema e a proteção de dados do usuário.
+
+------
