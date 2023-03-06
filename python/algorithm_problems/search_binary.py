@@ -10,12 +10,11 @@
 
 import os
 import sys
-sys.path.insert(0, 'C:/Users/Cougar_Gamer/Desktop/dev_lif/study_all/python/algorithm_problems/modules')
+
+sys.path.insert(0, 'C:/Users/Cougar_Gamer/Desktop/dev_lif/study_all/python/algorithm_problems/modules/search.py')
 from modules.search import *
 
 # Criando dados:
-
-list = gen_rand_list(10, 99)
 
 def search_binary_func(list,search):
 
@@ -27,27 +26,31 @@ def search_binary_func(list,search):
     
     while (index_sup - index_inf) > 1:
     
-        if search == list[index_mid]:
+        mid = list[index_mid]
+        inf = list[index_inf]
+        sup = list[index_sup]
+    
+        if search == mid:
             break
 
-        elif search > list[index_mid]:
+        elif search > mid:
             index_inf = index_mid
             index_mid = calc_mid_index(index_inf, index_sup)
             
-        elif search < list[index_mid]:
+        elif search < mid:
             index_sup = index_mid
             index_mid = calc_mid_index(index_inf, index_sup)
             
-    if search == list[index_mid]:
-        answer = list[index_mid]
+    if search == mid:
+        answer = mid
         found(index_mid)
     
-    elif search == list[index_inf]:
-        answer = list[index_inf]
+    elif search == inf:
+        answer = inf
         found(index_inf)
 
-    elif search == list[index_sup]:
-        answer = list[index_sup]
+    elif search == sup:
+        answer = sup
         found(index_sup)
 
     else:
@@ -87,4 +90,7 @@ def search_binary_continuous(list,search):
             os.system('cls')
             print('O número procurado não está na lista!')
 
-search_binary_func(list,2)
+
+test_list = [0, 20, 80, 30, 60, 50, 110, 100, 130, 170]
+answer = search_binary_func(test_list,80)
+print(answer)
