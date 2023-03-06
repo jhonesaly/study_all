@@ -18,11 +18,7 @@ from modules.search import *
 
 def search_binary_func(list,search):
 
-    default(list)
-    list_size = len(list)
-    index_sup = list_size-1
-    index_inf = 0
-    index_mid = calc_mid_index(index_inf, index_sup)
+    list_size, index_sup, index_inf, index_mid = default(list)
     
     while (index_sup - index_inf) > 1:
     
@@ -42,21 +38,21 @@ def search_binary_func(list,search):
             index_mid = calc_mid_index(index_inf, index_sup)
             
     if search == mid:
-        answer = mid
+        index = index_mid
         found(index_mid)
     
     elif search == inf:
-        answer = inf
+        index = index_inf
         found(index_inf)
 
     elif search == sup:
-        answer = sup
+        index = index_sup
         found(index_sup)
 
     else:
-        answer = -1
+        index = -1
     
-    return answer
+    return index
 
 # Iniciando programa
 
@@ -91,6 +87,6 @@ def search_binary_continuous(list,search):
             print('O número procurado não está na lista!')
 
 
-test_list = [0, 20, 80, 30, 60, 50, 110, 100, 130, 170]
-answer = search_binary_func(test_list,80)
+test_list = [0, 20, 30, 60, 110, 130, 170]
+answer = search_binary_func(test_list,130)
 print(answer)

@@ -29,7 +29,7 @@ def default(list):
     index_sup = list_size-1
     index_inf = 0
     index_mid = calc_mid_index(index_inf, index_sup)
-    return 
+    return list_size, index_sup, index_inf, index_mid
 
 ## Valor encontrado
 
