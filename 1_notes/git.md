@@ -110,3 +110,10 @@ Por exemplo, se você estiver fazendo uma alteração em um arquivo home.js que 
 - Não inclua informações desnecessárias: evite incluir informações desnecessárias, como nomes de arquivos, extensões ou informações técnicas que não sejam relevantes para a alteração realizada.
 - Se a informação não coube no commit, foi feito demais.
 - Muitas ferramentas de controle de versão, como o Git, têm um limite padrão de 50 a 72 caracteres por linha, para que a mensagem de commit seja exibida de forma legível em várias plataformas. Então, embora o Visual Studio Code não tenha um limite de caracteres específico, é uma boa prática manter as mensagens de commit com menos de 50 caracteres
+
+### Extensões úteis
+
+- Conventional Commits - Essa extensão permite a criação de commits convencionais diretamente no Visual Studio Code. Ele fornece sugestões para os tipos de commits, escopos e descrições e pode ser personalizado para se adequar às suas necessidades.
+- GitLens - Esta extensão fornece uma interface de usuário para commits que já foram feitos, permitindo que você revise e gerencie seus commits de maneira mais fácil. Também oferece suporte à criação de Commits Conventional.
+- Commitizen - Esta extensão permite que você use a ferramenta Commitizen para criar commits convencionais diretamente no Visual Studio Code. Ele fornece uma interface fácil de usar para criar commits e garante que você esteja seguindo as convenções corretas.
+- Gitmoji - Esta extensão usa emojis para criar commits e inclui suporte para Commits Conventional. Ele ajuda a tornar seus commits mais visuais e fáceis de entender.
