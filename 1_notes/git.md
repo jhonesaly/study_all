@@ -109,3 +109,4 @@ Por exemplo, se você estiver fazendo uma alteração em um arquivo home.js que 
 - Descreva o que foi alterado e por quê: explique brevemente qual a alteração realizada e por que ela foi necessária. Isso ajuda outros desenvolvedores a entender melhor a alteração e a decidir se precisam revisá-la ou não.
 - Não inclua informações desnecessárias: evite incluir informações desnecessárias, como nomes de arquivos, extensões ou informações técnicas que não sejam relevantes para a alteração realizada.
 - Se a informação não coube no commit, foi feito demais.
+- Muitas ferramentas de controle de versão, como o Git, têm um limite padrão de 50 a 72 caracteres por linha, para que a mensagem de commit seja exibida de forma legível em várias plataformas. Então, embora o Visual Studio Code não tenha um limite de caracteres específico, é uma boa prática manter as mensagens de commit com menos de 50 caracteres
