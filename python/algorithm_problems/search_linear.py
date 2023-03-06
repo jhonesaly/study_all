@@ -5,6 +5,15 @@
 # 3 If the current element is not the target element and if there are more elements in the array, set the current element to the next element and repeat step 2.
 # 4 If the current element is not the target element and there are no more elements in the array, return -1 to indicate that the element was not found.
 
+def search_linear_func(list, val):
+    outputx = -1
+    
+    for num in list:
+        if num == val:
+            outputx = list.index(val)
+    
+    return outputx
+
 # Bibliotecas:
 
 import os
@@ -17,52 +26,39 @@ list = [0, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
 os.system('cls')
 
-while exit != True:
+def search_linear_continuous(list, val):
+    while exit != True:
 
-    outputx = -1 
+        outputx = -1 
 
-    # Entrada de dados:
+        # Entrada de dados:
 
-    inputx = input('Digite "exit" para sair ou o número a ser buscado: ')
+        inputx = input('Digite "exit" para sair ou o número a ser buscado: ')
 
-    # Tratamento dos dados:
+        # Tratamento dos dados:
 
-    if inputx.isnumeric():
-        try:
-            inputx = int(inputx)
-        except:
+        if inputx.isnumeric():
+            try:
+                inputx = int(inputx)
+            except:
+                os.system('cls')
+                print('digite um número inteiro')
+
+        elif inputx == 'exit':
             os.system('cls')
-            print('digite um número inteiro')
+            print('até a próxima!')
+            exit = True
 
-    elif inputx == 'exit':
-        os.system('cls')
-        print('até a próxima!')
-        exit = True
-        break
+        # Operação dos dados:
 
-    # Operação dos dados:
+        outputx = search_linear_func(list, val)
 
-    for num in list:
+        # Saída dos dados: 
+
+        if outputx != -1:
+            os.system('cls')
+            print(f'o número faz parte da lista! Sua posição na memória é {outputx}')
         
-        if num == inputx:
+        else:
             os.system('cls')
-            outputx = list.index(inputx)          
-
-    # Saída dos dados: 
-
-    if outputx != -1:
-        os.system('cls')
-        print(f'o número faz parte da lista! Sua posição na memória é {outputx}')
-    
-    else:
-        os.system('cls')
-        print('o número não faz parte da lista!')
-
-def search_linear(list, val):
-    outputx = -1
-    
-    for num in list:
-        if num == val:
-            outputx = list.index(val)
-    
-    return outputx
+            print('o número não faz parte da lista!')
