@@ -39,7 +39,6 @@ Aqui vai uma lista dos principais tipos de assertion
 - assertLess(a, b): Verifica se a é menor que b.
 - assertLessEqual(a, b): Verifica se a é menor ou igual a b.
 
-
 ## Doctests
 
 Veja o seguinte algoritmo:
@@ -110,7 +109,7 @@ Se você já espera um determinado tipo de erro, você pode deixar o "expected" 
 
 A desvantagem do doctest é que ele fica no mesmo script do algoritmo, o que pode deixá-lo muito grande ou confuso. Por isso recomenda-se usá-lo somente em situações que hajam poucos e simples testes. Para soluções mais complexas, recomenda-se a solução a seguir.
 
-## unittest
+## Unittest
 
 Para criar um teste em um script separado, utiliza-se o algoritmo:
 
@@ -196,8 +195,9 @@ Caso os arquivos de testes estejam situados em outra pasta, é necessário adici
         )
     )
 
+------
 
-# TDD
+## TDD
 
 O TDD (Desenvolvimento Orientado a Testes) é uma prática de desenvolvimento de software que enfatiza a escrita de testes antes de escrever o código de produção. Em Python, o TDD é suportado por várias bibliotecas de testes, sendo a mais comum a unittest.
 

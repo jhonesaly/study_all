@@ -6,15 +6,17 @@
 # 4 If the current element is not the target element and there are no more elements in the array, return -1 to indicate that the element was not found.
 
 # Bibliotecas:
+
 import os
 
 # Dados estáticos:
-list = [0, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
+list = [0, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
 # Software:
 
 os.system('cls')
+
 while exit != True:
 
     outputx = -1 
@@ -55,3 +57,12 @@ while exit != True:
     else:
         os.system('cls')
         print('o número não faz parte da lista!')
+
+def search_linear(list, val):
+    outputx = -1
+    
+    for num in list:
+        if num == val:
+            outputx = list.index(val)
+    
+    return outputx
