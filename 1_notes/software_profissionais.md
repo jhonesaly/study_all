@@ -28,7 +28,9 @@ Designers de interface do usuário (UI) e designers de experiência do usuário 
 
 ![wireframe](images/wireframe.jpg)
 
-# Ferramentas
+Profissional SAP: é um profissional especializado em SAP, um sistema integrado de gestão empresarial (ERP) que ajuda as empresas a gerenciar suas operações de negócios. Os profissionais SAP são responsáveis por implementar, personalizar e manter o sistema SAP de acordo com as necessidades específicas da empresa.
+
+## Ferramentas
 
 ![Development Tools](images/development_tools.jpg)
 
