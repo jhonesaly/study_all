@@ -22,6 +22,9 @@ Dentro do desenvolvimento em si, que vai da Implementação até a Implantação
   - Nessa fase, os testes podem ser realizados em um ambiente controlado por um grupo seleto de usuários para fornecer feedback sobre o software. Os testes podem se concentrar em identificar bugs e falhas de desempenho, além de avaliar a usabilidade do software.
 - Beta: Quando o software passa para a fase beta, significa que a equipe de desenvolvimento está perto de concluir o desenvolvimento do software. Nessa fase, o software é lançado para um grupo maior de usuários para testes. O objetivo é identificar problemas adicionais e garantir que o software seja estável o suficiente para uso público.
   - Nessa fase, os testes podem ser realizados em um ambiente mais amplo por um grupo maior de usuários. Os testes podem se concentrar em identificar bugs e falhas de desempenho em uma ampla gama de sistemas e dispositivos, além de avaliar a usabilidade do software.
+  - Types of Beta
+    - Open Beta - Open to all public customers for testing
+    - Closed Beta - Restricted to selected customers for testing
 - Release Candidate (RC): Um Release Candidate é uma versão do software que a equipe de desenvolvimento acredita estar completa e pronta para lançamento. Antes de lançar o software publicamente, eles podem disponibilizar uma versão RC para testes finais. Isso é feito para garantir que não haja problemas críticos que impedirão o lançamento.
   - Nessa fase, os testes finais são realizados para garantir que não haja problemas críticos que impedirão o lançamento. Os testes podem se concentrar em garantir que todos os recursos funcionem corretamente, avaliar a qualidade do código e verificar se o software está em conformidade com os padrões de segurança.
 - Versão final: Finalmente, quando a equipe de desenvolvimento está satisfeita com a qualidade do software, ele é lançado oficialmente para o público como uma versão final.

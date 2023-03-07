@@ -31,6 +31,8 @@ Tipos de licença de distribuição disponíveis no GitHub:
 - Licença GPL: Uma licença copyleft que exige que qualquer software que use o código licenciado também seja liberado sob a mesma licença GPL. Isso garante que o código permaneça livre e aberto, mesmo quando é incluído em outros projetos.
 - Licença CC-NC (Creative Commons - NonCommercial): Essa licença permite que o código seja usado, modificado e distribuído sem fins comerciais. Isso significa que você não pode usar o código para ganhar dinheiro, mas pode usá-lo para outros fins, como aprendizado ou pesquisa.
 
+------
+
 ## Adicionando arquivos no repositório remoto
 
 O repositório remoto pode ser criado primeiramente no Github e então os arquivos serem criados diretamente nele, ou pode-se jogar todos os arquivos de um repositório local, com todos os seus commits, para o um repositório remoto através do comando push.
@@ -49,7 +51,6 @@ Para trazer um repositório remoto e suas alterações para o repositório local
 
 > para fazer o pull é necessário fornecer a senha de acesso ao seu GitHub
 
-
 ### Pull de repositório local para o repositório remoto
 
     git remote add origin git@github.com:username/repositoryname.git
@@ -57,18 +58,25 @@ Para trazer um repositório remoto e suas alterações para o repositório local
     git push -u origin main
 
 > O comando "git remote add origin git@github.com:username/repositoryname.git" adiciona um novo repositório remoto chamado "origin" com a URL especificada. A URL é o endereço do repositório no GitHub criado por "username" com o nome "repositoryname". Esse comando é geralmente usado quando você está criando um novo repositório local e deseja vinculá-lo a um repositório remoto, como o GitHub.
-
 > O comando "git branch -M main" renomeia a branch atual para "main". Isso é útil quando você quer mudar o nome da branch principal de um repositório, para evitar conflitos com as convenções de nomenclatura de branch.
-
 > O comando "git push -u origin main" envia as alterações da branch local "main" para o repositório remoto "origin" e cria uma nova branch com o mesmo nome no repositório remoto. O parâmetro "-u" é usado para estabelecer a branch remota como a branch padrão para o qual as alterações serão enviadas no futuro. Isso é útil para garantir que as alterações na branch local sejam sempre enviadas para a branch remota correspondente.
 
 ### Pull usando vscode
 
-Para fazer o pull e push de maneira simplificada no vscode, basta ir na barra vertical esqueda, localizar o "Source Control" e realizar todos esses comandos.
+Para fazer o pull e push de maneira simplificada no vscode, basta ir na barra vertical esquerda, localizar o "Source Control" e realizar todos esses comandos.
 
 ## Apagando repositório
 
 Para apagar um repositório no GitHub, você precisa navegar até a página do repositório que deseja excluir. Em seguida, clique no botão "Settings" (Configurações) no menu à direita. Na seção "Danger Zone" (Zona de Perigo), clique em "Delete this repository" (Excluir este repositório). Isso abrirá uma caixa de diálogo pedindo a confirmação da exclusão. Digite o nome do repositório e clique em "I understand the consequences, delete this repository" (Eu entendo as consequências, excluir este repositório). Lembre-se de que essa ação é irreversível e que todo o histórico de commits e arquivos do repositório serão perdidos.
 
+------
+
 ## Versionamento
 
+O número da versão é geralmente atribuído a cada lançamento (release) e não a cada commit. Cada commit é uma alteração no código-fonte do software que pode ser um pequeno ajuste ou uma grande funcionalidade nova.
+
+Normalmente, os desenvolvedores adicionam várias alterações a um repositório antes de criar uma nova release. Eles podem criar commits regulares ao longo do tempo para registrar seu progresso e, quando estiverem prontos para lançar uma nova versão, criarão uma nova tag que representa o número da versão e incluirá todas as alterações (commits) que foram adicionadas desde a última release.
+
+Quanto ao versionamento com o Git e o GitHub, é comum usar as tags do Git para atribuir um número de versão a uma release. Por exemplo, você pode usar o comando git tag para criar uma nova tag e associá-la a um determinado commit. Em seguida, você pode enviar as tags para o GitHub usando o comando git push --tags.
+
+Para criar uma nova release no GitHub, basta navegar até a página do seu repositório no GitHub, clicar na guia "Releases" e clicar no botão "Draft a new release". Em seguida, você pode escolher a tag que deseja associar com a nova release e adicionar quaisquer notas de lançamento relevantes. Quando você publicar a nova release, ela aparecerá na página do seu repositório no GitHub e será vinculada à tag correspondente no histórico de commits do Git.
