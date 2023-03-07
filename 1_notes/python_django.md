@@ -1,5 +1,4 @@
 # Django
----
 
 ## Arquitetura e Características
 
@@ -27,7 +26,8 @@ Principais características:
 - DRY principle
 - MTV pattern
 
----
+------
+
 ## Criando ambiente virtual
 
 O primeiro passo para criar uma aplicação web em Django é criar um ambiente virtual. Isso compartimentaliza o projeto, de modo que os projetos possam usar versões diferentes, muito comum no desenvolvimento web.
@@ -44,7 +44,8 @@ Explicando:
 2. ativa o ambiente virtual
 3. instala o Django usando python
 
----
+------
+
 ## Pasta de projeto Django
 
 Criando projeto:
@@ -65,7 +66,8 @@ Migrando a base de dados:
     cd mysite
     python manage.py migrate
 
----
+------
+
 ## Project settings
 
 - **DEBUG**: é um booleano que ativa e desativa o modo de depuração do projeto. Se for definido como True, Django exibirá páginas de erro detalhadas quando uma exceção não capturada for lançada por seu aplicativo. Ao mudar para um ambiente de produção, lembre-se de que você deve defini-lo como False. Nunca implante um site em produção com o DEBUG ativado porque você exporá informações confidenciais dados relacionados ao projeto.
@@ -83,7 +85,8 @@ Migrando a base de dados:
 - **LANGUAGE_CODE**: define o código de idioma padrão para este site Django.
 - **USE_TZ**: diz ao Django para ativar/desativar o suporte ao fuso horário. Django vem com suporte para datas com reconhecimento de fuso horário. Essa configuração é definida como True quando você cria um novo projeto usando o comando de gerenciamento de projeto inicial.
 
----
+------
+
 ## Rodando o Django
 
 Comando para iniciar o Django
@@ -92,7 +95,8 @@ Comando para iniciar o Django
 
 isso fará o Django iniciar o seu serviço na porta padrão 8000. Acessando o IP local e abrindo essa porta (<http://127.0.0.1:8000>), aparecerá uma imagem mostrando que o django foi configurado corretamente.
 
----
+------
+
 ## Criando Apps
 
 O comando para criar um novo app é:
@@ -109,4 +113,20 @@ Isso irá criar a pasta blog/ da aplicação com os seguintes arquivos:
 - **tests.py**: Aqui é onde você pode adicionar testes para sua aplicação.
 - **views.py**: A lógica do seu aplicativo vai aqui; cada visualização recebe uma solicitação HTTP, processa e retorna uma resposta.
 
+------
 
+## API
+
+O Django oferece suporte para a criação de APIs através do Django REST framework. O Django REST framework é uma extensão para o Django que fornece ferramentas e bibliotecas para ajudar na criação de APIs RESTful.
+
+Para criar uma API com o Django REST framework, você precisará seguir os seguintes passos:
+
+- Instalar o Django REST framework: Para começar, você precisará instalar o Django REST framework usando o pip. Basta abrir um terminal e digitar o seguinte comando:
+
+    pip install djangorestframework
+
+- Configurar o Django REST framework: Em seguida, você precisará configurar o Django REST framework adicionando as configurações necessárias ao arquivo settings.py do seu projeto Django.
+- Definir as views: Agora você precisa definir as views que irão mapear as URLs da sua API para as funções que irão lidar com as solicitações HTTP. Isso pode ser feito usando as classes genéricas fornecidas pelo Django REST framework, como APIView ou ViewSet.
+- Definir as URLs: Por fim, você precisará definir as URLs que mapeiam as solicitações HTTP para as views corretas. Isso é feito usando o arquivo urls.py da sua aplicação Django.
+
+Após seguir esses passos, você terá uma API RESTful em execução usando o Django REST framework. Seus clientes poderão se comunicar com sua API usando solicitações HTTP, como GET, POST, PUT e DELETE, e receber respostas em formatos como JSON ou XML.
