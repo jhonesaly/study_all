@@ -77,3 +77,13 @@ Alguns exemplos de aplicativos, serviços e equipamentos que podem ser usados em
 - Ataques de spear-phishing: Este tipo de ataque de phishing é direcionado a indivíduos específicos, geralmente usando informações pessoais obtidas de fontes públicas, como as redes sociais.
 
 Para se proteger contra ataques de phishing, é importante estar sempre vigilante em relação a e-mails e mensagens que solicitam informações pessoais ou financeiras. Além disso, é importante verificar cuidadosamente os links antes de clicar neles, verificar se o site é legítimo e usar autenticação de dois fatores sempre que possível. Alguns softwares de segurança também incluem recursos para detectar e bloquear sites de phishing.
+
+## Blind XSS
+
+Blind XSS (Cross-Site Scripting) é um tipo de vulnerabilidade de segurança web que permite que um atacante injete código malicioso em um site, sem que o usuário perceba. É chamado de "blind" porque o atacante não vê a saída do seu código, que pode ser executado em outro navegador ou em outro momento.
+
+Isso pode ser feito através de formulários de entrada, campos de busca ou outras áreas de entrada de dados em um site. O invasor pode usar técnicas de engenharia social para persuadir o usuário a clicar em um link malicioso ou visitar uma página da web que contenha código malicioso.
+
+Esta vulnerabilidade é causada pela falta de validação de entrada de dados e pela falta de filtragem adequada de conteúdo malicioso. Quando os sites não validam adequadamente as entradas de dados, os invasores podem enviar dados maliciosos que podem ser executados pelo navegador do usuário. Se o conteúdo malicioso não for filtrado corretamente, ele pode ser exibido no site como texto ou HTML, permitindo que o invasor execute o código malicioso.
+
+Para resolver esta vulnerabilidade, os desenvolvedores de sites devem validar adequadamente todas as entradas de dados e filtrar cuidadosamente todo o conteúdo malicioso. Eles também devem usar o recurso "Content Security Policy" (CSP), que impede a execução de código malicioso em um site. Além disso, implementar uma lista de exclusão de caracteres especiais: Isso ajuda a prevenir a injeção de código malicioso em campos de entrada do usuário. A lista de exclusão deve incluir caracteres que são frequentemente usados em ataques de injeção de código, como "<", ">" e "&".
