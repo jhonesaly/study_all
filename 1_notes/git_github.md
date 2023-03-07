@@ -22,7 +22,7 @@ Ex de .gitignore para python (Link: <https://github.com/jhonesaly/git-study/blob
     *.txt # evita que a extensão (txt no caso) entre no commit
     downloads/ # evita que a pasta (downloads no caso) entre no commit 
 
-### License 
+### License
 
 Tipos de licença de distribuição disponíveis no GitHub:
 
@@ -30,8 +30,6 @@ Tipos de licença de distribuição disponíveis no GitHub:
 - Licença MIT: Uma licença permissiva que permite que o código seja usado, modificado e distribuído para qualquer finalidade, desde que seja incluida uma cópia da licença e os créditos aos autores originais.
 - Licença GPL: Uma licença copyleft que exige que qualquer software que use o código licenciado também seja liberado sob a mesma licença GPL. Isso garante que o código permaneça livre e aberto, mesmo quando é incluído em outros projetos.
 - Licença CC-NC (Creative Commons - NonCommercial): Essa licença permite que o código seja usado, modificado e distribuído sem fins comerciais. Isso significa que você não pode usar o código para ganhar dinheiro, mas pode usá-lo para outros fins, como aprendizado ou pesquisa.
-
-
 
 ## Adicionando arquivos no repositório remoto
 
@@ -71,3 +69,6 @@ Para fazer o pull e push de maneira simplificada no vscode, basta ir na barra ve
 ## Apagando repositório
 
 Para apagar um repositório no GitHub, você precisa navegar até a página do repositório que deseja excluir. Em seguida, clique no botão "Settings" (Configurações) no menu à direita. Na seção "Danger Zone" (Zona de Perigo), clique em "Delete this repository" (Excluir este repositório). Isso abrirá uma caixa de diálogo pedindo a confirmação da exclusão. Digite o nome do repositório e clique em "I understand the consequences, delete this repository" (Eu entendo as consequências, excluir este repositório). Lembre-se de que essa ação é irreversível e que todo o histórico de commits e arquivos do repositório serão perdidos.
+
+## Versionamento
+
