@@ -5,7 +5,6 @@
 # We need to print output in alphabetic order.
 
 import string
-import random
 
 # char_all = set(string.ascii_letters)
 # digi_all = set(string.digits)
@@ -18,18 +17,22 @@ import random
 #string_aleatoria = "".join(random.choices(caracteres, k=size))
 # print(string_aleatoria)
 
+
+
+def char_missing(text):
+
+    char_input = text.lower()
+    char_input = [str for str in char_input]
+    char_input = set(char_input)
+
+    char_all = set(string.ascii_lowercase)
+
+    char_missing = char_all.difference(char_input)
+    char_missing = list(char_missing)
+    char_missing.sort()
+    char_missing = "".join(char_missing)
+        
+    return char_missing
+
 problem_input = 'The quick brown fox jumps'
-
-char_list = problem_input.lower()
-char_list = [str for str in char_list]
-char_list = set(char_list)
-
-char_all = set(string.ascii_lowercase)
-
-char_missing = char_all.difference(char_list)
-char_missing = list(char_missing)
-char_missing.sort()
-char_missing = "".join(char_missing)
-
-problem_output = char_missing
-print(problem_output)
+problem_output = char_missing(problem_input)
