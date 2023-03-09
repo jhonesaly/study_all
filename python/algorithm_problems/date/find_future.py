@@ -4,9 +4,7 @@
 # For each query, the task is to print the next closest date from the given array arr[]. 
 # If no such date exists, print “-1”.
 
-import os
-
-os.system('cls')
+import datetime
 
 n = 4 # número de datas
 q = 2 # número de pesquisas
@@ -18,7 +16,7 @@ print(problem_input_1)
 problem_input_2 = ['23/3/4345', '12/3/2']
 print(problem_input_2)
 
-# problem_answer = [23/5/56645, 4/12/233]
+# problem_answer = ['23/5/56645', '4/12/233']
 
 
 
