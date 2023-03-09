@@ -29,6 +29,15 @@ class TestDateCalculateAge(unittest.TestCase):
         output_expected = [datetime.date(5665, 5, 23), datetime.date(1233, 4, 22)]
         
         self.assertEqual(output,output_expected)
+
+        input_1 = ['22/4/1233', '1/3/0633', '23/5/5665', '4/12/2330']
+        input_2 = ['test','data','inválida']
+        
+        output = find_future(input_1,input_2)
+           
+        output_expected = [-1,-1,-1]
+        
+        self.assertEqual(output,output_expected)
     
 
 
