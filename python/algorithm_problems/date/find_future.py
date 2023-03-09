@@ -6,17 +6,23 @@
 
 import datetime
 
-def find_future(list_ref, search):
-
+def find_future(dates_ref_str, search_str):
+    
+    dates_ref_list = []
+    for date_str in dates_ref_str:
+        dates_ref_list.append(datetime.datetime.strptime(date_str, '%d/%m/%Y').date())
+    
+    date_search = datetime.datetime.strptime(search_str, '%d/%m/%Y').date()
+    
     answer = -1
 
     return answer
-# problem_input_1 = ['22/4/1233', '1/3/633', '23/5/56645', '4/12/233'] 
-# problem_input_1.sort()
-# print(problem_input_1)
 
-# problem_input_2 = ['23/3/4345', '12/3/2']
-# print(problem_input_2)
+
+problem_input_1 = ['22/4/1233', '1/3/633', '23/5/56645', '4/12/233'] 
+problem_input_2 = '23/3/4345'
+
+find_future(problem_input_1, problem_input_2)
 
 # problem_answer = ['23/5/56645', '4/12/233']
 
