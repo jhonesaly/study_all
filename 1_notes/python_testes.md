@@ -195,6 +195,67 @@ Caso os arquivos de testes estejam situados em outra pasta, é necessário adici
         )
     )
 
+## Coverage
+
+Fazer o teste de cobertura é uma maneira importante de garantir que seu código Python esteja testado adequadamente. Existem várias ferramentas para medir a cobertura de código em Python, mas um dos mais populares é o coverage.py. Neste tutorial, vou explicar como usá-lo para testar sua cobertura de código em Python.
+
+Antes de começar, você precisará instalar o coverage.py. A maneira mais fácil de fazer isso é usar o pip, o gerenciador de pacotes padrão do Python. Abra o terminal e digite o seguinte comando:
+
+    pip install coverage
+
+Isso instalará o coverage.py e suas dependências.
+
+Para começar a usar o coverage.py, você precisa criar um arquivo de configuração. Crie um arquivo chamado .coveragerc na raiz do seu projeto e adicione o seguinte conteúdo:
+
+    [run]
+    source = .
+    omit = */tests/*
+
+    [report]
+    show_missing = True
+
+O parâmetro source indica a pasta em que o coverage.py deve procurar pelo código a ser testado. Neste caso, estamos dizendo para procurar em todas as pastas do projeto. O parâmetro omit exclui as pastas que contêm arquivos de teste. Isso significa que o coverage.py não incluirá o código de teste em sua medição de cobertura. O parâmetro show_missing indica que o coverage.py deve mostrar as linhas que não foram testadas.
+
+Antes de medir a cobertura do seu código, você precisa escrever os testes. Para este tutorial, vamos criar um simples programa que calcula a área de um círculo. Crie um arquivo chamado circle.py e adicione o seguinte código:
+
+    import math
+
+    def area(radius):
+        return math.pi * radius ** 2
+
+Este é o código que queremos testar. Agora, crie um arquivo chamado test_circle.py e adicione o seguinte código:
+
+    import unittest
+    import circle
+
+    class TestCircle(unittest.TestCase):
+
+        def test_area(self):
+            self.assertEqual(circle.area(1), math.pi)
+            self.assertEqual(circle.area(2.5), math.pi * 2.5 ** 2)
+
+Este é um teste simples que verifica se a função area retorna o valor correto para diferentes raios.
+
+Agora que temos os testes, podemos medir a cobertura do código. Abra o terminal e digite o seguinte comando:
+
+    coverage run --source=. -m unittest discover
+
+Este comando usa o coverage.py para executar os testes em seu projeto e medir a cobertura de código. O parâmetro --source diz ao coverage.py para medir apenas o código em sua pasta atual. O parâmetro -m unittest discover executa todos os testes em seu projeto.
+
+Depois de executar o coverage.py, você pode gerar um relatório da cobertura de código. Para gerar um relatório em HTML, digite o seguinte comando:
+
+    coverage html
+
+Este comando gera um relatório em HTML na pasta htmlcov. Abra o arquivo htmlcov/index.html em seu navegador para ver o relatório completo da cobertura de código.
+
+O relatório de cobertura exibe informações sobre cada arquivo Python no projeto e quantas linhas foram executadas durante a execução dos testes. Ele também mostra as linhas que não foram executadas durante os testes.
+
+Além disso, você pode executar o seguinte comando para exibir um relatório simples no terminal:
+
+    coverage report
+
+Este comando exibe um resumo da cobertura de código em seu terminal, mostrando o percentual de linhas executadas para cada arquivo Python em seu projeto.
+
 ------
 
 ## TDD
