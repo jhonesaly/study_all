@@ -6,15 +6,17 @@
 
 import datetime
 
-n = 4 # número de datas
-q = 2 # número de pesquisas
+def find_future(list_ref, search):
 
-problem_input_1 = ['22/4/1233', '1/3/633', '23/5/56645', '4/12/233'] 
-problem_input_1.sort()
-print(problem_input_1)
+    answer = -1
 
-problem_input_2 = ['23/3/4345', '12/3/2']
-print(problem_input_2)
+    return answer
+# problem_input_1 = ['22/4/1233', '1/3/633', '23/5/56645', '4/12/233'] 
+# problem_input_1.sort()
+# print(problem_input_1)
+
+# problem_input_2 = ['23/3/4345', '12/3/2']
+# print(problem_input_2)
 
 # problem_answer = ['23/5/56645', '4/12/233']
 
