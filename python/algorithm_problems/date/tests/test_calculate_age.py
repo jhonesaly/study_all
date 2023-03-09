@@ -1,8 +1,10 @@
 import unittest
+import os
 import sys
-sys.path.insert(0, 'C:/Users/Cougar_Gamer/Desktop/dev_lif/study_all/python/algorithm_problems')
-sys.path.insert(0, 'c:/Users/Cougar_Gamer/Documents/GitHub/study_all/python/algorithm_problems')
-from date_calculate_age import *
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from calculate_age import *
 
 class TestDateCalculateAge(unittest.TestCase):
 
