@@ -14,11 +14,16 @@ def find_future(dates_ref_str, search_str):
     
     date_search = datetime.datetime.strptime(search_str, '%d/%m/%Y').date()
     
+    diff_list = []
     for date_ref in dates_ref_list:
         diff_date = abs((date_ref - date_search).days)
-        
-        print(diff_date)
-        
+        diff_list.append(diff_date)
+
+    min_diff = min(diff_list)
+    min_index = diff_list.index(min_diff)
+    answer = dates_ref_list[min_index]
+    print(answer)
+
     answer = -1
 
     return answer
