@@ -226,6 +226,7 @@ Antes de medir a cobertura do seu código, você precisa escrever os testes. Par
 Este é o código que queremos testar. Agora, crie um arquivo chamado test_circle.py e adicione o seguinte código:
 
     import unittest
+    import math
     import circle
 
     class TestCircle(unittest.TestCase):
@@ -248,6 +249,8 @@ Depois de executar o coverage.py, você pode gerar um relatório da cobertura de
 
 Este comando gera um relatório em HTML na pasta htmlcov. Abra o arquivo htmlcov/index.html em seu navegador para ver o relatório completo da cobertura de código.
 
+![Coverage report](images/coverage.png)
+
 O relatório de cobertura exibe informações sobre cada arquivo Python no projeto e quantas linhas foram executadas durante a execução dos testes. Ele também mostra as linhas que não foram executadas durante os testes.
 
 Além disso, você pode executar o seguinte comando para exibir um relatório simples no terminal:
@@ -255,6 +258,8 @@ Além disso, você pode executar o seguinte comando para exibir um relatório si
     coverage report
 
 Este comando exibe um resumo da cobertura de código em seu terminal, mostrando o percentual de linhas executadas para cada arquivo Python em seu projeto.
+
+![Coverage report 2](images/coverage2.png)
 
 ------
 
