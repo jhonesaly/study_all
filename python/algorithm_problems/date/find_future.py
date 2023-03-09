@@ -14,12 +14,17 @@ def find_future(dates_ref_str, search_str):
     
     date_search = datetime.datetime.strptime(search_str, '%d/%m/%Y').date()
     
+    for date_ref in dates_ref_list:
+        diff_date = abs((date_ref - date_search).days)
+        
+        print(diff_date)
+        
     answer = -1
 
     return answer
 
 
-problem_input_1 = ['22/4/1233', '1/3/633', '23/5/56645', '4/12/233'] 
+problem_input_1 = ['22/4/1233', '1/3/0633', '23/5/5665', '4/12/2330'] 
 problem_input_2 = '23/3/4345'
 
 find_future(problem_input_1, problem_input_2)
