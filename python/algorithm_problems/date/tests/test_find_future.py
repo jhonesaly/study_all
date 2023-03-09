@@ -8,8 +8,18 @@ from find_future import *
 
 class TestDateCalculateAge(unittest.TestCase):
 
+
+
     def test_find_fure_found(self):
-        self.assertEqual(find_future(['22/4/1233', '1/3/0633', '23/5/5665', '4/12/2330'],['23/3/4345', '25/5/1244']),[datetime.date(5665, 5, 23), datetime.date(1233, 4, 22)])
+
+        input_1 = ['22/4/1233', '1/3/0633', '23/5/5665', '4/12/2330']
+        input_2 = ['23/3/4345', '25/5/1244']
+        
+        output = find_future(input_1,input_2)
+           
+        output_expected = [datetime.date(5665, 5, 23), datetime.date(1233, 4, 22)]
+        
+        self.assertEqual(output,output_expected)
 
 if __name__ == '__main__':
     unittest.main()
