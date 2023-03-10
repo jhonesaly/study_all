@@ -4,7 +4,17 @@ Structural Pattern Matching (SPM) em Python é uma funcionalidade introduzida na
 
 A correspondência de padrões é uma técnica de programação que permite selecionar o código a ser executado com base no valor de entrada. Em vez de usar vários if-else ou switch-case aninhados, o structural pattern matching permite que você combine diferentes padrões em uma única expressão.
 
-## if-else
+A correspondência de padrões em Python oferece algumas vantagens em relação ao uso de estruturas condicionais tradicionais como if, elif, else.
+
+Aqui estão alguns motivos pelos quais você pode querer usar a correspondência de padrões:
+
+- É mais legível: Quando você tem vários casos para verificar, o uso de if, elif, else pode levar a um código mais confuso e difícil de ler. A correspondência de padrões pode tornar o código mais claro e fácil de entender.
+- Tratamento de valores padrão: A correspondência de padrões permite definir um valor padrão para tratar qualquer caso que não corresponda a nenhum padrão específico. Isso pode tornar o código mais limpo e evitar a necessidade de escrever uma cláusula else genérica.
+- Verificação de padrões complexos: Em alguns casos, a verificação de padrões pode ser mais expressiva e concisa do que escrever uma condição mais complexa usando if, elif, else. A correspondência de padrões permite que você verifique padrões mais complexos, como combinações de valores, tipos de dados e estruturas de dados.
+- Mais segurança na refatoração: A correspondência de padrões também pode ser útil ao fazer refatorações em seu código. Se você adicionar um novo padrão em uma estrutura match, o interpretador Python pode alertá-lo se houver algum lugar onde o novo padrão não esteja sendo verificado.
+- Obviamente, você não precisa usar a correspondência de padrões em todos os casos. Para casos simples, onde há apenas uma ou duas condições para verificar, o uso de if, elif, else é provavelmente mais adequado e mais fácil de entender. No entanto, para casos mais complexos, a correspondência de padrões pode ser uma ferramenta útil para tornar o código mais legível e mais seguro.
+
+## matching
 
 Vamos começar comparando a correspondência de padrões com as estruturas condicionais IF-ELIF-ELSE:
 
