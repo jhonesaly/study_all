@@ -17,7 +17,7 @@ print(uma_string)
 def sum(x: int, y: int, z: float) -> float:  
     return x + y + z
 
-soma = sum(1, 2, 'a')
+soma = sum(1, 2, 3.0)
 print(soma)
 
 # listas e sets
@@ -46,3 +46,14 @@ um_dict_de_listas: dict[str, list[int]] = {
 
 um_dict = {1: 1, '2': 2.0}
 print(um_dict)
+
+# type alias
+
+int_list = list[int]
+DictListaInteiros = dict[str, int_list]
+
+um_dict_de_listas: DictListaInteiros = {
+    "A": [1, 2],
+    "B": [3, 4],
+    "C": [5, 6],
+}

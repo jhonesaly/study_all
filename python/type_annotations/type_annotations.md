@@ -61,3 +61,11 @@ Para definir chave e valor de um dicionário, faça da seguinte forma:
 O erro ao inserir uma chave ou valor inadequado ficará assim:
 
 ![error list](hints5.png)
+
+### Type Aliases
+
+Você pode guardar em uma variável os type annotations e reutilizá-los como em:
+
+    int_list = list[int]
+    DictListaInteiros = dict[str, int_list]
+
