@@ -40,3 +40,11 @@ Para definir os tipos de parâmetros de funções, e o tipo do que deve ser reto
 Os erros serão exibidos da seguinte forma:
 
 ![error function](hints3.png)
+
+Para definir tipos de elementos dentro de listas, faã da seguinte forma:
+
+    lista_inteiros: list[int] = [1, 2, 3, 4]
+
+O erro ao inserir um valor inadequado ficará assim:
+
+![error list](hints4.png)

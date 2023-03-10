@@ -10,9 +10,15 @@ um_dicionário: dict = {'um': 1, 'dois': 2, 'três': 3}
 uma_string = 'a'
 print(uma_string)
 
-def sum(x: int, y: int, z: float) -> str:  
+def sum(x: int, y: int, z: float) -> float:  
     return x + y + z
 
-soma = sum(2, 3,'a')
+soma = sum(1, 2, 3)
 print(soma)
 
+lista_inteiros: list[int] = [1, 2, 3, 4]
+lista_strings: list[str] = ["1", "2", "3", "4"]
+lista_tuplas: list[tuple] = [(1, "1"), (2, "2")]
+lista_listas_int: list[list[int]] = [[1], [4, 5]]
+
+lista_inteiros: list[int] = [1, 2, 3, 'a']
