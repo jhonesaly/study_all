@@ -4,7 +4,9 @@
 
 ## Python
 
-Em python, para tal, se utiliza a biblioteca "mypy". PAra instálá-la, use:
+### Configurações
+
+Em python, para tal, se utiliza a biblioteca "mypy". Antes de começar, se quiser isolar o projeto, faça um ambiente virtual (venv). Para instalá-la, use:
 
     pip install mypy
     pip install flake8
@@ -15,3 +17,18 @@ Em settings.json, antes da última chaves, adicione as seguintes configurações
     "python.linting.mypyEnabled": true,
 
 Isso permitirá que você faça algumas tarefas sem ter de executar o mypy diretamente no terminal.
+
+### Básico
+
+Agora você pode definir o tipo da variável criada como em:
+
+    uma_string: str = "um, dois, três"
+    um_inteiro: int = 123
+
+Ao tentar mudar o tipo da variável que foi definida usando type_annotations, a IDE indicará o erro após o arquivo ter sido salvo. Não impedirá o script de rodar, entretanto.
+
+![erro via IDE](hints1.png)
+
+Salvo se o arquivo fosse executado no terminal via o mypy, que exibiria o erro como a IDE mostra.
+
+![error via terminal](hints2.png)
