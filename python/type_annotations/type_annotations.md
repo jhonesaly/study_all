@@ -27,15 +27,15 @@ Agora você pode definir o tipo da variável criada como em:
 
 Se você só definir o tipo da variável, sem declará-la, ela será criada dentro do dunder(anotations) como mostrado:
 
-![type declaration](hints0.png)
+![type declaration](images/hints0.png)
 
 Ao tentar mudar o tipo da variável que foi definida usando type_annotations, a IDE indicará o erro após o arquivo ter sido salvo. Não impedirá o script de rodar, entretanto.
 
-![erro via IDE](hints1.png)
+![erro via IDE](images/hints1.png)
 
 Salvo se o arquivo fosse executado no terminal via o mypy, que exibiria o erro como a IDE mostra.
 
-![error via terminal](hints2.png)
+![error via terminal](images/hints2.png)
 
 Para definir os tipos de parâmetros de funções, e o tipo do que deve ser retornado, faça da seguinte forma:
 
@@ -43,7 +43,7 @@ Para definir os tipos de parâmetros de funções, e o tipo do que deve ser reto
 
 Os erros serão exibidos da seguinte forma:
 
-![error function](hints3.png)
+![error function](images/hints3.png)
 
 Para definir tipos de elementos dentro de outros elementos (como listas e sets), faça da seguinte forma:
 
@@ -52,7 +52,7 @@ Para definir tipos de elementos dentro de outros elementos (como listas e sets),
 
 O erro ao inserir um valor inadequado ficará assim:
 
-![error list](hints4.png)
+![error list](images/hints4.png)
 
 Para definir chave e valor de um dicionário, faça da seguinte forma:
 
@@ -60,7 +60,7 @@ Para definir chave e valor de um dicionário, faça da seguinte forma:
 
 O erro ao inserir uma chave ou valor inadequado ficará assim:
 
-![error list](hints5.png)
+![error list](images/hints5.png)
 
 ### Type Aliases
 
@@ -79,7 +79,7 @@ Você também pode declarar mais de um tipo para a mesma variável como em:
 
 De fato, o que está sendo feito é criar um outro tipo, chamado de union, que recebe o declarado. Veja o erro em caso fora:
 
-![error union](hints6.png)
+![error union](images/hints6.png)
 
 ### Type Option
 
@@ -90,7 +90,7 @@ Você também pode declarar um tipo opcional para a variável como em:
 
 De fato, o que está sendo feito é criar um outro tipo, chamado de optional, que recebe o declarado. Veja o erro em caso fora:
 
-![error optional](hints7.png)
+![error optional](images/hints7.png)
 
 ### Type Callable
 
@@ -103,7 +103,7 @@ O tipo callable é como se transformasse uma função em uma variável, como em:
 
 Se não seguir a ordem como definida no callable, derá o seguinte erro:
 
-![error callable](hints8.png)
+![error callable](images/hints8.png)
 
 ### Type Typevar
 
