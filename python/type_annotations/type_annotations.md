@@ -41,9 +41,10 @@ Os erros serão exibidos da seguinte forma:
 
 ![error function](hints3.png)
 
-Para definir tipos de elementos dentro de listas, faça da seguinte forma:
+Para definir tipos de elementos dentro de outros elementos (como listas e sets), faça da seguinte forma:
 
     lista_inteiros: list[int] = [1, 2, 3, 4]
+    conjunto_strings: set[str] = {"1", "2", "3", "4"}
 
 O erro ao inserir um valor inadequado ficará assim:
 
