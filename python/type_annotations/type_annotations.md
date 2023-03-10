@@ -23,7 +23,11 @@ Isso permitirá que você faça algumas tarefas sem ter de executar o mypy diret
 Agora você pode definir o tipo da variável criada como em:
 
     uma_string: str = "um, dois, três"
-    um_inteiro: int = 123
+    outra_string: str
+
+Se você só definir o tipo da variável, sem declará-la, ela será criada dentro do dunder(anotations) como mostrado:
+
+![type declaration](hints0.png)
 
 Ao tentar mudar o tipo da variável que foi definida usando type_annotations, a IDE indicará o erro após o arquivo ter sido salvo. Não impedirá o script de rodar, entretanto.
 
