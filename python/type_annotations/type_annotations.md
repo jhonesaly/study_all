@@ -32,3 +32,11 @@ Ao tentar mudar o tipo da variável que foi definida usando type_annotations, a 
 Salvo se o arquivo fosse executado no terminal via o mypy, que exibiria o erro como a IDE mostra.
 
 ![error via terminal](hints2.png)
+
+Para definir os tipos de parâmetros de funções, e o tipo do que deve ser retornado, faça da seguinte forma:
+
+    def soma(x: int, y: float) -> float:
+
+Os erros serão exibidos da seguinte forma:
+
+![error function](hints3.png)
