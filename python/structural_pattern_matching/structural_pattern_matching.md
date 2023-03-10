@@ -27,3 +27,12 @@ A correspondência de padrões também pode ser usada para fazer a correspondên
 
 Nesse exemplo, o primeiro padrão corresponde à lista contendo os valores 1 e 2, o segundo padrão corresponde à lista contendo o valor 3 seguido de qualquer outro valor, e o último padrão corresponde a qualquer outra lista.
 
+## Or SPM
+
+O operador lógico OR pode ser usado para fazer a correspondência de padrões múltiplos:
+
+    valor = "b"
+
+    match valor:
+        case "a" | "b":
+            print("valor é 'a' ou 'b'")

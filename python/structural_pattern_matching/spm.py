@@ -22,5 +22,15 @@ match lista:
     case _:
         print("outros valores")
 
+# Or spm
 
+valor = "b"
+
+match valor:
+    case "a" | "b":
+        print("valor é 'a' ou 'b'")
+    case "c" | "d":
+        print("valor é 'c' ou'd'")
+    case _:
+        print("outro valor")
 
