@@ -71,7 +71,7 @@ string_e_inteiros = 2.3
 def sum2(x: int, y: float | None = None) -> float:
     return x + y
 
-sum2(2, 'a')
+sum2(2, 3)
 
 # type callable
 
@@ -88,3 +88,17 @@ def func_not_callable_format(a: float, b: float) -> float:
 
 execute_callable(func_callable_format, 1, 2)
 execute_callable(func_not_callable_format, 1.5, 2.5)
+
+# type typevar
+
+from typing import TypeVar
+
+T = TypeVar('T')
+
+def get_item(list: list[T], index: int) -> T:
+    return list[index]
+
+list_int = get_item([1, 10, 100], 1)
+list_str = get_item(['alfa', 10, 'gama'], 1)
+
+print(list_str)

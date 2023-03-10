@@ -104,3 +104,14 @@ O tipo callable é como se transformasse uma função em uma variável, como em:
 Se não seguir a ordem como definida no callable, derá o seguinte erro:
 
 ![error callable](hints8.png)
+
+### Type Typevar
+
+Outra manobra que pode ser feita é a declaração de um tipo novo, genérico ou dinâmico tipo de variável. Isso pode ser feito da seguinte forma:
+
+    from typing import TypeVar
+
+    T = TypeVar('T')
+
+    def get_item(list: list[T], index: int) -> dynamic:
+        return list[index]
