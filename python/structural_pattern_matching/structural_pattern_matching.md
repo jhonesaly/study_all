@@ -17,3 +17,19 @@ Vamos começar comparando a correspondência de padrões com as estruturas condi
             print("outro número")
 
 Observe que o caractere "underscore" (_) é usado como um padrão "coringa" para capturar qualquer valor que não corresponda a nenhum dos casos.
+
+A correspondência de padrões também pode ser usada para fazer a correspondência de padrões em listas:
+
+    lista = [1, 2, 3]
+
+    match lista:
+        case [1, 2]:
+            print("um e dois")
+        case [3, _]:
+            print("três e algum outro valor")
+        case _:
+            print("outros valores")
+
+Nesse exemplo, o primeiro padrão corresponde à lista contendo os valores 1 e 2, o segundo padrão corresponde à lista contendo o valor 3 seguido de qualquer outro valor, e o último padrão corresponde a qualquer outra lista.
+
+## 

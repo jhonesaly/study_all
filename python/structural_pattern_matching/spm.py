@@ -1,6 +1,6 @@
 # if-else to match
 
-num: int
+num = 1
 
 if num == 1:
     print("um")
@@ -16,3 +16,16 @@ match num:
         print("dois")
     case _:
         print("outro número")
+
+# Advanced if-else spm
+
+lista = [1, 2]
+
+match lista:
+    case [1, 2]:
+        print("um e dois")
+    case [3, _]:
+        print("três e algum outro valor")
+    case _:
+        print("outros valores")
+
