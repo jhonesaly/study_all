@@ -41,10 +41,18 @@ Os erros serão exibidos da seguinte forma:
 
 ![error function](hints3.png)
 
-Para definir tipos de elementos dentro de listas, faã da seguinte forma:
+Para definir tipos de elementos dentro de listas, faça da seguinte forma:
 
     lista_inteiros: list[int] = [1, 2, 3, 4]
 
 O erro ao inserir um valor inadequado ficará assim:
 
 ![error list](hints4.png)
+
+Para definir chave e valor de um dicionário, faça da seguinte forma:
+
+    um_dict: dict[str, int] = {"A": 0}
+
+O erro ao inserir uma chave ou valor inadequado ficará assim:
+
+![error list](hints5.png)

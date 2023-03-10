@@ -28,3 +28,17 @@ lista_tuplas: list[tuple] = [(1, "1"), (2, "2")]
 lista_listas_int: list[list[int]] = [[1], [4, 5]]
 
 # dicionário
+
+um_dict: dict[str, int] = {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+}
+
+um_dict_de_listas: dict[str, list[int]] = {
+    "A": [1, 2],
+    "B": [3, 4],
+    "C": [5, 6],
+}
+
+um_dict = {1: 1, '2': 2.0}
