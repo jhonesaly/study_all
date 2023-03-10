@@ -77,6 +77,17 @@ Você também pode declarar mais de um tipo para a mesma variável como em:
     string_e_inteiros = "A"
     string_e_inteiros = 2
 
-De fato, o que está sendo feito é criar um outro typo, chamado de union, que recebe o declarado. Veja o erro em caso fora:
+De fato, o que está sendo feito é criar um outro tipo, chamado de union, que recebe o declarado. Veja o erro em caso fora:
 
 ![error union](hints6.png)
+
+### Type Option
+
+Você também pode declarar um tipo opcional para a variável como em:
+
+    def sum2(x: int, y: float | None = None) -> float:
+        return x + y
+
+De fato, o que está sendo feito é criar um outro tipo, chamado de optional, que recebe o declarado. Veja o erro em caso fora:
+
+![error optional](hints7.png)

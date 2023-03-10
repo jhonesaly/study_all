@@ -65,3 +65,10 @@ string_e_inteiros = "A"
 string_e_inteiros = 2
 
 string_e_inteiros = 2.3
+
+# type option
+
+def sum2(x: int, y: float | None = None) -> float:
+    return x + y
+
+sum2(2, 'a')
