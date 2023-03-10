@@ -9,7 +9,7 @@ uma_lista: list = [1, 2, 3]
 uma_tupla: tuple = (1, 2, 3)
 um_dicionário: dict = {'um': 1, 'dois': 2, 'três': 3}
 
-uma_string = 'a'
+uma_string = 1
 print(uma_string)
 
 # função
@@ -17,15 +17,18 @@ print(uma_string)
 def sum(x: int, y: int, z: float) -> float:  
     return x + y + z
 
-soma = sum(1, 2, 3)
+soma = sum(1, 2, 'a')
 print(soma)
 
 # listas e sets
 
-lista_inteiros: list[int] = [1, 2, 3, 4]
-conjunto_strings: set[str] = {"1", "2", "3", "4"}
+lista_inteiros: list[int]
+conjunto_strings: set[str]
 lista_tuplas: list[tuple] = [(1, "1"), (2, "2")]
 lista_listas_int: list[list[int]] = [[1], [4, 5]]
+
+lista_inteiros = ['1']
+conjunto_strings = [1]
 
 # dicionário
 
@@ -40,3 +43,6 @@ um_dict_de_listas: dict[str, list[int]] = {
     "B": [3, 4],
     "C": [5, 6],
 }
+
+um_dict = {1: 1, '2': 2.0}
+print(um_dict)
