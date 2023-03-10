@@ -69,3 +69,14 @@ Você pode guardar em uma variável os type annotations e reutilizá-los como em
     int_list = list[int]
     DictListaInteiros = dict[str, int_list]
 
+### Type Union
+
+Você também pode declarar mais de um tipo para a mesma variável como em:
+
+    string_e_inteiros: str | int
+    string_e_inteiros = "A"
+    string_e_inteiros = 2
+
+De fato, o que está sendo feito é criar um outro typo, chamado de union, que recebe o declarado. Veja o erro em caso fora:
+
+![error union](hints6.png)

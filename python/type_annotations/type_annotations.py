@@ -57,3 +57,11 @@ um_dict_de_listas: DictListaInteiros = {
     "B": [3, 4],
     "C": [5, 6],
 }
+
+# type union
+
+string_e_inteiros: str | int
+string_e_inteiros = "A"
+string_e_inteiros = 2
+
+string_e_inteiros = 2.3
