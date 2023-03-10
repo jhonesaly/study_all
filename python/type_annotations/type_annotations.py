@@ -72,3 +72,19 @@ def sum2(x: int, y: float | None = None) -> float:
     return x + y
 
 sum2(2, 'a')
+
+# type callable
+
+from collections.abc import Callable
+
+def execute_callable(func: Callable[[int, int], int], a: int, b: int) -> int:
+    return func(a, b)
+
+def func_callable_format(a: int, b: int) -> int:
+    return a + b
+
+def func_not_callable_format(a: float, b: float) -> float:
+    return a + b
+
+execute_callable(func_callable_format, 1, 2)
+execute_callable(func_not_callable_format, 1.5, 2.5)

@@ -91,3 +91,16 @@ Você também pode declarar um tipo opcional para a variável como em:
 De fato, o que está sendo feito é criar um outro tipo, chamado de optional, que recebe o declarado. Veja o erro em caso fora:
 
 ![error optional](hints7.png)
+
+### Type Callable
+
+O tipo callable é como se transformasse uma função em uma variável, como em:
+
+    from collections.abc import Callable
+
+    def execute_callable(func: Callable[[int, int], int], a: int, b: int) -> int:
+        return func(a, b)
+
+Se não seguir a ordem como definida no callable, derá o seguinte erro:
+
+![error callable](hints8.png)
