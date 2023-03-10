@@ -1,13 +1,6 @@
-# if-else to match
+# if-else spm
 
 num = 1
-
-if num == 1:
-    print("um")
-elif num == 2:
-    print("dois")
-else:
-    print("outro número")
 
 match num:
     case 1:
@@ -19,7 +12,7 @@ match num:
 
 # Advanced if-else spm
 
-lista = [1, 2]
+lista = [1, 2, 3]
 
 match lista:
     case [1, 2]:
@@ -28,4 +21,6 @@ match lista:
         print("três e algum outro valor")
     case _:
         print("outros valores")
+
+
 
