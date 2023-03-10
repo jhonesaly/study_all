@@ -115,3 +115,21 @@ Outra manobra que pode ser feita é a declaração de um tipo novo, genérico ou
 
     def get_item(list: list[T], index: int) -> dynamic:
         return list[index]
+
+### Type Class
+
+Também é possível utilizar as classes como tipos, o que é muito útil, como em:
+
+    class Person:
+        def __init__(self, firstname, lastname):
+            self.firstname = firstname
+            self.lastname = lastname
+
+        @property
+        def full_name(self):
+            return f"{self.firstname} {self.lastname}"
+
+    def say_my_name(person: Person) -> str:
+        return person.full_name
+
+Inclusive, isso faz a IDE indicar quais são os atributos e métodos disponíveis, pois quando o é declarado, a IDE consegue encontrá-los.

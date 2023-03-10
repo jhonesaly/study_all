@@ -102,3 +102,19 @@ list_int = get_item([1, 10, 100], 1)
 list_str = get_item(['alfa', 10, 'gama'], 1)
 
 print(list_str)
+
+# type class
+
+class Person:
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+
+    @property
+    def full_name(self):
+        return f"{self.firstname} {self.lastname}"
+
+def say_my_name(person: Person) -> str:
+    return person.full_name
+
+print(say_my_name(Person("John", "Doe")))
