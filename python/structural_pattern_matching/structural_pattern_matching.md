@@ -36,3 +36,19 @@ O operador lógico OR pode ser usado para fazer a correspondência de padrões m
     match valor:
         case "a" | "b":
             print("valor é 'a' ou 'b'")
+
+## Case Guard (if no case)
+
+Você também pode usar uma cláusula de "guarda" (guard clause) para adicionar uma condição extra à correspondência de padrões. É como um if dentro de um caso:
+
+    valor = 7
+
+    match valor:
+        case x if x < 5:
+            print("valor é menor que 5")
+        case x if x > 10:
+            print("valor é maior que 10")
+        case _:
+            print("valor é entre 5 e 10, inclusive")
+
+Nesse exemplo, o primeiro padrão corresponde a valores menores que 5, o segundo padrão corresponde a valores maiores que 10 e o último padrão corresponde a valores entre 5 e 10, inclusive.

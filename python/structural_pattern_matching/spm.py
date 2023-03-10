@@ -34,3 +34,15 @@ match valor:
     case _:
         print("outro valor")
 
+# Case guard
+
+valor = 7
+
+match valor:
+    case x if x < 5:
+        print("valor é menor que 5")
+    case x if x > 10:
+        print("valor é maior que 10")
+    case _:
+        print("valor é entre 5 e 10, inclusive")
+
