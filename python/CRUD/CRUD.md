@@ -35,7 +35,7 @@ Para realizar a conexão, é necessário, primeiramente instalar a biblioteca de
 
     import mysql.connector
 
-    conexao = mysql.connector(
+    conexao = mysql.connector.connect(
         host='localhost',
         user='root',
         password='1234',
