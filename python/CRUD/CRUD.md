@@ -72,3 +72,11 @@ Para fazer o Create, o modelo é:
     cursor.execute(comando)
     conexao.commit()
 
+Para fazer o Read, o modelo é:
+
+    comando = f'SELECT * FROM produtos;'
+
+    cursor.execute(comando)
+    resultado = cursor.fetchall()
+    print(resultado)
+

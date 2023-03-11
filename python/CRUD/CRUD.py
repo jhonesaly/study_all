@@ -23,7 +23,15 @@ prod_val = 3.3
 comando = f'INSERT INTO produtos (Name, Value) VALUES ("{prod_name}", {prod_val})'
 
 cursor.execute(comando)
-conexao.commit() #edita o banco de dados
+conexao.commit()
+
+# Read
+
+comando = f'SELECT * FROM produtos;'
+
+cursor.execute(comando)
+resultado = cursor.fetchall()
+print(resultado)
 
 cursor.close()
 conexao.close()
