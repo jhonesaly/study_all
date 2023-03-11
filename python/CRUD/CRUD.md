@@ -52,3 +52,12 @@ Para realizar os comandos, é necessário criar um cursor, que será encerrado n
 
     cursor.close()
     conexao.close()
+
+Estrutura básica de um CRUD:
+
+    comando = ''
+    cursor.execute(comando)
+    conexao.commit() #edita o banco de dados
+    resultado = cursor.fetchall() #ler o banco de dados
+
+O comando indica o que será feito, a próxima linha executa o comando. Se o comando alterar o banco de dados, é necessário o commit. Se o comando é para pegar alguma informação do banco de dados, precisa ser guardado em 'resultado'.
