@@ -61,3 +61,14 @@ Estrutura básica de um CRUD:
     resultado = cursor.fetchall() #ler o banco de dados
 
 O comando indica o que será feito, a próxima linha executa o comando. Se o comando alterar o banco de dados, é necessário o commit. Se o comando é para pegar alguma informação do banco de dados, precisa ser guardado em 'resultado'.
+
+Para fazer o Create, o modelo é:
+
+    prod_name = "todynho"
+    prod_val = 3.3
+
+    comando = f'INSERT INTO produtos (Name, Value) VALUES ("{prod_name}", {prod_val})'
+
+    cursor.execute(comando)
+    conexao.commit()
+
