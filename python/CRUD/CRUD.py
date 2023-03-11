@@ -33,5 +33,15 @@ cursor.execute(comando)
 resultado = cursor.fetchall()
 print(resultado)
 
+# Update
+
+prod_name = "todynho"
+prod_new_val = 6.0
+
+comando = f'UPDATE produtos SET Value = {prod_new_val} WHERE Name = "{prod_name}"'
+
+cursor.execute(comando)
+conexao.commit()
+
 cursor.close()
 conexao.close()

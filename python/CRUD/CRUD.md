@@ -80,3 +80,13 @@ Para fazer o Read, o modelo é:
     resultado = cursor.fetchall()
     print(resultado)
 
+Para fazer o Update, o modelo é:
+
+    prod_name = "todynho"
+    prod_new_val = 6.0
+
+    comando = f'UPDATE produtos SET Value = {prod_new_val} WHERE Name = "{prod_name}"'
+
+    cursor.execute(comando)
+    conexao.commit()
+
