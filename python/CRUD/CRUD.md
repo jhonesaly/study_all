@@ -43,3 +43,12 @@ Para realizar a conexão, é necessário, primeiramente instalar a biblioteca de
     )
 
 host é o endereço da conexão, user é o usuário, password é a senha para acesso e database é o nome do banco que será conectado.
+
+Para realizar os comandos, é necessário criar um cursor, que será encerrado no final juntamente com a conexão, como em:
+
+    cursor = conexao.cursor()
+
+    # onde vai entrar o CRUD
+
+    cursor.close()
+    conexao.close()
