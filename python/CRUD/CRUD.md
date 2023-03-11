@@ -15,10 +15,31 @@ Para realizar o procedimento em python, é necessário já ter um banco de dados
 
 Será necessária a instalação do mysql server para disponibilizar o banco de dados. Depois disso ele pode ser acessado via mysql workbench ou qualquer outro SGBD (como o DBeaver).
 
-Para tal, foi montando o mysql server no Windows, adicionando a pasta /bin do server ao path e rodando o comando 'mysqld'. 
+Para tal, foi montando o mysql server no Windows, adicionando a pasta /bin do server ao path e rodando o comando 'mysqld'.
 
 Depois, foi criado, usando o mysql workbench, um banco de dados chamado de test, com a tabela produtos que contém o ID (PK), nome e valores. Com isso, agora podemos seguir para o script em python.
 
+    CREATE TABLE `test`.`produtos` (
+    `ID` INT NOT NULL AUTO_INCREMENT,
+    `Name` VARCHAR(45) NOT NULL,
+    `Value` DECIMAL NOT NULL,
+    PRIMARY KEY (`ID`));
 
+## Python
 
+Para realizar a conexão, é necessário, primeiramente instalar a biblioteca de conexão:
 
+    pip install mysql-connector
+
+ E então a escrever a seguinte estrutura básica para conexão:
+
+    import mysql.connector
+
+    conexao = mysql.connector(
+        host='localhost',
+        user='root',
+        password='1234',
+        database='test',
+    )
+
+host é o endereço da conexão, user é o usuário, password é a senha para acesso e database é o nome do banco que será conectado.
