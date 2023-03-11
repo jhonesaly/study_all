@@ -90,3 +90,11 @@ Para fazer o Update, o modelo é:
     cursor.execute(comando)
     conexao.commit()
 
+Para fazer o Delete, o modelo é:
+
+    prod_name = "todynho"
+
+    comando = f'DELETE FROM produtos WHERE Name = "{prod_name}"'
+
+    cursor.execute(comando)
+    conexao.commit()
