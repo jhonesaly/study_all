@@ -3,9 +3,11 @@
 import datetime
 
 def sum_minute (T:str, K:int|str) -> str:
-    date_hour = datetime.strptime(T, "%H:%M")
+    date_hour = datetime.datetime.strptime(T, "%H:%M")
     if isinstance(K, str):
         K = int(K)
-            
 
-    return new_T
+    new_T = date_hour + datetime.timedelta(minutes=K)
+    new_T_str = new_T.strftime("%H:%M")
+
+    return new_T_str
