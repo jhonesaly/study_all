@@ -1,6 +1,10 @@
 import unittest
 import os
 import sys
+import coverage
+
+cov = coverage.Coverage()
+cov.start()
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -15,6 +19,9 @@ class TestDateSumMinute(unittest.TestCase):
         self.assertEqual(sum_minute('12:43', '21'),'13:04')
         self.assertEqual(sum_minute('20:39', '534'),'05:33')
 
+cov.stop()
+cov.save()
+cov.report()
 
 if __name__ == '__main__':
     unittest.main()
