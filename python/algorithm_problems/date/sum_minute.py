@@ -5,7 +5,10 @@ import datetime
 def sum_minute (T:str, K:int|str) -> str:
     date_hour = datetime.datetime.strptime(T, "%H:%M")
     if isinstance(K, str):
-        K = int(K)
+        try:
+            K = int(K)
+        except ValueError:
+            raise ValueError("Invalid value for second argument")
 
     new_T = date_hour + datetime.timedelta(minutes=K)
     new_T_str = new_T.strftime("%H:%M")
