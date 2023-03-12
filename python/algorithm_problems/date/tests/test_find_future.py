@@ -6,9 +6,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from find_future import *
 
-class TestDateCalculateAge(unittest.TestCase):
+class TestDateFindFuture(unittest.TestCase):
 
-    def test_find_fure_found(self):
+    def test_find_future_found(self):
 
         input_1 = ['22/4/1233', '1/3/0633', '23/5/5665', '4/12/2330']
         input_2 = ['23/3/4345']
