@@ -11,5 +11,10 @@ class TestDateSumMinute(unittest.TestCase):
         self.assertEqual(sum_minute('12:43', 21),'13:04')
         self.assertEqual(sum_minute('20:39', 534),'05:33')
     
+    def test_sum_minute_arg2_is_str(self):
+        self.assertEqual(sum_minute('12:43', '21'),'13:04')
+        self.assertEqual(sum_minute('20:39', '534'),'05:33')
+
+
 if __name__ == '__main__':
     unittest.main()
