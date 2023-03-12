@@ -11,3 +11,7 @@ def sum_minute (T:str, K:int|str) -> str:
     new_T_str = new_T.strftime("%H:%M")
 
     return new_T_str
+
+if __name__ == "__main__":
+    test = sum_minute('20:39', 534)
+    print(test)
