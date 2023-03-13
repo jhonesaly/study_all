@@ -35,7 +35,7 @@ O primeiro passo para criar uma aplicação web em Django é criar um ambiente v
 Comandos no Windows:
 
     1. py -m venv my_env
-    2. .\my_env\Scripts\activate
+    2. my_env\Scripts\activate
     3. pip install django
 
 Explicando:
