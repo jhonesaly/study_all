@@ -73,12 +73,12 @@ Migrando a base de dados:
 - **DEBUG**: é um booleano que ativa e desativa o modo de depuração do projeto. Se for definido como True, Django exibirá páginas de erro detalhadas quando uma exceção não capturada for lançada por seu aplicativo. Ao mudar para um ambiente de produção, lembre-se de que você deve defini-lo como False. Nunca implante um site em produção com o DEBUG ativado porque você exporá informações confidenciais dados relacionados ao projeto.
 - **ALLOWED-HOSTS**: não é aplicado enquanto o modo de depuração está ativado ou quando os testes são executados. uma vez que você mova seu site para produção e defina DEBUG como False, você terá que adicionar seu domínio/host a esta configuração para permitir que ele sirva seu site Django.
 - **ISTALLED_APPS**: é uma configuração que você terá que editar para todos os projetos. Esta configuração diz ao Django qual aplicativos estão ativos para este site. Por padrão, o Django inclui os seguintes aplicativos:
-    - **django.contrib.admin**: Um site de administração
-    - **django.contrib.auth**: Um framework de autenticação Quando você tem que lidar com vários ambientes que requerem configurações diferentes, você pode criar um arquivo de configurações diferentes para cada ambiente.
-    - **django.contrib.contenttypes**: Um framework para lidar com tipos de conteúdo
-    - **django.contrib.sessions**: Uma estrutura de sessão
-    - **django.contrib.messages**: Uma estrutura de mensagens
-    - **django.contrib.staticfiles**: Um framework para gerenciar arquivos estáticos
+  - **django.contrib.admin**: Um site de administração
+  - **django.contrib.auth**: Um framework de autenticação Quando você tem que lidar com vários ambientes que requerem configurações diferentes, você pode criar um arquivo de configurações diferentes para cada ambiente.
+  - **django.contrib.contenttypes**: Um framework para lidar com tipos de conteúdo
+  - **django.contrib.sessions**: Uma estrutura de sessão
+  - **django.contrib.messages**: Uma estrutura de mensagens
+  - **django.contrib.staticfiles**: Um framework para gerenciar arquivos estáticos
 - **MIDDLEWARE é uma lista que contém o middleware a ser executado.
 - **ROOT_URLCONF**: indica o módulo Python onde os padrões de URL raiz do seu aplicativo são definidos.
 - **DATABASES**: é um dicionário que contém as configurações de todos os bancos de dados a serem utilizados no projeto. Sempre deve haver um banco de dados padrão. A configuração padrão usa um banco de dados SQLite3.
@@ -130,3 +130,4 @@ Para criar uma API com o Django REST framework, você precisará seguir os segui
 - Definir as URLs: Por fim, você precisará definir as URLs que mapeiam as solicitações HTTP para as views corretas. Isso é feito usando o arquivo urls.py da sua aplicação Django.
 
 Após seguir esses passos, você terá uma API RESTful em execução usando o Django REST framework. Seus clientes poderão se comunicar com sua API usando solicitações HTTP, como GET, POST, PUT e DELETE, e receber respostas em formatos como JSON ou XML.
+
