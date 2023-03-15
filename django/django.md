@@ -154,3 +154,14 @@ Por exemplo, se você tiver um diretório em seu projeto chamado "assets" que co
 Dessa forma, o Django irá procurar por arquivos estáticos dentro do diretório "assets" no diretório raiz do seu projeto. Observe que você precisa importar o módulo "os" para usar a função "os.path.join()" neste exemplo.
 
 Com essas configurações, você pode servir arquivos estáticos em sua aplicação Django de forma fácil e eficiente.
+
+## STATIC_ROOT:
+
+STATIC_ROOT é a configuração que especifica o diretório em que o Django irá coletar todos os arquivos estáticos da sua aplicação, em preparação para a implantação em um servidor de produção. Você precisa definir essa configuração para que o comando "collectstatic" possa coletar todos os arquivos estáticos em um único diretório.
+
+Por exemplo, se você deseja coletar todos os arquivos estáticos em um diretório chamado "staticfiles" na raiz do seu projeto, você pode adicionar o seguinte código ao seu arquivo "settings.py":
+
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+Observe que você precisa importar o módulo "os" para usar a função "os.path.join()" neste exemplo.
+
