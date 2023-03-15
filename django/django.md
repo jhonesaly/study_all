@@ -131,3 +131,12 @@ Para criar uma API com o Django REST framework, você precisará seguir os segui
 
 Após seguir esses passos, você terá uma API RESTful em execução usando o Django REST framework. Seus clientes poderão se comunicar com sua API usando solicitações HTTP, como GET, POST, PUT e DELETE, e receber respostas em formatos como JSON ou XML.
 
+## STATIC_URL:
+
+STATIC_URL é a URL base que o Django usará para servir arquivos estáticos (como arquivos CSS, JavaScript e imagens) em uma aplicação web. Por padrão, o valor de STATIC_URL é "/static/", o que significa que os arquivos estáticos serão servidos em uma URL com esse formato: http://example.com/static/. Você pode alterar essa configuração no arquivo "settings.py" do seu projeto Django.
+
+Por exemplo, se você quiser alterar a URL base de arquivos estáticos para "/assets/", você pode adicionar a seguinte linha ao seu arquivo "settings.py":
+
+    STATIC_URL = '/assets/'
+
+Dessa forma, o Django usará a URL http://example.com/assets/ para servir os arquivos estáticos da sua aplicação.
