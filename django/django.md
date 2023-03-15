@@ -165,3 +165,16 @@ Por exemplo, se você deseja coletar todos os arquivos estáticos em um diretór
 
 Observe que você precisa importar o módulo "os" para usar a função "os.path.join()" neste exemplo.
 
+## collectstatic:
+
+O collectstatic é um comando do Django que coleta todos os arquivos estáticos das suas aplicações e reúne-os em um único diretório especificado em STATIC_ROOT, que pode então ser servido por um servidor web.
+
+Para usar o collectstatic, você precisa primeiro definir STATIC_ROOT em seu arquivo "settings.py". Em seguida, abra um terminal e navegue até o diretório raiz do seu projeto. Digite o seguinte comando:
+
+    python manage.py collectstatic
+
+Isso coletará todos os arquivos estáticos da sua aplicação e salvá-los no diretório especificado em STATIC_ROOT.
+
+É importante lembrar que você precisa executar o comando collectstatic sempre que adicionar, atualizar ou remover arquivos estáticos em sua aplicação web. Isso garantirá que todos os arquivos estáticos necessários estejam disponíveis para sua aplicação, mesmo após a implantação em um servidor de produção.
+
+Com essas configurações e o comando collectstatic, você pode gerenciar facilmente os arquivos estáticos em sua aplicação Django e implantá-los em um ambiente de produção.
