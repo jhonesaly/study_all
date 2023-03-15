@@ -188,3 +188,9 @@ Com essas configurações e o comando collectstatic, você pode gerenciar facilm
 
 Os templates no Django são arquivos HTML que contêm blocos de código que podem ser preenchidos com dados dinâmicos pelo Django em tempo de execução. Os templates permitem separar o código HTML da lógica da aplicação, facilitando a manutenção do código e a reutilização de componentes.
 
+Funcionalidades: 
+
+- Herança de templates: permite que um template "herde" blocos de código de um template pai, evitando a necessidade de duplicar código em múltiplos templates.
+- Variáveis de contexto: permitem que dados dinâmicos sejam passados do Django para o template, como por exemplo, dados do banco de dados.
+- Tags e filtros: oferecem funcionalidades adicionais, como controle de fluxo, formatação de dados e geração de URLs.
+
