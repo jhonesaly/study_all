@@ -131,7 +131,10 @@ Para criar uma API com o Django REST framework, você precisará seguir os segui
 
 Após seguir esses passos, você terá uma API RESTful em execução usando o Django REST framework. Seus clientes poderão se comunicar com sua API usando solicitações HTTP, como GET, POST, PUT e DELETE, e receber respostas em formatos como JSON ou XML.
 
-## STATIC_URL:
+------
+
+## Static Files
+### STATIC_URL:
 
 STATIC_URL é a URL base que o Django usará para servir arquivos estáticos (como arquivos CSS, JavaScript e imagens) em uma aplicação web. Por padrão, o valor de STATIC_URL é "/static/", o que significa que os arquivos estáticos serão servidos em uma URL com esse formato: http://example.com/static/. Você pode alterar essa configuração no arquivo "settings.py" do seu projeto Django.
 
@@ -141,7 +144,7 @@ Por exemplo, se você quiser alterar a URL base de arquivos estáticos para "/as
 
 Dessa forma, o Django usará a URL http://example.com/assets/ para servir os arquivos estáticos da sua aplicação.
 
-## STATICFILES_DIRS:
+### STATICFILES_DIRS:
 
 STATICFILES_DIRS é uma configuração que especifica uma lista de diretórios onde o Django deve procurar por arquivos estáticos. Por padrão, o Django procura por arquivos estáticos em um diretório chamado "static" dentro de cada aplicação instalada. No entanto, você também pode especificar outros diretórios que contenham arquivos estáticos que não estão associados a nenhuma aplicação específica.
 
@@ -155,7 +158,7 @@ Dessa forma, o Django irá procurar por arquivos estáticos dentro do diretório
 
 Com essas configurações, você pode servir arquivos estáticos em sua aplicação Django de forma fácil e eficiente.
 
-## STATIC_ROOT:
+### STATIC_ROOT:
 
 STATIC_ROOT é a configuração que especifica o diretório em que o Django irá coletar todos os arquivos estáticos da sua aplicação, em preparação para a implantação em um servidor de produção. Você precisa definir essa configuração para que o comando "collectstatic" possa coletar todos os arquivos estáticos em um único diretório.
 
@@ -165,7 +168,7 @@ Por exemplo, se você deseja coletar todos os arquivos estáticos em um diretór
 
 Observe que você precisa importar o módulo "os" para usar a função "os.path.join()" neste exemplo.
 
-## collectstatic:
+### collectstatic:
 
 O collectstatic é um comando do Django que coleta todos os arquivos estáticos das suas aplicações e reúne-os em um único diretório especificado em STATIC_ROOT, que pode então ser servido por um servidor web.
 
@@ -178,3 +181,4 @@ Isso coletará todos os arquivos estáticos da sua aplicação e salvá-los no d
 É importante lembrar que você precisa executar o comando collectstatic sempre que adicionar, atualizar ou remover arquivos estáticos em sua aplicação web. Isso garantirá que todos os arquivos estáticos necessários estejam disponíveis para sua aplicação, mesmo após a implantação em um servidor de produção.
 
 Com essas configurações e o comando collectstatic, você pode gerenciar facilmente os arquivos estáticos em sua aplicação Django e implantá-los em um ambiente de produção.
+
