@@ -198,6 +198,12 @@ Comandos:
 
 Para criar um novo template em um projeto Django, basta criar um arquivo HTML em um diretório de templates. Por padrão, o Django procura por templates em um diretório chamado "templates" dentro de cada aplicação instalada. No entanto, você também pode especificar outros diretórios onde os templates podem ser encontrados usando a configuração TEMPLATE_DIRS em seu arquivo "settings.py".
 
+Alguns comandos úteis relacionados a templates em um projeto Django incluem:
+
+- {% extends 'template.html' %}: essa tag permite que um template herde blocos de código de um template pai especificado.
+- {{ variable }}: essa sintaxe permite que variáveis de contexto sejam exibidas em um template.
+- {% for item in items %}: essa sintaxe permite que o código dentro do bloco seja repetido para cada item em uma lista ou dicionário.
+
 Arquivos importantes:
 
 Os arquivos mais importantes relacionados aos templates em um projeto Django são:
