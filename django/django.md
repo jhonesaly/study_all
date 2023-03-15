@@ -194,3 +194,6 @@ Funcionalidades:
 - Variáveis de contexto: permitem que dados dinâmicos sejam passados do Django para o template, como por exemplo, dados do banco de dados.
 - Tags e filtros: oferecem funcionalidades adicionais, como controle de fluxo, formatação de dados e geração de URLs.
 
+Comandos:
+
+Para criar um novo template em um projeto Django, basta criar um arquivo HTML em um diretório de templates. Por padrão, o Django procura por templates em um diretório chamado "templates" dentro de cada aplicação instalada. No entanto, você também pode especificar outros diretórios onde os templates podem ser encontrados usando a configuração TEMPLATE_DIRS em seu arquivo "settings.py".
