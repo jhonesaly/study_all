@@ -140,3 +140,17 @@ Por exemplo, se você quiser alterar a URL base de arquivos estáticos para "/as
     STATIC_URL = '/assets/'
 
 Dessa forma, o Django usará a URL http://example.com/assets/ para servir os arquivos estáticos da sua aplicação.
+
+## STATICFILES_DIRS:
+
+STATICFILES_DIRS é uma configuração que especifica uma lista de diretórios onde o Django deve procurar por arquivos estáticos. Por padrão, o Django procura por arquivos estáticos em um diretório chamado "static" dentro de cada aplicação instalada. No entanto, você também pode especificar outros diretórios que contenham arquivos estáticos que não estão associados a nenhuma aplicação específica.
+
+Por exemplo, se você tiver um diretório em seu projeto chamado "assets" que contém arquivos estáticos, você pode adicionar o seguinte código ao seu arquivo "settings.py":
+
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'assets'),
+    ]
+
+Dessa forma, o Django irá procurar por arquivos estáticos dentro do diretório "assets" no diretório raiz do seu projeto. Observe que você precisa importar o módulo "os" para usar a função "os.path.join()" neste exemplo.
+
+Com essas configurações, você pode servir arquivos estáticos em sua aplicação Django de forma fácil e eficiente.
