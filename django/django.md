@@ -182,3 +182,9 @@ Isso coletará todos os arquivos estáticos da sua aplicação e salvá-los no d
 
 Com essas configurações e o comando collectstatic, você pode gerenciar facilmente os arquivos estáticos em sua aplicação Django e implantá-los em um ambiente de produção.
 
+------
+
+## Django Templates
+
+Os templates no Django são arquivos HTML que contêm blocos de código que podem ser preenchidos com dados dinâmicos pelo Django em tempo de execução. Os templates permitem separar o código HTML da lógica da aplicação, facilitando a manutenção do código e a reutilização de componentes.
+
