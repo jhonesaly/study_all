@@ -9,7 +9,7 @@ def home(request):
     })
 
 
-def recipes(request):
+def recipes(request, id):
     return render(request, 'recipes/pages/home.html', context={
         'name': 'Jota',
     })
