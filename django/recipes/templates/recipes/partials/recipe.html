@@ -47,5 +47,11 @@
             </a>
         </footer>
     {% endif %}
+
+    {% if is_detail_page is True %}
+        <div class="preparation-steps">
+            {{recipe.preparation_steps}}
+        </div>
+    {% endif %}
     
 </div>
