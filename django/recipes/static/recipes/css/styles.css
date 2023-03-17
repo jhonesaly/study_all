@@ -216,6 +216,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6rem;
 }
 
+.preparation-steps {
+    padding: var(--spacing-gutter-medium);
+}
+
 .recipe-footer a {
     background: var(--color-primary-dark);
     display: block;
