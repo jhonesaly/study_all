@@ -32,3 +32,18 @@ Depois, o código usa o operador de módulo % para calcular o resto da divisão 
 Finalmente, a função retorna o número inteiro final correspondente ao dia da semana da data de entrada.
 
 No exemplo de entrada fornecido, o código imprimirá o número 1, indicando que a data de 19/3/2023 é um domingo.
+
+### test_day_week
+
+Este é um teste unitário em Python que verifica se a função day_week está funcionando corretamente. O teste verifica se a saída da função day_week é igual ao resultado esperado, para diferentes entradas de data.
+
+A classe TestDateDayWeek herda da classe unittest.TestCase e contém um método de teste chamado test_day_week_found. Dentro deste método, o código define várias entradas de data como strings e chama a função day_week para obter a saída real. Em seguida, o código define o resultado esperado como um número inteiro e chama o método assertEqual para verificar se a saída real da função é igual ao resultado esperado.
+
+O teste verifica se a função day_week está funcionando corretamente para as seguintes datas:
+
+- 18/3/2023 (sábado): O resultado esperado é 7 (sábado), que é o dia anterior ao domingo.
+- 19/3/2023 (domingo): O resultado esperado é 1 (domingo), que corresponde ao dia de entrada.
+- 17/3/2023 (sexta-feira): O resultado esperado é 6 (sexta-feira), que é o dia anterior ao sábado.
+- 16/3/2023 (quinta-feira): O resultado esperado é 5 (quinta-feira), que é o dia anterior à sexta-feira.
+
+Por fim, o código chama o método unittest.main() para executar o teste unitário e verificar se a função day_week está produzindo os resultados esperados. Se a função day_week passar em todos os testes, a saída do teste será "OK". Caso contrário, o teste indicará qual teste falhou e qual foi a saída atual versus a esperada.
