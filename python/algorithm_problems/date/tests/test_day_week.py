@@ -27,5 +27,11 @@ class TestDateDayWeek(unittest.TestCase):
         
         self.assertEqual(output_actual,output_expected)
 
+        input_1 = '16/3/2023'
+        output_actual = day_week(input_1)    
+        output_expected = 5
+        
+        self.assertEqual(output_actual,output_expected)
+
 if __name__ == '__main__':
     unittest.main()
