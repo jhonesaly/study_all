@@ -9,9 +9,13 @@ def day_week(day_input_str):
     diff_days = (day_input_date - day_date_ref).days
     diff_day_week = diff_days % 7
     day_of_week = diff_day_week + day_week_int_ref
+
+    if day_of_week > 7:
+        day_of_week = day_of_week % 7
+
     return day_of_week
 
 if __name__ == '__main__':
-    problem_input_1 = '18/3/2023'
+    problem_input_1 = '19/3/2023'
     problem_output = day_week(problem_input_1)
     print(problem_output)
