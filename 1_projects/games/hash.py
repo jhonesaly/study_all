@@ -30,6 +30,14 @@ while end_game == False:
         else:
             hash[move2[0]][move2[1]] = 'O'
             move2_test = 'ok'
+    
+    # victory
+
+    if hash[0][0] == hash[0][1] == hash[0][2]:
+        print(f'victory of {hash[0][0]}!')
+
+        end_game = True
+
 
 
     
