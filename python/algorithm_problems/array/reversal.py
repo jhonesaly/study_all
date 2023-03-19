@@ -17,7 +17,9 @@ def reversal(list, search):
     return problem_output
 
 ###
-
+if __name__ == '__main__':
+    problem_input1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    problem_input2 = 5
 
 
 # answer = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]
