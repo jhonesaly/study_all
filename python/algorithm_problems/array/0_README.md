@@ -18,7 +18,7 @@ No bloco if __name__ == '__main__', é definida uma lista de entrada problem_inp
 
 O código apresentado é um teste unitário para a função find_three que foi importada do módulo find_three. Ele define duas funções de teste: test_find_three_equal e test_array_find_three_notequal. O primeiro teste verifica se a saída da função find_three com o test_input é igual a test_answer. O segundo teste verifica se a saída da função find_three com o mesmo test_input é diferente de test_not_answer. O bloco if __name__ == '__main__': permite que o arquivo possa ser executado como um script e chama a função main() do módulo unittest para executar os testes definidos no arquivo.
 
-## positive_negative
+## reorder
 
 Esta função recebe duas listas de inteiros do mesmo tamanho, "list_val" e "list_index", e reorganiza os elementos em "list_val" de acordo com a ordem definida em "list_index".
 
@@ -28,16 +28,16 @@ A função retorna duas listas reorganizadas, "list_val_ordered" e "list_index_o
 
 Para testar a função, dois exemplos de entrada foram fornecidos no bloco de código principal. A primeira lista, "input_1", contém os valores originais e a segunda lista, "input_2", contém os índices que definem a nova ordem. A função é então chamada com essas duas listas como argumentos e as duas listas reorganizadas são impressas.
 
-### test_positive_negative
+### test_reorder
 
-Este é um conjunto de testes unitários para o algoritmo positive_negative, que espera que o algoritmo reordene elementos em uma lista de acordo com outra lista de índices.
+Este é um conjunto de testes unitários para o algoritmo reorder, que espera que o algoritmo reordene elementos em uma lista de acordo com outra lista de índices.
 
-O teste test_positive_negative_equal verifica se o resultado do algoritmo é igual ao esperado para as entradas test_input_1 e test_input_2, e isso é feito usando as variáveis de resposta test_answer_1 e test_answer_2.
+O teste test_reorder_equal verifica se o resultado do algoritmo é igual ao esperado para as entradas test_input_1 e test_input_2, e isso é feito usando as variáveis de resposta test_answer_1 e test_answer_2.
 
-O teste test_positive_negative_notequal verifica se o resultado do algoritmo é diferente do valor test_not_answer_1 e test_not_answer_2 para as entradas test_input_1 e test_input_2.
+O teste test_reorder_notequal verifica se o resultado do algoritmo é diferente do valor test_not_answer_1 e test_not_answer_2 para as entradas test_input_1 e test_input_2.
 
-O teste test_positive_negative_same_length verifica se o comprimento da lista test_input_1 é igual ao comprimento da lista test_input_1, que deve ser verdadeiro.
+O teste test_reorder_same_length verifica se o comprimento da lista test_input_1 é igual ao comprimento da lista test_input_1, que deve ser verdadeiro.
 
-O teste test_positive_negative_not_same_length verifica se o comprimento da lista test_input_1 é diferente do comprimento da lista test_input_3, que deve ser verdadeiro.
+O teste test_reorder_not_same_length verifica se o comprimento da lista test_input_1 é diferente do comprimento da lista test_input_3, que deve ser verdadeiro.
 
 Todos os testes são executados usando a biblioteca de teste unittest do Python.
