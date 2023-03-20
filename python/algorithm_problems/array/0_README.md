@@ -61,3 +61,13 @@ Finalmente, a função retorna a lista ordenada.
 O código também tem um bloco "if name == "main":" que define uma lista de entrada "input" e chama a função "positive_negative" com essa entrada. Ele compara o resultado retornado pela função com uma lista de resposta esperada "answer" e define uma variável booleana "test" como True se os dois forem iguais e False caso contrário. Ele então imprime a lista ordenada resultante e o valor booleano de "test".
 
 No geral, o código é bem estruturado e cumpre o objetivo de reorganizar a lista de entrada de acordo com os requisitos especificados.
+
+### test_positive_negative
+
+O script de teste tem como objetivo testar as funções definidas no script "positive_negative.py". Ele utiliza a biblioteca "unittest" do Python para definir um conjunto de testes para as funções.
+
+A classe "TestPositiveNegative" é uma subclasse de "unittest.TestCase" e define os métodos de teste "test_positive_negative_equal", "test_more_positive" e "test_more_negative". Cada um desses métodos testa um cenário diferente de entrada para a função "positive_negative", e utiliza o método "self.assertEqual" para verificar se a saída da função é igual à resposta esperada.
+
+Dentro da condição "if name == 'main':" são definidos os cenários de teste para as entradas e saídas esperadas em cada método de teste. Em seguida, é chamado o método "unittest.main()", que executa todos os testes definidos na classe "TestPositiveNegative".
+
+Em resumo, o script de teste executa um conjunto de testes para verificar se a função "positive_negative" está funcionando corretamente para diferentes cenários de entrada.
