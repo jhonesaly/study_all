@@ -18,7 +18,7 @@ No bloco if __name__ == '__main__', é definida uma lista de entrada problem_inp
 
 O código apresentado é um teste unitário para a função find_three que foi importada do módulo find_three. Ele define duas funções de teste: test_find_three_equal e test_array_find_three_notequal. O primeiro teste verifica se a saída da função find_three com o test_input é igual a test_answer. O segundo teste verifica se a saída da função find_three com o mesmo test_input é diferente de test_not_answer. O bloco if __name__ == '__main__': permite que o arquivo possa ser executado como um script e chama a função main() do módulo unittest para executar os testes definidos no arquivo.
 
-## positive_negative
+## reorder
 
 Esta função recebe duas listas de inteiros do mesmo tamanho, "list_val" e "list_index", e reorganiza os elementos em "list_val" de acordo com a ordem definida em "list_index".
 
@@ -28,16 +28,46 @@ A função retorna duas listas reorganizadas, "list_val_ordered" e "list_index_o
 
 Para testar a função, dois exemplos de entrada foram fornecidos no bloco de código principal. A primeira lista, "input_1", contém os valores originais e a segunda lista, "input_2", contém os índices que definem a nova ordem. A função é então chamada com essas duas listas como argumentos e as duas listas reorganizadas são impressas.
 
-### test_positive_negative
+### test_reorder
 
-Este é um conjunto de testes unitários para o algoritmo positive_negative, que espera que o algoritmo reordene elementos em uma lista de acordo com outra lista de índices.
+Este é um conjunto de testes unitários para o algoritmo reorder, que espera que o algoritmo reordene elementos em uma lista de acordo com outra lista de índices.
 
-O teste test_positive_negative_equal verifica se o resultado do algoritmo é igual ao esperado para as entradas test_input_1 e test_input_2, e isso é feito usando as variáveis de resposta test_answer_1 e test_answer_2.
+O teste test_reorder_equal verifica se o resultado do algoritmo é igual ao esperado para as entradas test_input_1 e test_input_2, e isso é feito usando as variáveis de resposta test_answer_1 e test_answer_2.
 
-O teste test_positive_negative_notequal verifica se o resultado do algoritmo é diferente do valor test_not_answer_1 e test_not_answer_2 para as entradas test_input_1 e test_input_2.
+O teste test_reorder_notequal verifica se o resultado do algoritmo é diferente do valor test_not_answer_1 e test_not_answer_2 para as entradas test_input_1 e test_input_2.
 
-O teste test_positive_negative_same_length verifica se o comprimento da lista test_input_1 é igual ao comprimento da lista test_input_1, que deve ser verdadeiro.
+O teste test_reorder_same_length verifica se o comprimento da lista test_input_1 é igual ao comprimento da lista test_input_1, que deve ser verdadeiro.
 
-O teste test_positive_negative_not_same_length verifica se o comprimento da lista test_input_1 é diferente do comprimento da lista test_input_3, que deve ser verdadeiro.
+O teste test_reorder_not_same_length verifica se o comprimento da lista test_input_1 é diferente do comprimento da lista test_input_3, que deve ser verdadeiro.
 
 Todos os testes são executados usando a biblioteca de teste unittest do Python.
+
+## positive_negative
+
+O código é uma função em Python chamada "positive_negative" que recebe uma lista de números como entrada. A função tem como objetivo reorganizar a lista de forma que os números positivos ocorram em posições pares (0, 2, 4, ...) e os números negativos ocorram em posições ímpares (1, 3, 5, ...). O código é projetado para funcionar in-place, o que significa que a lista original é modificada e retornada pela função.
+
+O código começa criando duas listas vazias, "num_pos" e "num_neg", para armazenar os números positivos e negativos da lista de entrada, respectivamente. Ele então percorre a lista de entrada e adiciona cada número à lista correspondente com base em se é positivo ou negativo.
+
+Depois disso, o código inverte as duas listas "num_pos" e "num_neg", para que possamos começar a adicioná-las à lista ordenada começando pelo final.
+
+Em seguida, a lista "list_ordered" é criada como uma lista vazia que será preenchida com os números reorganizados.
+
+Depois disso, o código verifica se as listas "num_pos" e "num_neg" têm o mesmo comprimento. Se for esse o caso, ele adiciona números alternados das duas listas "num_pos" e "num_neg" à lista ordenada.
+
+Se as listas tiverem comprimentos diferentes, o código cria um loop que adiciona números alternados das duas listas "num_pos" e "num_neg" à lista ordenada apenas até que uma das listas acabe. Em seguida, ele adiciona os números restantes da lista mais longa à lista ordenada.
+
+Finalmente, a função retorna a lista ordenada.
+
+O código também tem um bloco "if name == "main":" que define uma lista de entrada "input" e chama a função "positive_negative" com essa entrada. Ele compara o resultado retornado pela função com uma lista de resposta esperada "answer" e define uma variável booleana "test" como True se os dois forem iguais e False caso contrário. Ele então imprime a lista ordenada resultante e o valor booleano de "test".
+
+No geral, o código é bem estruturado e cumpre o objetivo de reorganizar a lista de entrada de acordo com os requisitos especificados.
+
+### test_positive_negative
+
+O script de teste tem como objetivo testar as funções definidas no script "positive_negative.py". Ele utiliza a biblioteca "unittest" do Python para definir um conjunto de testes para as funções.
+
+A classe "TestPositiveNegative" é uma subclasse de "unittest.TestCase" e define os métodos de teste "test_positive_negative_equal", "test_more_positive" e "test_more_negative". Cada um desses métodos testa um cenário diferente de entrada para a função "positive_negative", e utiliza o método "self.assertEqual" para verificar se a saída da função é igual à resposta esperada.
+
+Dentro da condição "if name == 'main':" são definidos os cenários de teste para as entradas e saídas esperadas em cada método de teste. Em seguida, é chamado o método "unittest.main()", que executa todos os testes definidos na classe "TestPositiveNegative".
+
+Em resumo, o script de teste executa um conjunto de testes para verificar se a função "positive_negative" está funcionando corretamente para diferentes cenários de entrada.
