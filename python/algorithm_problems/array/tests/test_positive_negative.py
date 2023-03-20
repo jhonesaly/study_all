@@ -20,10 +20,14 @@ class TestPositiveNegative(unittest.TestCase):
     def test_positive_negative_same_length(self):
         self.assertEqual(len(test_input_1), len(test_input_1))
     
+    def test_positive_negative_not_same_length(self):
+        self.assertNotEqual(len(test_input_1), len(test_input_3))
+    
 
 if __name__ == '__main__':
     test_input_1 = [10, 11, 12]
     test_input_2 = [1, 0, 2]
+    test_input_3 = [12, 15, 16, 20]
 
     test_answer_1 = [11, 10, 12]
     test_answer_2 = [0, 1, 2]

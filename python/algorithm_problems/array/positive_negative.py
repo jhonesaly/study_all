@@ -17,7 +17,7 @@ def positive_negative(list_val, list_index):
     return list_val_ordered, list_index_ordered
 
 if __name__ == '__main__':
-    input_1 = [50, 40, 70, 60, 90]
+    input_1 = [50, 40, 70, 60]
     input_2 = [3,  0,  4,  1,  2]
 
     output_1, output_2 = positive_negative(input_1, input_2)
