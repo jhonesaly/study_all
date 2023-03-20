@@ -1,5 +1,11 @@
 # Array
 
+## find_three
+
+O código find_three define uma função que recebe uma lista de números como argumento e encontra os três maiores valores únicos presentes na lista. A função começa criando uma lista de três zeros (a variável max_three) que servirá para manter o controle dos maiores valores encontrados até o momento. Em seguida, a função itera sobre a lista de entrada e para cada elemento, verifica se é maior que o menor dos valores em max_three. Se for, então este elemento é adicionado na posição do menor valor em max_three. Ao final, a lista max_three é convertida em um conjunto para remover quaisquer valores duplicados, e esse conjunto é retornado como resultado.
+
+No bloco if __name__ == '__main__', é definida uma lista de entrada problem_input com cinco números. Essa lista é passada para a função find_three, cujo resultado é armazenado na variável problem_output. Finalmente, o resultado é exibido na tela por meio do comando print.
+
 ## positive_negative
 
 Esta função recebe duas listas de inteiros do mesmo tamanho, "list_val" e "list_index", e reorganiza os elementos em "list_val" de acordo com a ordem definida em "list_index".
