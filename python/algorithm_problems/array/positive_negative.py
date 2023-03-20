@@ -5,3 +5,6 @@
 # There can be unequal number of positive and negative values and the extra 
 # values have to left as it is.
 
+def positive_negative(list):
+    
+    return new_list
