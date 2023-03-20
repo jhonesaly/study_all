@@ -1,8 +1,3 @@
-import os
-
-os.system('cls')
-
-###
 def reversal(list, search):
     list_reversal = [0 for i in range(search)]
 
