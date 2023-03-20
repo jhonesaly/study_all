@@ -1,5 +1,13 @@
 # Array
 
+## reversal
+
+Este código define uma função chamada "reversal" que recebe uma lista e um número "search" como argumentos. A função reverte os "search" primeiros elementos da lista e retorna a lista modificada.
+
+A primeira linha da função cria uma nova lista "list_reversal" com tamanho "search", preenchida com zeros. Em seguida, um loop for é iniciado para iterar "search" vezes. A cada iteração, o último elemento da lista original é removido com o método "pop" e armazenado em "aux_1". A variável "aux_2" é criada como "search - i - 1" para mapear o índice apropriado em "list_reversal" para o valor de "aux_1". O valor de "aux_1" é então adicionado a "list_reversal" na posição "aux_2".
+
+Finalmente, a lista original é anexada à lista "list_reversal" e a lista completa é retornada como a saída da função. No exemplo dado, a função reverte os dois primeiros elementos da lista [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] e retorna a lista modificada [2, 1, 3, 4, 5, 6, 7, 8, 9, 10].
+
 ## find_three
 
 O código find_three define uma função que recebe uma lista de números como argumento e encontra os três maiores valores únicos presentes na lista. A função começa criando uma lista de três zeros (a variável max_three) que servirá para manter o controle dos maiores valores encontrados até o momento. Em seguida, a função itera sobre a lista de entrada e para cada elemento, verifica se é maior que o menor dos valores em max_three. Se for, então este elemento é adicionado na posição do menor valor em max_three. Ao final, a lista max_three é convertida em um conjunto para remover quaisquer valores duplicados, e esse conjunto é retornado como resultado.
