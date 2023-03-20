@@ -5,11 +5,11 @@
 # There can be unequal number of positive and negative values and the extra 
 # values have to left as it is.
 
-def positive_negative(list):
+def positive_negative(list_unordered):
     num_pos = []
     num_neg = []
 
-    for num in list:
+    for num in list_unordered:
         if num >= 0:
             num_pos.append(num)
         else:
@@ -18,37 +18,37 @@ def positive_negative(list):
     num_pos.reverse()
     num_neg.reverse()
 
-    new_list = []
+    list_ordered = []
 
     if len(num_pos) == len(num_neg):
-        for i in range(len(list)):
+        for i in range(len(list_unordered)):
             if i % 2 == 0:
-                new_list.append(num_pos.pop())
+                list_ordered.append(num_pos.pop())
             else:
-                new_list.append(num_neg.pop())
+                list_ordered.append(num_neg.pop())
     elif len(num_pos) > len(num_neg):
         for i in range(2*len(num_neg)):
             if i % 2 == 0:
-                new_list.append(num_pos.pop())
+                list_ordered.append(num_pos.pop())
             else:
-                new_list.append(num_neg.pop())
+                list_ordered.append(num_neg.pop())
         for i in range(len(num_pos)):
-            new_list.append(num_pos.pop())
+            list_ordered.append(num_pos.pop())
     elif len(num_pos) < len(num_neg):
         for i in range(2*len(num_pos)):
             if i % 2 == 0:
-                new_list.append(num_pos.pop())
+                list_ordered.append(num_pos.pop())
             else:
-                new_list.append(num_neg.pop())
+                list_ordered.append(num_neg.pop())
         for i in range(len(num_neg)):
-            new_list.append(num_neg.pop())
+            list_ordered.append(num_neg.pop())
  
-    return new_list
+    return list_ordered
 
 if __name__ == "__main__":
-    input = [1, -3, -6, 5, -7, -8]
+    input = [-1, 3, -5, 6, 3, 6, -7, -4, -9, 10]
     output = positive_negative(input)
-    answer = [1, -3, 5, -6, -7, -8]
+    answer = [3, -1, 6, -5, 3, -7, 6, -4, 10, -9]
     if output == answer:
         test = True
     else:
