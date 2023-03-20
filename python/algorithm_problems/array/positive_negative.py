@@ -19,18 +19,28 @@ def positive_negative(list):
     num_neg.reverse()
 
     new_list = []
-    for i in range(len(list)):
-        if i % 2 == 0:
+
+    if len(num_pos) == len(num_neg):
+        for i in range(len(list)):
+            if i % 2 == 0:
+                new_list.append(num_pos.pop())
+            else:
+                new_list.append(num_neg.pop())
+    elif len(num_pos) > len(num_neg):
+        for i in range(2*len(num_neg)):
+            if i % 2 == 0:
+                new_list.append(num_pos.pop())
+            else:
+                new_list.append(num_neg.pop())
+        for i in range(len(num_pos)):
             new_list.append(num_pos.pop())
-        else:
-            new_list.append(num_neg.pop())
-    
+ 
     return new_list
 
 if __name__ == "__main__":
-    input = [1, -3, -6, 5]
+    input = [1, -3, -6, 5, 7, 8]
     output = positive_negative(input)
-    answer = [1, -3, 5, -6]
+    answer = [1, -3, 5, -6, 7, 8]
     if output == answer:
         test = True
     else:
