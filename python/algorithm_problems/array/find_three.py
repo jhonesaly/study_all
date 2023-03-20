@@ -1,5 +1,5 @@
 import os
-from modules.search import *
+from search import *
 
 os.system('cls')
 
@@ -19,27 +19,26 @@ def array_find_three_func(problem_input):
 
     return problem_output
 
-problem_input = gen_rand_list(5, 99)
+if __name__ == '__main__':
 
-print(f'\nentradas: {problem_input}\n')
+    problem_input = gen_rand_list(5, 99)
 
-problem_output = array_find_three_func(problem_input)
+    print(f'\nentradas: {problem_input}\n')
 
-print(f'\nsaída: {problem_output}\n')
+    problem_output = array_find_three_func(problem_input)
 
-###
+    print(f'\nsaída: {problem_output}\n')
 
-sorted_list = sorted(problem_input, reverse=True)
-answer = set(sorted_list[:3])
+    sorted_list = sorted(problem_input, reverse=True)
+    answer = set(sorted_list[:3])
 
-print(f'\nresposta: {answer}\n')
+    print(f'\nresposta: {answer}\n')
 
+    # Teste
 
-# Teste
+    test1 = False
 
-test1 = False
+    if answer == problem_output:
+        test1 = True
 
-if answer == problem_output:
-    test1 = True
-
-print(f'\nTeste 1: {test1}\n')
+    print(f'\nTeste 1: {test1}\n')
