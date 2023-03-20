@@ -16,6 +16,9 @@ class TestPositiveNegative(unittest.TestCase):
         result_1, result_2 = positive_negative(test_input_1, test_input_2)
         self.assertNotEqual(result_1, test_not_answer_1)
         self.assertNotEqual(result_2, test_not_answer_2)
+
+    def test_positive_negative_same_length(self):
+        self.assertEqual(len(test_input_1), len(test_input_1))
     
 
 if __name__ == '__main__':
