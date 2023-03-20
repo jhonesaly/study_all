@@ -3,6 +3,9 @@
 # It is not allowed to given array arr’s length.
 
 def positive_negative(list_val, list_index):
+    if len(list_val) != len(list_index):
+        print("Incorrect number of elements")
+        return False, False
     
     return list_val_ordered, list_index_ordered
 
