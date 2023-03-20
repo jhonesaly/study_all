@@ -8,3 +8,14 @@
 def positive_negative(list):
     
     return new_list
+
+if __name__ == "__main__":
+    input = [1, -3, 5, 6, -3, 6, 7, -4, 9, 10]
+    output = positive_negative(input)
+    answer = [1, -3, 5, -3, 6, 6, 7, -4, 9, 10]
+    if output == answer:
+        test = True
+    else:
+        test = False
+    
+    print(test)
