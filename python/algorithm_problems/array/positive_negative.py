@@ -6,7 +6,16 @@
 # values have to left as it is.
 
 def positive_negative(list):
-    
+    num_pos = []
+    num_neg = []
+
+    for num in list:
+        if num >= 0:
+            num_pos.append(num)
+        else:
+            num_neg.append(num)
+
+    new_list = [num_pos, num_neg]    
     return new_list
 
 if __name__ == "__main__":
@@ -18,4 +27,5 @@ if __name__ == "__main__":
     else:
         test = False
     
+    print(output)   
     print(test)
