@@ -7,11 +7,18 @@ def positive_negative(list_val, list_index):
         print("Incorrect number of elements")
         return False, False
     
+    list_val_ordered = []
+    list_index_ordered = []
+
+    for idx in list_index:
+        list_val_ordered.append(list_val[idx])
+        list_index_ordered.append(list_index.index(idx))
+
     return list_val_ordered, list_index_ordered
 
 if __name__ == '__main__':
-    input_1 = [10, 11, 12]
-    input_2 = [1, 0, 2]
+    input_1 = [50, 40, 70, 60, 90]
+    input_2 = [3,  0,  4,  1,  2]
 
     output_1, output_2 = positive_negative(input_1, input_2)
     print(output_1)
