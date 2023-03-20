@@ -41,3 +41,23 @@ O teste test_reorder_same_length verifica se o comprimento da lista test_input_1
 O teste test_reorder_not_same_length verifica se o comprimento da lista test_input_1 é diferente do comprimento da lista test_input_3, que deve ser verdadeiro.
 
 Todos os testes são executados usando a biblioteca de teste unittest do Python.
+
+## positive_negative
+
+O código é uma função em Python chamada "positive_negative" que recebe uma lista de números como entrada. A função tem como objetivo reorganizar a lista de forma que os números positivos ocorram em posições pares (0, 2, 4, ...) e os números negativos ocorram em posições ímpares (1, 3, 5, ...). O código é projetado para funcionar in-place, o que significa que a lista original é modificada e retornada pela função.
+
+O código começa criando duas listas vazias, "num_pos" e "num_neg", para armazenar os números positivos e negativos da lista de entrada, respectivamente. Ele então percorre a lista de entrada e adiciona cada número à lista correspondente com base em se é positivo ou negativo.
+
+Depois disso, o código inverte as duas listas "num_pos" e "num_neg", para que possamos começar a adicioná-las à lista ordenada começando pelo final.
+
+Em seguida, a lista "list_ordered" é criada como uma lista vazia que será preenchida com os números reorganizados.
+
+Depois disso, o código verifica se as listas "num_pos" e "num_neg" têm o mesmo comprimento. Se for esse o caso, ele adiciona números alternados das duas listas "num_pos" e "num_neg" à lista ordenada.
+
+Se as listas tiverem comprimentos diferentes, o código cria um loop que adiciona números alternados das duas listas "num_pos" e "num_neg" à lista ordenada apenas até que uma das listas acabe. Em seguida, ele adiciona os números restantes da lista mais longa à lista ordenada.
+
+Finalmente, a função retorna a lista ordenada.
+
+O código também tem um bloco "if name == "main":" que define uma lista de entrada "input" e chama a função "positive_negative" com essa entrada. Ele compara o resultado retornado pela função com uma lista de resposta esperada "answer" e define uma variável booleana "test" como True se os dois forem iguais e False caso contrário. Ele então imprime a lista ordenada resultante e o valor booleano de "test".
+
+No geral, o código é bem estruturado e cumpre o objetivo de reorganizar a lista de entrada de acordo com os requisitos especificados.
