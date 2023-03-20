@@ -2,7 +2,7 @@
 # reorder elements in “arr[]” according to given index array. 
 # It is not allowed to given array arr’s length.
 
-def positive_negative(list_val, list_index):
+def reorder(list_val, list_index):
     if len(list_val) != len(list_index):
         print("Incorrect number of elements")
         return False, False
@@ -20,6 +20,6 @@ if __name__ == '__main__':
     input_1 = [50, 40, 70, 60]
     input_2 = [3,  0,  4,  1,  2]
 
-    output_1, output_2 = positive_negative(input_1, input_2)
+    output_1, output_2 = reorder(input_1, input_2)
     print(output_1)
     print(output_2)
