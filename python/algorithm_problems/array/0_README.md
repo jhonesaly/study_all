@@ -6,6 +6,10 @@ O código find_three define uma função que recebe uma lista de números como a
 
 No bloco if __name__ == '__main__', é definida uma lista de entrada problem_input com cinco números. Essa lista é passada para a função find_three, cujo resultado é armazenado na variável problem_output. Finalmente, o resultado é exibido na tela por meio do comando print.
 
+### test_find_three
+
+O código apresentado é um teste unitário para a função find_three que foi importada do módulo find_three. Ele define duas funções de teste: test_find_three_equal e test_array_find_three_notequal. O primeiro teste verifica se a saída da função find_three com o test_input é igual a test_answer. O segundo teste verifica se a saída da função find_three com o mesmo test_input é diferente de test_not_answer. O bloco if __name__ == '__main__': permite que o arquivo possa ser executado como um script e chama a função main() do módulo unittest para executar os testes definidos no arquivo.
+
 ## positive_negative
 
 Esta função recebe duas listas de inteiros do mesmo tamanho, "list_val" e "list_index", e reorganiza os elementos em "list_val" de acordo com a ordem definida em "list_index".
