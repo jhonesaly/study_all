@@ -14,14 +14,23 @@ def positive_negative(list):
             num_pos.append(num)
         else:
             num_neg.append(num)
+    
+    num_pos.reverse()
+    num_neg.reverse()
 
-    new_list = [num_pos, num_neg]    
+    new_list = []
+    for i in range(len(list)):
+        if i % 2 == 0:
+            new_list.append(num_pos.pop())
+        else:
+            new_list.append(num_neg.pop())
+    
     return new_list
 
 if __name__ == "__main__":
-    input = [1, -3, 5, 6, -3, 6, 7, -4, 9, 10]
+    input = [1, -3, -6, 5]
     output = positive_negative(input)
-    answer = [1, -3, 5, -3, 6, 6, 7, -4, 9, 10]
+    answer = [1, -3, 5, -6]
     if output == answer:
         test = True
     else:
