@@ -1,9 +1,3 @@
-import os
-
-os.system('cls')
-
-# Criando o input: 
-
 def find_three(list):
 
     max_three = [0,0,0]
