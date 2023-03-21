@@ -20,7 +20,7 @@
             {% if recipe.author.first_name %}
                 {{ recipe.author.first_name }} {{ recipe.author.last_name }}
             {% else %}
-                {% recipe.author.username %}
+                {{ recipe.author.username }}
             {% endif %}
         </span>
         <span class="recipe-author-item">
