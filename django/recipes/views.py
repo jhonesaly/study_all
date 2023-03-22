@@ -1,6 +1,6 @@
 from django.shortcuts import get_list_or_404, render
 from utils.recipes.factory import make_recipe
-from .models import Recipe
+from recipes.models import Recipe
 
 def home(request):
     recipes = Recipe.objects.filter(is_published=True).order_by('-id')
@@ -22,7 +22,7 @@ def category(request, category_id):
     
     return render(request, 'recipes/pages/category.html', context={
         'recipes': recipes,
-        'title':f'{category_name} - Category | '
+        'title':f'{recipes[0].category.name} - Category | '
     })
 
 def recipes(request, id):
