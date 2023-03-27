@@ -90,3 +90,7 @@ Um sistema de segurança baseado em IoT pode incluir câmeras de segurança, sen
 ## Controle de portão
 
 Os sistemas de controle de portão baseados em IoT permitem que os usuários controlem remotamente o acesso a suas casas. Os portões podem ser equipados com sensores de movimento ou leitores de cartão para permitir o acesso de entrada somente para usuários autorizados. Os usuários podem controlar o portão através de um aplicativo móvel ou assistente de voz, e receber alertas sempre que o portão for aberto.
+
+## Gerenciamento de energia
+
+A IoT também pode ser usada para gerenciar o consumo de energia em uma casa. Sensores de energia podem ser instalados em eletrodomésticos e luzes para monitorar seu consumo, e um dispositivo central de controle pode ser usado para ajustar a energia consumida automaticamente, otimizando o consumo de energia e reduzindo as contas de energia elétrica.
