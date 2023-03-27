@@ -106,6 +106,12 @@ Componentes do sistema:
 - Home Assistant: O Home Assistant é um software de automação residencial de código aberto que pode ser instalado em um dispositivo como um Raspberry Pi. Ele suporta uma ampla gama de dispositivos e serviços de terceiros e permite que os usuários criem automações personalizadas para controlar seus sistemas de segurança.
 - OpenHAB: O OpenHAB é outro software de automação residencial de código aberto que pode ser instalado em um dispositivo como um Raspberry Pi. Ele suporta uma ampla gama de dispositivos e serviços de terceiros e permite que os usuários criem regras personalizadas para controlar seus sistemas de segurança.
 
+#### Bibliotecaas Python
+
+- Pycom: A Pycom é uma biblioteca Python que permite que os usuários criem aplicativos para dispositivos IoT. Ela suporta uma ampla gama de dispositivos e serviços de terceiros e oferece recursos de segurança para proteger os dados dos usuários.
+- Zerynth: O Zerynth é uma biblioteca Python que permite que os usuários criem aplicativos para dispositivos IoT. Ele suporta uma ampla gama de dispositivos e serviços de terceiros e oferece recursos avançados de gerenciamento de energia para prolongar a vida útil da bateria dos dispositivos.
+- Adafruit: A Adafruit é uma biblioteca Python que oferece suporte para dispositivos IoT baseados em Arduino e Raspberry Pi. Ela inclui uma ampla gama de recursos e exemplos de código para ajudar os usuários a começarem a criar seus próprios aplicativos IoT.
+
 ## Controle de portão
 
 Os sistemas de controle de portão baseados em IoT permitem que os usuários controlem remotamente o acesso a suas casas. Os portões podem ser equipados com sensores de movimento ou leitores de cartão para permitir o acesso de entrada somente para usuários autorizados. Os usuários podem controlar o portão através de um aplicativo móvel ou assistente de voz, e receber alertas sempre que o portão for aberto.
