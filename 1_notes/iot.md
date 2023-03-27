@@ -86,3 +86,7 @@ Termostatos inteligentes são dispositivos que se comunicam com outros dispositi
 ## Sistema de segurança
 
 Um sistema de segurança baseado em IoT pode incluir câmeras de segurança, sensores de movimento, alarmes e outros dispositivos de segurança que se comunicam com um dispositivo central de controle. Este dispositivo central pode ser programado para enviar alertas de segurança para os usuários em seus dispositivos móveis ou laptops, e permitir que eles visualizem imagens ao vivo das câmeras em tempo real.
+
+## Controle de portão
+
+Os sistemas de controle de portão baseados em IoT permitem que os usuários controlem remotamente o acesso a suas casas. Os portões podem ser equipados com sensores de movimento ou leitores de cartão para permitir o acesso de entrada somente para usuários autorizados. Os usuários podem controlar o portão através de um aplicativo móvel ou assistente de voz, e receber alertas sempre que o portão for aberto.
