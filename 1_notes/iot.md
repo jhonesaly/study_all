@@ -97,6 +97,15 @@ Componentes do sistema:
 - Alertas em tempo real: Para que os proprietários fiquem cientes de atividades suspeitas em sua casa, o sistema de segurança pode enviar alertas em tempo real para o dispositivo central de controle ou para os dispositivos móveis dos proprietários. Esses alertas podem ser personalizados para se adequar às necessidades de cada proprietário.
 - Integração com assistentes de voz: Para tornar o sistema de segurança ainda mais conveniente, é possível integrá-lo com assistentes de voz como o Amazon Alexa ou o Google Assistant. Isso permite que os proprietários controlem o sistema de segurança por meio de comandos de voz.
 
+### Dispositivo Central de Controle
+
+#### Softwares prontos
+
+- Samsung SmartThings: O SmartThings da Samsung é um hub inteligente que pode ser usado para controlar dispositivos domésticos inteligentes e sistemas de segurança. Ele usa a tecnologia Zigbee e Z-Wave para se comunicar com os dispositivos e permite que os usuários controlem o sistema por meio de um aplicativo móvel.
+- Hubitat Elevation: O Hubitat Elevation é outro hub inteligente popular que pode ser usado para controlar dispositivos domésticos inteligentes e sistemas de segurança. Ele é compatível com mais de 2.000 dispositivos diferentes e permite que os usuários criem regras personalizadas para automatizar tarefas.
+- Home Assistant: O Home Assistant é um software de automação residencial de código aberto que pode ser instalado em um dispositivo como um Raspberry Pi. Ele suporta uma ampla gama de dispositivos e serviços de terceiros e permite que os usuários criem automações personalizadas para controlar seus sistemas de segurança.
+- OpenHAB: O OpenHAB é outro software de automação residencial de código aberto que pode ser instalado em um dispositivo como um Raspberry Pi. Ele suporta uma ampla gama de dispositivos e serviços de terceiros e permite que os usuários criem regras personalizadas para controlar seus sistemas de segurança.
+
 ## Controle de portão
 
 Os sistemas de controle de portão baseados em IoT permitem que os usuários controlem remotamente o acesso a suas casas. Os portões podem ser equipados com sensores de movimento ou leitores de cartão para permitir o acesso de entrada somente para usuários autorizados. Os usuários podem controlar o portão através de um aplicativo móvel ou assistente de voz, e receber alertas sempre que o portão for aberto.
