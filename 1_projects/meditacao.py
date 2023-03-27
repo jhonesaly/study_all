@@ -33,3 +33,18 @@ class Meditacao:
             print("Você escolheu música ambiente.")
         else:
             print("Opção inválida.")
+
+    def escolher_meditacao(self):
+        print("Escolha uma meditação:")
+        print("1. Mindfulness")
+        print("2. Respiração consciente")
+        print("3. Visualização")
+        opcao = input("Digite o número da meditação escolhida: ")
+        if opcao == "1":
+            self.mindfulness()
+        elif opcao == "2":
+            self.respiracao_consciente()
+        elif opcao == "3":
+            self.visualizacao()
+        else:
+            print("Opção inválida.")
