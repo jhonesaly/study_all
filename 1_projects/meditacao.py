@@ -18,3 +18,18 @@ class Meditacao:
         print("Iniciando meditação de visualização...")
         time.sleep(5)
         print("Meditação de visualização concluída.")
+
+    def escolher_trilha(self):
+        print("Escolha uma trilha sonora:")
+        print("1. Sons da natureza")
+        print("2. Música clássica")
+        print("3. Música ambiente")
+        opcao = input("Digite o número da trilha escolhida: ")
+        if opcao == "1":
+            print("Você escolheu sons da natureza.")
+        elif opcao == "2":
+            print("Você escolheu música clássica.")
+        elif opcao == "3":
+            print("Você escolheu música ambiente.")
+        else:
+            print("Opção inválida.")
