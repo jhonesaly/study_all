@@ -82,3 +82,7 @@ Este é um dos projetos mais comuns de automação residencial. Ele envolve o us
 ## Termostatos inteligentes
 
 Termostatos inteligentes são dispositivos que se comunicam com outros dispositivos de automação residencial para controlar a temperatura de uma casa. Eles podem ser programados para se ajustar automaticamente de acordo com os padrões de uso e preferências dos usuários, e podem ser controlados remotamente através de um aplicativo móvel ou assistente de voz.
+
+## Sistema de segurança
+
+Um sistema de segurança baseado em IoT pode incluir câmeras de segurança, sensores de movimento, alarmes e outros dispositivos de segurança que se comunicam com um dispositivo central de controle. Este dispositivo central pode ser programado para enviar alertas de segurança para os usuários em seus dispositivos móveis ou laptops, e permitir que eles visualizem imagens ao vivo das câmeras em tempo real.
