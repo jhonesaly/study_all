@@ -13,3 +13,8 @@ class Meditacao:
         print("Iniciando meditação de respiração consciente...")
         time.sleep(5)
         print("Meditação de respiração consciente concluída.")
+    
+    def visualizacao(self):
+        print("Iniciando meditação de visualização...")
+        time.sleep(5)
+        print("Meditação de visualização concluída.")
