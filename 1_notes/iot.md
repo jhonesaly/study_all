@@ -87,6 +87,16 @@ Termostatos inteligentes são dispositivos que se comunicam com outros dispositi
 
 Um sistema de segurança baseado em IoT pode incluir câmeras de segurança, sensores de movimento, alarmes e outros dispositivos de segurança que se comunicam com um dispositivo central de controle. Este dispositivo central pode ser programado para enviar alertas de segurança para os usuários em seus dispositivos móveis ou laptops, e permitir que eles visualizem imagens ao vivo das câmeras em tempo real.
 
+Componentes do sistema:
+
+- Câmeras de segurança: O primeiro passo em um sistema de segurança baseado em IoT é instalar câmeras de segurança em pontos estratégicos ao redor da casa. Essas câmeras podem ser conectadas à Internet e se comunicar com um dispositivo central de controle.
+- Sensores de movimento: Além de câmeras de segurança, sensores de movimento também podem ser instalados em pontos estratégicos da casa para detectar movimento e atividade suspeitos. Esses sensores podem se comunicar com um dispositivo central de controle para alertar os proprietários sobre atividades suspeitas.
+- Dispositivo central de controle: O dispositivo central de controle é um hub inteligente que se conecta aos dispositivos de segurança e permite que os proprietários controlem todo o sistema de segurança a partir de um único dispositivo. Ele pode ser um computador, um tablet ou um smartphone.
+- Conexão com a Internet: Para que o sistema de segurança baseado em IoT funcione corretamente, é necessário ter uma conexão de Internet confiável. A conexão à Internet permite que os dispositivos de segurança se comuniquem entre si e com o dispositivo central de controle.
+- Armazenamento em nuvem: Para armazenar as imagens das câmeras de segurança, é necessário ter um sistema de armazenamento em nuvem. Esse sistema de armazenamento em nuvem pode ser acessado pelo dispositivo central de controle e permite que os proprietários vejam as imagens em tempo real ou acessem imagens antigas armazenadas.
+- Alertas em tempo real: Para que os proprietários fiquem cientes de atividades suspeitas em sua casa, o sistema de segurança pode enviar alertas em tempo real para o dispositivo central de controle ou para os dispositivos móveis dos proprietários. Esses alertas podem ser personalizados para se adequar às necessidades de cada proprietário.
+- Integração com assistentes de voz: Para tornar o sistema de segurança ainda mais conveniente, é possível integrá-lo com assistentes de voz como o Amazon Alexa ou o Google Assistant. Isso permite que os proprietários controlem o sistema de segurança por meio de comandos de voz.
+
 ## Controle de portão
 
 Os sistemas de controle de portão baseados em IoT permitem que os usuários controlem remotamente o acesso a suas casas. Os portões podem ser equipados com sensores de movimento ou leitores de cartão para permitir o acesso de entrada somente para usuários autorizados. Os usuários podem controlar o portão através de um aplicativo móvel ou assistente de voz, e receber alertas sempre que o portão for aberto.
