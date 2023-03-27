@@ -72,3 +72,9 @@ Todos esses softwares são gratuitos para uso pessoal e comercial e possuem uma 
 - Conhecimento em normas e padrões de segurança, como as normas ISO 27001 e NIST, para garantir a segurança do sistema e a proteção de dados do usuário.
 
 ------
+
+## Projetos 
+
+### Controle de iluminação
+
+Este é um dos projetos mais comuns de automação residencial. Ele envolve o uso de sensores de movimento ou de luz para acionar ou desligar as luzes em uma casa. Através da IoT, esses sensores podem se comunicar com um dispositivo central de controle para permitir que os proprietários controlem as luzes da casa remotamente, seja através de um aplicativo móvel ou de um assistente de voz como o Amazon Alexa.
