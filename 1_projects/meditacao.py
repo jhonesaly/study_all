@@ -1,8 +1,13 @@
 import time
+import pygame
 
 class Meditacao:
     def __init__(self, nome):
         self.nome = nome
+        pygame.init()
+        self.sons_da_natureza = pygame.mixer.Sound("nature.wav")
+        self.musica_classica = pygame.mixer.Sound("classical.wav")
+        self.musica_ambiente = pygame.mixer.Sound("background.wav")
 
     def mindfulness(self):
         print("Iniciando meditação de mindfulness...")
