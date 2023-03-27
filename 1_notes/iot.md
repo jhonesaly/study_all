@@ -78,3 +78,7 @@ Todos esses softwares são gratuitos para uso pessoal e comercial e possuem uma 
 ### Controle de iluminação
 
 Este é um dos projetos mais comuns de automação residencial. Ele envolve o uso de sensores de movimento ou de luz para acionar ou desligar as luzes em uma casa. Através da IoT, esses sensores podem se comunicar com um dispositivo central de controle para permitir que os proprietários controlem as luzes da casa remotamente, seja através de um aplicativo móvel ou de um assistente de voz como o Amazon Alexa.
+
+## Termostatos inteligentes
+
+Termostatos inteligentes são dispositivos que se comunicam com outros dispositivos de automação residencial para controlar a temperatura de uma casa. Eles podem ser programados para se ajustar automaticamente de acordo com os padrões de uso e preferências dos usuários, e podem ser controlados remotamente através de um aplicativo móvel ou assistente de voz.
