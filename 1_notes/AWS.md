@@ -63,3 +63,10 @@ Comandos no server computer:
     nano ~/.ssh/authorized_keys
 
 Adicione a chave copiada no local computer na última linha do arquivo, salve e feche
+
+## Copie o app para o server
+
+Comandos no local computer
+
+    git remote add app_bare cursodjangoserver:~/app_bare
+    git push app_bare <branch> (master ou main)
