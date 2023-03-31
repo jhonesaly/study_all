@@ -2,7 +2,8 @@
 
 ## Instalando MySQL no servidor
 
-Comandos:
+Comandos no server:
+
     sudo apt update
     sudo apt-get install mysql-server
     sudo mysql -u root -p 
@@ -23,7 +24,7 @@ Comandos:
 
 ## Configurando git
 
-Comandos:
+Comandos no server:
 
     git config --global user.name 'Seu nome'
     git config --global user.email 'seu_email@gmail.com'
@@ -31,7 +32,7 @@ Comandos:
 
 ## Repositório bare
 
-Comandos:
+Comandos no server:
 
     mkdir -p ~/app_bare
     cd ~/app_bare
@@ -40,7 +41,7 @@ Comandos:
 
 ## Repositório da aplicação
 
-Comandos:
+Comandos no server:
 
     mkdir -p ~/app_repo
     cd ~/app_repo
@@ -51,14 +52,14 @@ Comandos:
 
 ## Fazendo conexão SSH
 
-Comandos no local computer:
+Comandos no local:
 
     ssh-keygen
     cat ~/.ssh/id_rsa.pub
 
 Copie a chave ssh mostrada
 
-Comandos no server computer:
+Comandos no server:
 
     nano ~/.ssh/authorized_keys
 
@@ -66,7 +67,7 @@ Adicione a chave copiada no local computer na última linha do arquivo, salve e 
 
 ## Copie o app para o server
 
-Comandos no local computer
+Comandos no local:
 
     git remote add app_bare cursodjangoserver:~/app_bare
     git push app_bare <branch> (master ou main)
