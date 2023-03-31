@@ -20,3 +20,11 @@ Comandos:
     CREATE DATABASE db_name;
     GRANT ALL PRIVILEGES ON db_name.* TO 'db_admin'@'localhost';
     exit
+
+## Configurando git
+
+Comandos:
+
+    git config --global user.name 'Seu nome'
+    git config --global user.email 'seu_email@gmail.com'
+    git config --global init.defaultBranch main
