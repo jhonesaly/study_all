@@ -69,5 +69,5 @@ Adicione a chave copiada no local computer na última linha do arquivo, salve e 
 
 Comandos no local:
 
-    git remote add app_bare cursodjangoserver:~/app_bare
+    git remote add app_bare ubuntu@<aws_server_ip>:~/app_bare
     git push app_bare <branch> (master ou main)
