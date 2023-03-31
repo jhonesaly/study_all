@@ -38,3 +38,14 @@ Comandos:
     git init --bare
     cd ~
 
+## Repositório da aplicação
+
+Comandos:
+
+    mkdir -p ~/app_repo
+    cd ~/app_repo
+    git init
+    git remote add origin ~/app_bare
+    git add . && git commit -m 'Initial'
+    cd ~
+
