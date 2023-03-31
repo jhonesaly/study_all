@@ -76,3 +76,16 @@ Comandos no server:
 
     cd app_repo
     git pull origin <branch> (master ou main)
+
+## Criando ambiente virtual e instalando pacotes
+
+Comandos no server (na pasta app_repo):
+    python -m venv venv
+    . venv/bin/activate
+    pip install -r requirements.txt
+
+Caso não tenha feito o arquivo requirements ainda, vá na pasta do projeto e use o seguinte comando:
+
+    pip freeze > requirements.txt
+
+Então refaça o procedimento de push para o mesmo estar disponível no servidor.
