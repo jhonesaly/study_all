@@ -89,3 +89,12 @@ Caso não tenha feito o arquivo requirements ainda, vá na pasta do projeto e us
     pip freeze > requirements.txt
 
 Então refaça o procedimento de push para o mesmo estar disponível no servidor.
+
+Outros pacotes necessários no server:
+
+    pip install psycopg2
+    pip install gunicorn
+
+Se a installação do psycopg2 não der certo, instale esse pacote antes e repita:
+
+    sudo apt-get install python3-dev
