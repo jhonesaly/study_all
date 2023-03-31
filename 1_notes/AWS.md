@@ -71,3 +71,8 @@ Comandos no local:
 
     git remote add app_bare ubuntu@<aws_server_ip>:~/app_bare
     git push app_bare <branch> (master ou main)
+
+Comandos no server:
+
+    cd app_repo
+    git pull origin <branch> (master ou main)
