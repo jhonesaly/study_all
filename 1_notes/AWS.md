@@ -6,6 +6,7 @@ Comandos no server:
 
     sudo apt update
     sudo apt-get install mysql-server
+    sudo apt-get install libmysqlclient-dev
     sudo mysql -u root -p 
 
     use mysql 
@@ -94,6 +95,7 @@ Outros pacotes necessários no server:
 
     pip install psycopg2
     pip install gunicorn
+    pip install mysqlclient
 
 Se a installação do psycopg2 não der certo, instale esse pacote antes e repita:
 
