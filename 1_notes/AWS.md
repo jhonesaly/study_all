@@ -98,3 +98,10 @@ Outros pacotes necessários no server:
 Se a installação do psycopg2 não der certo, instale esse pacote antes e repita:
 
     sudo apt-get install python3-dev
+
+## Configurando o environment
+
+    cp .env-example .env
+    nano .env
+
+Coloque as configurações corretas no arquivo
