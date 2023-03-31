@@ -28,3 +28,13 @@ Comandos:
     git config --global user.name 'Seu nome'
     git config --global user.email 'seu_email@gmail.com'
     git config --global init.defaultBranch main
+
+## Repositório bare
+
+Comandos:
+
+    mkdir -p ~/app_bare
+    cd ~/app_bare
+    git init --bare
+    cd ~
+
