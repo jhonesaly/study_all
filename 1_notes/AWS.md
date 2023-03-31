@@ -49,3 +49,17 @@ Comandos:
     git add . && git commit -m 'Initial'
     cd ~
 
+## Fazendo conexão SSH
+
+Comandos no local computer:
+
+    ssh-keygen
+    cat ~/.ssh/id_rsa.pub
+
+Copie a chave ssh mostrada
+
+Comandos no server computer:
+
+    nano ~/.ssh/authorized_keys
+
+Adicione a chave copiada no local computer na última linha do arquivo, salve e feche
