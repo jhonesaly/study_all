@@ -4,6 +4,8 @@ A Web3, também conhecida como a "Internet descentralizada", é uma evolução d
 
 A Web3 é caracterizada por uma série de tecnologias, incluindo blockchain, contratos inteligentes, criptomoedas, NFTs, entre outras. Essas tecnologias são usadas para criar aplicativos descentralizados, que funcionam em uma rede de computadores distribuída, sem a necessidade de servidores centralizados.
 
+"A Blockchain é sobre reduzir intermediários e parar de depender do Estado ou grandes empresas"
+
 ## Principais áreas da Web 3
 
 - Blockchain
@@ -16,7 +18,15 @@ A Web3 é caracterizada por uma série de tecnologias, incluindo blockchain, con
 
 ## Blockchain
 
-Blockchain é uma tecnologia que permite o registro de transações de forma descentralizada, transparente e segura. Ele consiste em um registro digital compartilhado entre vários computadores, onde cada transação é validada e adicionada em um bloco de transações. Uma vez adicionado, esse bloco é imutável e torna-se parte da cadeia de blocos, ou blockchain, que pode ser acessado por qualquer pessoa com acesso à rede.
+A blockchain é uma tecnologia de contabilidade distribuída que é essencialmente um banco de dados descentralizado e seguro. Em vez de ser armazenada em um único local ou servidor, a blockchain é armazenada em uma rede descentralizada de computadores, conhecidos como "nós". Cada nó na rede tem uma cópia completa e idêntica da blockchain, o que significa que não há um ponto central de falha e a rede é altamente resistente a ataques maliciosos.
+
+A blockchain é composta por blocos que contêm informações sobre transações, como o remetente, o destinatário, o valor e a data e hora da transação. Cada bloco contém um hash, que é uma sequência única de caracteres que representa o bloco. O hash do bloco anterior também é incluído no novo bloco, criando assim uma cadeia de blocos interconectados, daí o nome "blockchain".
+
+A blockchain é segura e imutável porque cada transação é validada e registrada por múltiplos nós na rede, e para adulterar um registro na blockchain, um invasor precisaria hackear uma maioria dos nós na rede simultaneamente, o que é virtualmente impossível.
+
+Você não precisa instalar a blockchain em seu computador para usar a tecnologia. A maioria das blockchains é acessível por meio de aplicativos ou carteiras que podem ser instalados em seu computador ou smartphone. Esses aplicativos permitem que você interaja com a blockchain, enviar e receber criptomoedas, criar contratos inteligentes e muito mais.
+
+Em resumo, Blockchain é uma que permite o registro de transações de forma descentralizada, transparente e segura. Ele consiste em um registro digital compartilhado entre vários computadores, onde cada transação é validada e adicionada em um bloco de transações. Uma vez adicionado, esse bloco é imutável e torna-se parte da cadeia de blocos, ou blockchain, que pode ser acessado por qualquer pessoa com acesso à rede. Ela não é um arquivo gigante ou um banco de dados tradicional, mas sim uma rede descentralizada de computadores que trabalham juntos para validar e armazenar transações.
 
 ### Principais Blockchains
 
