@@ -7,3 +7,7 @@ A Web3 é caracterizada por uma série de tecnologias, incluindo blockchain, con
 ## Blockchain
 
 Blockchain é uma tecnologia que permite o registro de transações de forma descentralizada, transparente e segura. Ele consiste em um registro digital compartilhado entre vários computadores, onde cada transação é validada e adicionada em um bloco de transações. Uma vez adicionado, esse bloco é imutável e torna-se parte da cadeia de blocos, ou blockchain, que pode ser acessado por qualquer pessoa com acesso à rede.
+
+## NFT
+
+Os NFTs (Non-Fungible Tokens) são uma forma de ativo digital único, que podem ser criados, comprados e vendidos na blockchain. Eles são usados para representar uma ampla gama de itens digitais, como arte digital, música, vídeos, jogos, etc. Cada NFT é único e pode ser verificado como autêntico usando a blockchain, o que os torna valiosos para colecionadores e investidores.
