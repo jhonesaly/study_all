@@ -193,3 +193,17 @@ O rollup otimista usa uma abordagem de validação mais leve e assume que todas 
 Já o rollup ZK usa um protocolo criptográfico conhecido como provas de conhecimento-zero para verificar a validade das transações, sem revelar detalhes das próprias transações. Isso permite que as transações sejam processadas com privacidade e segurança, sem a necessidade de confiar em uma autoridade central.
 
 Em resumo, rollup é uma tecnologia de camada 2 que agrupa várias transações em um único hash para aumentar a capacidade de processamento e escalabilidade de uma blockchain. Existem dois tipos principais de rollup: rollup otimista, que assume a validade das transações, e rollup ZK, que usa provas criptográficas para verificar a validade das transações com segurança e privacidade.
+
+## <span style="color:red">Privacy Coin</span>
+
+Uma privacy coin é uma criptomoeda que permite que as transações sejam feitas com maior privacidade e anonimato do que as criptomoedas tradicionais. Ao contrário de outras criptomoedas, que geralmente registram todas as transações em uma blockchain pública, as privacy coins oferecem recursos de privacidade, como criptografia, anonimato e técnicas de mistura de transações, para ocultar a identidade do remetente e do destinatário, bem como o valor da transação.
+
+Algumas das principais privacy coins são:
+
+- Monero (XMR): uma das primeiras e mais conhecidas privacy coins, que utiliza o protocolo CryptoNote para ofuscar as informações das transações.
+- Zcash (ZEC): utiliza a tecnologia zk-SNARKs para permitir que os usuários realizem transações privadas e verificáveis, sem revelar informações sobre a identidade ou o valor das transações.
+- Dash (DASH): utiliza uma técnica de mistura de transações chamada PrivateSend para oferecer maior privacidade e anonimato nas transações.
+- Verge (XVG): utiliza a tecnologia TOR (The Onion Router) e a rede de servidores IP2 para ocultar as informações de transações.
+- Grin (GRIN): uma privacy coin que utiliza a tecnologia Mimblewimble para oferecer privacidade e escalabilidade.
+
+Vale ressaltar que as privacy coins podem ser usadas para fins legítimos, como proteger a privacidade financeira dos usuários, mas também podem ser utilizadas para atividades ilegais, como lavagem de dinheiro e financiamento de atividades criminosas. Como resultado, algumas exchanges e reguladores financeiros podem ter políticas mais rígidas em relação às privacy coins.
