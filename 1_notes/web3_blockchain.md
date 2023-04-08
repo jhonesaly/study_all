@@ -181,3 +181,15 @@ A camada de contrato inteligente é a próxima camada, que é responsável pela 
 A camada de aplicação é a camada final da blockchain, que é responsável pela criação de aplicativos descentralizados (dApps) que interagem com a blockchain. Esta camada é geralmente implementada usando frameworks de desenvolvimento de dApps, como o Truffle, e é executada em cima da camada de contrato inteligente.
 
 Em resumo, as layers da blockchain se referem às diferentes camadas de uma arquitetura de blockchain, incluindo a camada de protocolo, a camada de contrato inteligente e a camada de aplicação. Cada camada trabalha em conjunto para fornecer uma plataforma de blockchain funcional e escalável para construir aplicativos descentralizados.
+
+### <span style="color:green">Rollup</span>
+
+Rollup é uma tecnologia de camada 2 que visa aumentar a capacidade de processamento e a escalabilidade de uma blockchain. É uma solução para o problema do alto custo e da baixa velocidade de processamento de transações em algumas blockchains, como a Ethereum.
+
+Existem dois tipos principais de rollup: rollup otimista e rollup ZK (Zero Knowledge). Ambos funcionam de maneira semelhante, com a ideia de agrupar várias transações em um único hash de transação. O hash é então publicado na camada principal da blockchain, reduzindo a quantidade de dados que precisam ser armazenados e validados na própria blockchain.
+
+O rollup otimista usa uma abordagem de validação mais leve e assume que todas as transações são válidas, a menos que haja uma prova em contrário. Ele permite que as transações sejam processadas mais rapidamente, mas requer uma verificação de validade caso haja uma disputa.
+
+Já o rollup ZK usa um protocolo criptográfico conhecido como provas de conhecimento-zero para verificar a validade das transações, sem revelar detalhes das próprias transações. Isso permite que as transações sejam processadas com privacidade e segurança, sem a necessidade de confiar em uma autoridade central.
+
+Em resumo, rollup é uma tecnologia de camada 2 que agrupa várias transações em um único hash para aumentar a capacidade de processamento e escalabilidade de uma blockchain. Existem dois tipos principais de rollup: rollup otimista, que assume a validade das transações, e rollup ZK, que usa provas criptográficas para verificar a validade das transações com segurança e privacidade.
