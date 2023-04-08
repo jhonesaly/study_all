@@ -215,3 +215,21 @@ Os exploradores de bloco, também conhecidos como block explorers, são ferramen
 Os exploradores de bloco são geralmente interfaces da web que permitem aos usuários pesquisar e visualizar informações sobre transações específicas em uma blockchain, além de monitorar o status de suas próprias transações. Essas ferramentas são úteis para rastrear transações em tempo real e podem ajudar os usuários a entender melhor como a blockchain está sendo usada.
 
 Alguns exemplos de exploradores de bloco incluem o Blockchain.com para a blockchain do Bitcoin, Etherscan para a blockchain do Ethereum, BscScan para a blockchain da Binance Smart Chain, entre outros. Cada blockchain tem seu próprio conjunto de exploradores de bloco específicos para essa rede.
+
+## <span style="color:red">Tipos de Blockchain</span>
+
+Existem quatro tipos principais de blockchains: pública, privada, consórcio e híbrida. Cada um desses tipos de blockchain tem suas próprias características, benefícios e desvantagens.
+
+Blockchain Pública:
+Uma blockchain pública é aberta e descentralizada, o que significa que qualquer pessoa pode participar da rede, fazer transações e validar blocos. As informações na blockchain pública são públicas e transparentes, e a segurança é mantida por meio de algoritmos de consenso, como o Proof of Work (PoW) ou o Proof of Stake (PoS). O Bitcoin e o Ethereum são exemplos de blockchains públicas.
+
+Blockchain Privada:
+Uma blockchain privada é operada por uma única organização ou grupo de organizações, e o acesso é restrito a um grupo de usuários autorizados. Essa rede geralmente é usada para fins empresariais e pode ter regras personalizadas para a governança e segurança da rede. A privacidade e a segurança são mantidas por meio de medidas de segurança, como autenticação e criptografia. Exemplos de blockchains privadas incluem o Hyperledger Fabric e o Quorum.
+
+Blockchain Consórcio:
+Uma blockchain consórcio é um tipo de blockchain privada que é compartilhada entre várias organizações. Neste modelo, várias empresas unem-se para criar uma rede blockchain que é compartilhada entre elas. A governança é estabelecida por um conjunto de regras acordadas entre as partes envolvidas, e a segurança é mantida por meio de medidas de segurança, como autenticação e criptografia. Um exemplo de blockchain consórcio é o R3 Corda.
+
+Blockchain Híbrida:
+Uma blockchain híbrida combina as características de uma blockchain pública e privada. Essas redes geralmente possuem um núcleo centralizado, mas permitem que usuários externos façam transações com alguma privacidade. A privacidade é mantida por meio de tecnologias de criptografia, como zk-SNARKs ou outras técnicas de privacidade. Um exemplo de blockchain híbrida é o Dragonchain.
+
+Cada tipo de blockchain tem seus próprios benefícios e desvantagens, e a escolha de qual usar dependerá dos requisitos e objetivos do projeto ou aplicação.
