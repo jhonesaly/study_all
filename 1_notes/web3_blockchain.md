@@ -169,3 +169,15 @@ Uma hard fork é uma mudança fundamental na rede que torna a versão antiga inc
 Já uma soft fork é uma atualização menos drástica que é compatível com a versão anterior. Isso significa que os usuários que optam por não atualizar seus softwares ainda podem se comunicar com os usuários da nova versão. A maioria das atualizações na blockchain é feita por meio de soft forks, já que é menos disruptivo para a rede e para os usuários.
 
 Em resumo, uma fork na blockchain ocorre quando uma nova versão do software é criada e pode ser classificada como hard fork ou soft fork. Uma hard fork é uma mudança fundamental que requer que todos os usuários atualizem seus softwares, enquanto uma soft fork é uma atualização menos drástica que é compatível com a versão anterior e permite que os usuários continuem a usar a rede sem atualizar seus softwares.
+
+## <span style="color:red">Layers</span>
+
+As layers da blockchain se referem às diferentes camadas ou níveis de uma arquitetura de blockchain. Cada camada tem uma função específica e trabalha em conjunto para fornecer uma plataforma de blockchain funcional e escalável.
+
+A camada mais básica da blockchain é a camada de protocolo, que lida com a criação de blocos, validação de transações, mineração e consenso. Esta camada é geralmente implementada como um software de código aberto que é executado em cada nó da rede blockchain.
+
+A camada de contrato inteligente é a próxima camada, que é responsável pela execução de contratos inteligentes e pela validação de transações baseadas em contratos inteligentes. Esta camada é geralmente implementada usando linguagens de programação específicas, como Solidity ou Vyper, e é executada em cima da camada de protocolo.
+
+A camada de aplicação é a camada final da blockchain, que é responsável pela criação de aplicativos descentralizados (dApps) que interagem com a blockchain. Esta camada é geralmente implementada usando frameworks de desenvolvimento de dApps, como o Truffle, e é executada em cima da camada de contrato inteligente.
+
+Em resumo, as layers da blockchain se referem às diferentes camadas de uma arquitetura de blockchain, incluindo a camada de protocolo, a camada de contrato inteligente e a camada de aplicação. Cada camada trabalha em conjunto para fornecer uma plataforma de blockchain funcional e escalável para construir aplicativos descentralizados.
