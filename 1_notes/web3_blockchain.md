@@ -139,3 +139,15 @@ Em vez de validar novos blocos por meio de um processo de mineração intensivo 
 Os validadores são incentivados a agir honestamente, pois qualquer comportamento desonesto, como validar blocos inválidos ou tentar atacar a rede, resultaria na perda de sua garantia em criptomoedas. Além disso, os validadores recebem recompensas em criptomoedas por validar novos blocos com sucesso, incentivando-os a manter a rede funcionando de maneira eficiente.
 
 A prova de participação é considerada uma alternativa mais eficiente e sustentável à prova de trabalho, pois requer muito menos energia para validar novos blocos e é menos suscetível a ataques de 51%. No entanto, a implementação da prova de participação pode ser mais complexa do que a prova de trabalho e requer uma grande quantidade de participação dos usuários da rede para funcionar de maneira eficaz.
+
+### <span style="color:green">Gas Fee</span>
+
+O gas fee é uma taxa que os usuários da rede blockchain pagam para realizar transações, interagir com contratos inteligentes ou executar outras ações na rede.
+
+Na maioria das blockchains, incluindo Ethereum, a taxa de gas é paga em Ether (ETH), a criptomoeda nativa da rede. O gas fee é uma forma de compensar os validadores da rede pelo trabalho necessário para processar as transações, executar os contratos inteligentes e manter a rede funcionando.
+
+O valor da taxa de gas é determinado pelo tamanho da transação ou contrato inteligente em bytes, bem como pelo congestionamento atual da rede. Quanto mais complexa for a transação, mais gas será necessário para executá-la e, consequentemente, maior será a taxa de gas.
+
+O gas fee também pode variar ao longo do tempo, dependendo da demanda por transações na rede. Em períodos de alta atividade na rede, os usuários podem precisar pagar taxas de gas mais altas para garantir que suas transações sejam processadas em tempo hábil.
+
+Em resumo, o gas fee é uma taxa paga pelos usuários da rede para incentivar os validadores a processar suas transações e é uma parte fundamental do funcionamento da maioria das blockchains.
