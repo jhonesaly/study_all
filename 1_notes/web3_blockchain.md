@@ -207,3 +207,11 @@ Algumas das principais privacy coins são:
 - Grin (GRIN): uma privacy coin que utiliza a tecnologia Mimblewimble para oferecer privacidade e escalabilidade.
 
 Vale ressaltar que as privacy coins podem ser usadas para fins legítimos, como proteger a privacidade financeira dos usuários, mas também podem ser utilizadas para atividades ilegais, como lavagem de dinheiro e financiamento de atividades criminosas. Como resultado, algumas exchanges e reguladores financeiros podem ter políticas mais rígidas em relação às privacy coins.
+
+## <span style="color:red">Explorador de blocos</span>
+
+Os exploradores de bloco, também conhecidos como block explorers, são ferramentas que permitem aos usuários visualizar informações detalhadas sobre as transações que ocorrem em uma blockchain, incluindo informações sobre blocos individuais, endereços de carteiras, taxas de transação, tempos de confirmação, recompensas de mineração e muito mais.
+
+Os exploradores de bloco são geralmente interfaces da web que permitem aos usuários pesquisar e visualizar informações sobre transações específicas em uma blockchain, além de monitorar o status de suas próprias transações. Essas ferramentas são úteis para rastrear transações em tempo real e podem ajudar os usuários a entender melhor como a blockchain está sendo usada.
+
+Alguns exemplos de exploradores de bloco incluem o Blockchain.com para a blockchain do Bitcoin, Etherscan para a blockchain do Ethereum, BscScan para a blockchain da Binance Smart Chain, entre outros. Cada blockchain tem seu próprio conjunto de exploradores de bloco específicos para essa rede.
