@@ -107,3 +107,16 @@ Os smart contracts são baseados em tecnologia blockchain, que permite a criaç�
 Por exemplo, um smart contract pode ser usado para automatizar um pagamento em criptomoedas após a conclusão de um projeto ou para garantir que os termos de um acordo de compartilhamento de recursos sejam cumpridos.
 
 Os smart contracts podem ser usados em várias áreas, incluindo finanças, imóveis, logística, seguros e muitas outras. Eles eliminam a necessidade de intermediários, tornando os processos mais rápidos, mais seguros e mais eficientes.
+
+## <span style="color:red">Consenso</span>
+
+Em uma rede blockchain, o consenso é o processo de validação e confirmação das transações e informações que estão sendo adicionadas à cadeia de blocos. É o que garante que a rede funcione de forma confiável e segura.
+
+O consenso é necessário porque as blockchains são descentralizadas, ou seja, não há uma autoridade central que possa validar as transações. Em vez disso, a validação é realizada pelos próprios participantes da rede, que devem chegar a um acordo sobre o que é válido e o que não é.
+
+Existem vários algoritmos de consenso utilizados em blockchains, como o Proof of Work (PoW), o Proof of Stake (PoS), o Delegated Proof of Stake (DPoS) e o Proof of Authority (PoA), entre outros.
+
+Cada algoritmo tem suas próprias regras e incentivos para garantir que a validação seja feita de forma justa e eficiente. O PoW, por exemplo, é utilizado no Bitcoin e envolve a resolução de problemas matemáticos complexos para validar as transações e adicionar novos blocos à cadeia. Já o PoS, utilizado na rede Ethereum, utiliza a quantidade de criptomoedas que um usuário possui para determinar a sua capacidade de validação de transações.
+
+Em resumo, o consenso é um elemento fundamental de qualquer rede blockchain, garantindo a sua integridade, segurança e eficiência.
+
