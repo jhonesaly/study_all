@@ -97,3 +97,13 @@ Por exemplo, se uma blockchain prioriza a segurança e a descentralização, ela
 A maioria das blockchains atualmente existentes enfrentam o trilema de alguma forma. Por exemplo, o Bitcoin é conhecido por sua segurança e descentralização, mas tem dificuldades em escalar para atender a uma grande demanda de transações. Já a rede da Ethereum tem como objetivo ser escalável e descentralizada, mas pode enfrentar desafios de segurança.
 
 Os desenvolvedores de blockchains estão constantemente trabalhando em soluções para lidar com o trilema, como o uso de tecnologias de consenso mais eficientes, aprimoramento de algoritmos de mineração e a implementação de soluções de escalabilidade.
+
+## <span style="color:red">Smart Contract</span>
+
+Um smart contract (contrato inteligente) é um programa de computador que executa automaticamente os termos de um contrato acordado entre duas partes, sem a necessidade de um intermediário ou terceira parte de confiança.
+
+Os smart contracts são baseados em tecnologia blockchain, que permite a criação de contratos digitais com confiança e segurança, garantindo que as regras acordadas serão cumpridas. Eles são escritos em uma linguagem de programação específica e são executados automaticamente quando certas condições predefinidas são atendidas.
+
+Por exemplo, um smart contract pode ser usado para automatizar um pagamento em criptomoedas após a conclusão de um projeto ou para garantir que os termos de um acordo de compartilhamento de recursos sejam cumpridos.
+
+Os smart contracts podem ser usados em várias áreas, incluindo finanças, imóveis, logística, seguros e muitas outras. Eles eliminam a necessidade de intermediários, tornando os processos mais rápidos, mais seguros e mais eficientes.
