@@ -120,3 +120,12 @@ Cada algoritmo tem suas próprias regras e incentivos para garantir que a valida
 
 Em resumo, o consenso é um elemento fundamental de qualquer rede blockchain, garantindo a sua integridade, segurança e eficiência.
 
+### <span style="color:green">Proof of Work</span>
+
+A prova de trabalho (Proof of Work - PoW) é um algoritmo de consenso utilizado em muitas blockchains, incluindo o Bitcoin. Ele foi criado como uma solução para o problema do "gasto duplo" - a possibilidade de gastar a mesma unidade de criptomoeda duas vezes - sem a necessidade de um intermediário ou autoridade central.
+
+A prova de trabalho é um processo computacional intensivo que envolve a resolução de problemas matemáticos complexos. Para adicionar um novo bloco à cadeia de blocos, os mineradores devem competir para resolver esse problema primeiro, com a solução correta sendo a chave para validar o novo bloco. O primeiro minerador a resolver o problema recebe uma recompensa em criptomoedas e o bloco validado é adicionado à cadeia.
+
+O algoritmo de prova de trabalho requer uma grande quantidade de poder de processamento para ser executado, o que significa que a validação de novos blocos requer uma grande quantidade de energia elétrica. Por essa razão, a prova de trabalho tem sido criticada por seu alto consumo de energia, além de ser suscetível a ataques de 51%, onde um grupo de mineradores com mais da metade do poder de processamento da rede pode controlar a validação das transações.
+
+Apesar de seus problemas, a prova de trabalho continua sendo uma das formas mais comuns de algoritmo de consenso utilizado em blockchains, embora muitas redes estejam explorando alternativas mais eficientes e sustentáveis, como a prova de participação (Proof of Stake) ou outros algoritmos mais avançados.
