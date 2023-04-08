@@ -4,6 +4,16 @@ A Web3, também conhecida como a "Internet descentralizada", é uma evolução d
 
 A Web3 é caracterizada por uma série de tecnologias, incluindo blockchain, contratos inteligentes, criptomoedas, NFTs, entre outras. Essas tecnologias são usadas para criar aplicativos descentralizados, que funcionam em uma rede de computadores distribuída, sem a necessidade de servidores centralizados.
 
+## Principais áreas da Web 3
+
+- Blockchain
+- Criptomoedas
+- Tokens
+- DeFi (Decentralized Finance)
+- DAO (Decentralized Autonomous Organization)
+- NFT (Non Fungible Token)
+- Metaverso
+
 ## Blockchain
 
 Blockchain é uma tecnologia que permite o registro de transações de forma descentralizada, transparente e segura. Ele consiste em um registro digital compartilhado entre vários computadores, onde cada transação é validada e adicionada em um bloco de transações. Uma vez adicionado, esse bloco é imutável e torna-se parte da cadeia de blocos, ou blockchain, que pode ser acessado por qualquer pessoa com acesso à rede.
