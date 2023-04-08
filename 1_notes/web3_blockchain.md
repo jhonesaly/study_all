@@ -129,3 +129,13 @@ A prova de trabalho é um processo computacional intensivo que envolve a resolu�
 O algoritmo de prova de trabalho requer uma grande quantidade de poder de processamento para ser executado, o que significa que a validação de novos blocos requer uma grande quantidade de energia elétrica. Por essa razão, a prova de trabalho tem sido criticada por seu alto consumo de energia, além de ser suscetível a ataques de 51%, onde um grupo de mineradores com mais da metade do poder de processamento da rede pode controlar a validação das transações.
 
 Apesar de seus problemas, a prova de trabalho continua sendo uma das formas mais comuns de algoritmo de consenso utilizado em blockchains, embora muitas redes estejam explorando alternativas mais eficientes e sustentáveis, como a prova de participação (Proof of Stake) ou outros algoritmos mais avançados.
+
+### <span style="color:green">Proof of Stake</span>
+
+A prova de participação (Proof of Stake - PoS) é um algoritmo de consenso alternativo à prova de trabalho (PoW) utilizado em algumas blockchains, como Ethereum, Cardano e Binance Smart Chain.
+
+Em vez de validar novos blocos por meio de um processo de mineração intensivo em energia, a prova de participação usa um sistema de votação em que os usuários da rede bloqueiam suas criptomoedas como "garantia" para se tornarem validadores de blocos. Em vez de resolver problemas matemáticos complexos, os validadores da rede são escolhidos aleatoriamente para validar novos blocos com base na quantidade de criptomoedas que eles bloquearam como garantia.
+
+Os validadores são incentivados a agir honestamente, pois qualquer comportamento desonesto, como validar blocos inválidos ou tentar atacar a rede, resultaria na perda de sua garantia em criptomoedas. Além disso, os validadores recebem recompensas em criptomoedas por validar novos blocos com sucesso, incentivando-os a manter a rede funcionando de maneira eficiente.
+
+A prova de participação é considerada uma alternativa mais eficiente e sustentável à prova de trabalho, pois requer muito menos energia para validar novos blocos e é menos suscetível a ataques de 51%. No entanto, a implementação da prova de participação pode ser mais complexa do que a prova de trabalho e requer uma grande quantidade de participação dos usuários da rede para funcionar de maneira eficaz.
