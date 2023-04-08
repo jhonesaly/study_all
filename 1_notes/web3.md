@@ -36,3 +36,9 @@ A blockchain Ethereum é uma plataforma descentralizada e pública de computaç�
 A principal diferença entre a blockchain Ethereum e a blockchain do Bitcoin é que a Ethereum permite a criação de contratos inteligentes, que são programas autônomos que executam automaticamente as regras acordadas entre as partes envolvidas em uma transação. Isso significa que a plataforma Ethereum pode ser usada para criar aplicativos descentralizados, como jogos, mercados de previsão, sistemas de identidade digital e muito mais.
 
 A blockchain Ethereum é baseada em uma tecnologia de contabilidade distribuída, em que todas as transações são registradas em uma rede descentralizada de computadores, conhecidos como "nós". Esses nós validam as transações e garantem a integridade e a segurança da rede. A Ethereum também utiliza um algoritmo de consenso chamado Proof of Work (PoW), que garante que apenas as transações válidas sejam adicionadas à blockchain.
+
+### Ethereum x Bitcoin
+
+O Ethereum é uma das maiores e mais populares blockchains, especialmente por permitir a criação de contratos inteligentes e tokens personalizados, incluindo os NFTs. No entanto, em termos de capitalização de mercado, o Bitcoin é atualmente a maior criptomoeda e blockchain do mundo.
+
+O Bitcoin e o Ethereum são duas blockchains diferentes e independentes. Embora ambas as blockchains permitam transações seguras e descentralizadas, elas têm finalidades e tecnologias diferentes. O Bitcoin foi criado principalmente para permitir transações financeiras peer-to-peer, enquanto o Ethereum foi criado para permitir a criação de aplicativos descentralizados.
