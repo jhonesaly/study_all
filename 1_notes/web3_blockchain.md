@@ -8,7 +8,7 @@ A blockchain é segura e imutável porque cada transação é validada e registr
 
 Você não precisa instalar a blockchain em seu computador para usar a tecnologia. A maioria das blockchains é acessível por meio de aplicativos ou carteiras que podem ser instalados em seu computador ou smartphone. Esses aplicativos permitem que você interaja com a blockchain, enviar e receber criptomoedas, criar contratos inteligentes e muito mais.
 
-## Principais Blockchains
+## <span style="color:red">Principais Blockchains</span>
 
 - Bitcoin: a primeira e mais famosa blockchain, usada principalmente como uma forma de pagamento descentralizada.
 - Ethereum: A blockchain Ethereum é uma plataforma descentralizada e pública de computação distribuída, que permite a criação de aplicativos descentralizados (dApps) e a execução de contratos inteligentes.
@@ -17,8 +17,13 @@ Você não precisa instalar a blockchain em seu computador para usar a tecnologi
 - Cardano: uma blockchain projetada para oferecer segurança e escalabilidade, permitindo a execução de contratos inteligentes e a criação de aplicativos descentralizados.
 - Solana: uma blockchain de alto desempenho que permite a execução de contratos inteligentes e aplicativos descentralizados em velocidades mais rápidas e com taxas de transação mais baixas que a Ethereum.
 
+------
 
-## Bitcoin
+## <span style="color:red">Bitcoin</span>
+
+<center>
+    <img src="images/bitcoin_logo.png" alt="Bitcoin logo" width="300"/>
+</center>
 
 A blockchain do Bitcoin é uma rede descentralizada de computadores que permite a criação de um sistema financeiro digital totalmente descentralizado e seguro. Ela foi criada em 2009 como a primeira implementação da tecnologia blockchain e tem sido a criptomoeda mais popular e amplamente adotada desde então.
 
@@ -30,7 +35,7 @@ Além disso, o Bitcoin é projetado para ser deflacionário, com um limite máxi
 
 Em resumo, a blockchain do Bitcoin é uma rede segura e descentralizada que permite a criação de um sistema financeiro digital seguro e descentralizado. Ela usa um sistema de mineração para validar transações e adicionar novos blocos à cadeia, e é projetada para ser deflacionária com um limite máximo de 21 milhões de bitcoins.
 
-### Mineração
+### <span style="color:green">Mineração</span>
 
 Minerar bitcoin envolve o uso de um hardware de mineração especializado, como ASICs (Application-Specific Integrated Circuits), para resolver problemas matemáticos complexos que validam transações na rede Bitcoin e adicionam novos blocos à blockchain. A mineração é uma atividade competitiva, e os mineradores competem para serem os primeiros a resolver o problema matemático e, assim, receber uma recompensa em bitcoin.
 
@@ -38,7 +43,26 @@ Atualmente, a mineração de bitcoin é muito mais difícil e complexa do que no
 
 Além disso, a rentabilidade da mineração de bitcoin depende de vários fatores, como o custo da eletricidade, o preço atual do bitcoin e o custo do hardware de mineração. Embora a mineração possa ser lucrativa em algumas circunstâncias, é importante lembrar que há muitos riscos envolvidos, e o retorno sobre o investimento pode variar amplamente.
 
-## Ethereum
+#### How to Mine
+
+- Obtenha um hardware de mineração de bitcoin: Você precisará de um hardware de mineração de bitcoin especializado, como ASICs (Application-Specific Integrated Circuits). Estes são projetados especificamente para a mineração de bitcoin e são muito mais eficientes do que um computador comum.
+
+<center>
+    <img src="images/asic_miner.png" alt="ASIC miner" width="300"/>
+</center>
+
+- Configure seu hardware de mineração: Siga as instruções fornecidas pelo fabricante do seu hardware de mineração para configurá-lo corretamente. Isso geralmente envolve conectar o hardware a uma fonte de alimentação e a um computador ou dispositivo de mineração.
+- Escolha uma pool de mineração: A mineração de bitcoin é uma atividade competitiva e é mais provável que você tenha sucesso se se juntar a uma pool de mineração. As pools de mineração são grupos de mineradores que se unem para combinar seu poder de processamento e aumentar suas chances de ganhar recompensas em bloco.
+- Instale um software de mineração: Para conectar seu hardware de mineração à pool de mineração, você precisará de um software de mineração. Existem várias opções disponíveis, incluindo CGMiner, BFGMiner e EasyMiner.
+- Comece a minerar: Depois de instalar o software de mineração, você pode começar a minerar bitcoin. O software de mineração enviará problemas matemáticos para o seu hardware de mineração, e você receberá uma recompensa em bitcoin se resolver com sucesso um problema matemático e validar um bloco na blockchain do Bitcoin.
+
+------
+
+## <span style="color:red">Ethereum</span>
+
+<center>
+    <img src="images/logo_ethereum.jpg" alt="Ethereum logo" width="300"/>
+</center>
 
 A blockchain Ethereum é uma plataforma descentralizada e pública de computação distribuída, que permite a criação de aplicativos descentralizados (dApps) e a execução de contratos inteligentes. A Ethereum utiliza sua própria criptomoeda, o Ether (ETH), como meio de troca na plataforma.
 
@@ -46,7 +70,7 @@ A principal diferença entre a blockchain Ethereum e a blockchain do Bitcoin é 
 
 A blockchain Ethereum é baseada em uma tecnologia de contabilidade distribuída, em que todas as transações são registradas em uma rede descentralizada de computadores, conhecidos como "nós". Esses nós validam as transações e garantem a integridade e a segurança da rede. A Ethereum também utiliza um algoritmo de consenso chamado Proof of Work (PoW), que garante que apenas as transações válidas sejam adicionadas à blockchain.
 
-### Ethereum x Bitcoin
+### <span style="color:green">Ethereum x Bitcoin</span>
 
 O Ethereum é uma das maiores e mais populares blockchains, especialmente por permitir a criação de contratos inteligentes e tokens personalizados, incluindo os NFTs. No entanto, em termos de capitalização de mercado, o Bitcoin é atualmente a maior criptomoeda e blockchain do mundo.
 
