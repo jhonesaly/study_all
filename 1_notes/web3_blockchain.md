@@ -150,4 +150,10 @@ O valor da taxa de gas é determinado pelo tamanho da transação ou contrato in
 
 O gas fee também pode variar ao longo do tempo, dependendo da demanda por transações na rede. Em períodos de alta atividade na rede, os usuários podem precisar pagar taxas de gas mais altas para garantir que suas transações sejam processadas em tempo hábil.
 
-Em resumo, o gas fee é uma taxa paga pelos usuários da rede para incentivar os validadores a processar suas transações e é uma parte fundamental do funcionamento da maioria das blockchains.
+O gas, gwei e limit são termos relacionados à taxa de gas fee na rede Ethereum. Vamos explicar cada um deles:
+
+- Gas: é a unidade de medida que representa o trabalho necessário para realizar uma operação na rede Ethereum, como executar um contrato inteligente ou enviar uma transação. Cada operação tem um custo de gas associado a ela, que é determinado pela complexidade da operação.
+- Gwei: é uma subunidade do Ether (ETH) que é usada para medir a taxa de gas na rede Ethereum. Gwei significa "giga wei", onde 1 gwei é igual a 0,000000001 ETH. Como as taxas de gas geralmente são valores muito pequenos, a maioria dos usuários da rede prefere usar gwei em vez de ETH para expressar as taxas.
+- Limit: é o limite máximo de gas que um usuário está disposto a pagar por uma transação. Ele é definido pelo remetente da transação e representa o número máximo de unidades de gas que o remetente está disposto a pagar pela execução da transação.
+
+Em resumo, o gas é a unidade de medida do trabalho realizado na rede Ethereum, o gwei é a unidade de medida usada para expressar as taxas de gas e o limit é o limite máximo de gas que um usuário está disposto a pagar por uma transação. O conhecimento desses termos é importante para entender como as taxas de gas são calculadas e como os usuários podem otimizar suas transações para minimizar o custo de gas.
