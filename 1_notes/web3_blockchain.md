@@ -30,7 +30,13 @@ Além disso, o Bitcoin é projetado para ser deflacionário, com um limite máxi
 
 Em resumo, a blockchain do Bitcoin é uma rede segura e descentralizada que permite a criação de um sistema financeiro digital seguro e descentralizado. Ela usa um sistema de mineração para validar transações e adicionar novos blocos à cadeia, e é projetada para ser deflacionária com um limite máximo de 21 milhões de bitcoins.
 
+### Mineração
 
+Minerar bitcoin envolve o uso de um hardware de mineração especializado, como ASICs (Application-Specific Integrated Circuits), para resolver problemas matemáticos complexos que validam transações na rede Bitcoin e adicionam novos blocos à blockchain. A mineração é uma atividade competitiva, e os mineradores competem para serem os primeiros a resolver o problema matemático e, assim, receber uma recompensa em bitcoin.
+
+Atualmente, a mineração de bitcoin é muito mais difícil e complexa do que nos primeiros anos do Bitcoin, pois a competição por recompensas em bloco é muito alta, e a maioria dos mineradores agora opera em grandes instalações de mineração que consomem grandes quantidades de energia elétrica. Portanto, a mineração de bitcoin não é algo que possa ser facilmente feito em casa com um computador comum.
+
+Além disso, a rentabilidade da mineração de bitcoin depende de vários fatores, como o custo da eletricidade, o preço atual do bitcoin e o custo do hardware de mineração. Embora a mineração possa ser lucrativa em algumas circunstâncias, é importante lembrar que há muitos riscos envolvidos, e o retorno sobre o investimento pode variar amplamente.
 
 ## Ethereum
 
