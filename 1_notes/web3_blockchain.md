@@ -157,3 +157,15 @@ O gas, gwei e limit são termos relacionados à taxa de gas fee na rede Ethereum
 - Limit: é o limite máximo de gas que um usuário está disposto a pagar por uma transação. Ele é definido pelo remetente da transação e representa o número máximo de unidades de gas que o remetente está disposto a pagar pela execução da transação.
 
 Em resumo, o gas é a unidade de medida do trabalho realizado na rede Ethereum, o gwei é a unidade de medida usada para expressar as taxas de gas e o limit é o limite máximo de gas que um usuário está disposto a pagar por uma transação. O conhecimento desses termos é importante para entender como as taxas de gas são calculadas e como os usuários podem otimizar suas transações para minimizar o custo de gas.
+
+## <span style="color:red">Fork</span>
+
+Uma fork em uma blockchain ocorre quando uma nova versão do software é criada e os usuários da rede têm a opção de escolher entre continuar usando a versão antiga ou atualizar para a nova versão. Isso pode acontecer por uma variedade de razões, como correções de bugs, melhorias de desempenho ou mudanças nas regras da rede.
+
+Existem dois tipos de forks: hard fork e soft fork.
+
+Uma hard fork é uma mudança fundamental na rede que torna a versão antiga incompatível com a nova versão. Isso significa que todos os usuários da rede precisam atualizar seus softwares para continuar usando a rede. Se um usuário decidir continuar usando a versão antiga, ele estará em uma rede separada da nova rede e não poderá se comunicar com os usuários da nova rede. Isso pode levar à criação de uma nova criptomoeda, como aconteceu com o Bitcoin Cash, que foi criado a partir de um hard fork no Bitcoin.
+
+Já uma soft fork é uma atualização menos drástica que é compatível com a versão anterior. Isso significa que os usuários que optam por não atualizar seus softwares ainda podem se comunicar com os usuários da nova versão. A maioria das atualizações na blockchain é feita por meio de soft forks, já que é menos disruptivo para a rede e para os usuários.
+
+Em resumo, uma fork na blockchain ocorre quando uma nova versão do software é criada e pode ser classificada como hard fork ou soft fork. Uma hard fork é uma mudança fundamental que requer que todos os usuários atualizem seus softwares, enquanto uma soft fork é uma atualização menos drástica que é compatível com a versão anterior e permite que os usuários continuem a usar a rede sem atualizar seus softwares.
