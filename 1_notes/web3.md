@@ -15,16 +15,17 @@ Os NFTs (Non-Fungible Tokens) são uma forma de ativo digital único, que podem 
 ## Principais ferramentas e tecnologias
 
 - Ethereum: é a principal plataforma de blockchain usada na Web3, que permite a criação de contratos inteligentes e tokens personalizados.
-
 - IPFS: é um sistema de arquivos descentralizado usado para armazenar e compartilhar dados na Web3.
-
 - Web3.js: é uma biblioteca JavaScript que permite a interação com a rede Ethereum e a criação de aplicativos descentralizados na Web3.
-
 - Solidity: é uma linguagem de programação usada para escrever contratos inteligentes na plataforma Ethereum.
-
 - Remix: é uma IDE (Integrated Development Environment) que permite escrever, testar e implantar contratos inteligentes na plataforma Ethereum.
-
 - Truffle: é uma ferramenta de desenvolvimento de blockchain que permite criar, testar e implantar contratos inteligentes na plataforma Ethereum.
-
 - Ganache: é uma rede blockchain privada para testes de desenvolvimento de aplicativos na plataforma Ethereum.
 
+### Principais ferramentas e tecnologias que usam python
+
+- Brownie: é uma ferramenta de desenvolvimento de blockchain escrita em Python que permite criar, testar e implantar contratos inteligentes na plataforma Ethereum.
+- Web3.py: é uma biblioteca Python que permite a interação com a rede Ethereum e a criação de aplicativos descentralizados na Web3 de forma mais abrangente que o py-eth.
+- Py-solc: é uma biblioteca Python para compilar contratos inteligentes escritos em Solidity, a linguagem de programação usada na plataforma Ethereum. O Py-solc compila o código-fonte Solidity em bytecode que pode ser implantado na rede Ethereum. Ele também pode ser usado para verificar a sintaxe e a semântica do código-fonte Solidity antes da compilação.
+- Py-Eth:  é outra biblioteca Python para interagir com a rede Ethereum, permitindo a leitura e escrita de dados na blockchain Ethereum, bem como o gerenciamento de contas e transações. O Py-Eth também fornece uma interface para a linguagem de programação Solidity, permitindo que desenvolvedores Python escrevam contratos inteligentes na plataforma Ethereum.
+- 
