@@ -17,7 +17,22 @@ Você não precisa instalar a blockchain em seu computador para usar a tecnologi
 - Cardano: uma blockchain projetada para oferecer segurança e escalabilidade, permitindo a execução de contratos inteligentes e a criação de aplicativos descentralizados.
 - Solana: uma blockchain de alto desempenho que permite a execução de contratos inteligentes e aplicativos descentralizados em velocidades mais rápidas e com taxas de transação mais baixas que a Ethereum.
 
-### Ethereum
+
+## Bitcoin
+
+A blockchain do Bitcoin é uma rede descentralizada de computadores que permite a criação de um sistema financeiro digital totalmente descentralizado e seguro. Ela foi criada em 2009 como a primeira implementação da tecnologia blockchain e tem sido a criptomoeda mais popular e amplamente adotada desde então.
+
+A blockchain do Bitcoin é composta por blocos que contêm informações sobre as transações na rede, como o remetente, o destinatário, o valor e a data e hora da transação. Cada bloco contém um hash, que é uma sequência única de caracteres que representa o bloco, e o hash do bloco anterior, criando assim uma cadeia de blocos interconectados, daí o nome "blockchain".
+
+Os usuários podem enviar e receber bitcoins por meio da rede Bitcoin, que é altamente segura e imutável devido à natureza descentralizada da blockchain. Para adulterar um registro na blockchain, um invasor precisaria hackear uma maioria dos nós na rede simultaneamente, o que é virtualmente impossível.
+
+Além disso, o Bitcoin é projetado para ser deflacionário, com um limite máximo de 21 milhões de bitcoins que podem ser minerados. A mineração de bitcoins é um processo pelo qual os computadores na rede resolvem problemas matemáticos complexos para validar transações e adicionar novos blocos à blockchain, recebendo bitcoins como recompensa.
+
+Em resumo, a blockchain do Bitcoin é uma rede segura e descentralizada que permite a criação de um sistema financeiro digital seguro e descentralizado. Ela usa um sistema de mineração para validar transações e adicionar novos blocos à cadeia, e é projetada para ser deflacionária com um limite máximo de 21 milhões de bitcoins.
+
+
+
+## Ethereum
 
 A blockchain Ethereum é uma plataforma descentralizada e pública de computação distribuída, que permite a criação de aplicativos descentralizados (dApps) e a execução de contratos inteligentes. A Ethereum utiliza sua própria criptomoeda, o Ether (ETH), como meio de troca na plataforma.
 
@@ -25,7 +40,7 @@ A principal diferença entre a blockchain Ethereum e a blockchain do Bitcoin é 
 
 A blockchain Ethereum é baseada em uma tecnologia de contabilidade distribuída, em que todas as transações são registradas em uma rede descentralizada de computadores, conhecidos como "nós". Esses nós validam as transações e garantem a integridade e a segurança da rede. A Ethereum também utiliza um algoritmo de consenso chamado Proof of Work (PoW), que garante que apenas as transações válidas sejam adicionadas à blockchain.
 
-#### Ethereum x Bitcoin
+### Ethereum x Bitcoin
 
 O Ethereum é uma das maiores e mais populares blockchains, especialmente por permitir a criação de contratos inteligentes e tokens personalizados, incluindo os NFTs. No entanto, em termos de capitalização de mercado, o Bitcoin é atualmente a maior criptomoeda e blockchain do mundo.
 
