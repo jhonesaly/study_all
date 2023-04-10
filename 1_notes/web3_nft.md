@@ -20,3 +20,18 @@ Existem vários tipos de NFTs, e cada um tem suas próprias características. Al
 - Immutable NFT: É um tipo de NFT que é considerado permanente e imutável, o que significa que ele não pode ser alterado ou excluído. Isso é importante para garantir a autenticidade e integridade dos ativos digitais representados pelos tokens.
 
 Esses são apenas alguns exemplos de tipos de NFTs existentes. À medida que a tecnologia NFT continua a evoluir, é possível que novos tipos de tokens não fungíveis surjam no futuro.
+
+
+## <span style="color:red">Ferramentas</span>
+
+Existem várias ferramentas para criação e análise de NFTs, algumas das principais incluem:
+
+- OpenSea: É um mercado online de NFTs que também oferece ferramentas para a criação e leilão de tokens não fungíveis.
+- Rarible: É outro mercado de NFTs que permite que os criadores criem e vendam seus próprios tokens não fungíveis.
+- SuperRare: É um mercado focado em arte digital, permitindo que artistas vendam suas criações em formato de NFTs.
+- Mintable: É uma plataforma de criação e venda de NFTs que permite que os criadores criem tokens únicos em diferentes blockchains.
+- Nifty Gateway: É um mercado focado em NFTs colecionáveis, permitindo que os usuários comprem e vendam tokens não fungíveis de artistas e marcas famosas.
+- CryptoSlam: É uma plataforma de análise que permite aos usuários monitorar a atividade do mercado de NFTs, incluindo o volume de vendas, preços e estatísticas de usuários.
+- NonFungible: É outra plataforma de análise que oferece estatísticas e insights sobre o mercado de NFTs, bem como uma lista de NFTs mais populares.
+
+Essas são apenas algumas das ferramentas disponíveis para criação e análise de NFTs. À medida que o mercado de tokens não fungíveis continua a crescer, é provável que novas ferramentas surjam para atender às necessidades dos criadores e colecionadores.
