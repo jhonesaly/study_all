@@ -45,6 +45,18 @@ Além de oferecer uma experiência de fã mais envolvente e interativa, os fan t
 
 Os fan tokens são uma nova forma de interação entre fãs e seus clubes esportivos favoritos, criando uma comunidade mais engajada e fiel. Eles oferecem uma oportunidade única para os fãs terem uma voz ativa e fazerem parte da tomada de decisões do clube, além de obterem acesso a experiências exclusivas e recompensas especiais.
 
+### <span style="color:green">Social Token</span>
+
+Social tokens são uma classe emergente de tokens criptográficos que representam a marca pessoal ou social de um indivíduo, comunidade ou organização. Eles permitem que indivíduos ou grupos criem uma moeda própria para a comunidade que seguem, criando uma forma mais direta e personalizada de conexão com seus fãs ou seguidores.
+
+Esses tokens permitem que os detentores expressem sua lealdade ou apoio a uma pessoa, empresa ou causa, fornecendo-lhes acesso a conteúdo exclusivo, eventos virtuais, mercadorias exclusivas e muito mais. Eles podem ser comprados, negociados e utilizados como meio de pagamento em plataformas específicas ou em redes sociais.
+
+Os detentores de social tokens também podem participar da governança da comunidade, ajudando a tomar decisões importantes sobre o uso e alocação do token. Através do uso de smart contracts, os detentores de tokens podem ter uma voz ativa na direção futura da comunidade, votando em propostas e decisões.
+
+Uma das vantagens dos social tokens é a possibilidade de criar novas formas de monetização para criadores de conteúdo e artistas, que podem obter mais controle sobre sua carreira e mais engajamento com sua base de fãs. Além disso, eles oferecem uma oportunidade para as comunidades construírem relacionamentos mais estreitos e significativos entre si.
+
+Embora ainda seja uma área em desenvolvimento, os social tokens têm a capacidade de transformar a maneira como as pessoas interagem e monetizam suas marcas pessoais, bem como criar novas oportunidades para comunidades de nicho.
+
 ## <span style="color:red">Tokenização de Ativos</span>
 
 A tokenização de ativos é um processo que envolve a conversão de um ativo físico, como imóveis, obras de arte, ou ações, em tokens digitais que podem ser negociados na blockchain. A ideia por trás da tokenização é trazer a eficiência e transparência da tecnologia blockchain para o mundo dos ativos tradicionais, tornando-os mais acessíveis e líquidos.
