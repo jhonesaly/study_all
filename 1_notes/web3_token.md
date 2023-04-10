@@ -33,6 +33,18 @@ Existem diferentes tipos de tokens que podem ser criados na blockchain. Aqui est
   - Stablecoins Centralizadas: São apoiadas por reservas de moedas fiduciárias ou ativos de reserva, como títulos do Tesouro dos EUA. Essas stablecoins são emitidas por uma entidade centralizada e são projetadas para manter um valor estável em relação à moeda de reserva. Exemplos de stablecoins centralizadas incluem o USDT (Tether) e o USDC (USD Coin).
   - Stablecoins Descentralizadas: São criadas por meio de contratos inteligentes na blockchain e usam mecanismos de estabilização de preço para manter um valor estável em relação a uma moeda fiduciária. Essas stablecoins não são apoiadas por reservas de moeda fiduciária e são totalmente descentralizadas. Exemplos de stablecoins descentralizadas incluem DAI (MakerDAO) e BUSD (Binance USD).
 
+### <span style="color:green">Fan Token</span>
+
+Fan tokens são tokens de utilidade emitidos por empresas esportivas, como times de futebol, que permitem aos fãs se envolverem mais com seus clubes favoritos. Eles são usados para criar uma experiência mais imersiva e interativa para os fãs, oferecendo-lhes acesso a uma variedade de recursos exclusivos, como votação em enquetes, competições de jogos, experiências VIP, conteúdo exclusivo e muito mais.
+
+Os fãs podem adquirir esses tokens por meio de compra direta, troca por outras criptomoedas ou recompensas por meio de programas de fidelidade. Os tokens também podem ser usados como moeda para comprar produtos ou serviços, como ingressos para jogos, merchandising oficial, experiências de jogo e outros.
+
+Os fãs também podem influenciar a tomada de decisões do clube, como escolher o uniforme, selecionar jogadores, nomear um MVP ou escolher a música que será tocada nos jogos. Esses recursos interativos são possíveis graças à tecnologia blockchain, que permite que os detentores de tokens votem de forma transparente e segura, com resultados verificáveis e imutáveis.
+
+Além de oferecer uma experiência de fã mais envolvente e interativa, os fan tokens também podem ser uma fonte de receita para as empresas esportivas, ajudando-as a se financiarem e a se tornarem mais sustentáveis financeiramente.
+
+Os fan tokens são uma nova forma de interação entre fãs e seus clubes esportivos favoritos, criando uma comunidade mais engajada e fiel. Eles oferecem uma oportunidade única para os fãs terem uma voz ativa e fazerem parte da tomada de decisões do clube, além de obterem acesso a experiências exclusivas e recompensas especiais.
+
 ## <span style="color:red">Tokenização de Ativos</span>
 
 A tokenização de ativos é um processo que envolve a conversão de um ativo físico, como imóveis, obras de arte, ou ações, em tokens digitais que podem ser negociados na blockchain. A ideia por trás da tokenização é trazer a eficiência e transparência da tecnologia blockchain para o mundo dos ativos tradicionais, tornando-os mais acessíveis e líquidos.
