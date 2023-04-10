@@ -85,6 +85,18 @@ No entanto, a adoção do CDBC também traz algumas preocupações, como a perda
 
 Atualmente, vários bancos centrais estão estudando e desenvolvendo suas próprias CDBCs, como o Banco Central da China, que lançou o yuan digital em um teste piloto em várias cidades do país.
 
+### <span style="color:green">ICO</span>
+
+Initial Coin Offering (ICO) é um método de arrecadação de fundos usado por empresas e projetos que trabalham com criptomoedas ou tecnologia blockchain. O objetivo da ICO é oferecer aos investidores a oportunidade de comprar tokens emitidos pela empresa ou projeto em troca de criptomoedas, geralmente Bitcoin ou Ethereum.
+
+Os tokens oferecidos durante uma ICO podem ser usados como moeda dentro do ecossistema da empresa ou projeto, ou podem representar uma participação nos lucros da empresa, ou até mesmo ser usados como um meio de governança, permitindo que os investidores votem em questões importantes relacionadas ao projeto.
+
+A ICO é semelhante à oferta pública inicial (IPO) de ações, mas ao contrário das ações, os tokens emitidos durante uma ICO não representam uma participação direta na empresa e não são regulamentados pelas leis de valores mobiliários tradicionais.
+
+Embora as ICOs tenham sido uma forma popular de arrecadação de fundos no passado, elas também foram alvo de muitas críticas e escândalos relacionados a fraudes e esquemas de pirâmide. Além disso, muitas ICOs acabaram sendo mal-sucedidas, deixando os investidores sem nada.
+
+Por causa disso, muitos governos começaram a impor regulamentações mais rígidas em relação às ICOs e algumas plataformas, como o Facebook e o Google, proibiram anúncios relacionados a ICOs. Como resultado, muitas empresas agora optam por outras formas de arrecadação de fundos, como ofertas de tokens de segurança (STOs) ou ofertas de tokens de utilidade (UTOs).
+
 ## <span style="color:red">Tokenização de Ativos</span>
 
 A tokenização de ativos é um processo que envolve a conversão de um ativo físico, como imóveis, obras de arte, ou ações, em tokens digitais que podem ser negociados na blockchain. A ideia por trás da tokenização é trazer a eficiência e transparência da tecnologia blockchain para o mundo dos ativos tradicionais, tornando-os mais acessíveis e líquidos.
