@@ -71,6 +71,20 @@ No entanto, existem alguns riscos associados às stablecoins, como a possibilida
 
 Apesar desses riscos, as stablecoins têm crescido em popularidade nos últimos anos, especialmente com o aumento da adoção de criptomoedas e a demanda por uma alternativa mais estável às criptomoedas tradicionais.
 
+### <span style="color:green">Central Bank Digital Currency</span>
+
+CDBC (Central Bank Digital Currency) ou moeda digital de banco central é uma forma de moeda digital emitida por um banco central, que é uma autoridade monetária responsável pela política monetária de um país. O CDBC é semelhante à moeda fiduciária tradicional, como notas e moedas, mas é totalmente digital e criado pelo banco central.
+
+A principal diferença entre o CDBC e outras formas de dinheiro digital, como criptomoedas, é que o CDBC é emitido e garantido pelo banco central, o que significa que tem o apoio do governo e pode ser considerado uma forma de moeda soberana. Enquanto outras criptomoedas são descentralizadas e não são emitidas por nenhuma autoridade central.
+
+Os CDBCs podem ser usados para pagamentos e transações digitais, assim como as moedas fiduciárias tradicionais. No entanto, a adoção do CDBC pode trazer alguns benefícios em relação às moedas tradicionais, como redução de custos e aumento da eficiência nas transações, além de permitir a inclusão financeira de pessoas sem acesso a serviços bancários tradicionais.
+
+Além disso, o CDBC pode ajudar a combater atividades ilegais, como a lavagem de dinheiro e o financiamento do terrorismo, uma vez que todas as transações seriam registradas na blockchain e rastreáveis pelo banco central.
+
+No entanto, a adoção do CDBC também traz algumas preocupações, como a perda de privacidade financeira e a possibilidade de controle excessivo do governo sobre as transações. Por isso, muitos bancos centrais estão avaliando cuidadosamente as implicações de lançar suas próprias moedas digitais antes de tomar uma decisão.
+
+Atualmente, vários bancos centrais estão estudando e desenvolvendo suas próprias CDBCs, como o Banco Central da China, que lançou o yuan digital em um teste piloto em várias cidades do país.
+
 ## <span style="color:red">Tokenização de Ativos</span>
 
 A tokenização de ativos é um processo que envolve a conversão de um ativo físico, como imóveis, obras de arte, ou ações, em tokens digitais que podem ser negociados na blockchain. A ideia por trás da tokenização é trazer a eficiência e transparência da tecnologia blockchain para o mundo dos ativos tradicionais, tornando-os mais acessíveis e líquidos.
