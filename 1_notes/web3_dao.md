@@ -75,3 +75,7 @@ Existem muitas ferramentas e serviços que auxiliam as DAOs em suas atividades d
 - Serviços de comunidade: Esses serviços ajudam as DAOs a se comunicar e interagir com seus membros e comunidade, como fóruns, plataformas de bate-papo e redes sociais. Alguns exemplos incluem Discord, Telegram e Discourse.
 
 Essas são apenas algumas das muitas ferramentas e serviços disponíveis para as DAOs. Cada DAO pode escolher as ferramentas e serviços que melhor atendem às suas necessidades e objetivos específicos.
+
+<center>
+    <img src="images/dao_tooling.jpg" alt="tools" width="900"/>
+</center>
