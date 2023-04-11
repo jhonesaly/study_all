@@ -49,3 +49,15 @@ A seguir estão alguns passos para realizar a descentralização de uma DAO apó
 - Evolução contínua: A governança de uma DAO é um processo em evolução, e é importante que a DAO continue a adaptar e evoluir seus processos de governança com o tempo, para garantir que eles continuem a funcionar de maneira eficaz.
 
 A descentralização pode ser um processo complexo e desafiador, mas é fundamental para uma DAO alcançar sua visão de governança democrática e transparente. É importante que a transição para a governança descentralizada seja realizada de maneira cuidadosa e transparente, para garantir que todos os membros estejam cientes das mudanças e possam se adaptar a elas.
+
+## <span style="color:red">Tesouraria</span>
+
+A tesouraria de uma DAO é um fundo mantido pela DAO para financiar suas atividades e projetos. É uma das principais funções da DAO e é geralmente gerenciada pelos membros da DAO por meio de um processo de governança descentralizada.
+
+A tesouraria é alimentada por várias fontes de financiamento, como doações, investimentos e receitas geradas por projetos financiados pela DAO. É importante que a tesouraria seja bem gerenciada e transparente para garantir que os recursos da DAO sejam usados de maneira eficaz e de acordo com os interesses dos membros da DAO.
+
+Os membros da DAO podem apresentar propostas para o uso dos fundos da tesouraria, como investimentos em projetos, doações para causas ou organizações específicas, ou o pagamento de despesas da DAO, como taxas de transação. Essas propostas são então votadas pelos detentores de tokens de governança da DAO, que decidem se aprovam ou rejeitam as propostas.
+
+Para garantir a transparência e responsabilidade na gestão da tesouraria, é comum que as DAOs publiquem regularmente relatórios financeiros para os membros da comunidade e outras partes interessadas. Esses relatórios podem incluir informações como o valor total dos ativos da tesouraria, fluxos de caixa, despesas e receitas geradas por projetos financiados pela DAO.
+
+Em resumo, a tesouraria de uma DAO é um componente fundamental para financiar suas atividades e projetos, e sua gestão eficaz é crucial para garantir o sucesso da DAO e a confiança dos seus membros e apoiadores.
