@@ -61,3 +61,17 @@ Os membros da DAO podem apresentar propostas para o uso dos fundos da tesouraria
 Para garantir a transparência e responsabilidade na gestão da tesouraria, é comum que as DAOs publiquem regularmente relatórios financeiros para os membros da comunidade e outras partes interessadas. Esses relatórios podem incluir informações como o valor total dos ativos da tesouraria, fluxos de caixa, despesas e receitas geradas por projetos financiados pela DAO.
 
 Em resumo, a tesouraria de uma DAO é um componente fundamental para financiar suas atividades e projetos, e sua gestão eficaz é crucial para garantir o sucesso da DAO e a confiança dos seus membros e apoiadores.
+
+## <span style="color:red">Ferramentas</span>
+
+Existem muitas ferramentas e serviços que auxiliam as DAOs em suas atividades diárias e na tomada de decisões. Abaixo estão algumas das principais ferramentas e serviços de DAO:
+
+- Plataformas de votação: Essas plataformas permitem que os membros da DAO votem em propostas e tomem decisões coletivas. Alguns exemplos incluem Aragon, DAOstack e Colony.
+- Carteiras de criptomoedas: As carteiras de criptomoedas são usadas para armazenar e gerenciar tokens de governança da DAO e outras criptomoedas. Algumas opções populares incluem Metamask, MyEtherWallet e Gnosis Safe.
+- Serviços de gerenciamento de tesouraria: Esses serviços ajudam as DAOs a gerenciar seus fundos e ativos, incluindo contabilidade, reconciliação de transações e relatórios financeiros. Alguns exemplos incluem Gilded Finance, Zapper e DeFi Saver.
+- Serviços de governança: Esses serviços ajudam as DAOs a gerenciar seus processos de governança, como a apresentação de propostas, votação e tomada de decisões. Alguns exemplos incluem Boardroom, Snapshot e Offchain Labs.
+- Serviços de orçamento e previsão: Esses serviços ajudam as DAOs a prever e planejar suas despesas e receitas, além de criar orçamentos. Alguns exemplos incluem Forecast Foundation e Parsiq.
+- Serviços de incubação: Esses serviços ajudam as DAOs a desenvolver projetos, fornecendo financiamento, mentoria e recursos. Alguns exemplos incluem MetaCartel Ventures e DAOhaus.
+- Serviços de comunidade: Esses serviços ajudam as DAOs a se comunicar e interagir com seus membros e comunidade, como fóruns, plataformas de bate-papo e redes sociais. Alguns exemplos incluem Discord, Telegram e Discourse.
+
+Essas são apenas algumas das muitas ferramentas e serviços disponíveis para as DAOs. Cada DAO pode escolher as ferramentas e serviços que melhor atendem às suas necessidades e objetivos específicos.
