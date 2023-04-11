@@ -79,3 +79,19 @@ Essas são apenas algumas das muitas ferramentas e serviços disponíveis para a
 <center>
     <img src="images/dao_tooling.jpg" alt="tools" width="900"/>
 </center>
+
+## <span style="color:red">Cases</span>
+
+Existem vários casos de sucesso de DAO que demonstram o potencial da tecnologia blockchain e da governança descentralizada. Abaixo estão alguns dos principais exemplos:
+
+- Uniswap: Uniswap é uma plataforma de troca de criptomoedas baseada em Ethereum que permite que os usuários negociem qualquer par de tokens ERC-20 sem intermediários. A plataforma é governada por um token de governança (UNI), que permite que os detentores do token votem em propostas de governança. Desde o lançamento em 2018, Uniswap se tornou uma das principais exchanges de criptomoedas do mundo.
+- MakerDAO: MakerDAO é uma plataforma de empréstimo descentralizada baseada em Ethereum que permite que os usuários emprestem e tomem empréstimos de criptomoedas usando um token de estabilidade (DAI). A plataforma é governada por um token de governança (MKR), que permite que os detentores do token votem em propostas de governança. Desde o lançamento em 2017, MakerDAO se tornou um dos principais projetos de DeFi.
+- AAVE: AAVE é uma plataforma de empréstimo descentralizada baseada em Ethereum que permite que os usuários emprestem e tomem empréstimos de criptomoedas usando um sistema de colateralização de ativos. A plataforma é governada por um token de governança (AAVE), que permite que os detentores do token votem em propostas de governança. Desde o lançamento em 2017, AAVE se tornou um dos principais projetos de DeFi.
+- MolochDAO: MolochDAO é uma DAO criada para fornecer financiamento para projetos de código aberto na comunidade Ethereum. A DAO é governada pelos membros da comunidade Ethereum, que possuem tokens de governança que permitem que eles votem em propostas de financiamento. Desde o lançamento em 2019, MolochDAO já financiou vários projetos de código aberto.
+- The LAO: The LAO é uma DAO criada para investir em startups de tecnologia usando um modelo de financiamento de capital de risco. A DAO é governada pelos membros da comunidade que possuem tokens de governança, que permitem que eles votem em propostas de investimento. Desde o lançamento em 2020, The LAO já investiu em várias startups de tecnologia.
+
+Esses são apenas alguns exemplos de casos de sucesso de DAO. Cada um desses projetos demonstra o potencial da tecnologia blockchain e da governança descentralizada em fornecer soluções inovadoras para uma ampla gama de problemas.
+
+<center>
+    <img src="images/dao_landscape.png" alt="tools" width="900"/>
+</center>
