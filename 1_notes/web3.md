@@ -48,3 +48,13 @@ Airdrop é um termo usado no mundo das criptomoedas para descrever o processo de
 Durante um airdrop, os proprietários de uma criptomoeda específica podem receber novas moedas ou tokens em sua carteira digital, sem a necessidade de comprar ou investir em qualquer coisa. Em alguns casos, o airdrop pode ter requisitos específicos para receber as moedas, como a necessidade de realizar determinadas ações ou ter um certo número de tokens em sua carteira digital.
 
 Os airdrops podem ser realizados por startups de criptomoedas, projetos blockchain estabelecidos, exchanges e outras entidades relacionadas à criptomoeda. Eles podem ser uma forma eficaz de atrair novos usuários e incentivar a adoção de novos projetos de criptomoedas. No entanto, é importante notar que nem todos os airdrops são legítimos, e alguns podem ser tentativas de golpes ou fraudes. Portanto, é importante ter cuidado e realizar uma pesquisa adequada antes de participar de qualquer airdrop.
+
+## Domain ENS
+
+Domain Name Service (DNS) é um sistema que traduz nomes de domínio em endereços IP. Ele permite que os usuários acessem sites usando nomes de domínio fáceis de lembrar, em vez de ter que digitar um endereço IP longo e difícil de lembrar.
+
+Um Domain Name System Security Extension (DNSSEC) é uma extensão de segurança do DNS que adiciona uma camada adicional de autenticação e verificação de segurança aos registros do DNS. Ele ajuda a garantir que os usuários se conectem ao site correto e não a uma versão falsa ou fraudulenta do site. O DNSSEC é baseado em criptografia de chave pública e usa assinaturas digitais para proteger a integridade dos registros do DNS.
+
+O DNSSEC protege contra ataques de envenenamento de cache DNS, que podem ser usados para redirecionar usuários para sites falsos ou maliciosos. Ele também protege contra ataques de sequestro de DNS, onde um invasor pode interceptar o tráfego DNS para redirecionar os usuários para sites maliciosos ou roubar informações de login.
+
+No entanto, nem todos os sites usam o DNSSEC, e a implementação pode ser complexa e requerer suporte de infraestrutura adicional. Alguns provedores de serviços de Internet (ISPs) e registradores de domínios oferecem suporte ao DNSSEC, enquanto outros podem não suportá-lo ou cobrar uma taxa adicional para ativá-lo. É importante verificar se um site usa DNSSEC e, se não o fizer, usar outras medidas de segurança, como o uso de uma conexão segura (https) e evitar o uso de redes Wi-Fi públicas não seguras.
