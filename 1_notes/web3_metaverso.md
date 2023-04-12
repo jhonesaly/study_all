@@ -31,3 +31,17 @@ No metaverso, os NFTs podem ser usados ​​para representar propriedades virtu
 Por exemplo, no metaverso Decentraland, os usuários podem comprar terrenos virtuais representados por NFTs, que podem ser usados ​​para construir e personalizar edifícios e outros elementos no ambiente virtual. Outros metaversos, como Somnium Space e The Sandbox, também usam NFTs como representações de propriedades virtuais exclusivas.
 
 Os NFTs oferecem várias vantagens no metaverso, como a capacidade de provar a autenticidade e a propriedade de ativos digitais, a capacidade de negociar ativos exclusivos em um mercado aberto e a possibilidade de criar modelos de negócios inovadores baseados em ativos digitais exclusivos. Por essa razão, os NFTs têm o potencial de desempenhar um papel importante no futuro do metaverso e das economias digitais em geral.
+
+## <span style="color:red">Principais metaversos</span>
+
+Existem diversos metaversos em desenvolvimento e operação atualmente, cada um com suas próprias características, comunidades e objetivos. Abaixo estão alguns dos principais metaversos atualmente em destaque:
+
+- Second Life - Um dos metaversos mais antigos e conhecidos, criado em 2003. É um ambiente virtual centralizado que permite aos usuários criar e personalizar personagens, construir e decorar ambientes, e participar de eventos e atividades em tempo real.
+- Minecraft - Embora não seja estritamente um metaverso, o Minecraft é um jogo sandbox que permite aos jogadores criar e explorar mundos virtuais em blocos. Com mais de 100 milhões de usuários ativos, o Minecraft tem uma comunidade muito grande e diversa de jogadores.
+- Decentraland - Um metaverso descentralizado baseado em blockchain, onde os usuários podem comprar e possuir terrenos virtuais representados por NFTs, e construir ambientes e experiências personalizadas. O Decentraland é executado na blockchain Ethereum e possui uma economia virtual própria.
+- Roblox - Um jogo em estilo sandbox que permite aos jogadores criar e explorar mundos virtuais, além de jogar jogos criados por outros usuários. O Roblox tem uma comunidade muito grande e ativa, com mais de 150 milhões de usuários ativos.
+- The Sandbox - Um metaverso descentralizado baseado em blockchain, onde os usuários podem criar, compartilhar e monetizar jogos, aplicativos e experiências virtuais. Os ativos digitais no Sandbox são representados por NFTs e os usuários podem possuir e negociar esses ativos na economia virtual do metaverso.
+- Somnium Space - Um metaverso descentralizado baseado em blockchain, onde os usuários podem possuir e construir propriedades virtuais, bem como participar de eventos e atividades em tempo real. O Somnium Space tem um mundo virtual em constante evolução e é executado na blockchain Ethereum.
+- Entropia Universe - Um metaverso com uma economia virtual complexa, onde os jogadores podem ganhar dinheiro real comprando e vendendo itens e propriedades virtuais. O Entropia Universe é executado em um mecanismo de jogo proprietário e tem uma economia virtual própria.
+
+Esses são apenas alguns dos principais metaversos atualmente disponíveis, e há muitos outros em desenvolvimento ou em operação que oferecem experiências virtuais únicas e interessantes.
