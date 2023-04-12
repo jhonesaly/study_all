@@ -58,3 +58,13 @@ Um Domain Name System Security Extension (DNSSEC) é uma extensão de segurança
 O DNSSEC protege contra ataques de envenenamento de cache DNS, que podem ser usados para redirecionar usuários para sites falsos ou maliciosos. Ele também protege contra ataques de sequestro de DNS, onde um invasor pode interceptar o tráfego DNS para redirecionar os usuários para sites maliciosos ou roubar informações de login.
 
 No entanto, nem todos os sites usam o DNSSEC, e a implementação pode ser complexa e requerer suporte de infraestrutura adicional. Alguns provedores de serviços de Internet (ISPs) e registradores de domínios oferecem suporte ao DNSSEC, enquanto outros podem não suportá-lo ou cobrar uma taxa adicional para ativá-lo. É importante verificar se um site usa DNSSEC e, se não o fizer, usar outras medidas de segurança, como o uso de uma conexão segura (https) e evitar o uso de redes Wi-Fi públicas não seguras.
+
+## Solidity
+
+Solidity é uma linguagem de programação de contrato inteligente (smart contract) usada para desenvolver aplicativos descentralizados (DApps) na plataforma Ethereum. É uma linguagem de alto nível, similar ao JavaScript, e é projetada especificamente para escrever contratos inteligentes na blockchain Ethereum.
+
+Os contratos inteligentes escritos em Solidity são executados na máquina virtual Ethereum (EVM) e implementados na forma de códigos-fonte. Eles podem conter lógica de negócios, regras de transações, transferências de tokens e outras funcionalidades. A linguagem é baseada em orientação a objetos e inclui recursos avançados como herança, bibliotecas e contratos de interface.
+
+A sintaxe do Solidity é semelhante à do JavaScript, e sua estrutura de programa é semelhante à de outras linguagens orientadas a objetos. A linguagem também possui recursos de segurança integrados, como verificação de tipo de dados e checagem de exceções, para evitar vulnerabilidades comuns, como ataques de estouro de pilha e vazamentos de memória.
+
+Embora o Solidity seja a linguagem de contrato inteligente mais popular usada na plataforma Ethereum, outras linguagens, como Vyper e Serpent, também são usadas para escrever contratos inteligentes na blockchain Ethereum.
