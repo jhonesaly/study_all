@@ -40,3 +40,11 @@ Os NFTs (Non-Fungible Tokens) são uma forma de ativo digital único, que podem 
 - Web3.py: é uma biblioteca Python que permite a interação com a rede Ethereum e a criação de aplicativos descentralizados na Web3 de forma mais abrangente que o py-eth.
 - Py-solc: é uma biblioteca Python para compilar contratos inteligentes escritos em Solidity, a linguagem de programação usada na plataforma Ethereum. O Py-solc compila o código-fonte Solidity em bytecode que pode ser implantado na rede Ethereum. Ele também pode ser usado para verificar a sintaxe e a semântica do código-fonte Solidity antes da compilação.
 - Py-Eth:  é outra biblioteca Python para interagir com a rede Ethereum, permitindo a leitura e escrita de dados na blockchain Ethereum, bem como o gerenciamento de contas e transações. O Py-Eth também fornece uma interface para a linguagem de programação Solidity, permitindo que desenvolvedores Python escrevam contratos inteligentes na plataforma Ethereum.
+
+## Airdrop
+
+Airdrop é um termo usado no mundo das criptomoedas para descrever o processo de distribuição gratuita de tokens ou criptomoedas para os detentores de uma determinada moeda digital. Esse processo é geralmente realizado como uma estratégia de marketing para aumentar a conscientização e o interesse em uma nova criptomoeda ou projeto blockchain.
+
+Durante um airdrop, os proprietários de uma criptomoeda específica podem receber novas moedas ou tokens em sua carteira digital, sem a necessidade de comprar ou investir em qualquer coisa. Em alguns casos, o airdrop pode ter requisitos específicos para receber as moedas, como a necessidade de realizar determinadas ações ou ter um certo número de tokens em sua carteira digital.
+
+Os airdrops podem ser realizados por startups de criptomoedas, projetos blockchain estabelecidos, exchanges e outras entidades relacionadas à criptomoeda. Eles podem ser uma forma eficaz de atrair novos usuários e incentivar a adoção de novos projetos de criptomoedas. No entanto, é importante notar que nem todos os airdrops são legítimos, e alguns podem ser tentativas de golpes ou fraudes. Portanto, é importante ter cuidado e realizar uma pesquisa adequada antes de participar de qualquer airdrop.
