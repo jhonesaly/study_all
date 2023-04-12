@@ -78,3 +78,17 @@ O IPFS usa um sistema de endereçamento baseado em conteúdo, onde cada arquivo 
 O IPFS também tem recursos avançados de compartilhamento de arquivos, como a capacidade de criar links diretos para arquivos e pastas, permitindo que os usuários compartilhem arquivos diretamente entre si sem precisar usar um servidor centralizado. Ele também suporta criptografia de ponta a ponta para garantir a segurança dos arquivos durante a transferência.
 
 O IPFS é usado em vários projetos blockchain, incluindo o Ethereum e o Filecoin. Ele é uma tecnologia emergente que está mudando a maneira como os arquivos são armazenados e compartilhados na internet, permitindo a criação de uma internet mais descentralizada e distribuída.
+
+## Jobs in web3
+
+cryptocurrencyjobs.co
+pompcryptojobs.com
+cryptojobslist.com
+useweb3.xyz/jobs
+buildspace.so
+web3board.io
+web3.career
+crypto.jobs
+remoteok.com
+defi.jobs
+dework.xyz
