@@ -68,3 +68,13 @@ Os contratos inteligentes escritos em Solidity são executados na máquina virtu
 A sintaxe do Solidity é semelhante à do JavaScript, e sua estrutura de programa é semelhante à de outras linguagens orientadas a objetos. A linguagem também possui recursos de segurança integrados, como verificação de tipo de dados e checagem de exceções, para evitar vulnerabilidades comuns, como ataques de estouro de pilha e vazamentos de memória.
 
 Embora o Solidity seja a linguagem de contrato inteligente mais popular usada na plataforma Ethereum, outras linguagens, como Vyper e Serpent, também são usadas para escrever contratos inteligentes na blockchain Ethereum.
+
+## IPFS
+
+InterPlanetary File System (IPFS) é um protocolo de rede descentralizado usado para armazenar e compartilhar arquivos em uma rede peer-to-peer. Ele foi projetado para ser uma alternativa ao protocolo HTTP (Hypertext Transfer Protocol) que é usado atualmente para a transferência de arquivos na internet.
+
+O IPFS usa um sistema de endereçamento baseado em conteúdo, onde cada arquivo é identificado por um hash criptográfico exclusivo que representa seu conteúdo. Isso permite que os arquivos sejam armazenados de forma descentralizada, onde várias cópias do mesmo arquivo podem ser mantidas em diferentes nós da rede. Os arquivos são baixados de vários nós na rede, em vez de um único servidor centralizado, o que pode aumentar a velocidade de transferência e tornar o armazenamento de dados mais resiliente e confiável.
+
+O IPFS também tem recursos avançados de compartilhamento de arquivos, como a capacidade de criar links diretos para arquivos e pastas, permitindo que os usuários compartilhem arquivos diretamente entre si sem precisar usar um servidor centralizado. Ele também suporta criptografia de ponta a ponta para garantir a segurança dos arquivos durante a transferência.
+
+O IPFS é usado em vários projetos blockchain, incluindo o Ethereum e o Filecoin. Ele é uma tecnologia emergente que está mudando a maneira como os arquivos são armazenados e compartilhados na internet, permitindo a criação de uma internet mais descentralizada e distribuída.
