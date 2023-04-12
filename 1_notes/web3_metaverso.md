@@ -21,3 +21,13 @@ A realidade virtual (VR) e a realidade aumentada (AR) são tecnologias imersivas
 A realidade virtual é uma tecnologia que cria um ambiente completamente virtual e imersivo, onde os usuários podem sentir que estão dentro de um mundo digital. Para isso, os usuários utilizam um dispositivo de visualização, como um headset VR, que cobre os olhos e exibe uma imagem em 3D, proporcionando uma sensação de profundidade e perspectiva. Além disso, alguns dispositivos VR também incluem controles para que os usuários possam interagir com objetos virtuais e movimentar-se dentro do ambiente virtual.
 
 Por outro lado, a realidade aumentada é uma tecnologia que adiciona elementos virtuais ao mundo real em que o usuário está presente. Os usuários utilizam dispositivos, como smartphones ou tablets, para visualizar objetos digitais sobrepostos em seu campo de visão, combinando elementos virtuais e reais. Por exemplo, ao usar um aplicativo de AR para visualizar uma sala, o usuário pode ver objetos digitais, como móveis virtuais, que parecem estar realmente presentes na sala.
+
+## <span style="color:red">NFT no metaverso</span>
+
+Os NFTs (Non-Fungible Tokens) são ativos digitais únicos que podem ser usados ​​para representar uma ampla gama de itens digitais, como arte, música, vídeos e outros bens digitais exclusivos. O metaverso e os NFTs têm uma relação próxima porque os NFTs podem ser usados ​​como ativos dentro do metaverso.
+
+No metaverso, os NFTs podem ser usados ​​para representar propriedades virtuais, como terrenos, itens de jogos, edifícios, entre outros. Ao usar NFTs para representar esses ativos digitais exclusivos, os usuários do metaverso podem comprar, vender e negociar esses ativos como se fossem propriedades físicas.
+
+Por exemplo, no metaverso Decentraland, os usuários podem comprar terrenos virtuais representados por NFTs, que podem ser usados ​​para construir e personalizar edifícios e outros elementos no ambiente virtual. Outros metaversos, como Somnium Space e The Sandbox, também usam NFTs como representações de propriedades virtuais exclusivas.
+
+Os NFTs oferecem várias vantagens no metaverso, como a capacidade de provar a autenticidade e a propriedade de ativos digitais, a capacidade de negociar ativos exclusivos em um mercado aberto e a possibilidade de criar modelos de negócios inovadores baseados em ativos digitais exclusivos. Por essa razão, os NFTs têm o potencial de desempenhar um papel importante no futuro do metaverso e das economias digitais em geral.
