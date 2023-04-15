@@ -4,6 +4,16 @@ Cybersecurity (ou segurança cibernética, em português) é o conjunto de medid
 
 A segurança cibernética é importante porque as ameaças cibernéticas estão se tornando cada vez mais sofisticadas e comuns, representando um risco significativo para a privacidade, integridade e disponibilidade das informações digitais, tanto em nível pessoal quanto empresarial. Portanto, é necessário implementar medidas de segurança adequadas para proteger contra essas ameaças e minimizar os riscos de ataques bem-sucedidos.
 
+## Hacking
+
+Hacking é uma técnica utilizada para explorar sistemas de computadores e redes com o objetivo de encontrar vulnerabilidades e falhas de segurança. O termo hacker, originalmente, referia-se a um especialista em computação que possuía habilidades avançadas de programação e sistemas operacionais.
+
+No entanto, com o tempo, o termo hacker passou a ser associado também a indivíduos que usam essas habilidades para fins maliciosos, como roubo de informações, espionagem, invasão de sistemas, sabotagem e outros tipos de crimes cibernéticos. Esses indivíduos são chamados de crackers.
+
+Dessa forma, é importante diferenciar entre os hackers éticos e os crackers. Os hackers éticos são profissionais de segurança cibernética que usam suas habilidades para encontrar e corrigir vulnerabilidades de segurança em sistemas de computadores e redes, a fim de protegê-los contra ataques maliciosos. Eles trabalham com o consentimento dos proprietários dos sistemas e seguem padrões éticos e legais em suas atividades.
+
+Por outro lado, os crackers são indivíduos que usam suas habilidades para explorar vulnerabilidades em sistemas de computadores e redes para fins maliciosos, sem autorização dos proprietários dos sistemas. Eles são considerados criminosos cibernéticos e violam a lei em suas atividades.
+
 ## Spoofing
 
 O "spoofing" é uma técnica em que o número de telefone exibido no identificador de chamadas é falsificado para ocultar a verdadeira identidade do chamador. Essa técnica é usada por golpistas e spammers para enganar as pessoas e fazer com que atendam chamadas que normalmente evitariam.
