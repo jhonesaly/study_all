@@ -1,4 +1,8 @@
-# Cyber Security
+# Cybersecurity
+
+Cybersecurity (ou segurança cibernética, em português) é o conjunto de medidas técnicas, práticas e processos que visam proteger sistemas de computadores, redes, dispositivos móveis, servidores e dados digitais de ataques maliciosos, como roubo de informações, invasão de sistemas, espionagem, sabotagem, phishing e malware.
+
+A segurança cibernética é importante porque as ameaças cibernéticas estão se tornando cada vez mais sofisticadas e comuns, representando um risco significativo para a privacidade, integridade e disponibilidade das informações digitais, tanto em nível pessoal quanto empresarial. Portanto, é necessário implementar medidas de segurança adequadas para proteger contra essas ameaças e minimizar os riscos de ataques bem-sucedidos.
 
 ## Spoofing
 
