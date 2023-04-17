@@ -22,6 +22,19 @@ Já o hacker White Hat é alguém que usa suas habilidades para encontrar vulner
 
 O hacker Gray Hat é uma combinação dos dois anteriores, agindo em uma zona cinzenta da ética. Esses hackers podem encontrar vulnerabilidades em sistemas e redes sem autorização, mas ao invés de usá-las para benefício próprio, eles notificam as empresas responsáveis para que as vulnerabilidades possam ser corrigidas. Alguns podem cobrar por esse serviço, enquanto outros simplesmente gostam de desafiar a segurança de sistemas sem causar prejuízos.
 
+## Tipos de ameaças
+
+Existem várias tipos de ameaças cibernéticas que podem comprometer a segurança de sistemas, redes e informações. Alguns dos principais tipos de ameaças incluem:
+
+- Malware: software malicioso projetado para se infiltrar em um sistema sem o conhecimento do usuário, como vírus, worms, trojans, ransomware, entre outros.
+- Phishing: uma técnica que envolve a criação de sites, e-mails ou mensagens de texto falsas para enganar usuários e obter informações confidenciais, como senhas e informações de cartão de crédito.
+- Ataques de negação de serviço (DDoS): tentativas de sobrecarregar um sistema ou rede com tráfego excessivo para que ele fique inacessível para usuários legítimos.
+- Engenharia social: técnicas psicológicas usadas para persuadir usuários a fornecer informações confidenciais ou permitir acesso não autorizado a sistemas e redes.
+- Ataques de força bruta: tentativas repetitivas de adivinhar senhas ou outros dados confidenciais até que a combinação correta seja encontrada.
+- Injeção de código: uma técnica usada para inserir código malicioso em um site ou aplicativo para obter acesso não autorizado.
+- Acesso não autorizado: tentativas de invadir um sistema ou rede sem permissão para obter informações confidenciais ou causar danos.
+
+
 ## Spoofing
 
 O "spoofing" é uma técnica em que o número de telefone exibido no identificador de chamadas é falsificado para ocultar a verdadeira identidade do chamador. Essa técnica é usada por golpistas e spammers para enganar as pessoas e fazer com que atendam chamadas que normalmente evitariam.
