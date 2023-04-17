@@ -14,6 +14,14 @@ Dessa forma, é importante diferenciar entre os hackers éticos e os crackers. O
 
 Por outro lado, os crackers são indivíduos que usam suas habilidades para explorar vulnerabilidades em sistemas de computadores e redes para fins maliciosos, sem autorização dos proprietários dos sistemas. Eles são considerados criminosos cibernéticos e violam a lei em suas atividades.
 
+### Black, gray, white
+
+Um hacker Black Hat é alguém que usa suas habilidades para invadir sistemas e redes, roubar informações confidenciais, danificar sistemas e causar prejuízos. Esses hackers agem de forma ilegal e muitas vezes visam obter lucro financeiro.
+
+Já o hacker White Hat é alguém que usa suas habilidades para encontrar vulnerabilidades em sistemas e redes com o objetivo de ajudar a corrigi-las e melhorar a segurança. Esses hackers trabalham dentro da lei e são muitas vezes contratados por empresas para testar a segurança de seus sistemas.
+
+O hacker Gray Hat é uma combinação dos dois anteriores, agindo em uma zona cinzenta da ética. Esses hackers podem encontrar vulnerabilidades em sistemas e redes sem autorização, mas ao invés de usá-las para benefício próprio, eles notificam as empresas responsáveis para que as vulnerabilidades possam ser corrigidas. Alguns podem cobrar por esse serviço, enquanto outros simplesmente gostam de desafiar a segurança de sistemas sem causar prejuízos.
+
 ## Spoofing
 
 O "spoofing" é uma técnica em que o número de telefone exibido no identificador de chamadas é falsificado para ocultar a verdadeira identidade do chamador. Essa técnica é usada por golpistas e spammers para enganar as pessoas e fazer com que atendam chamadas que normalmente evitariam.
