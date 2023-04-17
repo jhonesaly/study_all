@@ -46,6 +46,18 @@ Existem muitas boas práticas de cibersegurança que podem ajudar a proteger seu
 - Use software antivírus e firewall: use software de segurança atualizado e confiável para ajudar a proteger seus dispositivos e rede contra ameaças cibernéticas.
 - Limite o acesso: conceda acesso apenas a usuários autorizados e restrinja o acesso aos dados e informações somente ao que é necessário para as funções de trabalho.
 
+## Blue Team x Red Team
+
+Blue team e red team são dois conceitos relacionados à segurança cibernética que são frequentemente usados em testes de penetração e simulações de ataques.
+
+O blue team é a equipe encarregada de defender os sistemas e dados de uma organização. Eles trabalham para identificar e mitigar as ameaças de segurança, monitorar a rede em busca de atividades suspeitas e responder rapidamente a incidentes de segurança.
+
+Por outro lado, o red team é uma equipe contratada por uma organização para simular um ataque cibernético em seus sistemas, com o objetivo de identificar vulnerabilidades de segurança e testar a eficácia das defesas implementadas pelo blue team. Eles trabalham para imitar as táticas, técnicas e procedimentos de um invasor real, incluindo tentativas de phishing, engenharia social, escaneamento de vulnerabilidades, entre outras técnicas.
+
+O trabalho conjunto entre o blue team e red team é conhecido como "purple teaming". Nesse modelo, o red team ajuda a identificar falhas na defesa e o blue team utiliza essas informações para aprimorar suas defesas e melhorar a segurança do sistema.
+
+Em resumo, o blue team é responsável pela defesa e o red team é responsável por identificar vulnerabilidades e simular ataques, ambos trabalhando juntos para aprimorar a segurança cibernética da organização.
+
 ## Spoofing
 
 O "spoofing" é uma técnica em que o número de telefone exibido no identificador de chamadas é falsificado para ocultar a verdadeira identidade do chamador. Essa técnica é usada por golpistas e spammers para enganar as pessoas e fazer com que atendam chamadas que normalmente evitariam.
