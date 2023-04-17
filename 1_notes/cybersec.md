@@ -34,6 +34,17 @@ Existem várias tipos de ameaças cibernéticas que podem comprometer a seguran�
 - Injeção de código: uma técnica usada para inserir código malicioso em um site ou aplicativo para obter acesso não autorizado.
 - Acesso não autorizado: tentativas de invadir um sistema ou rede sem permissão para obter informações confidenciais ou causar danos.
 
+## Boas práticas
+
+Existem muitas boas práticas de cibersegurança que podem ajudar a proteger seus sistemas, dados e informações. Aqui estão algumas das principais:
+
+- Mantenha o software atualizado: manter o software do seu sistema operacional, aplicativos e dispositivos atualizados com as versões mais recentes pode ajudar a corrigir vulnerabilidades de segurança conhecidas.
+- Use senhas fortes: use senhas longas e complexas, incluindo uma combinação de letras maiúsculas e minúsculas, números e caracteres especiais. Evite usar senhas comuns e nunca use a mesma senha em mais de uma conta.
+- Use autenticação de dois fatores: adicione uma camada extra de segurança ao ativar a autenticação de dois fatores (2FA) em contas críticas. Isso exige que você insira um código único enviado por SMS ou gerado por um aplicativo autenticador ao fazer login.
+- Cuidado com phishing: esteja atento a e-mails, mensagens de texto ou ligações suspeitas, especialmente se pedirem informações pessoais ou financeiras. Verifique se as solicitações são legítimas antes de fornecer informações.
+- Faça backup regularmente: mantenha cópias de backup dos seus arquivos importantes e mantenha-os em um local seguro. Isso pode ajudar a recuperar dados em caso de perda ou roubo.
+- Use software antivírus e firewall: use software de segurança atualizado e confiável para ajudar a proteger seus dispositivos e rede contra ameaças cibernéticas.
+- Limite o acesso: conceda acesso apenas a usuários autorizados e restrinja o acesso aos dados e informações somente ao que é necessário para as funções de trabalho.
 
 ## Spoofing
 
