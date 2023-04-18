@@ -58,6 +58,16 @@ O trabalho conjunto entre o blue team e red team é conhecido como "purple teami
 
 Em resumo, o blue team é responsável pela defesa e o red team é responsável por identificar vulnerabilidades e simular ataques, ambos trabalhando juntos para aprimorar a segurança cibernética da organização.
 
+## Vírus que atacaram Windows
+
+Alguns dos principais vírus e malware que prejudicaram o funcionamento de sistemas operacionais Windows, incluindo o Windows 10:
+
+- Sasser: Este worm, que surgiu em 2004, explorava uma vulnerabilidade no Windows XP e no Windows 2000. Ele se propagava automaticamente pela rede, causando reinicializações aleatórias e lentidão no sistema.
+- MyDoom: Esse worm, que apareceu em 2004, se espalhava por e-mails e compartilhamento de arquivos em redes. Ele causava sobrecarga de servidores, bloqueio de sites e lentidão na internet.
+- Zeus/Zbot: Este Trojan, que apareceu em 2007, é um tipo de malware projetado para roubar informações financeiras, como senhas de banco e detalhes de cartões de crédito. Ele afetou principalmente sistemas Windows, comprometendo a segurança financeira dos usuários.
+- Emotet: Este malware, que surgiu em 2014, é um Trojan bancário que se espalha por e-mails de phishing e documentos maliciosos. Ele é conhecido por roubar informações sensíveis, como credenciais de login e dados financeiros, e também pode se espalhar para outros sistemas Windows em uma rede.
+- Petya/NotPetya: Este ransomware, que apareceu em 2016, se espalhou rapidamente pelo mundo, afetando sistemas Windows, incluindo o Windows 10. Ele criptografava os arquivos do sistema e exibia uma mensagem de resgate, causando grandes interrupções em empresas e organizações.
+
 ## Spoofing
 
 O "spoofing" é uma técnica em que o número de telefone exibido no identificador de chamadas é falsificado para ocultar a verdadeira identidade do chamador. Essa técnica é usada por golpistas e spammers para enganar as pessoas e fazer com que atendam chamadas que normalmente evitariam.
