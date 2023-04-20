@@ -61,3 +61,19 @@ Camada de Apresentação: É responsável pela tradução, compressão e criptog
 Camada de Aplicação: É a camada mais alta do modelo OSI e fornece interfaces para que as aplicações de usuário possam interagir com a rede. Ela inclui protocolos específicos de aplicação, como HTTP (para a World Wide Web), SMTP (para email), FTP (para transferência de arquivos) e muitos outros.
 
 É importante notar que nem todos os modelos de rede seguem exatamente o Modelo OSI, e alguns modelos, como o Modelo TCP/IP, têm uma abordagem diferente com um número diferente de camadas e funcionalidades. No entanto, o Modelo OSI é amplamente utilizado como uma referência padrão para entender a estrutura e a organização dos protocolos de rede em diferentes camadas.
+
+## Protocolos
+
+Existem muitos protocolos de rede utilizados em redes de computadores para garantir a comunicação eficiente e confiável entre os dispositivos. Aqui estão alguns exemplos de protocolos de rede amplamente utilizados:
+
+Protocolo TCP/IP (Transmission Control Protocol/Internet Protocol): É o protocolo de rede mais amplamente utilizado na Internet e em muitas redes locais (LANs) e redes de longa distância (WANs). Ele é composto por dois protocolos principais: TCP, que é um protocolo de transporte confiável que garante a entrega de dados sem perda ou corrupção, e IP, que é um protocolo de roteamento que permite que os dados sejam encaminhados entre redes.
+
+Protocolo Ethernet: É um protocolo de rede com fio que é amplamente utilizado em redes locais (LANs). Ele define os padrões para a transmissão de dados em formato de quadros pela rede e é comumente usado para conectar dispositivos em uma rede local, como computadores, switches, roteadores e outros dispositivos de rede.
+
+Protocolo Wi-Fi (IEEE 802.11): É um conjunto de padrões de protocolo de rede sem fio que permite a comunicação sem fio entre dispositivos em uma rede local (LAN). É amplamente utilizado em redes de área local sem fio (WLANs) para conectar dispositivos como computadores, smartphones, tablets e dispositivos IoT (Internet of Things).
+
+Protocolo DNS (Domain Name System): É um protocolo utilizado para converter nomes de domínio em endereços IP, permitindo a navegação na Internet por meio de nomes de domínio amigáveis em vez de endereços IP numéricos. Ele é amplamente utilizado para a resolução de nomes de domínio em endereços IP em redes de computadores.
+
+Protocolo DHCP (Dynamic Host Configuration Protocol): É um protocolo utilizado para atribuição dinâmica de endereços IP a dispositivos em uma rede. Ele permite que os dispositivos obtenham automaticamente configurações de rede, como endereços IP, máscaras de sub-rede, gateways e outros parâmetros de configuração de rede, facilitando a administração e gerenciamento de redes.
+
+Protocolo SNMP (Simple Network Management Protocol): É um protocolo utilizado para o gerenciamento e monitoramento de dispositivos em uma rede, como switches, roteadores, servidores e outros dispositivos de rede. Ele permite a coleta de informações de gerenciamento de rede, configuração e controle de dispositivos em uma rede.
