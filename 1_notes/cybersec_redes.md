@@ -15,3 +15,17 @@ Ponto a Ponto (P2P): É um modelo de arquitetura em que os dispositivos na rede 
 Arquitetura em Camadas: É um modelo de arquitetura em que as funções de rede são organizadas em camadas distintas, com cada camada sendo responsável por uma função específica. As camadas são interconectadas e trabalham em conjunto para fornecer serviços de rede. Um exemplo conhecido de arquitetura em camadas é o modelo OSI (Open Systems Interconnection), que é um modelo de referência usado para entender e projetar redes de computadores.
 
 Arquitetura em Nuvem (Cloud Computing): É um modelo de arquitetura em que os recursos de computação, como armazenamento, processamento e aplicativos, são fornecidos de forma remota através da internet. Os usuários acessam esses recursos através de uma rede, geralmente a Internet, e não precisam se preocupar com a infraestrutura subjacente.
+
+## Tipos
+
+Rede Local (LAN - Local Area Network): É uma rede que abrange uma área geográfica limitada, como um escritório, uma empresa ou um campus universitário. É comumente usada para conectar dispositivos em uma área específica e pode ser configurada com alta velocidade e baixa latência.
+
+Rede de Longa Distância (WAN - Wide Area Network): É uma rede que abrange uma grande área geográfica, como cidades, estados ou países. É usada para conectar redes locais em diferentes locais geográficos, geralmente usando tecnologias de telecomunicações, como linhas dedicadas, redes de satélite ou conexões de internet.
+
+Rede de Área Global (GAN - Global Area Network): É uma rede que abrange uma grande escala geográfica, como todo o mundo, e é usada para interconectar redes de longa distância em diferentes países ou continentes. A Internet é o exemplo mais conhecido de uma GAN.
+
+Rede sem Fio (Wireless Network): É uma rede que permite a conexão de dispositivos sem fio, como smartphones, tablets, laptops e dispositivos IoT (Internet das Coisas), utilizando tecnologias como Wi-Fi, Bluetooth, 4G/5G, entre outras.
+
+Rede Definida por Software (SDN - Software-Defined Networking): É uma arquitetura de rede que separa o plano de controle (responsável pela tomada de decisões) do plano de dados (responsável pela transferência de dados). Isso permite uma maior flexibilidade e controle centralizado na configuração e gerenciamento da rede, tornando-a mais adaptável às necessidades de segurança cibernética.
+
+Rede Virtual Privada (VPN - Virtual Private Network): É uma rede que utiliza a infraestrutura de uma rede pública, como a Internet, para criar uma conexão segura e criptografada entre dispositivos remotos. É frequentemente usada para acessar recursos de rede de forma segura e proteger a comunicação em ambientes de acesso remoto.
