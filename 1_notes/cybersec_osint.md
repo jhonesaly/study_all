@@ -22,3 +22,6 @@ O OSINT Framework é uma ferramenta útil para pesquisadores, investigadores, pr
 As categorias do OSINT Framework abrangem uma ampla gama de áreas, como pessoas, empresas, organizações, redes sociais, email, domínios, IPs, localização geográfica, código-fonte, eventos, notícias, e muitos outros. Cada categoria possui uma lista de recursos e ferramentas de código aberto relacionadas, com links para os respectivos websites e documentações.
 
 O OSINT Framework é uma fonte valiosa de informações e ferramentas para realizar investigações, pesquisas e análises de inteligência com base em fontes abertas. É importante observar que o uso do OSINT deve ser realizado em conformidade com as leis e regulamentos aplicáveis, incluindo os princípios éticos de coleta e uso de informações.
+
+![osint workflow 1](images/osint_workflow.png)
+![osint workflow 2](images/osint_workflow2.png)
