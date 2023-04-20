@@ -41,3 +41,23 @@ Topologia em Anel: É um tipo de topologia em que os dispositivos são conectado
 Topologia em Malha: É um tipo de topologia em que todos os dispositivos estão conectados a todos os outros dispositivos na rede, criando uma rede de conexões redundantes. Essa topologia oferece alta confiabilidade e tolerância a falhas, pois permite que os dados sejam roteados por caminhos alternativos se uma rota falhar.
 
 Topologia em Árvore: É um tipo de topologia em que os dispositivos são organizados em uma estrutura hierárquica em forma de árvore, com um nó raiz que está conectado aos nós filhos, e assim por diante. Essa topologia é comumente usada em redes de grande escala, como redes corporativas, e permite uma maior organização e controle da rede.
+
+## Camadas
+
+As camadas da rede se referem à organização hierárquica dos protocolos de rede em diferentes níveis de abstração, também conhecida como modelo de referência. O modelo de referência mais comum é o Modelo OSI (Open Systems Interconnection), que é composto por sete camadas. Aqui estão as sete camadas do Modelo OSI:
+
+Camada Física: É a camada mais baixa do modelo OSI e trata da transmissão física dos dados na rede. Ela define os padrões de transmissão de bits por meio de meios físicos, como cabos, sinais elétricos ou ondas de rádio.
+
+Camada de Enlace de Dados: É responsável pelo controle de acesso ao meio físico, como a detecção e correção de erros na transmissão de dados, controle de fluxo e endereçamento físico (como endereços MAC em redes Ethernet).
+
+Camada de Rede: É responsável pela transferência de dados de um nó para outro em diferentes redes. Ela lida com o roteamento de pacotes, encaminhamento de dados e controle de congestionamento.
+
+Camada de Transporte: É responsável pelo transporte confiável e eficiente de dados entre dispositivos finais. Ela fornece serviços de transporte, como segmentação e remontagem de dados, controle de fluxo e controle de erro.
+
+Camada de Sessão: É responsável pelo estabelecimento, manutenção e encerramento das sessões de comunicação entre dispositivos. Ela gerencia a troca de dados e estabelece a sincronização e a recuperação em caso de falhas de conexão.
+
+Camada de Apresentação: É responsável pela tradução, compressão e criptografia dos dados, garantindo que eles estejam em um formato adequado para transmissão e compreensão pelos dispositivos finais.
+
+Camada de Aplicação: É a camada mais alta do modelo OSI e fornece interfaces para que as aplicações de usuário possam interagir com a rede. Ela inclui protocolos específicos de aplicação, como HTTP (para a World Wide Web), SMTP (para email), FTP (para transferência de arquivos) e muitos outros.
+
+É importante notar que nem todos os modelos de rede seguem exatamente o Modelo OSI, e alguns modelos, como o Modelo TCP/IP, têm uma abordagem diferente com um número diferente de camadas e funcionalidades. No entanto, o Modelo OSI é amplamente utilizado como uma referência padrão para entender a estrutura e a organização dos protocolos de rede em diferentes camadas.
