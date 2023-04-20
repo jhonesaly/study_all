@@ -29,3 +29,15 @@ Rede sem Fio (Wireless Network): É uma rede que permite a conexão de dispositi
 Rede Definida por Software (SDN - Software-Defined Networking): É uma arquitetura de rede que separa o plano de controle (responsável pela tomada de decisões) do plano de dados (responsável pela transferência de dados). Isso permite uma maior flexibilidade e controle centralizado na configuração e gerenciamento da rede, tornando-a mais adaptável às necessidades de segurança cibernética.
 
 Rede Virtual Privada (VPN - Virtual Private Network): É uma rede que utiliza a infraestrutura de uma rede pública, como a Internet, para criar uma conexão segura e criptografada entre dispositivos remotos. É frequentemente usada para acessar recursos de rede de forma segura e proteger a comunicação em ambientes de acesso remoto.
+
+## Topologia
+
+Topologia em Estrela: É um tipo de topologia em que todos os dispositivos em uma rede estão conectados a um dispositivo central, conhecido como hub ou switch. O hub ou switch atua como ponto central de conexão, e todos os dispositivos na rede se comunicam através dele. Se um dispositivo falhar, apenas esse dispositivo será afetado, sem impactar os demais dispositivos na rede.
+
+Topologia em Barramento: É um tipo de topologia em que todos os dispositivos em uma rede são conectados a um único cabo, conhecido como barramento. Os dispositivos compartilham o mesmo meio de transmissão para se comunicarem. Se um dispositivo falhar ou o cabo for danificado, pode causar a interrupção de toda a rede.
+
+Topologia em Anel: É um tipo de topologia em que os dispositivos são conectados em forma de anel, em que cada dispositivo está conectado aos dispositivos vizinhos, formando um circuito fechado. Os dados são transmitidos em uma única direção ao redor do anel até chegar ao destino correto. Se um dispositivo falhar, pode afetar a comunicação em toda a rede.
+
+Topologia em Malha: É um tipo de topologia em que todos os dispositivos estão conectados a todos os outros dispositivos na rede, criando uma rede de conexões redundantes. Essa topologia oferece alta confiabilidade e tolerância a falhas, pois permite que os dados sejam roteados por caminhos alternativos se uma rota falhar.
+
+Topologia em Árvore: É um tipo de topologia em que os dispositivos são organizados em uma estrutura hierárquica em forma de árvore, com um nó raiz que está conectado aos nós filhos, e assim por diante. Essa topologia é comumente usada em redes de grande escala, como redes corporativas, e permite uma maior organização e controle da rede.
