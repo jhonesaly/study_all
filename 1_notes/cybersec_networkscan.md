@@ -36,3 +36,17 @@ O Nmap (Network Mapper) é uma ferramenta popular de código aberto usada para v
 - Varredura de DNS: O Nmap também pode ser usado para varrer e explorar servidores de nomes de domínio (DNS), buscando informações sobre os registros de DNS de um domínio específico, como identificação de hosts, serviços e configurações de DNS.
 
 É importante ressaltar que o uso do Nmap ou de qualquer outra ferramenta de varredura de rede para fins de ataque cibernético é ilegal e antiético. Apenas profissionais de segurança cibernética autorizados devem usar o Nmap ou qualquer outra ferramenta de varredura de rede para fins legítimos, como avaliação de segurança em ambientes controlados e com devida autorização legal. O uso inadequado do Nmap ou de qualquer outra ferramenta de segurança pode resultar em consequências legais graves.
+
+## Enumeração
+
+A enumeração com o Nmap (Network Mapper) é uma técnica usada em segurança cibernética para coletar informações detalhadas sobre sistemas alvo em uma rede. É uma etapa posterior à varredura de portas, em que o Nmap é usado para obter informações adicionais sobre os serviços, aplicativos, configurações e outras características dos hosts identificados durante a varredura de portas. A enumeração pode ajudar a identificar possíveis vulnerabilidades e explorar informações específicas sobre os sistemas alvo.
+
+A enumeração com o Nmap pode envolver o uso de várias opções e recursos avançados do Nmap para obter informações detalhadas sobre os hosts identificados na rede. Alguns exemplos de técnicas de enumeração com o Nmap incluem:
+
+- Varredura de versões de serviços: O Nmap pode ser configurado para identificar as versões dos serviços e aplicativos em execução em portas abertas nos sistemas alvo. Isso pode ajudar a identificar possíveis vulnerabilidades conhecidas associadas a versões específicas de serviços ou aplicativos.
+- Detecção de sistemas operacionais: O Nmap pode ser usado para identificar o sistema operacional em execução em um host alvo com base nas características de suas respostas de rede, o que pode ajudar a adaptar ataques específicos para o sistema operacional identificado.
+- Enumeração de scripts e plugins: O Nmap suporta a execução de scripts e plugins personalizados, o que permite aos usuários escreverem e executarem scripts de enumeração personalizados para obter informações específicas sobre os hosts alvo. Por exemplo, pode-se usar scripts do Nmap para obter informações sobre os serviços, banners de banners de serviços, informações de SSL/TLS, informações de diretórios web, entre outros.
+- Enumeração de usuários e grupos: O Nmap pode ser usado para identificar informações de usuários e grupos em sistemas alvo, como nomes de usuários, grupos, permissões de arquivos e configurações de segurança.
+- Enumeração de DNS: O Nmap também pode ser usado para obter informações detalhadas sobre os registros de DNS de um domínio específico, como identificação de hosts, serviços e configurações de DNS.
+
+A enumeração com o Nmap pode fornecer informações valiosas para os profissionais de segurança cibernética durante a avaliação de segurança de uma rede, permitindo identificar possíveis pontos fracos e vulnerabilidades em sistemas e serviços. É importante notar que a enumeração com o Nmap, assim como qualquer outra técnica de segurança, deve ser realizada apenas em redes e sistemas que o profissional de segurança tenha autorização legal para acessar e avaliar, de acordo com as leis e regulamentações aplicáveis e as políticas de ética e legalidade.
