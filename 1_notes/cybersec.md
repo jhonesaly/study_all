@@ -116,21 +116,6 @@ Alguns exemplos de aplicativos, serviços e equipamentos que podem ser usados em
 
 Para se proteger contra ataques MITM, é recomendável evitar o uso de redes Wi-Fi públicas não seguras e usar conexões criptografadas sempre que possível, como conexões HTTPS. Também é recomendável usar ferramentas de segurança de rede, como firewalls e sistemas de detecção de intrusão (IDS), para detectar e prevenir ataques MITM.
 
-## Phishing
-
-Phishing é um tipo de ataque cibernético em que um invasor tenta enganar um usuário para que ele revele informações confidenciais, como senhas, informações bancárias e outras informações pessoais. O ataque de phishing é geralmente realizado por meio de mensagens de e-mail, mensagens de texto, mensagens instantâneas ou redes sociais.
-
-O ataque de phishing é feito de várias maneiras, mas geralmente começa com uma mensagem que se parece com uma comunicação legítima de uma empresa, como um banco ou uma loja online. A mensagem geralmente pede que o usuário clique em um link para atualizar suas informações de conta ou confirmar um pagamento. O link geralmente leva o usuário a uma página falsa que se parece com o site legítimo, mas é controlada pelo invasor. Quando o usuário fornece as informações solicitadas na página falsa, o invasor pode usá-las para roubar dinheiro ou realizar outras atividades fraudulentas.
-
-Alguns exemplos de aplicativos, serviços e equipamentos que podem ser usados em ataques de phishing incluem:
-
-- E-mails de phishing: Os invasores enviam e-mails de phishing para as vítimas, que parecem ser de uma empresa legítima, solicitando informações confidenciais ou pedindo que a vítima clique em um link malicioso. Esses e-mails podem ser enviados manualmente ou usando software automatizado.
-- Páginas de phishing: Os invasores criam páginas de phishing que se parecem com sites legítimos de empresas, como bancos e lojas online. Eles podem usar técnicas de engenharia social para fazer com que as vítimas revelem informações confidenciais.
-- Ferramentas de phishing: Existem várias ferramentas disponíveis na internet que permitem que os invasores criem e distribuam ataques de phishing, incluindo kits de phishing e geradores de páginas falsas.
-- Ataques de spear-phishing: Este tipo de ataque de phishing é direcionado a indivíduos específicos, geralmente usando informações pessoais obtidas de fontes públicas, como as redes sociais.
-
-Para se proteger contra ataques de phishing, é importante estar sempre vigilante em relação a e-mails e mensagens que solicitam informações pessoais ou financeiras. Além disso, é importante verificar cuidadosamente os links antes de clicar neles, verificar se o site é legítimo e usar autenticação de dois fatores sempre que possível. Alguns softwares de segurança também incluem recursos para detectar e bloquear sites de phishing.
-
 ## Blind XSS
 
 Blind XSS (Cross-Site Scripting) é um tipo de vulnerabilidade de segurança web que permite que um atacante injete código malicioso em um site, sem que o usuário perceba. É chamado de "blind" porque o atacante não vê a saída do seu código, que pode ser executado em outro navegador ou em outro momento.
