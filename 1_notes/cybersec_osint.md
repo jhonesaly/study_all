@@ -40,3 +40,17 @@ Aqui está um tutorial básico de como usar o Shodan:
 - Utilize as informações encontradas de forma ética e legal, sempre respeitando as leis de privacidade e segurança. O Shodan pode ser uma ferramenta poderosa para fins de pesquisa, identificação de vulnerabilidades e teste de segurança em dispositivos, mas também pode ser utilizada de maneira inadequada para fins maliciosos. Portanto, use-o com responsabilidade e ética.
 
 Lembre-se de que o Shodan é uma ferramenta de busca de dispositivos conectados à Internet e, assim como outras ferramentas de segurança, deve ser utilizada com cuidado e respeitando a legislação local e as políticas de privacidade. Certifique-se sempre de obter autorização adequada antes de realizar qualquer teste de segurança em dispositivos de terceiros e tome medidas adequadas para proteger sua própria privacidade e segurança online.
+
+## Maltego
+
+O Maltego é uma ferramenta de inteligência de código aberto (open source) usada para coletar e correlacionar informações sobre alvos ou entidades específicas na Internet. É uma ferramenta poderosa para análise de informações de código aberto (OSINT - Open Source Intelligence) e pode ser usada para realizar investigações, análises de vulnerabilidades, análises de ameaças, reconhecimento de alvo e outras atividades relacionadas à inteligência de segurança.
+
+Aqui estão algumas informações básicas sobre o Maltego e como utilizá-lo:
+
+- Baixe e instale o Maltego em seu computador. O Maltego está disponível em várias edições, incluindo uma versão gratuita chamada Maltego CE (Community Edition), que possui recursos limitados, e versões comerciais com recursos avançados.
+- Abra o Maltego e selecione o tipo de entidade que você deseja investigar. O Maltego suporta uma ampla variedade de entidades, como endereços de e-mail, nomes de domínio, endereços IP, perfis de redes sociais, números de telefone, e muitos outros.
+- Conecte-se a várias fontes de dados públicas e comerciais disponíveis no Maltego, como mecanismos de busca, redes sociais, serviços de DNS, bases de dados de registros públicos, entre outros. O Maltego usa transformações (Transforms) para consultar e coletar informações dessas fontes de dados, que podem ser representadas graficamente em um diagrama.
+- Analise os resultados e visualize as informações coletadas em formato gráfico. O Maltego permite visualizar as informações coletadas em um diagrama interativo que pode ser personalizado de acordo com suas necessidades. Você pode explorar relacionamentos entre entidades, identificar padrões, e obter insights valiosos para suas investigações.
+- Utilize as informações obtidas de forma ética e legal, sempre respeitando as leis de privacidade e segurança. O Maltego é uma ferramenta poderosa que pode ajudar na coleta e correlação de informações, mas é importante usá-la de forma responsável e ética, de acordo com as leis e regulamentos aplicáveis.
+
+Lembre-se de que o Maltego é uma ferramenta de análise de informações de código aberto que pode ser usada para fins legais e éticos, como investigações de segurança, pesquisa de ameaças e análise de vulnerabilidades. No entanto, é importante sempre obter autorização adequada e cumprir todas as leis e regulamentos aplicáveis ao realizar qualquer atividade de coleta de informações ou análise de dados. Certifique-se também de proteger sua própria privacidade e segurança online durante o uso do Maltego ou qualquer outra ferramenta de segurança.
