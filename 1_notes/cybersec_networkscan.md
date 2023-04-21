@@ -24,3 +24,15 @@ Alguns exemplos de aplicativos, serviços e equipamentos que usam o Nmap incluem
 - Segurança de rede: O Nmap é frequentemente usado em conjunto com outras ferramentas de segurança de rede, como firewalls e sistemas de detecção de intrusão (IDS), para avaliar a segurança da rede e identificar possíveis ameaças.
 
 ![nmap cheat sheet](images/nmap-cheat-sheet3.png)
+
+## Técnicas
+
+O Nmap (Network Mapper) é uma ferramenta popular de código aberto usada para varredura de rede, e pode ser utilizado tanto para fins legítimos, como para fins maliciosos por indivíduos com intenções de ataque cibernético. Algumas das técnicas de ataque que podem ser realizadas usando o Nmap incluem:
+
+- Varredura de portas: O Nmap pode ser usado para varrer uma rede em busca de portas abertas em sistemas alvo. Isso pode ajudar um atacante a identificar quais serviços ou aplicativos estão sendo executados em um sistema, e possivelmente identificar vulnerabilidades conhecidas associadas a esses serviços.
+- Detecção de sistemas operacionais: O Nmap pode ser usado para identificar o sistema operacional em execução em um host alvo com base nas características de suas respostas de rede. Isso pode ser útil para um atacante determinar quais vulnerabilidades específicas podem ser exploradas em um sistema operacional específico.
+- Varredura de scripts e plugins: O Nmap suporta a execução de scripts e plugins personalizados, o que permite aos atacantes escreverem e executarem scripts de ataque personalizados para explorar vulnerabilidades específicas ou realizar atividades maliciosas em um host alvo.
+- Varredura de rede furtiva: O Nmap suporta opções de varredura que podem tentar evadir a detecção de sistemas de segurança, como firewalls e sistemas de detecção de intrusões (IDS). Por exemplo, a varredura "Stealth" do Nmap pode tentar evitar a detecção escondendo o tráfego de varredura em pacotes legítimos.
+- Varredura de DNS: O Nmap também pode ser usado para varrer e explorar servidores de nomes de domínio (DNS), buscando informações sobre os registros de DNS de um domínio específico, como identificação de hosts, serviços e configurações de DNS.
+
+É importante ressaltar que o uso do Nmap ou de qualquer outra ferramenta de varredura de rede para fins de ataque cibernético é ilegal e antiético. Apenas profissionais de segurança cibernética autorizados devem usar o Nmap ou qualquer outra ferramenta de varredura de rede para fins legítimos, como avaliação de segurança em ambientes controlados e com devida autorização legal. O uso inadequado do Nmap ou de qualquer outra ferramenta de segurança pode resultar em consequências legais graves.
