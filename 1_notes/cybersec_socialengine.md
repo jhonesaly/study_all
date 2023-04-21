@@ -1,0 +1,9 @@
+# Engenharia Social
+
+A engenharia social é uma prática que envolve manipulação psicológica e social para obter informações, acesso ou vantagens indevidas de outras pessoas ou organizações. É uma forma de ataque que explora a natureza humana e usa técnicas de persuasão, manipulação e engano para obter benefícios pessoais ou ganho ilícito.
+
+A engenharia social é frequentemente usada em atividades de hacking, ciberataques e fraudes, onde os atacantes exploram a confiança e a ingenuidade das pessoas para obter informações confidenciais, como senhas, dados pessoais, informações bancárias ou acesso a sistemas de computadores. Isso pode ser feito por meio de técnicas como phishing, pretexting, tailgating, ou manipulação emocional, onde os atacantes se passam por alguém que eles não são, manipulam situações ou emoções para obter informações ou acesso.
+
+A engenharia social também pode ser usada em contextos legais, como na área de vendas, marketing ou política, para influenciar o comportamento das pessoas, obter vendas, votos ou apoio. É importante notar que a engenharia social é uma prática antiética e muitas vezes ilegal quando usada para fins ilícitos, e pode ter sérias consequências legais e éticas.
+
+Para se proteger contra a engenharia social, é importante estar ciente dos riscos e ter cuidado ao compartilhar informações confidenciais, verificar a identidade das pessoas ou organizações com as quais você interage online ou offline, e estar sempre atento a sinais de manipulação ou solicitações suspeitas. É fundamental seguir as melhores práticas de segurança cibernética, como não clicar em links suspeitos, não compartilhar senhas ou informações sensíveis com desconhecidos, e manter-se atualizado sobre as ameaças cibernéticas e como se proteger delas.
