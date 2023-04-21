@@ -54,3 +54,17 @@ Aqui estão algumas informações básicas sobre o Maltego e como utilizá-lo:
 - Utilize as informações obtidas de forma ética e legal, sempre respeitando as leis de privacidade e segurança. O Maltego é uma ferramenta poderosa que pode ajudar na coleta e correlação de informações, mas é importante usá-la de forma responsável e ética, de acordo com as leis e regulamentos aplicáveis.
 
 Lembre-se de que o Maltego é uma ferramenta de análise de informações de código aberto que pode ser usada para fins legais e éticos, como investigações de segurança, pesquisa de ameaças e análise de vulnerabilidades. No entanto, é importante sempre obter autorização adequada e cumprir todas as leis e regulamentos aplicáveis ao realizar qualquer atividade de coleta de informações ou análise de dados. Certifique-se também de proteger sua própria privacidade e segurança online durante o uso do Maltego ou qualquer outra ferramenta de segurança.
+
+## Foca
+
+O FOCA (Fingerprinting Organizations with Collected Archives) é uma ferramenta de código aberto desenvolvida pela empresa espanhola Informática 64 que é usada para coletar e analisar metadados em documentos para obter informações sobre organizações ou entidades específicas. O FOCA é amplamente utilizado para análise de segurança e testes de penetração, e é uma ferramenta popular na comunidade de segurança da informação.
+
+Aqui estão algumas informações básicas sobre o FOCA e como utilizá-lo:
+
+- Baixe e instale o FOCA em seu computador. O FOCA é uma ferramenta para Windows e está disponível gratuitamente no site oficial da Informática 64.
+- Abra o FOCA e conecte-se a um alvo específico. O FOCA permite a você especificar um domínio ou uma URL como alvo para análise.
+- Analise os documentos coletados em busca de metadados. O FOCA é capaz de analisar documentos, como arquivos PDF, documentos do Microsoft Office (Word, Excel, PowerPoint) e outros formatos, em busca de metadados incorporados, como nome do autor, nome da organização, endereços de e-mail, nomes de arquivos e muito mais.
+- Extraia metadados e obtenha insights sobre a organização alvo. O FOCA permite extrair os metadados encontrados nos documentos analisados e apresentá-los em uma interface gráfica fácil de usar. Isso pode fornecer informações valiosas sobre a organização, sua estrutura, funcionários, tecnologias usadas e outras informações relevantes para análise de segurança.
+- Utilize as informações obtidas de forma ética e legal, sempre respeitando as leis de privacidade e segurança. O FOCA é uma ferramenta poderosa que pode ajudar na coleta de informações, mas é importante usá-la de forma responsável e ética, de acordo com as leis e regulamentos aplicáveis.
+
+Lembre-se de que o FOCA é uma ferramenta de análise de metadados de documentos que pode ser usada para fins legais e éticos, como análise de segurança, pesquisa de informações públicas e análise de vulnerabilidades. No entanto, é importante sempre obter autorização adequada e cumprir todas as leis e regulamentos aplicáveis ao realizar qualquer atividade de coleta de informações ou análise de dados. Certifique-se também de proteger sua própria privacidade e segurança online durante o uso do FOCA ou qualquer outra ferramenta de segurança.
