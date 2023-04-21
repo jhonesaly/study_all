@@ -25,3 +25,18 @@ O OSINT Framework é uma fonte valiosa de informações e ferramentas para reali
 
 ![osint workflow 1](images/osint_workflow.png)
 ![osint workflow 2](images/osint_workflow2.png)
+
+## Shodan
+
+O Shodan é um motor de busca especializado em busca de dispositivos conectados à Internet, como servidores, roteadores, câmeras IP, e outros dispositivos IoT (Internet of Things). Ao contrário dos motores de busca convencionais que indexam páginas web, o Shodan indexa informações sobre os dispositivos e serviços expostos na Internet, permitindo aos usuários buscar por dispositivos com base em critérios específicos, como localização geográfica, tipo de dispositivo, porta de rede, e até mesmo por palavras-chave relacionadas aos serviços em execução.
+
+Aqui está um tutorial básico de como usar o Shodan:
+
+- Acesse o site do Shodan em https://www.shodan.io/ e crie uma conta gratuita, se você ainda não tiver uma.
+- Faça login na sua conta do Shodan.
+- No campo de pesquisa na página inicial do Shodan, você pode inserir palavras-chave relacionadas aos dispositivos ou serviços que deseja encontrar. Por exemplo, você pode digitar "Apache" para encontrar servidores web Apache expostos na Internet.
+- Use os filtros avançados para refinar sua pesquisa. Você pode especificar a localização geográfica, o tipo de dispositivo, o sistema operacional, a porta de rede e muitos outros critérios para encontrar dispositivos específicos.
+- Analise os resultados da pesquisa para encontrar informações detalhadas sobre os dispositivos encontrados, como endereço IP, localização geográfica, banners de serviço, e outras informações relevantes.
+- Utilize as informações encontradas de forma ética e legal, sempre respeitando as leis de privacidade e segurança. O Shodan pode ser uma ferramenta poderosa para fins de pesquisa, identificação de vulnerabilidades e teste de segurança em dispositivos, mas também pode ser utilizada de maneira inadequada para fins maliciosos. Portanto, use-o com responsabilidade e ética.
+
+Lembre-se de que o Shodan é uma ferramenta de busca de dispositivos conectados à Internet e, assim como outras ferramentas de segurança, deve ser utilizada com cuidado e respeitando a legislação local e as políticas de privacidade. Certifique-se sempre de obter autorização adequada antes de realizar qualquer teste de segurança em dispositivos de terceiros e tome medidas adequadas para proteger sua própria privacidade e segurança online.
