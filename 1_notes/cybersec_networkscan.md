@@ -22,3 +22,5 @@ Alguns exemplos de aplicativos, serviços e equipamentos que usam o Nmap incluem
 - Gerenciamento de rede: O Nmap pode ser usado por administradores de rede para identificar dispositivos de rede, verificar se os serviços estão em execução e monitorar o tráfego de rede.
 - Análise de vulnerabilidades: Ferramentas de análise de vulnerabilidades, como o **OpenVAS** e o **Nessus**, usam o Nmap para identificar sistemas vulneráveis em uma rede.
 - Segurança de rede: O Nmap é frequentemente usado em conjunto com outras ferramentas de segurança de rede, como firewalls e sistemas de detecção de intrusão (IDS), para avaliar a segurança da rede e identificar possíveis ameaças.
+
+![nmap cheat sheet](images/nmap-cheat-sheet3.png)
