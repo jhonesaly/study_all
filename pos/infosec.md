@@ -91,3 +91,45 @@ Esses são apenas alguns exemplos de serviços de segurança que são oferecidos
 Nesse modelo geral de comunicação, o emissor envia a mensagem através do canal para o receptor, enquanto a criptografia é utilizada para proteger o conteúdo da mensagem contra interceptação. O árbitro atua como um intermediário confiável para garantir a integridade e autenticidade da comunicação, enquanto o oponente pode representar uma ameaça à segurança da comunicação, tentando interferir ou obter acesso não autorizado à mensagem.
 
 ![modelo de segurança](images/modelsec.png)
+
+## Review
+
+- 1.1 o que é a arquitetura de segurança oSI?
+- 1.2 Qual é a diferença entre ameaças à segurança passivas e ativas?
+- 1.3 liste e defina resumidamente as categorias de ataques passivos e ativos à segurança.
+- 1.4 liste e defina resumidamente as categorias dos serviços de segurança.
+- 1.5 liste e defina resumidamente as categorias dos mecanismos de segurança.
+
+1.1 A arquitetura de segurança OSI (Open Systems Interconnection) é um modelo de referência utilizado para descrever a estrutura de comunicação em redes de computadores. Ela é composta por sete camadas, cada uma responsável por uma parte específica do processo de comunicação, desde a camada física até a camada de aplicação. A arquitetura OSI é uma estrutura conceitual que permite a comunicação entre diferentes sistemas e define padrões para a interoperabilidade de redes.
+
+1.2 A diferença entre ameaças à segurança passivas e ativas está relacionada com o tipo de ação que é realizada pelo atacante. Ameaças passivas são aquelas em que o atacante busca obter informações ou monitorar as atividades do sistema sem realizar ações diretas para modificar ou interromper a operação normal do sistema. Por outro lado, ameaças ativas são aquelas em que o atacante realiza ações diretas para modificar, corromper, destruir ou interromper a operação normal do sistema.
+
+1.3 Categorias de ataques
+
+Ataques passivos à segurança:
+
+- Monitoramento: o atacante monitora a comunicação ou as atividades do sistema para obter informações sensíveis.
+- Interceptação: o atacante obtém acesso não autorizado a informações em trânsito entre os sistemas, como interceptar pacotes de rede.
+- Escuta clandestina: o atacante utiliza dispositivos para obter informações confidenciais, como escutas telefônicas ou keyloggers.
+
+Ataques ativos à segurança:
+
+- Modificação: o atacante realiza alterações não autorizadas nas informações ou dados do sistema.
+- Interrupção: o atacante busca interromper ou inutilizar o funcionamento normal do sistema ou dos serviços.
+- Corrupção: o atacante danifica ou corrompe os dados ou recursos do sistema.
+
+1.4 Categorias de serviços de segurança:
+
+- Confidencialidade: garante que as informações sejam protegidas contra acesso não autorizado, garantindo que somente as partes autorizadas possam acessá-las.
+- Integridade: garante a integridade das informações, protegendo-as contra alterações ou corrupção não autorizada.
+- Autenticação: verifica a identidade das partes envolvidas na comunicação, garantindo que sejam quem afirmam ser.
+- Autorização: gerencia as permissões e acessos dos usuários aos recursos e serviços do sistema.
+- Disponibilidade: garante a disponibilidade dos recursos e serviços do sistema, evitando interrupções não autorizadas.
+- Não repúdio: garante que as partes envolvidas na comunicação não possam negar a autoria ou recebimento de uma mensagem.
+
+1.5 Categorias de mecanismos de segurança:
+
+- Controle de acesso: define políticas e mecanismos que regulam o acesso aos recursos do sistema, garantindo que somente usuários autorizados possam acessá-los.
+- Criptografia: utiliza técnicas de codificação para proteger as informações contra acesso não autorizado, garantindo a confidencialidade e integridade dos dados.
+- Assinatura digital: utiliza técnicas de criptografia para garantir a autenticidade e integridade das informações, permitindo a verificação da autoria da mensagem.
+- Firewall: é uma barreira de segurança que monitora e controla
