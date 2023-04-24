@@ -79,3 +79,15 @@ Esses são apenas alguns exemplos de serviços de segurança que são oferecidos
 
 ![mecanismo x serviço](images/mecxser.png)
 
+## Modelo de comunicação
+
+- Emissor: É a parte que inicia o processo de comunicação, enviando a mensagem. O emissor é responsável por codificar a mensagem em um formato compreensível e enviá-la ao receptor.
+- Receptor: É a parte que recebe a mensagem enviada pelo emissor e decodifica para obter seu significado. O receptor é responsável por interpretar a mensagem e compreendê-la.
+- Canal: É o meio de transmissão utilizado para enviar a mensagem do emissor ao receptor. Pode ser um meio físico, como um cabo de rede, ou um meio sem fio, como o ar para comunicações sem fio.
+- Criptografia: É o processo de codificar a mensagem de forma a torná-la ilegível para terceiros não autorizados. A criptografia é frequentemente usada para garantir a confidencialidade da mensagem, protegendo seu conteúdo contra interceptação ou acesso não autorizado.
+- Árbitro: É uma entidade imparcial que atua como intermediário no processo de comunicação, garantindo a integridade e autenticidade da mensagem. O árbitro pode verificar a autenticidade dos envolvidos na comunicação, validar a integridade da mensagem e garantir a conformidade com as políticas de segurança estabelecidas.
+- Oponente: É uma entidade mal-intencionada ou adversária que pode tentar interromper, interceptar, modificar ou acessar indevidamente a mensagem ou o processo de comunicação. O oponente pode ser uma pessoa, uma organização ou até mesmo um software malicioso.
+
+Nesse modelo geral de comunicação, o emissor envia a mensagem através do canal para o receptor, enquanto a criptografia é utilizada para proteger o conteúdo da mensagem contra interceptação. O árbitro atua como um intermediário confiável para garantir a integridade e autenticidade da comunicação, enquanto o oponente pode representar uma ameaça à segurança da comunicação, tentando interferir ou obter acesso não autorizado à mensagem.
+
+![modelo de segurança](images/modelsec.png)
