@@ -74,3 +74,8 @@ No contexto da segurança da informação, os serviços de segurança são os re
 - Educação e Conscientização em Segurança: A educação e conscientização em segurança são serviços que visam educar os usuários e funcionários sobre práticas seguras de uso de sistemas e informações. Isso pode incluir treinamentos, workshops, campanhas de conscientização, e a disseminação de políticas e procedimentos de segurança para garantir que os usuários estejam cientes das melhores práticas de segurança e saibam como agir de forma segura em seu ambiente de trabalho.
 
 Esses são apenas alguns exemplos de serviços de segurança que são oferecidos para proteger informações e sistemas em um ambiente de segurança da informação. É importante contar com uma combinação adequada de serviços de segurança para garantir uma proteção abrangente e eficaz contra ameaças de segurança.
+
+### Serviço x Mecanismo
+
+![mecanismo x serviço](images/mecxser.png)
+
