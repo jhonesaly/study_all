@@ -30,3 +30,12 @@ Alguns dos principais elementos de uma política de segurança da informação p
 
 Uma política de segurança da informação eficaz é essencial para proteger as informações confidenciais de uma organização e garantir a confidencialidade, integridade e disponibilidade dos dados. É importante revisar e atualizar regularmente a política de segurança da informação para se adaptar às mudanças nas ameaças cibernéticas, na tecnologia e nas regulamentações aplicáveis, e garantir a proteção contínua dos ativos de informação da organização.
 
+## Incidentes de Segurança
+
+Notificações, abusos e incidentes de segurança são conceitos importantes na área de segurança da informação e podem ser cobrados em concursos públicos, incluindo aqueles com provas elaboradas pelo Cebraspe. Em resumo, esses conceitos podem ser entendidos da seguinte forma:
+
+- Notificações: referem-se à comunicação de eventos ou atividades relacionadas à segurança da informação que são reportados apropriadamente para as partes relevantes dentro de uma organização. Isso pode incluir a detecção de possíveis ameaças, vulnerabilidades ou violações de segurança, bem como relatórios de auditoria, logs de eventos, entre outros. As notificações são importantes para alertar sobre possíveis incidentes de segurança e permitir a tomada de ações corretivas.
+- Abusos: são ações impróprias, indevidas ou maliciosas que violam as políticas de segurança da informação de uma organização. Isso pode incluir o uso inadequado de recursos de TI, como acesso não autorizado a sistemas, uso impróprio de informações confidenciais, divulgação indevida de dados, entre outros. O combate aos abusos é importante para proteger a confidencialidade, integridade e disponibilidade das informações e garantir o uso adequado dos recursos de TI.
+- Incidentes de segurança: referem-se a eventos ou situações que comprometem a segurança da informação de uma organização. Isso pode incluir ataques cibernéticos, vazamento de informações confidenciais, perda de dados, indisponibilidade de sistemas, entre outros. O gerenciamento de incidentes de segurança é fundamental para identificar, responder e mitigar os impactos desses eventos, minimizando possíveis danos à organização.
+
+É importante compreender esses conceitos e sua aplicação prática na gestão da segurança da informação, incluindo as melhores práticas de notificação, prevenção e resposta a abusos e incidentes de segurança. Revisar e praticar com questões de provas anteriores também pode ser uma estratégia eficaz para se preparar para os exames de concursos públicos.
