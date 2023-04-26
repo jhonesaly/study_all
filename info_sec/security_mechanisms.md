@@ -39,3 +39,12 @@ Notificações, abusos e incidentes de segurança são conceitos importantes na 
 - Incidentes de segurança: referem-se a eventos ou situações que comprometem a segurança da informação de uma organização. Isso pode incluir ataques cibernéticos, vazamento de informações confidenciais, perda de dados, indisponibilidade de sistemas, entre outros. O gerenciamento de incidentes de segurança é fundamental para identificar, responder e mitigar os impactos desses eventos, minimizando possíveis danos à organização.
 
 É importante compreender esses conceitos e sua aplicação prática na gestão da segurança da informação, incluindo as melhores práticas de notificação, prevenção e resposta a abusos e incidentes de segurança. Revisar e praticar com questões de provas anteriores também pode ser uma estratégia eficaz para se preparar para os exames de concursos públicos.
+
+## Backups
+
+Backups são cópias de dados ou informações que são criadas e armazenadas em locais separados do original, com o objetivo de proteger essas informações contra perda, dano ou indisponibilidade. Os backups são uma parte essencial da estratégia de recuperação de desastres e são usados para garantir a disponibilidade e integridade dos dados em caso de falhas de hardware, erro humano, desastres naturais, ataques cibernéticos ou outros incidentes de segurança.
+
+Existem diferentes tipos de backups, como o backup completo, que copia todos os dados; o backup incremental, que copia apenas as alterações desde o último backup; e o backup diferencial, que copia apenas as alterações desde o último backup completo. Além disso, é importante considerar também a frequência e a localização dos backups, bem como as políticas de retenção, que determinam por quanto tempo os backups devem ser armazenados.
+
+Os backups devem ser realizados de forma regular e testados para garantir a sua eficácia na recuperação de dados em caso de necessidade. É importante também garantir que os backups sejam armazenados em locais seguros, protegidos contra acesso não autorizado, e que sejam criptografados para garantir a confidencialidade dos dados.
+
