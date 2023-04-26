@@ -1,6 +1,6 @@
 # Mecanismos de Segurança
 
-O mecanismo de segurança da informação é um conceito importante na área de segurança da informação e pode ser cobrado em concursos públicos, incluindo aqueles com provas elaboradas pela banca Cebraspe. Em resumo, o mecanismo de segurança da informação refere-se a um conjunto de técnicas, processos ou procedimentos utilizados para proteger a confidencialidade, integridade e disponibilidade das informações em sistemas de informação. Alguns pontos-chave relacionados a esse tema são:
+Em resumo, o mecanismo de segurança da informação refere-se a um conjunto de técnicas, processos ou procedimentos utilizados para proteger a confidencialidade, integridade e disponibilidade das informações em sistemas de informação. Alguns pontos-chave relacionados a esse tema são:
 
 - Criptografia: é um mecanismo que utiliza algoritmos matemáticos para codificar informações de forma a torná-las ilegíveis para terceiros não autorizados. É utilizado para proteger a confidencialidade dos dados e garantir a sua privacidade.
 - Controle de acesso: refere-se a medidas que limitam o acesso às informações apenas a usuários autorizados. Pode envolver o uso de senhas, autenticação multifator, controle de privilégios de usuários, entre outros, para proteger a integridade e confidencialidade dos dados.
@@ -9,8 +9,6 @@ O mecanismo de segurança da informação é um conceito importante na área de 
 - Backups: são cópias de segurança de informações importantes, armazenadas em locais seguros, para proteger a integridade e disponibilidade dos dados em caso de perda, falha de sistema ou desastres.
 - Logging e auditoria: envolve a geração de registros de eventos e atividades em sistemas de informação, permitindo a monitoração e auditoria das ações dos usuários. É utilizado para detectar atividades suspeitas, investigar incidentes de segurança e garantir a responsabilização dos usuários.
 - Políticas de segurança: são diretrizes, normas e procedimentos estabelecidos pela organização para orientar as práticas de segurança da informação. Incluem políticas de senha, políticas de uso aceitável, políticas de acesso remoto, entre outras, e são importantes para promover uma cultura de segurança nas organizações.
-
-Esses são alguns dos principais mecanismos de segurança da informação que podem ser cobrados em concursos públicos com provas elaboradas pela banca Cebraspe. É importante estudar esses conceitos e suas aplicações na prática, bem como revisar e praticar com questões de provas anteriores para se preparar adequadamente para o exame.
 
 ## Política de Segurança da Informação
 
@@ -32,7 +30,7 @@ Uma política de segurança da informação eficaz é essencial para proteger as
 
 ## Incidentes de Segurança
 
-Notificações, abusos e incidentes de segurança são conceitos importantes na área de segurança da informação e podem ser cobrados em concursos públicos, incluindo aqueles com provas elaboradas pelo Cebraspe. Em resumo, esses conceitos podem ser entendidos da seguinte forma:
+Em resumo, esses conceitos podem ser entendidos da seguinte forma:
 
 - Notificações: referem-se à comunicação de eventos ou atividades relacionadas à segurança da informação que são reportados apropriadamente para as partes relevantes dentro de uma organização. Isso pode incluir a detecção de possíveis ameaças, vulnerabilidades ou violações de segurança, bem como relatórios de auditoria, logs de eventos, entre outros. As notificações são importantes para alertar sobre possíveis incidentes de segurança e permitir a tomada de ações corretivas.
 - Abusos: são ações impróprias, indevidas ou maliciosas que violam as políticas de segurança da informação de uma organização. Isso pode incluir o uso inadequado de recursos de TI, como acesso não autorizado a sistemas, uso impróprio de informações confidenciais, divulgação indevida de dados, entre outros. O combate aos abusos é importante para proteger a confidencialidade, integridade e disponibilidade das informações e garantir o uso adequado dos recursos de TI.
@@ -50,10 +48,9 @@ Os backups devem ser realizados de forma regular e testados para garantir a sua 
 
 ## Logs
 
-Logs são um elemento importante na área de segurança da informação e podem ser abordados em concursos públicos, incluindo aqueles com provas elaboradas pelo Cebraspe. Em resumo, os logs podem ser entendidos da seguinte forma:
+Em resumo, os logs podem ser entendidos da seguinte forma:
 
-Logs são registros eletrônicos gerados por sistemas, aplicativos, dispositivos ou redes que registram eventos, atividades e transações que ocorrem em um ambiente de tecnologia da informação. Os logs podem conter informações detalhadas sobre ações realizadas, como acesso a sistemas, alterações de configuração, eventos de segurança, erros, entre outros. Os logs são valiosos para fins de monitoramento, análise de eventos de segurança, investigação de incidentes e auditoria.
+- Logs são registros eletrônicos gerados por sistemas, aplicativos, dispositivos ou redes que registram eventos, atividades e transações que ocorrem em um ambiente de tecnologia da informação. Os logs podem conter informações detalhadas sobre ações realizadas, como acesso a sistemas, alterações de configuração, eventos de segurança, erros, entre outros. Os logs são valiosos para fins de monitoramento, análise de eventos de segurança, investigação de incidentes e auditoria.
+- Os logs podem ser usados para identificar possíveis ameaças e atividades suspeitas, ajudar na detecção precoce de ataques cibernéticos, fornecer evidências em caso de incidentes de segurança e auxiliar na resposta a eventos indesejados. É importante ter políticas e procedimentos adequados para coleta, armazenamento, retenção e análise de logs, bem como garantir que os registros sejam protegidos contra acesso não autorizado e adulteração.
+- Os logs podem ser gerenciados por meio de ferramentas de registro, como sistemas de gerenciamento de logs (log management systems), sistemas de informação de segurança (security information and event management - SIEM), ou até mesmo por meio de registros manuais. É fundamental compreender a importância dos logs na segurança da informação e sua utilização como fonte de informação para a detecção e resposta a eventos de segurança.
 
-Os logs podem ser usados para identificar possíveis ameaças e atividades suspeitas, ajudar na detecção precoce de ataques cibernéticos, fornecer evidências em caso de incidentes de segurança e auxiliar na resposta a eventos indesejados. É importante ter políticas e procedimentos adequados para coleta, armazenamento, retenção e análise de logs, bem como garantir que os registros sejam protegidos contra acesso não autorizado e adulteração.
-
-Os logs podem ser gerenciados por meio de ferramentas de registro, como sistemas de gerenciamento de logs (log management systems), sistemas de informação de segurança (security information and event management - SIEM), ou até mesmo por meio de registros manuais. É fundamental compreender a importância dos logs na segurança da informação e sua utilização como fonte de informação para a detecção e resposta a eventos de segurança.
