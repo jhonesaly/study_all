@@ -54,3 +54,12 @@ Em resumo, os logs podem ser entendidos da seguinte forma:
 - Os logs podem ser usados para identificar possíveis ameaças e atividades suspeitas, ajudar na detecção precoce de ataques cibernéticos, fornecer evidências em caso de incidentes de segurança e auxiliar na resposta a eventos indesejados. É importante ter políticas e procedimentos adequados para coleta, armazenamento, retenção e análise de logs, bem como garantir que os registros sejam protegidos contra acesso não autorizado e adulteração.
 - Os logs podem ser gerenciados por meio de ferramentas de registro, como sistemas de gerenciamento de logs (log management systems), sistemas de informação de segurança (security information and event management - SIEM), ou até mesmo por meio de registros manuais. É fundamental compreender a importância dos logs na segurança da informação e sua utilização como fonte de informação para a detecção e resposta a eventos de segurança.
 
+## Computer Security Incident Response Team (CSIRT)
+
+A Computer Security Incident Response Team (CSIRT) é uma equipe especializada em responder a incidentes de segurança da informação em um ambiente computacional. Essa equipe é responsável por identificar, analisar e responder a eventos de segurança que podem afetar a confidencialidade, integridade e disponibilidade de sistemas e dados.
+
+A principal função de um CSIRT é detectar e responder a incidentes de segurança, como violações de dados, malware, intrusões e outras ameaças cibernéticas. Eles são responsáveis por investigar e avaliar a gravidade dos incidentes, coordenar as atividades de resposta, mitigar os danos causados e implementar medidas de prevenção e proteção para evitar futuros incidentes.
+
+Além disso, um CSIRT também é responsável por fornecer orientação e suporte técnico para a equipe de TI e outros departamentos, desenvolver e implementar políticas de segurança, realizar análises forenses, monitorar continuamente a segurança da rede e dos sistemas, e colaborar com outras equipes e entidades externas, como as autoridades policiais e os fornecedores de serviços de segurança.
+
+A eficácia de um CSIRT é crucial para garantir a segurança e proteção dos ativos de informação de uma organização, bem como para minimizar os impactos financeiros e de reputação associados a incidentes de segurança. A coordenação, a resposta rápida e a expertise técnica de um CSIRT são fundamentais para lidar com os desafios em constante evolução do cenário de ameaças cibernéticas.
