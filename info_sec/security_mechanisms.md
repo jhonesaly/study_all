@@ -36,7 +36,7 @@ Em resumo, esses conceitos podem ser entendidos da seguinte forma:
 - Abusos: são ações impróprias, indevidas ou maliciosas que violam as políticas de segurança da informação de uma organização. Isso pode incluir o uso inadequado de recursos de TI, como acesso não autorizado a sistemas, uso impróprio de informações confidenciais, divulgação indevida de dados, entre outros. O combate aos abusos é importante para proteger a confidencialidade, integridade e disponibilidade das informações e garantir o uso adequado dos recursos de TI.
 - Incidentes de segurança: referem-se a eventos ou situações que comprometem a segurança da informação de uma organização. Isso pode incluir ataques cibernéticos, vazamento de informações confidenciais, perda de dados, indisponibilidade de sistemas, entre outros. O gerenciamento de incidentes de segurança é fundamental para identificar, responder e mitigar os impactos desses eventos, minimizando possíveis danos à organização.
 
-É importante compreender esses conceitos e sua aplicação prática na gestão da segurança da informação, incluindo as melhores práticas de notificação, prevenção e resposta a abusos e incidentes de segurança. Revisar e praticar com questões de provas anteriores também pode ser uma estratégia eficaz para se preparar para os exames de concursos públicos.
+É importante compreender esses conceitos e sua aplicação prática na gestão da segurança da informação, incluindo as melhores práticas de notificação, prevenção e resposta a abusos e incidentes de segurança.
 
 ## Backups
 
