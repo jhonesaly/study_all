@@ -48,3 +48,12 @@ Existem diferentes tipos de backups, como o backup completo, que copia todos os 
 
 Os backups devem ser realizados de forma regular e testados para garantir a sua eficácia na recuperação de dados em caso de necessidade. É importante também garantir que os backups sejam armazenados em locais seguros, protegidos contra acesso não autorizado, e que sejam criptografados para garantir a confidencialidade dos dados.
 
+## Logs
+
+Logs são um elemento importante na área de segurança da informação e podem ser abordados em concursos públicos, incluindo aqueles com provas elaboradas pelo Cebraspe. Em resumo, os logs podem ser entendidos da seguinte forma:
+
+Logs são registros eletrônicos gerados por sistemas, aplicativos, dispositivos ou redes que registram eventos, atividades e transações que ocorrem em um ambiente de tecnologia da informação. Os logs podem conter informações detalhadas sobre ações realizadas, como acesso a sistemas, alterações de configuração, eventos de segurança, erros, entre outros. Os logs são valiosos para fins de monitoramento, análise de eventos de segurança, investigação de incidentes e auditoria.
+
+Os logs podem ser usados para identificar possíveis ameaças e atividades suspeitas, ajudar na detecção precoce de ataques cibernéticos, fornecer evidências em caso de incidentes de segurança e auxiliar na resposta a eventos indesejados. É importante ter políticas e procedimentos adequados para coleta, armazenamento, retenção e análise de logs, bem como garantir que os registros sejam protegidos contra acesso não autorizado e adulteração.
+
+Os logs podem ser gerenciados por meio de ferramentas de registro, como sistemas de gerenciamento de logs (log management systems), sistemas de informação de segurança (security information and event management - SIEM), ou até mesmo por meio de registros manuais. É fundamental compreender a importância dos logs na segurança da informação e sua utilização como fonte de informação para a detecção e resposta a eventos de segurança.
