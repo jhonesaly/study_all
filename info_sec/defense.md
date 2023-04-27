@@ -29,3 +29,13 @@ Por outro lado, honeypots de alta interatividade são mais sofisticados e comple
 Os honeypots de alta interatividade são mais eficazes para atrair invasores experientes e sofisticados, pois são capazes de emular a maioria dos serviços e sistemas operacionais reais, incluindo vulnerabilidades conhecidas. No entanto, eles também são mais difíceis e caros de configurar e gerenciar, e podem ser mais arriscados, pois podem ser mais difíceis de controlar e podem ser alvo de ataques direcionados.
 
 Em resumo, a principal diferença entre honeypots de alta e baixa interatividade é a sofisticação e realismo da simulação do sistema operacional e serviços emulados. Os honeypots de alta interatividade são mais realistas, mas também mais complexos e caros, enquanto honeypots de baixa interatividade são mais simples, menos realistas, mas ainda capazes de atrair a maioria dos ataques automatizados.
+
+### Honeytoken
+
+Um honeytoken é um tipo de isca de segurança que é projetado para detectar atividades maliciosas em um sistema ou rede. Ao contrário de um honeypot, que é uma imitação de um sistema ou serviço inteiro, um honeytoken é um único elemento de dados que é criado para ser detectado e rastreado quando acessado por alguém que não deveria ter acesso.
+
+Um honeytoken pode ser qualquer coisa, desde um arquivo de texto ou um nome de usuário falso até uma chave de API inválida ou um link malicioso. Eles são projetados para serem atraentes para invasores e outros usuários mal-intencionados, que serão atraídos a acessá-los, e quando eles fizerem isso, a equipe de segurança poderá ser alertada e rastrear a atividade do invasor.
+
+Honeytokens são úteis porque eles permitem que as equipes de segurança detectem tentativas de acesso não autorizado a dados sensíveis ou sistemas críticos, mesmo que esses sistemas ou dados não sejam normalmente monitorados. Eles também podem ser usados para rastrear o movimento lateral de invasores que já têm acesso a um sistema, mas estão tentando se mover para outros sistemas ou dados.
+
+Ao usar honeytokens, é importante garantir que eles sejam cuidadosamente projetados e implementados, para que não causem falsos positivos ou afetem negativamente a funcionalidade do sistema. Além disso, é crucial que as equipes de segurança monitorem regularmente as atividades de honeytoken e tomem medidas imediatas para detectar e responder a quaisquer tentativas de acesso não autorizado.
