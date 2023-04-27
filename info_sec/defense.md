@@ -17,3 +17,15 @@ Outras ferramentas de honeypot incluem o Kippo, que é um honeypot de SSH, e o D
 Já uma honeynet é uma rede de honeypots interconectados, que criam uma simulação realista de uma rede corporativa. Eles são projetados para serem altamente sofisticados, simulando todos os aspectos de uma rede real, incluindo servidores, roteadores, switches e firewalls. Honeynets são mais complexos de configurar e gerenciar do que honeypots, mas também fornecem uma visão mais abrangente dos ataques cibernéticos.
 
 Em geral, as ferramentas de honeypot são muito úteis para a detecção de ameaças em tempo real, permitindo que as equipes de segurança detectem ataques cibernéticos antes que eles possam causar danos ao sistema real. No entanto, é importante lembrar que essas ferramentas devem ser implementadas com cuidado e com a ajuda de especialistas em segurança da informação, para garantir que elas não representem uma ameaça adicional ao sistema.
+
+## Tipos
+
+Honeypots de alta interatividade e de baixa interatividade são duas categorias diferentes de honeypots baseadas na complexidade e sofisticação da simulação do sistema operacional ou serviço sendo emulado.
+
+Um honeypot de baixa interatividade é relativamente simples e fácil de configurar. Ele emula apenas serviços básicos, como HTTP, FTP ou Telnet, sem emular o sistema operacional real. Esses honeypots geralmente são automatizados e não exigem muita intervenção humana. Como resultado, eles são menos realistas do que honeypots de alta interatividade, mas ainda são capazes de atrair e detectar a maioria dos ataques automatizados.
+
+Por outro lado, honeypots de alta interatividade são mais sofisticados e complexos. Eles emulam um sistema operacional completo e oferecem um ambiente de emulação realista, permitindo que invasores interajam com um sistema simulado de maneira muito semelhante a um sistema real. Eles exigem mais recursos e esforços para serem configurados e gerenciados, e geralmente são usados para coletar informações mais avançadas sobre táticas e técnicas de invasão.
+
+Os honeypots de alta interatividade são mais eficazes para atrair invasores experientes e sofisticados, pois são capazes de emular a maioria dos serviços e sistemas operacionais reais, incluindo vulnerabilidades conhecidas. No entanto, eles também são mais difíceis e caros de configurar e gerenciar, e podem ser mais arriscados, pois podem ser mais difíceis de controlar e podem ser alvo de ataques direcionados.
+
+Em resumo, a principal diferença entre honeypots de alta e baixa interatividade é a sofisticação e realismo da simulação do sistema operacional e serviços emulados. Os honeypots de alta interatividade são mais realistas, mas também mais complexos e caros, enquanto honeypots de baixa interatividade são mais simples, menos realistas, mas ainda capazes de atrair a maioria dos ataques automatizados.
