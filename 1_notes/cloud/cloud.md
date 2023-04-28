@@ -44,3 +44,15 @@ Software as a Service (SaaS): é um modelo em que o provedor de serviços em nuv
 Platform as a Service (PaaS): é um modelo em que o provedor de serviços em nuvem fornece uma plataforma para que os desenvolvedores criem e implantem seus próprios aplicativos na nuvem. A plataforma inclui ferramentas e recursos necessários para desenvolver, testar e implantar aplicativos. O provedor de serviços em nuvem é responsável pela manutenção da infraestrutura subjacente, enquanto os desenvolvedores são responsáveis pelo desenvolvimento e implantação de seus próprios aplicativos. Exemplos de PaaS incluem o Heroku, o Google App Engine e o Microsoft Azure.
 
 Infrastructure as a Service (IaaS): é um modelo em que o provedor de serviços em nuvem fornece recursos de infraestrutura, como servidores, armazenamento e rede, na nuvem. Os usuários podem implantar e gerenciar suas próprias aplicações e sistemas na nuvem, usando os recursos fornecidos pelo provedor de serviços em nuvem. Os usuários são responsáveis por configurar e gerenciar sua própria infraestrutura na nuvem, enquanto o provedor de serviços em nuvem é responsável por manter a infraestrutura subjacente e disponível para uso. Exemplos de IaaS incluem o Amazon Web Services (AWS), o Google Cloud Platform e o Microsoft Azure.
+
+## Agentes
+
+Consumidor: é o agente que utiliza os serviços em nuvem fornecidos pelo provedor de serviços em nuvem. O consumidor pode ser um indivíduo, uma empresa ou uma organização que acessa e utiliza os recursos em nuvem através da internet. O consumidor paga pelo uso dos serviços em nuvem com base em diferentes modelos de preços, como por hora, por uso ou por assinatura.
+
+Provedor: é o agente que oferece os serviços em nuvem ao consumidor. O provedor é responsável por manter a infraestrutura em nuvem, garantindo que os recursos sejam sempre disponíveis, escaláveis e seguros. Existem diferentes tipos de provedores de serviços em nuvem, como provedores de nuvem pública, provedores de nuvem privada, provedores de nuvem híbrida e provedores de nuvem multicloud.
+
+Auditor: é o agente que realiza auditorias independentes em provedores de serviços em nuvem para verificar se eles estão em conformidade com as políticas de segurança e privacidade dos dados. Os auditores ajudam a garantir que os dados dos consumidores sejam tratados de maneira adequada e que os provedores de serviços em nuvem sigam as melhores práticas de segurança.
+
+Agente: é um software ou aplicativo que é executado em um ambiente em nuvem e realiza tarefas específicas em nome do consumidor. Os agentes podem ser usados para monitorar o desempenho do sistema, gerenciar recursos em nuvem, realizar backup de dados, aplicar políticas de segurança e realizar outras tarefas.
+
+Operador: é o agente responsável por gerenciar a infraestrutura em nuvem e garantir que os recursos em nuvem estejam sempre disponíveis e funcionando corretamente. Os operadores geralmente têm acesso a recursos de gerenciamento de nuvem, como painéis de controle e ferramentas de gerenciamento, e são responsáveis por monitorar o desempenho da infraestrutura em nuvem e solucionar problemas quando necessário.
