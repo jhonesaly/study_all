@@ -90,3 +90,27 @@ Vulnerabilidades de interface e API: o risco de vulnerabilidades de interface e 
 Isolamento insuficiente entre as instâncias da nuvem: o risco de isolamento insuficiente entre as instâncias da nuvem ocorre quando as instâncias da nuvem não são adequadamente isoladas, permitindo a interceptação de dados entre as instâncias.
 
 É importante que as organizações que utilizam serviços em nuvem estejam cientes desses riscos e adotem as medidas de segurança adequadas para proteger seus dados e recursos na nuvem.
+
+## Contramedidas
+
+As contramedidas para os riscos de segurança da computação em nuvem podem variar dependendo do tipo de risco, da infraestrutura em nuvem e da política de segurança da organização. No entanto, a seguir estão algumas contramedidas gerais que podem ajudar a mitigar os riscos:
+
+Violação de dados: as contramedidas incluem a criptografia de dados, a autenticação forte, o controle de acesso baseado em função e a implementação de políticas de segurança de dados.
+
+Perda de dados: as contramedidas incluem backups regulares de dados, redundância de dados e testes de recuperação de desastres.
+
+Ataques de negação de serviço (DDoS): as contramedidas incluem a implementação de serviços de mitigação de DDoS, a configuração correta do firewall e a utilização de serviços de balanceamento de carga.
+
+Espionagem: as contramedidas incluem a implementação de políticas de segurança de dados, a criptografia de dados e a autenticação forte.
+
+Injeção de código malicioso: as contramedidas incluem a implementação de software antivírus e antimalware, a implementação de atualizações de segurança regulares e a aplicação de políticas de segurança de dados.
+
+Problemas de conformidade: as contramedidas incluem a implementação de políticas de conformidade regulatória e a realização de auditorias regulares de segurança.
+
+Gerenciamento de contas inadequado: as contramedidas incluem a implementação de políticas de gerenciamento de contas, a implementação de controles de acesso baseados em função e a utilização de soluções de gerenciamento de identidade e acesso.
+
+Controle insuficiente de acesso: as contramedidas incluem a implementação de políticas de controle de acesso, a utilização de autenticação forte e a configuração adequada de firewalls e outros controles de segurança.
+
+Vulnerabilidades de interface e API: as contramedidas incluem a implementação de testes regulares de segurança, a configuração adequada de firewalls e outros controles de segurança e a utilização de autenticação forte.
+
+Isolamento insuficiente entre as instâncias da nuvem: as contramedidas incluem a configuração adequada dos controles de segurança da nuvem, a utilização de tecnologias de virtualização seguras e a implementação de políticas de segurança de dados.
