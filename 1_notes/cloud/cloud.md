@@ -20,3 +20,13 @@ Existem algumas características essenciais da computação em nuvem, que inclue
 - Compartilhamento e colaboração: a possibilidade de compartilhar e colaborar em documentos e arquivos em tempo real com outras pessoas em qualquer lugar do mundo.
 - Alta disponibilidade: a garantia de que os recursos em nuvem estarão disponíveis sempre que o usuário precisar utilizá-los, sem interrupções.
 - Segurança: medidas de segurança são implementadas para proteger os dados dos usuários em nuvem contra ameaças cibernéticas e outras vulnerabilidades.
+
+## Modelos
+
+O National Institute of Standards and Technology (NIST) define cinco modelos de desenvolvimento em nuvem, que são:
+
+- Nuvem Privada: onde a infraestrutura em nuvem é usada exclusivamente por uma organização, e os recursos são gerenciados internamente ou por um provedor terceirizado. É uma opção para empresas que precisam manter o controle total sobre seus dados e sistemas.
+- Nuvem Comunitária: onde a infraestrutura em nuvem é compartilhada por várias organizações que têm interesses comuns, como requisitos de segurança ou conformidade. É uma opção para empresas que precisam de recursos em nuvem personalizados e específicos.
+- Nuvem Pública: onde a infraestrutura em nuvem é compartilhada por muitos usuários e gerenciada por um provedor de serviços em nuvem. É uma opção mais econômica e escalável para empresas que não precisam de níveis extremos de controle sobre seus dados.
+- Nuvem Híbrida: onde a infraestrutura em nuvem é composta por dois ou mais modelos de nuvem, geralmente com a nuvem privada e a nuvem pública sendo as opções mais comuns. É uma opção para empresas que desejam manter alguns recursos em nuvem internamente enquanto aproveitam a escalabilidade e flexibilidade da nuvem pública.
+- Nuvem Multicloud: onde a infraestrutura em nuvem é composta por dois ou mais provedores de serviços em nuvem, independentemente do modelo de nuvem que eles oferecem. É uma opção para empresas que desejam usar diferentes provedores de nuvem para diferentes aplicações ou serviços, ou para evitar depender de um único provedor de nuvem.
