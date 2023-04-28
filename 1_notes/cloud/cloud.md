@@ -8,6 +8,14 @@ Entre os principais benefícios da nuvem estão a flexibilidade, escalabilidade 
 
 Apesar das vantagens, a segurança ainda é uma preocupação para muitos usuários da nuvem, já que o armazenamento de dados em servidores remotos pode deixá-los mais vulneráveis a ataques cibernéticos. É importante que as empresas e usuários adotem medidas de segurança adequadas para proteger seus dados na nuvem.
 
+### Host x Cloud
+
+Os serviços de hospedagem, como o HostGator, geralmente fornecem recursos de hospedagem em um único servidor físico compartilhado com outros usuários. Esses serviços são muitas vezes projetados para hospedar sites ou aplicativos da web que exigem recursos limitados, como pequenas empresas ou blogs. Esses serviços podem ser gerenciados pelo usuário ou pela empresa de hospedagem, mas geralmente não oferecem recursos avançados de gerenciamento, como escalabilidade automática ou balanceamento de carga.
+
+Por outro lado, os serviços em nuvem, como o Amazon Web Services (AWS), fornecem recursos de infraestrutura em nuvem que podem ser escalados e dimensionados de acordo com a demanda. Esses serviços são projetados para hospedar aplicativos empresariais ou serviços de grande escala, como aplicativos de rede social ou serviços de streaming de vídeo. Os serviços em nuvem oferecem recursos avançados de gerenciamento, como balanceamento de carga automático, escalabilidade horizontal, gerenciamento de armazenamento e gerenciamento de banco de dados.
+
+Embora ambos os serviços possam ser usados para hospedar sites ou aplicativos da web, eles diferem na forma como são configurados e gerenciados. No geral, os serviços em nuvem oferecem mais recursos avançados de gerenciamento e escalabilidade, mas também podem ser mais complexos de configurar e gerenciar em comparação com os serviços de hospedagem tradicionais.
+
 ## Características
 
 Existem algumas características essenciais da computação em nuvem, que incluem:
