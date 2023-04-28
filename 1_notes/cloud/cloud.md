@@ -7,3 +7,16 @@ Existem três principais modelos de serviço em nuvem: Software as a Service (Sa
 Entre os principais benefícios da nuvem estão a flexibilidade, escalabilidade e redução de custos, já que os usuários pagam apenas pelos recursos que usam. Além disso, a nuvem permite maior mobilidade e acesso remoto, tornando mais fácil a colaboração e compartilhamento de dados e informações.
 
 Apesar das vantagens, a segurança ainda é uma preocupação para muitos usuários da nuvem, já que o armazenamento de dados em servidores remotos pode deixá-los mais vulneráveis a ataques cibernéticos. É importante que as empresas e usuários adotem medidas de segurança adequadas para proteger seus dados na nuvem.
+
+## Características
+
+Existem algumas características essenciais da computação em nuvem, que incluem:
+
+- Elasticidade: a capacidade de aumentar ou diminuir rapidamente a capacidade de processamento e armazenamento conforme a demanda do usuário.
+- Automação: a utilização de ferramentas e recursos automatizados para provisionamento, configuração e gerenciamento de recursos em nuvem.
+- Escalabilidade: a capacidade de expandir a capacidade de processamento e armazenamento sem impactar negativamente no desempenho dos serviços em nuvem.
+- Pagamento por uso: o modelo de pagamento que permite aos usuários pagar apenas pelos recursos que eles utilizam.
+- Acesso remoto: a capacidade de acessar e utilizar os recursos da nuvem de qualquer lugar do mundo, utilizando uma conexão com a internet.
+- Compartilhamento e colaboração: a possibilidade de compartilhar e colaborar em documentos e arquivos em tempo real com outras pessoas em qualquer lugar do mundo.
+- Alta disponibilidade: a garantia de que os recursos em nuvem estarão disponíveis sempre que o usuário precisar utilizá-los, sem interrupções.
+- Segurança: medidas de segurança são implementadas para proteger os dados dos usuários em nuvem contra ameaças cibernéticas e outras vulnerabilidades.
