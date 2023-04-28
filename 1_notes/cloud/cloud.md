@@ -64,3 +64,29 @@ Auditor: é o agente que realiza auditorias independentes em provedores de servi
 Agente: é um software ou aplicativo que é executado em um ambiente em nuvem e realiza tarefas específicas em nome do consumidor. Os agentes podem ser usados para monitorar o desempenho do sistema, gerenciar recursos em nuvem, realizar backup de dados, aplicar políticas de segurança e realizar outras tarefas.
 
 Operador: é o agente responsável por gerenciar a infraestrutura em nuvem e garantir que os recursos em nuvem estejam sempre disponíveis e funcionando corretamente. Os operadores geralmente têm acesso a recursos de gerenciamento de nuvem, como painéis de controle e ferramentas de gerenciamento, e são responsáveis por monitorar o desempenho da infraestrutura em nuvem e solucionar problemas quando necessário.
+
+## Riscos
+
+A CSA identificou dez principais riscos de segurança associados à computação em nuvem. São eles:
+
+Violação de dados: o risco de violação de dados ocorre quando dados confidenciais ou sensíveis são acessados, divulgados, roubados ou destruídos sem autorização.
+
+Perda de dados: o risco de perda de dados ocorre quando os dados armazenados na nuvem são perdidos ou corrompidos devido a falhas na infraestrutura da nuvem.
+
+Ataques de negação de serviço (DDoS): o risco de DDoS ocorre quando um ataque é lançado contra os recursos da nuvem, tornando-os indisponíveis para os usuários legítimos.
+
+Espionagem: o risco de espionagem ocorre quando os dados confidenciais são acessados ou interceptados por agentes mal-intencionados ou concorrentes.
+
+Injeção de código malicioso: o risco de injeção de código malicioso ocorre quando código malicioso é inserido em um serviço em nuvem, comprometendo sua integridade e segurança.
+
+Problemas de conformidade: o risco de problemas de conformidade ocorre quando os serviços em nuvem não atendem aos requisitos regulatórios ou de conformidade.
+
+Gerenciamento de contas inadequado: o risco de gerenciamento de contas inadequado ocorre quando as contas de usuários são mal gerenciadas, levando a vulnerabilidades de segurança.
+
+Controle insuficiente de acesso: o risco de controle insuficiente de acesso ocorre quando usuários não autorizados ou mal-intencionados obtêm acesso aos recursos da nuvem.
+
+Vulnerabilidades de interface e API: o risco de vulnerabilidades de interface e API ocorre quando as interfaces e APIs da nuvem são vulneráveis a ataques.
+
+Isolamento insuficiente entre as instâncias da nuvem: o risco de isolamento insuficiente entre as instâncias da nuvem ocorre quando as instâncias da nuvem não são adequadamente isoladas, permitindo a interceptação de dados entre as instâncias.
+
+É importante que as organizações que utilizam serviços em nuvem estejam cientes desses riscos e adotem as medidas de segurança adequadas para proteger seus dados e recursos na nuvem.
