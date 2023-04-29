@@ -114,3 +114,4 @@ Controle insuficiente de acesso: as contramedidas incluem a implementação de p
 Vulnerabilidades de interface e API: as contramedidas incluem a implementação de testes regulares de segurança, a configuração adequada de firewalls e outros controles de segurança e a utilização de autenticação forte.
 
 Isolamento insuficiente entre as instâncias da nuvem: as contramedidas incluem a configuração adequada dos controles de segurança da nuvem, a utilização de tecnologias de virtualização seguras e a implementação de políticas de segurança de dados.
+
