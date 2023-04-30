@@ -9,3 +9,16 @@ O controle de acesso físico é usado para proteger recursos físicos, como pré
 Já o controle de acesso lógico é usado para proteger recursos digitais, como sistemas, dados, redes, aplicativos, entre outros. Ele é implementado por meio de técnicas como autenticação, autorização, criptografia, políticas de segurança, monitoramento e auditoria. O controle de acesso lógico é usado para garantir que apenas usuários autorizados possam acessar recursos digitais, proteger informações confidenciais, garantir a privacidade dos usuários e prevenir ataques cibernéticos.
 
 Em resumo, o controle de acesso é uma parte importante da segurança da informação, e é usado para garantir a proteção dos recursos físicos e digitais de uma organização contra ameaças internas e externas.
+
+## Recursos
+
+No contexto de segurança da informação, é importante proteger diversos recursos que são críticos para o funcionamento de uma organização. Alguns dos recursos que devem ser protegidos incluem:
+
+- Sistemas: computadores, servidores, dispositivos móveis e outros dispositivos que processam, armazenam e transmitem informações.
+- Redes: conexões de rede que permitem a comunicação entre sistemas e usuários.
+- Dados: informações confidenciais, como informações financeiras, dados pessoais de clientes, segredos comerciais, entre outros.
+- Aplicativos: software utilizado para processar e armazenar dados, como bancos de dados, sistemas de gerenciamento de conteúdo, sistemas de gerenciamento de relacionamento com o cliente (CRM), entre outros.
+- Instalações físicas: prédios, escritórios, salas de servidores, salas de reuniões, entre outros locais onde informações críticas são armazenadas ou processadas.
+- Recursos humanos: funcionários, colaboradores, fornecedores e parceiros que têm acesso a informações sensíveis e críticas.
+
+A proteção desses recursos é fundamental para garantir a segurança da informação de uma organização. Além disso, é importante lembrar que a segurança da informação não é uma tarefa isolada e deve ser abordada de forma holística, incluindo a conscientização dos usuários, políticas e procedimentos de segurança, treinamento e adoção de melhores práticas de segurança.
