@@ -22,3 +22,17 @@ No contexto de segurança da informação, é importante proteger diversos recur
 - Recursos humanos: funcionários, colaboradores, fornecedores e parceiros que têm acesso a informações sensíveis e críticas.
 
 A proteção desses recursos é fundamental para garantir a segurança da informação de uma organização. Além disso, é importante lembrar que a segurança da informação não é uma tarefa isolada e deve ser abordada de forma holística, incluindo a conscientização dos usuários, políticas e procedimentos de segurança, treinamento e adoção de melhores práticas de segurança.
+
+## Controle Lógico
+
+Controle de acesso lógico é um conjunto de técnicas e procedimentos usados para garantir que apenas usuários autorizados possam acessar recursos digitais, como dados, sistemas e aplicativos. O objetivo principal do controle de acesso lógico é proteger informações confidenciais e garantir a privacidade dos usuários.
+
+Existem várias técnicas que podem ser usadas para implementar o controle de acesso lógico, como:
+
+- Autenticação: verifica a identidade do usuário, geralmente por meio de uma combinação de nome de usuário e senha, autenticação de dois fatores, biometria ou outros mecanismos de segurança.
+- Autorização: define os níveis de acesso de um usuário a recursos específicos, com base em suas funções e responsabilidades dentro da organização.
+- Criptografia: protege dados confidenciais por meio de algoritmos criptográficos que impedem que informações sensíveis sejam acessadas ou lidas sem a devida autorização.
+- Políticas de segurança: definem as regras e diretrizes para o uso adequado de recursos de tecnologia da informação, incluindo o acesso a dados e sistemas.
+- Monitoramento e auditoria: rastreia e registra todas as atividades de usuários em sistemas e aplicativos, permitindo a identificação rápida de problemas de segurança ou violações de política.
+
+Em resumo, o controle de acesso lógico é essencial para manter a segurança e privacidade dos dados em um ambiente digital. É importante que as organizações implementem uma estratégia eficaz de controle de acesso lógico para proteger seus recursos e informações confidenciais contra ameaças internas e externas.
