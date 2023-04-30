@@ -31,3 +31,16 @@ Existem vários tópicos importantes que devem ser incluídos em uma Política d
 - Revisão e atualização: a PSI deve ser revisada regularmente e atualizada sempre que necessário, levando em conta as mudanças no ambiente de ameaças e as necessidades da organização.
 
 Esses são apenas alguns dos tópicos importantes que devem ser incluídos em uma PSI. É importante que a política seja personalizada de acordo com as necessidades específicas da organização e revisada regularmente para garantir que continue eficaz na proteção das informações confidenciais e sensíveis.
+
+## Elaboração
+
+A elaboração de uma Política de Segurança da Informação (PSI) geralmente segue as seguintes fases:
+
+- Análise de riscos: A primeira fase é a análise de riscos, na qual a organização deve identificar as informações críticas que precisam ser protegidas, os riscos associados a essas informações e as possíveis ameaças que podem afetar a segurança da informação. Com base nessa análise, a organização pode definir os controles de segurança necessários para proteger as informações.
+- Definição de objetivos: Na segunda fase, a organização deve definir os objetivos e metas da PSI, levando em conta os resultados da análise de riscos. É importante que esses objetivos e metas estejam alinhados com os objetivos estratégicos da organização.
+- Desenvolvimento da PSI: Na terceira fase, a equipe de TI, em colaboração com outras áreas da organização, deve desenvolver a PSI, definindo as políticas, procedimentos e controles necessários para proteger as informações confidenciais e sensíveis.
+- Implementação: Na quarta fase, a organização deve implementar a PSI, incluindo a comunicação da política para os colaboradores, a implantação de controles de segurança e a realização de treinamentos e conscientização.
+- Monitoramento e avaliação: Na quinta fase, a organização deve monitorar continuamente a implementação da PSI e avaliar a eficácia dos controles de segurança. Isso inclui a realização de auditorias de segurança e revisões regulares da PSI.
+- Revisão e atualização: Na sexta e última fase, a organização deve revisar e atualizar a PSI sempre que necessário, levando em conta as mudanças no ambiente de ameaças e as necessidades da organização.
+
+Essas são as principais fases de elaboração de uma PSI. É importante que a política seja personalizada de acordo com as necessidades específicas da organização e que seja revisada regularmente para garantir que continue eficaz na proteção das informações confidenciais e sensíveis.
