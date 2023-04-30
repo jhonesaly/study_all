@@ -10,5 +10,7 @@ with open('usuarios.txt', 'r') as input:
     for line in lines:
         name, size = line.split()
         size_mb = round(int(size)/1024/1024,2)
-        users[name] = size_mb
+        users['name'] = name
+        users['size'] = size_mb
         print(users)
+print(users)
