@@ -36,3 +36,16 @@ Existem várias técnicas que podem ser usadas para implementar o controle de ac
 - Monitoramento e auditoria: rastreia e registra todas as atividades de usuários em sistemas e aplicativos, permitindo a identificação rápida de problemas de segurança ou violações de política.
 
 Em resumo, o controle de acesso lógico é essencial para manter a segurança e privacidade dos dados em um ambiente digital. É importante que as organizações implementem uma estratégia eficaz de controle de acesso lógico para proteger seus recursos e informações confidenciais contra ameaças internas e externas.
+
+## Fatores de autenticação
+
+Existem diversos fatores de autenticação que podem ser utilizados para garantir a segurança de um sistema e proteger o acesso a informações sensíveis. Os principais fatores de autenticação são:
+
+- Autenticação baseada em senha: é o método mais comum de autenticação, no qual o usuário precisa fornecer um nome de usuário e uma senha para acessar o sistema. É importante que a senha seja forte e complexa, para evitar ataques de força bruta.
+- Autenticação baseada em token: é um método de autenticação em que um dispositivo físico é usado para gerar um código único para cada login. Os tokens podem ser gerados por meio de dispositivos USB, cartões inteligentes ou aplicativos de autenticação móvel.
+- Autenticação baseada em biometria: é um método de autenticação que utiliza características únicas do corpo humano, como impressões digitais, reconhecimento facial, reconhecimento de voz ou leitura de retina para verificar a identidade do usuário.
+- Autenticação baseada em certificado: é um método de autenticação em que um certificado digital é usado para validar a identidade do usuário. O certificado é emitido por uma autoridade de certificação confiável e é armazenado no dispositivo do usuário.
+- Autenticação baseada em fator de localização: é um método de autenticação em que a localização do usuário é verificada para confirmar a identidade. Por exemplo, um usuário pode ser autenticado se ele estiver em uma localização física específica, como o escritório da empresa.
+- Autenticação baseada em múltiplos fatores: é um método de autenticação que combina dois ou mais dos fatores acima para garantir a segurança do acesso. Por exemplo, pode ser usado um token de autenticação combinado com a leitura de impressão digital para garantir que o usuário seja autenticado corretamente.
+
+É importante escolher o tipo de autenticação mais adequado para a sua organização, levando em consideração o nível de segurança necessário e a facilidade de uso para os usuários. Uma boa prática é utilizar uma combinação de diferentes fatores de autenticação para aumentar a segurança do sistema.
