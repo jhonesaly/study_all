@@ -54,3 +54,25 @@ Existem várias formas de evitar os ataques elencados no OWASP Top 10, algumas d
 - Utilize ferramentas de segurança - utilize ferramentas de segurança automatizadas para verificar periodicamente a segurança de seu sistema, tais como análise de código-fonte estática, varreduras de vulnerabilidade, etc.
 
 Lembre-se de que a segurança não é algo que possa ser adicionado posteriormente a uma aplicação ou sistema - ela deve ser projetada e implementada desde o início do processo de desenvolvimento. Além disso, as medidas de segurança devem ser revistas e atualizadas regularmente para manter a proteção contra ameaças atuais e emergentes.
+
+## Ferramentas
+
+Existem diversas ferramentas disponíveis tanto para a defesa quanto para o ataque em segurança da informação. Algumas das principais são:
+
+Ferramentas de defesa:
+
+- Firewalls: protegem as redes contra tráfego não autorizado e previnem a propagação de malware.
+- Antivírus: detectam e removem vírus e outras formas de malware.
+- IDS/IPS: sistemas de detecção/prevenção de intrusão que monitoram o tráfego de rede em busca de atividades suspeitas e podem bloquear o tráfego malicioso.
+- Gerenciadores de senhas: permitem criar senhas complexas e armazená-las de forma segura.
+- Ferramentas de criptografia: protegem dados sensíveis por meio de criptografia, tanto em trânsito quanto em repouso.
+
+Ferramentas de ataque:
+
+- Ferramentas de varredura de portas e vulnerabilidades: permitem identificar portas abertas em sistemas e dispositivos, bem como vulnerabilidades em softwares.
+- Frameworks de exploração de vulnerabilidades: como o Metasploit, que ajudam os atacantes a encontrar e explorar vulnerabilidades conhecidas.
+- Keyloggers: capturam as teclas digitadas pelos usuários para roubar senhas e outras informações confidenciais.
+- RATs (Remote Access Trojans): permitem que os atacantes controlem remotamente os computadores infectados.
+- Botnets: redes de computadores infectados que podem ser controlados remotamente para executar ataques coordenados.
+
+É importante notar que a maioria dessas ferramentas pode ser usada tanto para fins legítimos quanto maliciosos, dependendo da intenção do usuário. Por isso, é fundamental que sejam utilizadas de forma ética e responsável.
