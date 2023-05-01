@@ -39,3 +39,18 @@ A08:2021 - Falhas na Integridade de Dados e Software: Esse tipo de ataque ocorre
 A09:2021 - Falhas em log e monitoramento de segurança: anteriormente intitulado "Logging & Monitoring Insufficient", este item sobe para a nona posição do ranking e foi adicionado a partir da pesquisa de mercado. Esta categoria foi expandida para incluir mais tipos de falhas, é desafiadora de testar e não é bem representada nos dados CVE / CVSS. No entanto, as falhas nesta categoria podem afetar diretamente a visibilidade, alerta de incidentes e forense.
 
 A10:2021 - Forgery de solicitação do lado do servidor: adicionado a partir da pesquisa da comunidade, este item representa a situação em que os membros da comunidade de segurança estão nos dizendo que isso é importante, embora não seja ilustrado nos dados no momento. Os dados mostram uma taxa de incidência relativamente baixa com cobertura de teste acima da média, juntamente com classificações acima da média para potencial de exploração e impacto.
+
+## Defesas
+
+
+Existem várias formas de evitar os ataques elencados no OWASP Top 10, algumas delas são:
+
+- Mantenha o software atualizado e corrigido - verifique regularmente se há atualizações de segurança e corrija quaisquer vulnerabilidades conhecidas.
+- Use autenticação forte e controles de acesso - certifique-se de que seus usuários são autenticados e autorizados corretamente e de acordo com as práticas recomendadas.
+- Proteja seus dados - use criptografia forte para proteger os dados em repouso e em trânsito.
+- Faça a validação correta dos dados - garanta que a entrada do usuário seja validada e sanitizada corretamente antes de ser usada em operações críticas.
+- Implemente medidas de segurança apropriadas - utilize as melhores práticas de segurança, como firewalls, IDS/IPS, monitoramento de segurança, etc.
+- Eduque seus usuários - sensibilize seus usuários sobre as ameaças de segurança e as melhores práticas para proteger as informações e recursos da empresa.
+- Utilize ferramentas de segurança - utilize ferramentas de segurança automatizadas para verificar periodicamente a segurança de seu sistema, tais como análise de código-fonte estática, varreduras de vulnerabilidade, etc.
+
+Lembre-se de que a segurança não é algo que possa ser adicionado posteriormente a uma aplicação ou sistema - ela deve ser projetada e implementada desde o início do processo de desenvolvimento. Além disso, as medidas de segurança devem ser revistas e atualizadas regularmente para manter a proteção contra ameaças atuais e emergentes.
