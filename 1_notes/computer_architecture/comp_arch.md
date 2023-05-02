@@ -75,3 +75,13 @@ Tecnologia Pessoal (TP): inclui tecnologia usada por indivíduos para fins pesso
 Tecnologia de Sensor/Atuador: inclui tecnologia usada para detectar, medir e controlar ações em um ambiente físico, como sensores de temperatura, sensores de movimento, câmeras, sistemas de alarme e atuadores, como motores e válvulas.
 
 Essas categorias são amplas e muitas vezes interconectadas. Por exemplo, a TI e a TO podem se sobrepor em muitos casos, e a tecnologia pessoal pode incluir elementos de tecnologia de sensor/atuador. Além disso, há muitas outras áreas em que a tecnologia é aplicada, como a biotecnologia, nanotecnologia, robótica, inteligência artificial e outras.
+
+## Arquitetura ARM
+
+A arquitetura ARM é uma arquitetura de processadores RISC (Reduced Instruction Set Computing) que é usada em uma ampla gama de dispositivos, desde smartphones e tablets até dispositivos de Internet das Coisas (IoT), equipamentos médicos, sistemas embarcados e até mesmo supercomputadores. A arquitetura ARM é conhecida por seu baixo consumo de energia, tamanho compacto, alto desempenho e flexibilidade.
+
+A arquitetura ARM é desenvolvida pela empresa britânica ARM Holdings, que licencia a tecnologia para outras empresas fabricantes de processadores, como Qualcomm, Samsung, MediaTek, entre outras. Os processadores baseados na arquitetura ARM são usados em muitos dispositivos móveis, como smartphones Android, iPhones, iPads e tablets, bem como em muitos outros dispositivos, como roteadores Wi-Fi, TVs inteligentes, consoles de jogos, câmeras e sistemas de navegação por satélite.
+
+Uma das principais vantagens da arquitetura ARM é sua eficiência energética. Isso significa que dispositivos baseados em ARM tendem a ter uma vida útil de bateria mais longa do que dispositivos baseados em outras arquiteturas de processadores. Além disso, os processadores ARM são altamente escaláveis e modulares, permitindo que fabricantes de dispositivos personalizem e otimizem a arquitetura para atender às suas necessidades específicas.
+
+A arquitetura ARM também é projetada para oferecer alto desempenho em ambientes com limitações de energia, tamanho e custo. Os processadores baseados em ARM geralmente usam menos transistores do que processadores baseados em outras arquiteturas, o que os torna mais baratos e fáceis de produzir. Além disso, a arquitetura ARM oferece suporte para uma ampla gama de periféricos e dispositivos, tornando-a uma escolha popular para dispositivos de baixo custo e sistemas embarcados.
