@@ -35,3 +35,19 @@ Controle: o computador é capaz de controlar dispositivos externos, como impress
 Movimentação: o computador é capaz de movimentar informações de um dispositivo de armazenamento para outro, permitindo a transferência de arquivos e o compartilhamento de informações entre usuários e sistemas diferentes. Isso é possível por meio de interfaces de comunicação, como a Internet, redes locais e dispositivos de armazenamento externos.
 
 Essas quatro funções são essenciais para o funcionamento de um computador e tornam possível a realização de tarefas complexas em diferentes áreas, como negócios, ciência, entretenimento, educação e muito mais.
+
+## Evolução Histórica
+
+A evolução histórica da arquitetura de computadores é marcada por várias fases, cada uma caracterizada por avanços significativos em termos de tecnologia e inovação. Algumas das principais fases incluem:
+
+Primeira Geração (1940-1956): A primeira geração de computadores era baseada em válvulas termiônicas e usava cartões perfurados para entrada de dados. Exemplos notáveis dessa geração incluem o ENIAC e o UNIVAC.
+
+Segunda Geração (1956-1963): A segunda geração de computadores usava transistores para substituir as válvulas termiônicas, o que permitiu a redução de tamanho e consumo de energia. Exemplos notáveis dessa geração incluem o IBM 7090 e o UNIVAC 1107.
+
+Terceira Geração (1964-1971): A terceira geração de computadores usava circuitos integrados, permitindo a redução ainda maior de tamanho e consumo de energia. Exemplos notáveis dessa geração incluem o IBM System/360 e o DEC PDP-8.
+
+Quarta Geração (1971-1989): A quarta geração de computadores usava microprocessadores, permitindo a criação de computadores pessoais e outros dispositivos eletrônicos de consumo em massa. Exemplos notáveis dessa geração incluem o IBM PC e o Apple Macintosh.
+
+Quinta Geração (1989-presente): A quinta geração de computadores é caracterizada pela evolução dos microprocessadores, permitindo a criação de dispositivos móveis, computação em nuvem, inteligência artificial e outras tecnologias avançadas.
+
+Além dessas fases, também houve avanços significativos em outras áreas da arquitetura de computadores, como a memória, a entrada/saída e os sistemas operacionais. No geral, a evolução da arquitetura de computadores permitiu o desenvolvimento de tecnologias e dispositivos cada vez mais poderosos, capazes de processar e armazenar grandes quantidades de informações e realizar tarefas complexas em tempo real.
