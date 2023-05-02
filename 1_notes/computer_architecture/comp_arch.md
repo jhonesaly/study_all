@@ -51,3 +51,13 @@ Quarta Geração (1971-1989): A quarta geração de computadores usava microproc
 Quinta Geração (1989-presente): A quinta geração de computadores é caracterizada pela evolução dos microprocessadores, permitindo a criação de dispositivos móveis, computação em nuvem, inteligência artificial e outras tecnologias avançadas.
 
 Além dessas fases, também houve avanços significativos em outras áreas da arquitetura de computadores, como a memória, a entrada/saída e os sistemas operacionais. No geral, a evolução da arquitetura de computadores permitiu o desenvolvimento de tecnologias e dispositivos cada vez mais poderosos, capazes de processar e armazenar grandes quantidades de informações e realizar tarefas complexas em tempo real.
+
+## Sistemas Embarcados
+
+Sistemas embarcados são sistemas eletrônicos microprocessados que têm como objetivo controlar, monitorar ou executar funções específicas em um dispositivo ou sistema maior. Eles são projetados para operar de forma autônoma e muitas vezes são construídos com restrições de tamanho, energia e custo, a fim de atender a requisitos específicos.
+
+Os sistemas embarcados podem ser encontrados em uma ampla variedade de dispositivos, desde eletrodomésticos e equipamentos médicos até sistemas de controle de tráfego e satélites. Eles são compostos por um ou mais microcontroladores ou microprocessadores que são programados para executar funções específicas, muitas vezes em tempo real.
+
+A programação de sistemas embarcados pode ser realizada em linguagens de programação de baixo nível, como C e Assembly, e exige um conhecimento avançado de eletrônica, sistemas digitais e comunicação de dados. Os sistemas embarcados também podem incluir outros componentes eletrônicos, como sensores, atuadores, memórias e interfaces de comunicação.
+
+Os sistemas embarcados são fundamentais para o funcionamento de muitos dispositivos e sistemas modernos, e sua importância está crescendo à medida que a tecnologia se torna cada vez mais integrada em nossas vidas diárias.
