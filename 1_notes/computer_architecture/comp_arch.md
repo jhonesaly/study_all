@@ -61,3 +61,17 @@ Os sistemas embarcados podem ser encontrados em uma ampla variedade de dispositi
 A programação de sistemas embarcados pode ser realizada em linguagens de programação de baixo nível, como C e Assembly, e exige um conhecimento avançado de eletrônica, sistemas digitais e comunicação de dados. Os sistemas embarcados também podem incluir outros componentes eletrônicos, como sensores, atuadores, memórias e interfaces de comunicação.
 
 Os sistemas embarcados são fundamentais para o funcionamento de muitos dispositivos e sistemas modernos, e sua importância está crescendo à medida que a tecnologia se torna cada vez mais integrada em nossas vidas diárias.
+
+## Tipos de tecnologia
+
+Existem diferentes maneiras de categorizar os tipos de tecnologia, mas uma delas é a seguinte:
+
+Tecnologia da Informação (TI): inclui hardware, software, redes e infraestrutura de TI usados para processar, armazenar, transmitir e gerenciar informações.
+
+Tecnologia Operacional (TO): inclui tecnologia usada para controlar processos e equipamentos físicos em várias indústrias, como manufatura, transporte, energia e saúde.
+
+Tecnologia Pessoal (TP): inclui tecnologia usada por indivíduos para fins pessoais e de entretenimento, como smartphones, tablets, laptops, câmeras digitais e dispositivos de jogos.
+
+Tecnologia de Sensor/Atuador: inclui tecnologia usada para detectar, medir e controlar ações em um ambiente físico, como sensores de temperatura, sensores de movimento, câmeras, sistemas de alarme e atuadores, como motores e válvulas.
+
+Essas categorias são amplas e muitas vezes interconectadas. Por exemplo, a TI e a TO podem se sobrepor em muitos casos, e a tecnologia pessoal pode incluir elementos de tecnologia de sensor/atuador. Além disso, há muitas outras áreas em que a tecnologia é aplicada, como a biotecnologia, nanotecnologia, robótica, inteligência artificial e outras.
