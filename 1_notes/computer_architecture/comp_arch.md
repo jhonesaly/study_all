@@ -85,3 +85,17 @@ A arquitetura ARM é desenvolvida pela empresa britânica ARM Holdings, que lice
 Uma das principais vantagens da arquitetura ARM é sua eficiência energética. Isso significa que dispositivos baseados em ARM tendem a ter uma vida útil de bateria mais longa do que dispositivos baseados em outras arquiteturas de processadores. Além disso, os processadores ARM são altamente escaláveis e modulares, permitindo que fabricantes de dispositivos personalizem e otimizem a arquitetura para atender às suas necessidades específicas.
 
 A arquitetura ARM também é projetada para oferecer alto desempenho em ambientes com limitações de energia, tamanho e custo. Os processadores baseados em ARM geralmente usam menos transistores do que processadores baseados em outras arquiteturas, o que os torna mais baratos e fáceis de produzir. Além disso, a arquitetura ARM oferece suporte para uma ampla gama de periféricos e dispositivos, tornando-a uma escolha popular para dispositivos de baixo custo e sistemas embarcados.
+
+## Arquitetura em nuvem
+
+A arquitetura em nuvem (cloud computing) refere-se ao uso de recursos de computação, como servidores, armazenamento e redes, que são disponibilizados pela internet e fornecidos por provedores de serviços em nuvem, como Amazon Web Services (AWS), Microsoft Azure e Google Cloud Platform.
+
+A arquitetura em nuvem é baseada em um modelo de serviço em que os usuários podem acessar recursos de computação sob demanda, pagando apenas pelo que usam. Isso significa que empresas e organizações podem escalar rapidamente seus recursos de computação sem a necessidade de adquirir hardware e infraestrutura de TI adicionais, o que pode ser muito caro e demorado.
+
+A arquitetura em nuvem é composta por vários componentes, incluindo armazenamento em nuvem, rede em nuvem, plataforma em nuvem e software em nuvem. O armazenamento em nuvem permite que os usuários armazenem e acessem dados a partir de qualquer lugar, a qualquer momento. A rede em nuvem permite que os usuários se conectem aos recursos de computação em nuvem, independentemente da localização física desses recursos. A plataforma em nuvem fornece um ambiente de desenvolvimento e implantação para aplicativos em nuvem, enquanto o software em nuvem oferece uma variedade de aplicativos e serviços baseados em nuvem, como processamento de dados em nuvem, análise em nuvem, entre outros.
+
+Uma das principais vantagens da arquitetura em nuvem é sua escalabilidade. Os usuários podem escalar rapidamente seus recursos de computação para atender às demandas de pico de tráfego ou processamento, e, em seguida, reduzir a escala quando a demanda diminuir. Além disso, a arquitetura em nuvem permite que os usuários acessem seus dados e aplicativos de qualquer lugar, a qualquer momento, desde que tenham uma conexão com a internet.
+
+Outra vantagem da arquitetura em nuvem é a segurança. Os provedores de serviços em nuvem geralmente investem muito em medidas de segurança física e digital, como criptografia de dados, firewalls e monitoramento constante. Isso pode ser especialmente importante para empresas que lidam com informações confidenciais ou regulamentadas.
+
+Em resumo, a arquitetura em nuvem oferece uma alternativa flexível e econômica para a infraestrutura de TI tradicional, permitindo que as empresas e organizações reduzam custos, melhorem a escalabilidade e a segurança de seus recursos de computação.
