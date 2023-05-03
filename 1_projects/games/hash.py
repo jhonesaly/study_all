@@ -33,11 +33,11 @@ while end_game == False:
     
     # victory
 
-    if hash[0][0] == hash[0][1] == hash[0][2]:
-        print(f'victory of {hash[0][0]}!')
-
-        end_game = True
-
-
-
+    for x in range(2):
+        if hash[x][0] == hash[x][1] == hash[x][2]:
+            print(f'victory of {hash[x][0]}!')
+            end_game = True
     
+        elif hash[0][x] == hash[1][x] == hash[2][x]:
+            print(f'victory of {hash[0][x]}!')
+            end_game = True
