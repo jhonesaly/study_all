@@ -46,13 +46,13 @@ while end_game == False:
                 end_game = True
                 break
 
-        elif (x<3) and (hash[x][x] == hash[x+1][x+1] == hash[x+2][x+2]):
+        elif (x==0) and (hash[x][x] == hash[x+1][x+1] == hash[x+2][x+2]):
             if hash[x+1][x+1] != '':
                 print(f'victory of {hash[x+1][x+1]}!')
                 end_game = True
                 break
 
-        elif (x<3) and (hash[x][x+2] == hash[x+1][x+1] == hash[x+2][x]):
+        elif (x==0) and (hash[x][x+2] == hash[x+1][x+1] == hash[x+2][x]):
             if hash[x+1][x+1] != '':
                 print(f'victory of {hash[x+1][x+1]}!')
                 end_game = True
