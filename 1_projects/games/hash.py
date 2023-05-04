@@ -1,7 +1,7 @@
 hash = ['','',''],['','',''],['','','']
+end_game = False
 
 def victory(hash):
-    end_game = False
 
     for x in range(2):
         if hash[x][0] == hash[x][1] == hash[x][2]:
@@ -16,15 +16,15 @@ def victory(hash):
                 end_game = True
                 break
 
-        elif (x==0) and (hash[x][x] == hash[x+1][x+1] == hash[x+2][x+2]):
-            if hash[x+1][x+1] != '':
-                print(f'victory of {hash[x+1][x+1]}!')
+        elif (hash[0][0] == hash[1][1] == hash[2][2]):
+            if hash[1][1] != '':
+                print(f'victory of {hash[1][1]}!')
                 end_game = True
                 break
 
-        elif (x==0) and (hash[x][x+2] == hash[x+1][x+1] == hash[x+2][x]):
+        elif (x==0) and (hash[0][2] == hash[1][1] == hash[2][0]):
             if hash[x+1][x+1] != '':
-                print(f'victory of {hash[x+1][x+1]}!')
+                print(f'victory of {hash[1][1]}!')
                 end_game = True
                 break
 
