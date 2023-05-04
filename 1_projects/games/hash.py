@@ -1,7 +1,8 @@
-hash = ['','',''],['','',''],['','','']
+hash = [['','',''],['','',''],['','','']]
 end_game = False
 
 def victory(hash):
+    end_game = False
 
     for x in range(2):
         if hash[x][0] == hash[x][1] == hash[x][2]:
@@ -33,7 +34,17 @@ def victory(hash):
     
     return end_game
 
-end_game = victory(hash)
+def move(hash, move):
+    move_test = 'not_ok'
+
+    while move_test != 'ok':
+        move = move.split(',')
+        move = [int(x)-1 for x in move]
+        if hash[move[0]][move[1]] != '':
+            print('Espaço já marcado. Escolha outro!')
+        else:
+            hash[move[0]][move[1]] = 'X'
+            move_test = 'ok'
 
 while end_game == False:
 
@@ -53,6 +64,10 @@ while end_game == False:
             move1_test = 'ok'
 
     end_game = victory(hash)
+    if end_game == True:
+        for line in hash:
+            print(line)
+        break
 
     move2_test = 'not_ok'
 
@@ -67,3 +82,7 @@ while end_game == False:
             move2_test = 'ok'
     
     end_game = victory(hash)
+    if end_game == True:
+        for line in hash:
+            print(line)
+        break
