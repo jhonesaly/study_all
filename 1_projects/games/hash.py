@@ -1,6 +1,10 @@
 hash = [['','',''],['','',''],['','','']]
 end_game = False
 
+def show(hash):
+    for line in hash:
+        print(line)
+
 def victory(hash):
     end_game = False
 
@@ -49,21 +53,20 @@ def move(hash, XO):
 
 while end_game == False:
 
-    for line in hash:
-        print(line)
-    
+    show(hash)
+
     move(hash,'X')
 
     end_game = victory(hash)
+
     if end_game == True:
-        for line in hash:
-            print(line)
+        show(hash)
         break
 
     move(hash,'O')
     
     end_game = victory(hash)
+    
     if end_game == True:
-        for line in hash:
-            print(line)
+        show(hash)
         break
