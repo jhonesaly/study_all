@@ -34,16 +34,17 @@ def victory(hash):
     
     return end_game
 
-def move(hash, move):
+def move(hash, XO):
     move_test = 'not_ok'
 
     while move_test != 'ok':
+        move = input(f"Digite onde deja colocar o {XO} (ex: 1,1): ")
         move = move.split(',')
         move = [int(x)-1 for x in move]
         if hash[move[0]][move[1]] != '':
             print('Espaço já marcado. Escolha outro!')
         else:
-            hash[move[0]][move[1]] = 'X'
+            hash[move[0]][move[1]] = XO
             move_test = 'ok'
 
 while end_game == False:
@@ -51,17 +52,7 @@ while end_game == False:
     for line in hash:
         print(line)
     
-    move1_test = 'not_ok'
-
-    while move1_test != 'ok':
-        move1 = input("Digite onde deja colocar o X (ex: 1,1): ")
-        move1 = move1.split(',')
-        move1 = [int(x)-1 for x in move1]
-        if hash[move1[0]][move1[1]] != '':
-            print('Espaço já marcado. Escolha outro!')
-        else:
-            hash[move1[0]][move1[1]] = 'X'
-            move1_test = 'ok'
+    move(hash,'X')
 
     end_game = victory(hash)
     if end_game == True:
@@ -69,17 +60,7 @@ while end_game == False:
             print(line)
         break
 
-    move2_test = 'not_ok'
-
-    while move2_test != 'ok':
-        move2 = input("Digite onde deja colocar o O (ex: 1,1): ")
-        move2 = move2.split(',')
-        move2 = [int(x)-1 for x in move2]
-        if hash[move2[0]][move2[1]] != '':
-            print('Espaço já marcado. Escolha outro!')
-        else:
-            hash[move2[0]][move2[1]] = 'O'
-            move2_test = 'ok'
+    move(hash,'O')
     
     end_game = victory(hash)
     if end_game == True:
