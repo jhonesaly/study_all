@@ -66,7 +66,7 @@ while end_game == False:
     move(hash,'O')
     
     end_game = victory(hash)
-    
+
     if end_game == True:
         show(hash)
         break
