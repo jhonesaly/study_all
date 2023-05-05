@@ -47,3 +47,14 @@ while True:
         print(result)
         show_board(board)
         break
+
+if __name__ == '__main__':
+    hash = [['O','X','O'],
+            ['X','X','O'],
+            ['X','O','X']]
+    assert check_victory(hash) == False
+
+    hash = [['O','X','O'],
+            ['X','O','O'],
+            ['X','X','O']]
+    assert check_victory(hash) == True
