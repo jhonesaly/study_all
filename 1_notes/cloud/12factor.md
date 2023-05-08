@@ -17,11 +17,13 @@ As doze práticas descritas pelos "12 Factor" são:
 - Logs: As aplicações devem emitir logs em formato padrão para facilitar a depuração e a análise.
 - Admin processes: As tarefas administrativas, como a execução de migrações de banco de dados, devem ser executadas por meio de processos isolados e gerenciados.
 
+## Questões
+
 As principais questões que podem ser cobradas em uma prova sobre as "12 Factor" incluem:
 
 - O que são as "12 Factor"?
 
-As "12 Factor" são um conjunto de práticas recomendadas para construir aplicativos modernos que são escaláveis, resilientes e fáceis de manter.
+As "12 Factor" são um conjunto de práticas recomendadas para construir aplicativos modernos em nuvem que são escaláveis, resilientes e fáceis de manter.
 
 - Qual é o objetivo delas?
 
@@ -29,6 +31,7 @@ O objetivo das "12 Factor" é fornecer uma metodologia para construir aplicativo
 
 - Quais são os benefícios de seguir?
 
+Seguir as práticas recomendadas dos 12 Factor pode trazer benefícios como **portabilidade de aplicativos, escalabilidade horizontal, robustez e facilidade de manutenção e implantação**.
 
 - Quais são as doze práticas que compõem as "12 Factor"?
 
@@ -40,9 +43,11 @@ A prática "Config" recomenda armazenar a configuração do aplicativo em variá
 
 - Por que a configuração deve ser armazenada em variáveis de ambiente, em vez de ser codificada no código da aplicação?
 
+Armazenar as configurações em variáveis de ambiente é mais seguro, flexível e facilita a implementação dos princípios de DevOps.
 
 - Como os 12 Factor abordam a portabilidade de aplicativos em nuvem?
 
+Os 12 Factor abordam a portabilidade de aplicativos em nuvem por meio da separação clara entre o código da aplicação e as dependências do sistema operacional subjacente.
 
 - Por que a prática "Backing services" é importante para aplicativos em nuvem?
 
@@ -54,6 +59,7 @@ A prática "Dev/prod parity" recomenda manter as configurações de desenvolvime
 
 - Como os 12 Factor abordam a escalabilidade horizontal de aplicativos em nuvem?
 
+Os 12 Factor abordam a escalabilidade horizontal de aplicativos em nuvem por meio da separação clara entre o processo de construção, empacotamento e execução.
 
 - Por que a prática "Disposability" é importante para a escalabilidade de aplicativos em nuvem?
 
@@ -63,12 +69,14 @@ A prática "Disposability" recomenda maximizar a robustez com inicialização e 
 
 A prática "Logs" recomenda tratar os logs como fluxos de eventos. Isso significa que os logs são **usados ​​para ajudar a entender o comportamento do aplicativo e solucionar problemas**, como erros ou ações mal-sucedidas.
 
+- Como os 12 Factor lidam com a separação de processos para tarefas administrativas?
+
+Os 12 Factor lidam com a separação de processos para tarefas administrativas por meio do princípio de processos isolados e gerenciados.
+
 - Como a prática "Admin processes" ajuda a manter aplicativos em nuvem saudáveis?
 
 A prática "Admin processes" recomenda executar tarefas administrativas como processos únicos e pontuais. Isso ajuda a manter aplicativos em nuvem saudáveis, pois garante que as tarefas administrativas sejam **executadas de maneira confiável e em um ambiente controlado**.
 
-- Como os 12 Factor lidam com a separação de processos para tarefas administrativas?
-
-
 - Como as práticas recomendadas dos 12 Factor podem ser aplicadas a diferentes tipos de aplicativos em nuvem?
 
+As práticas recomendadas dos 12 Factor podem ser aplicadas a diferentes tipos de aplicativos em nuvem, independentemente da linguagem ou tecnologia utilizada, e podem ser adaptadas para atender às necessidades específicas de cada aplicativo.
