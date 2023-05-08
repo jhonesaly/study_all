@@ -80,3 +80,5 @@ A prática "Admin processes" recomenda executar tarefas administrativas como pro
 - Como as práticas recomendadas dos 12 Factor podem ser aplicadas a diferentes tipos de aplicativos em nuvem?
 
 As práticas recomendadas dos 12 Factor podem ser aplicadas a diferentes tipos de aplicativos em nuvem, independentemente da linguagem ou tecnologia utilizada, e podem ser adaptadas para atender às necessidades específicas de cada aplicativo.
+
+![12 factors](images/12Factors.png)
