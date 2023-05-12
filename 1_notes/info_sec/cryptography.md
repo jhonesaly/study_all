@@ -20,7 +20,7 @@ RSA: Este é um algoritmo de criptografia assimétrica que usa chaves públicas 
 
 SHA (Secure Hash Algorithm): Este é um conjunto de algoritmos de criptografia hash usado para proteger a integridade dos dados. Eles são amplamente utilizados em aplicativos de segurança, incluindo TLS/SSL, senhas de usuário e autenticação de mensagens.
 
-## Chaves
+## Chave simétrica
 
 Uma chave de criptografia de 128 bits é uma sequência de 128 bits de comprimento, o que significa que há 2^128 possíveis chaves diferentes que poderiam ser usadas para criptografar e descriptografar dados.
 
@@ -60,3 +60,15 @@ Representação em binário:
     1111 = F
 
 Observe que cada dígito hexadecimal representa um número de 0 a 15 em decimal, que é igual a uma combinação de 4 bits em binário.
+
+## Chave Assimétrica
+
+Para gerar um par de chaves RSA, que é um dos algoritmos de criptografia de chave pública mais populares, primeiro você precisa escolher dois números primos grandes diferentes, digamos p=17 e q=19. Em seguida, calcule o produto n=pq, que neste caso é igual a 323. Isso será a parte pública da chave.
+
+Agora, você precisa calcular um número relativamente primo de (p-1)(q-1). Vamos escolher e=7. A chave pública agora é um par de valores (n, e), que no nosso exemplo seria (323, 7).
+
+Em seguida, você precisa encontrar um valor d que seja o inverso multiplicativo de e mod (p-1)(q-1). Isso pode ser calculado usando o algoritmo de Euclides estendido. No nosso exemplo, d=103 é o inverso multiplicativo de 7 mod 288. No contexto da geração de chaves RSA, 7 mod 288 significa o resto da divisão de 7 por 288. Esse é o valor da chave privada.
+
+Agora, a chave pública é (323, 7) e a chave privada é (323, 103). Qualquer pessoa que queira enviar uma mensagem para você pode usar sua chave pública para criptografar a mensagem. Você pode descriptografar a mensagem usando sua chave privada correspondente.
+
+Note que no exemplo acima, os números são pequenos apenas para fins de ilustração. Na prática, as chaves RSA usadas são muito maiores, geralmente com tamanhos de 2048 bits ou mais.
