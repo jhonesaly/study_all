@@ -26,6 +26,10 @@ Análise de casos de uso: Consiste em identificar os atores, as ações e as int
 
 etnografia: é uma técnica de observação que pode ser usada para compreender os processos operacionais e ajudar a extrair os requisitos de apoio para esses processos. Um analista faz uma imersão no ambiente de trabalho em que o sistema será usado. O trabalho do dia a dia é observado e são feitas anotações sobre as tarefas reais em que os participantes estão envolvidos. O valor da etnografia é que ela ajuda a descobrir requisitos implícitos do sistema que refletem as formas reais com que as pessoas trabalham, em vez de refletir processos formais definidos pela organização.
 
+User Stories (Histórias de Usuário): As user stories são uma técnica amplamente utilizada em metodologias ágeis, como o Scrum. Elas são breves descrições de funcionalidades do sistema, escritas a partir da perspectiva do usuário. As user stories capturam as necessidades e requisitos do usuário de forma sucinta e fornecem uma base para o planejamento e desenvolvimento iterativo do produto.
+
+Estudo de Mercado e Análise Competitiva: A análise do mercado e da concorrência é importante para compreender o contexto em que o produto será lançado. A equipe realiza pesquisas de mercado, estuda tendências e analisa produtos concorrentes para identificar requisitos e oportunidades que possam ser relevantes para o sucesso do produto.
+
 Essas são apenas algumas das técnicas utilizadas na descoberta de requisitos. A seleção das técnicas mais apropriadas dependerá do contexto do projeto, dos stakeholders envolvidos e das características do sistema em desenvolvimento.
 
 ## MVP
