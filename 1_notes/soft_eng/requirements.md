@@ -1,8 +1,14 @@
-# Requisitos
+# Engenharia de Requisitos
 
-## Técnicas de Definição
+## Software de prateleira
 
-### Etnografia
+O software de prateleira foca em soluções mais comuns ao mercado. Esse tipo pode ser adquirido por qualquer empresa que se adapte ao que é oferecido pelo programa. É um tipo de software mais genérico e generalista, cujo a intenção é alcançar o maior número de consumidores. Além disso, não oferece tanta especificidade nas resoluções dos problemas.
+
+## Requisitos
+
+### Técnicas de Definição
+
+#### Etnografia
 
 A etnografia é uma abordagem de pesquisa qualitativa que visa compreender e descrever as práticas culturais e sociais de um grupo de pessoas em seu ambiente natural. Envolve a observação direta e participante, entrevistas e análise de documentos, com o objetivo de obter insights sobre o comportamento, valores, crenças e necessidades dos indivíduos estudados.
 
