@@ -62,16 +62,6 @@ Para criar as tags automaticamente, comece o arquivo digitando "html:5" e o cabe
 
 - `<iframe>`: Usada para incorporar conteúdo de outra página web, como vídeos ou mapas.
 
-**Formulários e Entrada de Dados:**
-
-- `<form>`: Usada para criar um formulário em uma página web, onde os usuários podem inserir e enviar dados.
-
-- `<input>`: Usada dentro de um formulário para criar campos de entrada, como caixas de texto, botões de rádio, caixas de seleção e mais.
-
-- `<textarea>`: Usada em formulários para criar uma área de texto expansível onde os usuários podem inserir várias linhas de texto.
-
-- `<button>`: Usada para criar botões clicáveis em formulários ou para ações interativas.
-
 **Outras Tags Importantes:**
 
 - `<div>`: Usada como um elemento de divisão para agrupar e estruturar conteúdo.
@@ -191,6 +181,28 @@ Essas tags são essenciais para criar tabelas estruturadas em HTML. O uso de `<t
 Quando quiser que uma célula ocupe mais de uma coluna, use "colspan="x"", em que x é o número de colunas. (ex:<th colspan="2">Produto</th>)
 
 Quando quiser que uma célula ocupe mais de uma linha, use "rowspan="x"", em que x é o número de linhas. (ex:<td rowspan="2">Camiseta</td>)
+
+## Formulários com HTML
+
+Principais tags:
+
+1. `<form>`: A tag `<form>` é usada para criar um formulário em uma página web. É onde os elementos de entrada e botões de envio são definidos.
+
+2. `<input>`: A tag `<input>` é usada para criar campos de entrada em um formulário. Ela pode ser configurada com vários tipos, como texto, senha, caixa de seleção, botão de rádio e outros.
+
+3. `<textarea>`: A tag `<textarea>` é usada para criar uma área de texto expansível onde os usuários podem inserir várias linhas de texto.
+
+4. `<select>`: A tag `<select>` é usada para criar listas suspensas (select boxes) que permitem aos usuários escolher uma opção de um conjunto de escolhas.
+
+5. `<label>`: A tag `<label>` é usada para associar um rótulo descritivo a um elemento de entrada, tornando o formulário mais acessível e usável.
+
+6. `<button>`: A tag `<button>` é usada para criar botões clicáveis em formulários para ações como enviar ou redefinir.
+
+Exemplos podem ser encontrados no respectivo arquivo html.
+
+Primeiro, temos um formulário de cadastro simples que inclui campos de texto para nome, email e senha. O botão "Cadastrar" é usado para enviar o formulário.
+
+Depois, temos um formulário de feedback que inclui um campo de texto expansível usando a tag `<textarea>`. Isso permite que os usuários forneçam feedback em várias linhas.
 
 ## Conclusão
 

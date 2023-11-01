@@ -37,7 +37,8 @@
         <p>Parágrafo</p>
         <p>Esta é uma página de exemplo que inclui várias meta tags para controle e compartilhamento de conteúdo.</p>
         <a href="#">Link</a>
-<section>
+<h1>Listas</h1>
+        <section>
     <div>
         <ul>
             <li>Item 1</li>
@@ -63,8 +64,8 @@
           </nav>
     </div>
 </section>
+<h1>Tabelas</h1>
 <section>
-    <h1>Exemplo de Tabela HTML</h1>
 
     <!-- Tabela Simples -->
     <table border="1">
@@ -94,8 +95,7 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Produto</th>
-                <th>Preço</th>
+                <th colspan="2">Produto</th>
             </tr>
         </thead>
         <tbody>
@@ -119,6 +119,32 @@
             </tr>
         </tfoot>
     </table>
+</section>
+<h1>Formulários</h1>
+<section>
+    <h1>Cadastro de Usuário</h1>
+    <form action="/processar-cadastro" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h1>Envie seu Feedback</h1>
+    <form action="/enviar-feedback" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
 </section>
         <footer>
             <p>Rodapé</p>
