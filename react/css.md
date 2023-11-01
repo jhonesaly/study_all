@@ -208,10 +208,54 @@ Neste exemplo, os elementos dentro do contêiner são organizados em uma coluna 
 
 O Flexbox é uma ferramenta poderosa para criar layouts flexíveis e responsivos em CSS, tornando mais fácil a criação de designs complexos com menos código. Ele é especialmente útil quando se trata de alinhar e distribuir elementos em um único eixo.
 
+## Pseudo-classes em CSS
+
+As pseudo-classes em CSS são seletores que permitem estilizar elementos com base em estados ou características específicas que não podem ser selecionadas usando apenas seletores simples. Elas são indicadas por um "dois-pontos" (`:`) após o seletor e são usadas para aplicar estilos a elementos em estados específicos. Aqui estão algumas pseudo-classes comuns e exemplos de uso:
+
+### 1. :hover
+A pseudo-classe `:hover` é usada para estilizar um elemento quando o cursor do mouse está sobre ele. É frequentemente usada para criar efeitos de destaque em links e botões.
+
+Exemplo:
+```css
+a:hover {
+  color: #0077cc; /* Muda a cor do texto quando o mouse está sobre o link */
+}
+```
+
+### 2. :active
+A pseudo-classe `:active` é usada para estilizar um elemento quando ele está ativamente sendo clicado ou pressionado. É comumente usado para dar feedback visual imediato ao usuário durante uma interação de clique.
+
+Exemplo:
+```css
+button:active {
+  background-color: #ff6600; /* Muda a cor de fundo quando o botão está sendo clicado */
+}
+```
+
+### 3. :focus
+A pseudo-classe `:focus` é usada para estilizar um elemento quando ele está focado, geralmente após ser selecionado com o teclado ou com um dispositivo de entrada alternativo. É útil para melhorar a acessibilidade.
+
+Exemplo:
+```css
+input:focus {
+  border-color: #0077cc; /* Muda a cor da borda quando o campo de entrada está em foco */
+}
+```
+
+### 4. :nth-child(n)
+A pseudo-classe `:nth-child(n)` permite selecionar elementos com base em sua posição em relação aos irmãos. Você pode usar valores inteiros, fórmulas ou palavras-chave como "even" (par) e "odd" (ímpar).
+
+Exemplo:
+```css
+ul li:nth-child(odd) {
+  background-color: #f2f2f2; /* Estiliza as linhas ímpares em uma lista não ordenada */
+}
+```
+
+
 ## Media Queries
 As media queries permitem que você aplique estilos diferentes com base nas características do dispositivo, como tamanho da tela, orientação e resolução.
 
-## Transições e Animações
-CSS permite criar transições suaves e animações para elementos, tornando as páginas da web mais interativas.
+## Conclusão
 
 Este panorama fornece uma visão geral dos principais conceitos do CSS. Dominar CSS é essencial para o desenvolvimento web e pode ser especialmente útil ao criar estilos para páginas relacionadas ao concurso da Câmara dos Deputados organizado pela banca FGV.
