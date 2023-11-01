@@ -252,9 +252,63 @@ ul li:nth-child(odd) {
 }
 ```
 
+## Media Queries em CSS
 
-## Media Queries
-As media queries permitem que você aplique estilos diferentes com base nas características do dispositivo, como tamanho da tela, orientação e resolução.
+As Media Queries são uma técnica em CSS que permite aplicar estilos diferentes a um documento HTML com base nas características do dispositivo no qual o conteúdo está sendo exibido, como tamanho da tela, resolução, orientação e muito mais. Isso torna possível criar layouts responsivos que se ajustam automaticamente a diferentes dispositivos e tamanhos de tela. Aqui estão algumas explicações e exemplos de Media Queries:
+
+### Sintaxe Básica de Media Query:
+
+Uma Media Query é definida dentro de um bloco CSS usando a sintaxe `@media`, seguida de uma condição que descreve as características do dispositivo. Se a condição for atendida, as regras CSS dentro da Media Query serão aplicadas.
+
+Exemplo de uma Media Query que aplica estilos a dispositivos com largura de tela menor que 600 pixels:
+
+```css
+@media (max-width: 600px) {
+  /* Estilos a serem aplicados para telas menores que 600px de largura */
+  body {
+    font-size: 14px;
+  }
+}
+```
+
+### Principais Características das Media Queries:
+
+- **`max-width` e `min-width`**: São usados para especificar faixas de largura de tela nas quais as regras CSS devem ser aplicadas.
+- **`orientation`**: Permite segmentar dispositivos em modo retrato (`portrait`) ou paisagem (`landscape`).
+- **`device-pixel-ratio`**: Permite segmentar dispositivos com densidade de pixels específica, útil para imagens de alta resolução (retina).
+- **`hover`**: Segmenta dispositivos com capacidade de hover, como dispositivos com mouse.
+
+### Exemplo HTML e CSS:
+
+Aqui está um exemplo de HTML e CSS que usa uma Media Query para alterar o tamanho da fonte em dispositivos com largura de tela menor que 600 pixels:
+
+HTML (entre a tag `<section>`):
+```html
+<section>
+  <h2>Texto Responsivo</h2>
+  <p>Este é um exemplo de texto que se ajusta automaticamente em dispositivos de tela pequena.</p>
+</section>
+```
+
+CSS (dentro de um arquivo .css):
+```css
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Media Query para dispositivos de tela pequena */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores que 600px */
+  }
+}
+```
+
+Neste exemplo, a Media Query verifica se a largura da tela é menor que 600 pixels e, se for verdadeira, aplica um estilo que reduz o tamanho da fonte do corpo (`body`) para tornar o texto mais legível em dispositivos de tela pequena.
+
+Essa é apenas uma das muitas maneiras de usar Media Queries para criar layouts responsivos em CSS, permitindo que o design de um site se adapte de forma eficaz a uma variedade de dispositivos e tamanhos de tela.
 
 ## Conclusão
 
