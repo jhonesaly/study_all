@@ -100,6 +100,8 @@ Um documento HTML básico é composto por várias partes essenciais:
 
 Essas são algumas das tags HTML comuns e importantes, agrupadas por funcionalidade e área de atuação em uma aplicação web. Cada uma delas desempenha um papel fundamental na estruturação e apresentação de conteúdo na web.
 
+Para aprofundar seus conhecimentos em HTML, você pode consultar recursos adicionais, tutoriais e a [documentação oficial do HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) e seus [tutoriais](https://www.w3schools.com/html/).
+
 ## Exemplo de Uso
 
 Aqui está um exemplo simples de um documento HTML que exibe um título, um parágrafo e uma imagem:
