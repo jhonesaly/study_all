@@ -1,0 +1,97 @@
+/* Estilizando o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilizando h1 */
+  h1 {
+    color: #ff6600;
+  }
+  
+  /* Estilizando parágrafos */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilizando links */
+  a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  /* Estilizando listas não ordenadas */
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  /* Estilizando listas ordenadas */
+  ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  /* Estilizando links de navegação */
+  nav a {
+    color: #009900;
+    text-decoration: underline;
+  }
+  
+  /* Estilizando tabelas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilizando formulários */
+  form {
+    margin: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilizando o rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  

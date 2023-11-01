@@ -1,6 +1,8 @@
 # CSS
 
-CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar a apresentação e o layout de elementos HTML em uma página da web. Ele desempenha um papel fundamental na criação de páginas da web atraentes e funcionais. Aqui estão alguns conceitos essenciais sobre CSS:
+CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar a apresentação e o layout de elementos HTML em uma página da web. Ele desempenha um papel fundamental na criação de páginas da web atraentes e funcionais.
+
+O link entre um arquivo css e o html se dá pela inclusão da tag <link rel="stylesheet" type="text/css" href="file_name.css"> dentro da tag <header> do html.
 
 ## Seletores em CSS
 
