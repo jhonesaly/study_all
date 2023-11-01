@@ -24,6 +24,8 @@ Um documento HTML básico é composto por várias partes essenciais:
 
 - `<header>`: Indicar cabeçalho
 
+- `<footer>`: indicar rodapé
+
 - `<p>`: É usado para criar parágrafos de texto.
 
 - `<a>`: É usado para criar links para outras páginas da web ou recursos.
