@@ -4,6 +4,15 @@ CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar
 
 O link entre um arquivo css e o html se dá pela inclusão da tag <link rel="stylesheet" type="text/css" href="file_name.css"> dentro da tag <header> do html.
 
+## Propriedades e Valores
+As propriedades CSS determinam como os elementos serão estilizados. Cada propriedade tem um valor associado. Exemplos de propriedades incluem:
+- `color`: Define a cor do texto.
+- `font-size`: Define o tamanho da fonte.
+- `margin`: Define as margens de um elemento.
+
+## Cascata
+O "C" em CSS significa "Cascading", o que se refere à hierarquia de regras. As regras CSS podem ser aplicadas de diferentes maneiras, com base na especificidade e na ordem em que são definidas.
+
 ## Seletores em CSS
 
 Os seletores são parte fundamental do CSS, pois são usados para direcionar e estilizar elementos HTML específicos em uma página da web. Eles permitem que você especifique quais elementos devem receber as regras de estilo que você define. Aqui estão alguns tipos comuns de seletores e exemplos reais:
@@ -70,15 +79,6 @@ a:hover {
 Este seletor estilizará links quando o cursor do mouse estiver sobre eles.
 
 Esses são apenas alguns exemplos de seletores em CSS. Dominar o uso eficaz de seletores é fundamental para aplicar estilos de maneira seletiva e precisa em sua página da web. Eles desempenham um papel crucial na estilização de elementos para criar um design coeso e atraente.
-
-## Propriedades e Valores
-As propriedades CSS determinam como os elementos serão estilizados. Cada propriedade tem um valor associado. Exemplos de propriedades incluem:
-- `color`: Define a cor do texto.
-- `font-size`: Define o tamanho da fonte.
-- `margin`: Define as margens de um elemento.
-
-## Cascata
-O "C" em CSS significa "Cascading", o que se refere à hierarquia de regras. As regras CSS podem ser aplicadas de diferentes maneiras, com base na especificidade e na ordem em que são definidas.
 
 ## Box Model em CSS
 
