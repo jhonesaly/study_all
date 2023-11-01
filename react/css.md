@@ -153,8 +153,60 @@ Este estilo será aplicado a um elemento HTML com a classe "box", criando uma ca
 
 Dominar o Box Model é essencial para controlar o layout e a aparência dos elementos em uma página da web. Ele permite que você crie designs precisos e responsivos, ajustando o tamanho das caixas e o espaçamento entre elas de acordo com suas necessidades.
 
-## Flexbox e Grid
-Flexbox e Grid são sistemas de layout avançados que simplificam a criação de layouts complexos e responsivos.
+## Flexbox em CSS
+
+O Flexbox (abreviação de Flexible Box Layout) é um sistema de layout em CSS projetado para facilitar o posicionamento e a distribuição de elementos em uma página da web. Ele introduz um modelo de caixa unidimensional, onde os elementos são organizados em um único eixo (horizontal ou vertical) de acordo com as relações espaciais entre eles. Aqui está uma explicação mais abrangente e exemplos reais do uso do Flexbox:
+
+### Conceitos-Chave do Flexbox:
+
+#### 1. Eixos Principal e Cruzado:
+- Eixo Principal: É o eixo principal de layout, ao longo do qual os itens flex são dispostos. Pode ser horizontal (no caso de `flex-direction: row`) ou vertical (no caso de `flex-direction: column`).
+- Eixo Cruzado: É o eixo perpendicular ao eixo principal.
+
+#### 2. Flex Container e Flex Items:
+- Flex Container: É o elemento que contém os itens flex e é configurado com a propriedade `display: flex` ou `display: inline-flex`. Ele define o contexto para o layout flexível.
+- Flex Items: São os elementos filhos diretos do flex container que se tornam itens flexíveis e são organizados de acordo com as regras do Flexbox.
+
+#### 3. Propriedades Principais do Flex Container:
+- `display`: Define se o elemento é um flex container (`flex`) ou um inline flex container (`inline-flex`).
+- `flex-direction`: Define a direção principal em que os itens flex são colocados: `row`, `row-reverse`, `column` ou `column-reverse`.
+- `justify-content`: Controla o alinhamento dos itens ao longo do eixo principal.
+- `align-items`: Controla o alinhamento dos itens ao longo do eixo cruzado.
+- `align-content`: Controla o alinhamento de linhas de itens quando há espaço extra no eixo cruzado.
+
+### Exemplos de Uso do Flexbox:
+
+#### Exemplo 1: Alinhar Itens Horizontalmente
+```css
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: #0077cc;
+}
+```
+Neste exemplo, os itens dentro do contêiner são centralizados horizontalmente ao longo do eixo principal.
+
+#### Exemplo 2: Criar um Layout de Colunas Flexíveis
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  flex: 1;
+  background-color: #f2f2f2;
+  margin: 10px;
+}
+```
+Neste exemplo, os elementos dentro do contêiner são organizados em uma coluna vertical, e as colunas flexíveis ajustam automaticamente seu tamanho para preencher o espaço disponível.
+
+O Flexbox é uma ferramenta poderosa para criar layouts flexíveis e responsivos em CSS, tornando mais fácil a criação de designs complexos com menos código. Ele é especialmente útil quando se trata de alinhar e distribuir elementos em um único eixo.
 
 ## Media Queries
 As media queries permitem que você aplique estilos diferentes com base nas características do dispositivo, como tamanho da tela, orientação e resolução.
