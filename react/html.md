@@ -82,8 +82,6 @@ Para criar as tags automaticamente, comece o arquivo digitando "html:5" e o cabe
 
 - `<hr>`: Usada para criar uma linha horizontal, frequentemente usada para separar conteúdo em uma página.
 
-- `<table>`, `<tr>`, `<td>`: Usadas para criar tabelas e suas células, úteis para exibir dados tabulares.
-
 - `<details>` e `<summary>`: Usadas para criar elementos de detalhes expansíveis e contráteis, úteis para exibir informações adicionais de forma condensada.
 
 - `<progress>`: Usada para criar barras de progresso, indicando o progresso de uma tarefa.
@@ -154,54 +152,41 @@ Essas são algumas das principais meta tags em HTML que são usadas para control
 
 - `<nav>`: Usada para definir uma seção de navegação, geralmente contendo links para outras páginas ou seções do site.
 
-Claro, vou gerar exemplos em HTML para cada uma das tags que você mencionou:
+Os exemplos em HTML para cada uma das tags está no respectico arquivo html.
 
-### `<ul>` e `<li>` - Lista Não Ordenada:
-
-```html
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-```
-
-Neste exemplo, `<ul>` é usado para criar uma lista não ordenada e `<li>` é usado para definir itens de lista. Isso resultará em uma lista com marcadores, geralmente pontos, como:
+No exemplo, `<ul>` é usado para criar uma lista não ordenada e `<li>` é usado para definir itens de lista. Isso resultará em uma lista com marcadores, geralmente pontos, como:
 
 - Item 1
 - Item 2
 - Item 3
 
-### `<ol>` e `<li>` - Lista Ordenada:
-
-```html
-<ol>
-  <li>Primeiro item</li>
-  <li>Segundo item</li>
-  <li>Terceiro item</li>
-</ol>
-```
-
-Neste exemplo, `<ol>` é usado para criar uma lista ordenada e `<li>` é usado para definir itens de lista. Isso resultará em uma lista numerada, como:
+Em seguida, `<ol>` é usado para criar uma lista ordenada e `<li>` é usado para definir itens de lista. Isso resultará em uma lista numerada, como:
 
 1. Primeiro item
 2. Segundo item
 3. Terceiro item
 
-### `<nav>` - Seção de Navegação:
+Por último, `<nav>` é usado para criar uma seção de navegação que contém links para diferentes páginas ou seções do site. Cada item de lista `<li>` contém um link `<a>` para uma página específica. Observe que os URLs dentro de `href` (# neste caso) são fictícios e devem ser substituídos pelos URLs reais do seu site.
 
-```html
-<nav>
-  <ul>
-    <li><a href="#">Página Inicial</a></li>
-    <li><a href="#">Sobre</a></li>
-    <li><a href="#">Serviços</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
-</nav>
-```
+## Tabelas com HTML
 
-Neste exemplo, `<nav>` é usado para criar uma seção de navegação que contém links para diferentes páginas ou seções do site. Cada item de lista `<li>` contém um link `<a>` para uma página específica. Observe que os URLs dentro de `href` (# neste caso) são fictícios e devem ser substituídos pelos URLs reais do seu site.
+Principais tags HTML usadas para tabelas:
+
+1. `<table>`: A tag `<table>` é usada para criar uma tabela HTML. Ela é o elemento contêiner principal para a estrutura da tabela.
+
+2. `<tr>`: A tag `<tr>` é usada para definir uma linha em uma tabela. Dentro de uma tabela, você pode ter várias linhas, e cada linha contém células.
+
+3. `<th>`: A tag `<th>` é usada para definir células de cabeçalho em uma tabela. O conteúdo das células de cabeçalho geralmente contém títulos ou rótulos para as colunas.
+
+4. `<td>`: A tag `<td>` é usada para definir células de dados em uma tabela. O conteúdo das células de dados contém informações ou dados específicos.
+
+5. `<thead>`: A tag `<thead>` é usada para agrupar as linhas que representam o cabeçalho da tabela. Geralmente contém uma ou mais linhas com células de cabeçalho `<th>`.
+
+6. `<tbody>`: A tag `<tbody>` é usada para agrupar as linhas que representam o corpo principal da tabela. Ele contém uma ou mais linhas com células de dados `<td>`.
+
+7. `<tfoot>`: A tag `<tfoot>` é usada para agrupar as linhas que representam o rodapé da tabela. Normalmente, ele contém uma ou mais linhas com células de rodapé `<td>`.
+
+Essas tags são essenciais para criar tabelas estruturadas em HTML. O uso de `<th>` para células de cabeçalho ajuda a identificar as colunas de forma semântica, enquanto `<td>` é usado para células de dados que contêm informações reais. `<thead>`, `<tbody>`, e `<tfoot>` ajudam a organizar a tabela em partes distintas, como cabeçalho, corpo e rodapé. O exemplo segue no respectivo arquivo html.
 
 ## Conclusão
 
