@@ -95,3 +95,23 @@ header {
     text-align: center;
   }
   
+  /* Estilos para a seção com Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens ao longo do eixo principal (horizontal) */
+    align-items: center; /* Centraliza os itens ao longo do eixo cruzado (vertical) */
+    height: 200px; /* Altura da seção */
+    background-color: #f2f2f2;
+  }
+  
+  .flex-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #0077cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
