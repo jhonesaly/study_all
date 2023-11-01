@@ -38,6 +38,8 @@ Um documento HTML básico é composto por várias partes essenciais:
 
 Aqui está um exemplo simples de um documento HTML que exibe um título, um parágrafo e uma imagem:
 
+Comece o arquivo digitando "html:5" e o cabeçalho será criado.
+
 ```html
 <!DOCTYPE html>
 <html>
