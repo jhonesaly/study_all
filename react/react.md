@@ -14,3 +14,16 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 
 - **Ecosistema Rico**: O React possui um ecossistema robusto de bibliotecas e ferramentas, incluindo o React Router para gerenciamento de rotas, o Redux para gerenciamento de estado global e muitos outros recursos.
 
+## Vantagens
+
+- Alta performance devido ao Virtual DOM.
+- Facilidade de teste de componentes isolados.
+- Comunidade ativa e vasta documentação.
+- Reutilização de componentes acelera o desenvolvimento.
+
+## Desvantagens
+
+- Curva de aprendizado inicial, especialmente para iniciantes em JavaScript.
+- Pode exigir configuração adicional usando ferramentas como o Create React App.
+- Gerenciamento de estado em aplicativos maiores pode ser complexo.
+
