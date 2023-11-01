@@ -115,3 +115,9 @@ header {
     color: white;
     font-weight: bold;
   }
+
+/* Estilizando links quando o mouse está sobre eles */
+ul li a:hover {
+    color: #b4ff04;
+    text-decoration: underline;
+  }
