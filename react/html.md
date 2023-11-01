@@ -188,6 +188,10 @@ Principais tags HTML usadas para tabelas:
 
 Essas tags são essenciais para criar tabelas estruturadas em HTML. O uso de `<th>` para células de cabeçalho ajuda a identificar as colunas de forma semântica, enquanto `<td>` é usado para células de dados que contêm informações reais. `<thead>`, `<tbody>`, e `<tfoot>` ajudam a organizar a tabela em partes distintas, como cabeçalho, corpo e rodapé. O exemplo segue no respectivo arquivo html.
 
+Quando quiser que uma célula ocupe mais de uma coluna, use "colspan="x"", em que x é o número de colunas. (ex:<th colspan="2">Produto</th>)
+
+Quando quiser que uma célula ocupe mais de uma linha, use "rowspan="x"", em que x é o número de linhas. (ex:<td rowspan="2">Camiseta</td>)
+
 ## Conclusão
 
 O HTML é a espinha dorsal da web e é fundamental para a criação de páginas da web. Ele fornece uma estrutura básica que permite a criação de conteúdo e sua formatação. Além dos elementos mencionados aqui, o HTML possui uma ampla gama de tags e atributos que permitem a personalização e a criação de páginas da web interativas.
