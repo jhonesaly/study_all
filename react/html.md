@@ -20,57 +20,85 @@ Um documento HTML básico é composto por várias partes essenciais:
 
 ## Tags HTML
 
-- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: São usados para criar títulos de diferentes níveis de importância.
+**Estrutura de Página e Conteúdo:**
 
-- `<header>`: Indicar cabeçalho
+- `<header>`: Usada para indicar o cabeçalho de uma seção ou página web.
 
-- `<footer>`: indicar rodapé
+- `<footer>`: Usada para indicar o rodapé de uma seção ou página web.
 
-- `<p>`: É usado para criar parágrafos de texto.
+- `<section>`: Usada para definir uma seção temática ou conteúdo agrupado em uma página.
 
-- `<a>`: É usado para criar links para outras páginas da web ou recursos.
+- `<article>`: Usada para definir um conteúdo autônomo e autocontido, como uma postagem de blog, notícia ou artigo.
 
-- `<img>`: É usado para inserir imagens na página.
+- `<aside>`: Usada para representar conteúdo relacionado ou complementar ao conteúdo principal de uma página.
 
-- `<ul>` e `<ol>`: São usados para criar listas não ordenadas (com marcadores) e listas ordenadas (com números ou letras), respectivamente.
+**Texto e Formatação:**
 
-- `<li>`: É usado para definir itens de lista dentro de `<ul>` ou `<ol>`.
+- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Usadas para criar títulos de diferentes níveis de importância.
 
-- `<div>`: É um elemento de divisão usado para agrupar e estruturar conteúdo.
+- `<p>`: Usada para criar parágrafos de texto.
 
 - `<strong>` e `<em>`: Usadas para enfatizar texto, onde `<strong>` geralmente indica ênfase forte (geralmente exibido em negrito) e `<em>` indica ênfase enfática (geralmente exibido em itálico).
 
-- `<a>` (com o atributo `target="_blank"`): Ao adicionar `target="_blank"` a um link `<a>`, você pode fazer com que o link seja aberto em uma nova janela ou guia do navegador.
+- `<abbr>`: Usada para definir uma abreviação ou acrônimo, com o atributo `title` para fornecer uma explicação completa.
 
-- `<br>`: Usado para criar uma quebra de linha dentro de um texto ou parágrafo.
+- `<cite>`: Usada para marcar títulos de obras, como livros, filmes ou artigos, que você está citando em seu conteúdo.
 
-- `<hr>`: É uma linha horizontal que é frequentemente usada para separar conteúdo em uma página.
+- `<q>`: Usada para citar o texto dentro das aspas, indicando que é uma citação.
 
-- `<span>`: Semelhante ao `<div>`, o `<span>` é usado para agrupar elementos inline e aplicar estilos ou manipulações de script a eles.
+- `<del>` e `<ins>`: Usadas para marcar texto deletado ou inserido, úteis em revisões de texto ou documentos.
 
-- `<table>`, `<tr>`, `<td>`: São usados para criar tabelas e suas células. Embora tabelas tenham sido amplamente usadas para layout no passado, elas ainda são valiosas para exibir dados tabulares.
+- `<time>`: Usada para representar datas e horários com informações semânticas.
 
-- `<figure>` e `<figcaption>`: Usados para agrupar imagens e fornecer uma legenda associada à imagem usando o `<figcaption>`.
+- `<mark>`: Usada para destacar partes de texto dentro de um conteúdo.
 
-- `<abbr>`: Usado para definir uma abreviação ou acrônimo, e você pode usar o atributo `title` para fornecer uma explicação completa.
+**Listas e Navegação:**
 
-- `<cite>`: Usado para marcar títulos de obras, como livros, filmes ou artigos, que você está citando em seu conteúdo.
+- `<ul>`: Usada para criar listas não ordenadas (com marcadores).
 
-- `<q>`: Usado para citar o texto dentro das aspas, indicando que é uma citação. Pode ser usado para fins de formatação.
+- `<ol>`: Usada para criar listas ordenadas (com números ou letras).
 
-- `<del>` e `<ins>`: Usados para marcar texto deletado ou inserido, úteis em revisões de texto ou documentos.
+- `<li>`: Usada para definir itens de lista dentro de `<ul>` ou `<ol>`.
 
-- `<time>`: Usado para representar datas e horários, fornecendo informações semânticas para os motores de busca e leitores de tela.
+- `<nav>`: Usada para definir uma seção de navegação, geralmente contendo links para outras páginas ou seções do site.
 
-- `<mark>`: Usado para destacar partes de texto dentro de um conteúdo.
+**Imagens e Multimídia:**
 
-- `<details>` e `<summary>`: Usados para criar elementos de detalhes expansíveis e contráteis, úteis para exibir informações adicionais de forma condensada.
+- `<img>`: Usada para inserir imagens na página.
 
-- `<progress>`: Usado para criar barras de progresso, indicando o progresso de uma tarefa.
+- `<figure>` e `<figcaption>`: Usadas para agrupar imagens e fornecer uma legenda associada à imagem usando `<figcaption>`.
 
-- `<meter>`: Usado para representar uma medida escalar em uma faixa conhecida, como uma avaliação de 0 a 10.
+- `<iframe>`: Usada para incorporar conteúdo de outra página web, como vídeos ou mapas.
 
-Essas são algumas das tags menos usadas, mas que podem ser valiosas em cenários específicos. A escolha das tags depende do contexto e dos requisitos do seu projeto. Certifique-se de consultar a documentação oficial do HTML ou recursos adicionais para obter informações detalhadas sobre essas tags e como usá-las de maneira apropriada.
+**Formulários e Entrada de Dados:**
+
+- `<form>`: Usada para criar um formulário em uma página web, onde os usuários podem inserir e enviar dados.
+
+- `<input>`: Usada dentro de um formulário para criar campos de entrada, como caixas de texto, botões de rádio, caixas de seleção e mais.
+
+- `<textarea>`: Usada em formulários para criar uma área de texto expansível onde os usuários podem inserir várias linhas de texto.
+
+- `<button>`: Usada para criar botões clicáveis em formulários ou para ações interativas.
+
+**Outras Tags Importantes:**
+
+- `<div>`: Usada como um elemento de divisão para agrupar e estruturar conteúdo.
+
+- `<span>`: Usada para agrupar elementos inline e aplicar estilos ou manipulações de script a eles.
+
+- `<br>`: Usada para criar uma quebra de linha dentro de um texto ou parágrafo.
+
+- `<hr>`: Usada para criar uma linha horizontal, frequentemente usada para separar conteúdo em uma página.
+
+- `<table>`, `<tr>`, `<td>`: Usadas para criar tabelas e suas células, úteis para exibir dados tabulares.
+
+- `<details>` e `<summary>`: Usadas para criar elementos de detalhes expansíveis e contráteis, úteis para exibir informações adicionais de forma condensada.
+
+- `<progress>`: Usada para criar barras de progresso, indicando o progresso de uma tarefa.
+
+- `<meter>`: Usada para representar uma medida escalar em uma faixa conhecida, como uma avaliação de 0 a 10.
+
+Essas são algumas das tags HTML comuns e importantes, agrupadas por funcionalidade e área de atuação em uma aplicação web. Cada uma delas desempenha um papel fundamental na estruturação e apresentação de conteúdo na web.
 
 ## Exemplo de Uso
 
