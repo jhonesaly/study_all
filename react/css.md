@@ -82,7 +82,7 @@ O "C" em CSS significa "Cascading", o que se refere à hierarquia de regras. As 
 
 ## Box Model em CSS
 
-O Box Model é um conceito fundamental em CSS que descreve como os elementos HTML são dimensionados e espaçados na página. Cada elemento HTML é considerado um "caixa" que consiste em quatro partes principais: conteúdo, padding, border e margem. Aqui está uma explicação mais abrangente de cada uma dessas partes, juntamente com exemplos reais:
+O Box Model é um conceito fundamental em CSS que descreve como os elementos HTML são dimensionados e espaçados na página. Cada elemento HTML é considerado um "caixa" que consiste em quatro partes principais: conteúdo, padding, border e margem.
 
 ### 1. Conteúdo (Content)
 
