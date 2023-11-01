@@ -27,3 +27,26 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
+## Exemplo de Uso
+
+Aqui está um exemplo simples de um componente React que renderiza um "Olá, Mundo!" na página:
+
+```jsx
+import React from 'react';
+
+function App() {
+  return (
+    <div>
+      <h1>Olá, Mundo!</h1>
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Conclusão
+
+O React é uma escolha popular para o desenvolvimento de aplicativos da web modernos devido à sua eficiência, flexibilidade e comunidade ativa. Com sua abordagem baseada em componentes e recursos avançados, ele continua a ser uma ferramenta poderosa para construir interfaces de usuário dinâmicas e interativas.
+
+Para saber mais sobre o React, consulte a [documentação oficial](https://reactjs.org/).
