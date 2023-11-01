@@ -102,6 +102,56 @@ Essas são algumas das tags HTML comuns e importantes, agrupadas por funcionalid
 
 Para aprofundar seus conhecimentos em HTML, você pode consultar recursos adicionais, tutoriais e a [documentação oficial do HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) e seus [tutoriais](https://www.w3schools.com/html/).
 
+## Meta Tags
+
+1. `<meta charset="UTF-8">`: Define o conjunto de caracteres utilizado na página, geralmente como UTF-8 para suportar caracteres especiais e idiomas diversos.
+
+2. `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Controla a exibição e dimensionamento da página em dispositivos móveis, garantindo uma experiência responsiva.
+
+3. `<meta name="description" content="Descrição da página">`: Fornece uma breve descrição da página para os motores de busca, exibida nos resultados da pesquisa.
+
+4. `<meta name="keywords" content="palavras-chave, relacionadas, à, página">`: Anteriormente usado para listar palavras-chave associadas à página, mas atualmente não é muito relevante para SEO.
+
+5. `<meta name="author" content="Nome do Autor">`: Indica o autor da página.
+
+6. `<meta name="robots" content="index, follow">`: Controla como os motores de busca rastreiam e indexam a página. "index" permite a indexação, e "follow" permite o rastreamento de links na página.
+
+7. `<meta http-equiv="refresh" content="5;url=redirecionamento.html">`: Redireciona automaticamente para outra página após um determinado tempo (neste caso, 5 segundos).
+
+8. `<meta http-equiv="content-language" content="pt-BR">`: Define o idioma principal do conteúdo da página, o que pode afetar como os motores de busca interpretam o idioma do conteúdo.
+
+9.  `<meta http-equiv="refresh" content="5;url=redirecionamento.html">`: Já mencionado anteriormente, esta meta tag redireciona automaticamente para outra página após um determinado tempo.
+
+10. `<meta http-equiv="cache-control" content="no-cache">`: Controla as instruções de cache para a página, informando aos navegadores que eles não devem armazenar em cache a página.
+
+11. `<meta http-equiv="pragma" content="no-cache">`: Semelhante ao exemplo anterior, informa aos navegadores para não armazenar em cache a página.
+
+12. `<meta http-equiv="expires" content="0">`: Define uma data de expiração imediata para a página, o que também pode evitar o armazenamento em cache.
+
+13. `<meta http-equiv="refresh" content="5;url=redirecionamento.html">`: Esta meta tag já mencionada redireciona automaticamente para outra página após um determinado tempo.
+
+14. `<meta http-equiv="x-ua-compatible" content="IE=edge">`: Informa aos navegadores Internet Explorer para renderizar a página no modo de última geração (Edge).
+
+15. `<meta http-equiv="x-ua-compatible" content="IE=7">`: Pode ser usada para forçar o Internet Explorer a renderizar a página em um modo de compatibilidade específico (por exemplo, IE7).
+
+16. `<meta name="og:title" content="Título Open Graph">`: Define o título a ser exibido ao compartilhar a página em redes sociais (Open Graph).
+
+17. `<meta name="og:description" content="Descrição Open Graph">`: Define a descrição a ser exibida ao compartilhar a página em redes sociais (Open Graph).
+
+18. `<meta name="og:image" content="url-da-imagem.jpg">`: Especifica uma imagem a ser exibida ao compartilhar a página em redes sociais (Open Graph).
+
+19. `<meta name="og:url" content="URL-da-Página">`: Define a URL da página ao compartilhar em redes sociais (Open Graph).
+
+20. `<meta name="og:type" content="website">`: Indica o tipo de conteúdo, geralmente "website" para páginas web.
+
+21. `<meta name="og:site_name" content="Nome do Site">`: Especifica o nome do site ao compartilhar em redes sociais (Open Graph).
+
+22. `<meta name="twitter:card" content="summary_large_image">`: Define o tipo de cartão do Twitter a ser exibido ao compartilhar a página no Twitter.
+
+23. `<meta name="twitter:site" content="@nome-do-site">`: Especifica a conta do Twitter associada à página.
+
+Essas são algumas das principais meta tags em HTML que são usadas para controlar e melhorar a apresentação e o compartilhamento de páginas na web. Cada uma delas desempenha um papel importante em aspectos como SEO, compatibilidade móvel e compartilhamento em redes sociais.
+
 ## Exemplo de Uso
 
 Aqui está um exemplo simples de um documento HTML que exibe um título, um parágrafo e uma imagem:
