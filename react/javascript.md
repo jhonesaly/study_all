@@ -169,6 +169,30 @@ const primeiroPar = vetor.find(numero => numero % 2 === 0);
 console.log(primeiroPar); // Saída: 2
 ```
 
+## DOM
+
+A DOM (Document Object Model) é uma representação em árvore da estrutura de um documento HTML, XML ou XHTML em um ambiente de programação, como JavaScript. Ela permite que os programadores acessem e manipulem os elementos e conteúdos de uma página web de forma dinâmica.
+
+Aqui estão alguns pontos-chave sobre a DOM:
+
+1. **Estrutura em Árvore:** A DOM organiza a estrutura de um documento web em uma árvore hierárquica. Cada elemento HTML (como tags `<div>`, `<p>`, `<a>`, etc.) é representado por um nó na árvore.
+
+2. **Acesso a Elementos:** Através da DOM, os desenvolvedores podem acessar e interagir com os elementos HTML de uma página. Isso permite a leitura e a modificação do conteúdo, atributos, estilos e até mesmo a adição ou remoção de elementos.
+
+3. **Manipulação Dinâmica:** A DOM permite que você crie páginas web interativas e dinâmicas. Por exemplo, você pode usar JavaScript para responder a eventos do usuário (cliques, pressionamentos de tecla, etc.) e alterar o conteúdo da página sem precisar recarregá-la.
+
+4. **Plataforma-Agnóstica:** A DOM é independente da plataforma, o que significa que você pode acessá-la e manipulá-la em navegadores web, em ambientes Node.js, em aplicativos móveis e em outros contextos.
+
+5. **Document Object:** A raiz da árvore DOM é geralmente chamada de "document object". Ela representa todo o documento HTML e oferece métodos para acessar outros elementos da árvore.
+
+6. **Métodos e Propriedades:** Para interagir com a DOM, os desenvolvedores usam JavaScript e seus métodos e propriedades. Por exemplo, você pode usar `document.getElementById("id-do-elemento")` para acessar um elemento pelo seu ID.
+
+7. **Eventos:** A DOM também lida com eventos, como cliques de mouse, pressionamentos de tecla e muito mais. Os desenvolvedores podem adicionar ouvintes de eventos aos elementos HTML para responder a ações do usuário.
+
+8. **Cross-Browser Compatibility:** A DOM é projetada para funcionar em diferentes navegadores web, o que significa que você pode desenvolver páginas web que são compatíveis com diversos navegadores.
+
+Em resumo, a DOM é uma parte fundamental da programação web, pois permite que os desenvolvedores criem páginas web interativas e dinâmicas, tornando a web mais envolvente para os usuários. Ela serve como uma interface entre o código JavaScript e o conteúdo HTML de uma página, permitindo a manipulação e interação com elementos da página de forma programática.
+
 ## Ecossistema
 JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca de pacotes e frameworks. Alguns dos principais frameworks incluem:
 - **React:** Uma biblioteca para construir interfaces de usuário.
