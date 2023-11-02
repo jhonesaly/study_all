@@ -52,3 +52,15 @@ class Pessoa {
 
 const pessoa1 = new Pessoa("João", 30);
 pessoa1.apresentar();
+
+// Exemplo de manipulação de vetor em JavaScript
+
+const vetor = [1, 2, 3, 4, 5];
+
+// Filtrar números pares
+const numerosPares = vetor.filter(numero => numero % 2 === 0);
+console.log("Números pares:", numerosPares); // Saída: [2, 4]
+
+// Encontrar o primeiro número ímpar
+const primeiroImpar = vetor.find(numero => numero % 2 !== 0);
+console.log("Primeiro número ímpar:", primeiroImpar); // Saída: 1
