@@ -27,23 +27,19 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
-## Exemplo de Uso
+## Tutorial
 
-Aqui está um exemplo simples de um componente React que renderiza um "Olá, Mundo!" na página:
+Para começar um projeto em react, use no terminal:
 
-```jsx
-import React from 'react';
-
-function App() {
-  return (
-    <div>
-      <h1>Olá, Mundo!</h1>
-    </div>
-  );
-}
-
-export default App;
 ```
+npx create-react-app nome_do_app
+```
+
+em que nome_do_app é o nome do projeto e será o nome da pasta criada, que ficará inicialmente assim:
+
+![Projeto inicial](images/react_app_inicial.png)
+
+
 
 ## Conclusão
 
