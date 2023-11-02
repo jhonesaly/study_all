@@ -55,7 +55,11 @@ npm run start
 ```
 ### Criando componente
 
-Os componentes devem ser criados separadamente dentro da pasta /src e no formato .js, como o seguinte exemplo:
+Os componentes devem ser criados separadamente dentro da pasta /components dentro da pasta /src.
+
+![Components](images/react_components.png)
+
+Veja o conteúdo do BotaoContador.js:
 
 ```
 import React, { useState } from 'react';
@@ -87,7 +91,7 @@ Com isso, o componente pode ser importado pelo index.js na raiz do projeto assim
 
 ```
 ...
-import BotaoContador from './BotaoContador';
+import BotaoContador from './components/BotaoContador';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -98,6 +102,12 @@ root.render(
 );
 ...
 
+```
+
+Para facilitar a integração com arquivo css posterior, o arquivo pode ser criado dentro de uma pasta (ex: Button) e dentro dela o arquivo index.js de modo que, quando a pasta for indicada, o .js será usado automaticamente como em:
+
+```
+import Button from './components/Button'
 ```
 
 
