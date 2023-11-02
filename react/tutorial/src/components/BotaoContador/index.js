@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function BotaoContador() {
+function BotaoContador(props) {
+    const {title} = props;
     const [contador, setContador] = useState(0);
   
     const aumentarContador = () => {
@@ -13,7 +14,7 @@ function BotaoContador() {
   
     return (
       <div>
-        <h1>Contador: {contador}</h1>
+        <h1>{title}: {contador}</h1>
         <button onClick={aumentarContador}>Aumentar</button>
         <button onClick={diminuirContador}>Diminuir</button>
       </div>

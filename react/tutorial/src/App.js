@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <BotaoContador />
+      <BotaoContador title="Votos" />
     </div>
   );
 }
