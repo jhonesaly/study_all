@@ -24,17 +24,96 @@ JavaScript é usado em várias áreas, incluindo:
 
 - **Jogos e Aplicações Desktop:** Com a ajuda de bibliotecas e frameworks, é possível criar jogos e aplicativos de desktop usando JavaScript.
 
-## Sintaxe Básica
-Aqui está um exemplo simples de código JavaScript:
+# Sintaxe
+
+Neste guia, exploraremos os conceitos fundamentais de programação em JavaScript, incluindo operadores, condicionais, tipos de variáveis, laços de repetição, funções e classes.
+
+### Operadores
+
+JavaScript oferece diversos operadores para realizar operações em variáveis e valores. Aqui estão alguns dos operadores mais comuns:
+
+| Tipo de Operador | Descrição |
+| --- | --- |
+| Aritméticos | `+`, `-`, `*`, `/`, `%` (adição, subtração, multiplicação, divisão, módulo) |
+| Comparação | `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` (igualdade, desigualdade, maior, menor) |
+| Lógicos | `&&` (AND lógico), `||` (OR lógico), `!` (NOT lógico) |
+| Atribuição | `=`, `+=`, `-=`, `*=`, `/=` (atribuição simples e composta) |
+| Ternário | `? :` (operador ternário para condicionais) |
+
+### Condicionais
+
+As estruturas condicionais permitem que você tome decisões em seu código com base em condições. O mais comum é o `if`, mas também existem outras opções, como `else if` e `switch`.
 
 ```javascript
-// Exemplo de código JavaScript
-function saudacao(nome) {
-  console.log(`Olá, ${nome}!`);
+if (condição) {
+  // Bloco de código executado se a condição for verdadeira
+} else if (outra_condição) {
+  // Bloco de código executado se outra_condição for verdadeira
+} else {
+  // Bloco de código executado se nenhuma das condições anteriores for verdadeira
 }
-
-saudacao("Chatty");
 ```
+
+### Tipos de Variáveis
+
+JavaScript possui vários tipos de variáveis, incluindo:
+
+- **Number**: Para representar números inteiros e de ponto flutuante.
+- **String**: Para armazenar texto.
+- **Boolean**: Para representar valores verdadeiros ou falsos.
+- **Object**: Para armazenar coleções de dados.
+- **Array**: Para armazenar listas de valores.
+- **Undefined**: Quando uma variável não foi inicializada.
+- **Null**: Para representar a ausência intencional de valor.
+
+### Laços de Repetição
+
+Os laços de repetição permitem que você execute um bloco de código várias vezes. Os mais comuns são o `for` e o `while`.
+
+#### Laço `for`
+
+```javascript
+for (inicialização; condição; incremento) {
+  // Bloco de código a ser repetido
+}
+```
+
+#### Laço `while`
+
+```javascript
+while (condição) {
+  // Bloco de código a ser repetido enquanto a condição for verdadeira
+}
+```
+
+### Funções
+
+Funções são blocos de código que podem ser reutilizados. Elas são definidas usando a palavra-chave `function`.
+
+```javascript
+function nomeDaFunção(parametro1, parametro2) {
+  // Bloco de código da função
+  return resultado;
+}
+```
+
+### Classes
+
+Classes são usadas para criar objetos em JavaScript. Elas foram introduzidas no ECMAScript 6 (ES6) e oferecem uma maneira mais estruturada de definir objetos e métodos.
+
+```javascript
+class NomeDaClasse {
+  constructor(parametro1, parametro2) {
+    // Construtor da classe
+  }
+
+  métodoDaClasse() {
+    // Método da classe
+  }
+}
+```
+
+Este guia oferece uma visão geral dos principais conceitos de programação em JavaScript. À medida que você avança em seus estudos, poderá aprofundar-se em cada um desses tópicos e explorar ainda mais a linguagem.
 
 ## Ecossistema
 JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca de pacotes e frameworks. Alguns dos principais frameworks incluem:
