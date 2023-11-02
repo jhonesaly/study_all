@@ -39,7 +39,17 @@ em que nome_do_app é o nome do projeto e será o nome da pasta criada, que fica
 
 ![Projeto inicial](images/react_app_inicial.png)
 
+Então, mude o terminal para a pasta criada:
 
+```
+cd nome_do_app
+```
+
+E para rodar o react, use:
+
+```
+npm run start
+```
 
 ## Conclusão
 
