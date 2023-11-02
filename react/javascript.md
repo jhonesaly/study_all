@@ -115,6 +115,60 @@ class NomeDaClasse {
 
 Este guia oferece uma visão geral dos principais conceitos de programação em JavaScript. À medida que você avança em seus estudos, poderá aprofundar-se em cada um desses tópicos e explorar ainda mais a linguagem.
 
+## Vetores e matrizes
+
+Em JavaScript, um vetor é uma coleção ordenada de elementos, enquanto uma matriz é uma coleção de vetores ou, mais precisamente, uma coleção de coleções. Ambos são usados para armazenar e manipular dados de forma estruturada.
+
+### Vetores
+
+Um vetor é uma lista de valores separados por vírgulas e geralmente é definido entre colchetes `[]`. Por exemplo:
+
+```javascript
+const vetor = [1, 2, 3, 4, 5];
+```
+
+### Matrizes
+
+Uma matriz em JavaScript é uma coleção de vetores, permitindo que você crie estruturas de dados bidimensionais. Por exemplo:
+
+```javascript
+const matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+```
+
+## Manipulação com Métodos
+
+JavaScript oferece métodos para manipular vetores e matrizes de maneira eficiente. Alguns desses métodos incluem:
+
+### `filter`
+
+O método `filter` permite filtrar elementos com base em uma condição e criar um novo vetor com os elementos que atendem a essa condição.
+
+Exemplo:
+
+```javascript
+const vetor = [1, 2, 3, 4, 5];
+
+const numerosPares = vetor.filter(numero => numero % 2 === 0);
+console.log(numerosPares); // Saída: [2, 4]
+```
+
+### `find`
+
+O método `find` é usado para encontrar o primeiro elemento que atende a uma determinada condição.
+
+Exemplo:
+
+```javascript
+const vetor = [1, 2, 3, 4, 5];
+
+const primeiroPar = vetor.find(numero => numero % 2 === 0);
+console.log(primeiroPar); // Saída: 2
+```
+
 ## Ecossistema
 JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca de pacotes e frameworks. Alguns dos principais frameworks incluem:
 - **React:** Uma biblioteca para construir interfaces de usuário.
