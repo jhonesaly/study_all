@@ -29,6 +29,9 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 
 ## Tutorial
 
+
+### Iniciando o React
+
 Para começar um projeto em react, use no terminal:
 
 ```
@@ -50,6 +53,53 @@ E para rodar o react, use:
 ```
 npm run start
 ```
+### Criando componente
+
+Os componentes devem ser criados separadamente dentro da pasta /src e no formato .js, como o seguinte exemplo:
+
+```
+import React, { useState } from 'react';
+
+function BotaoContador() {
+    const [contador, setContador] = useState(0);
+  
+    const aumentarContador = () => {
+      setContador(contador + 1);
+    };
+  
+    const diminuirContador = () => {
+      setContador(contador - 1);
+    };
+  
+    return (
+      <div>
+        <h1>Contador: {contador}</h1>
+        <button onClick={aumentarContador}>Aumentar</button>
+        <button onClick={diminuirContador}>Diminuir</button>
+      </div>
+    );
+  }
+  export default BotaoContador;
+```
+
+Com isso, o componente pode ser importado pelo index.js na raiz do projeto assim:
+
+
+```
+...
+import BotaoContador from './BotaoContador';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+    <BotaoContador />
+  </React.StrictMode>
+);
+...
+
+```
+
 
 ## Conclusão
 
