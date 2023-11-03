@@ -175,6 +175,20 @@ export default createGlobalStyle`
 `
 ```
 
+Depois importando no index.js da raiz do projeto:
+
+```
+import GlobalStyles from './global';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <GlobalStyles />
+    <App />
+  </React.StrictMode>
+);
+```
+
 ## Conseguindo componentes
 
 1. **npm (Node Package Manager):** O npm é o repositório de pacotes JavaScript mais utilizado. Você pode procurar por componentes React prontos, bibliotecas e pacotes relacionados ao seu projeto. Para instalar um pacote, você pode usar o comando `npm install`.
