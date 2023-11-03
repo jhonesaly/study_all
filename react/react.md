@@ -110,6 +110,58 @@ Para facilitar a integração com arquivo css posterior, o arquivo pode ser cria
 import Button from './components/Button'
 ```
 
+## Biblioteca styled-components
+
+A biblioteca "styled-components" é popular para estilização de componentes em aplicações React. Ela permite que você defina estilos CSS diretamente em seus componentes React usando uma sintaxe similar ao CSS-in-JS. Com "styled-components", você pode criar componentes estilizados reutilizáveis que encapsulam seu estilo e lógica, tornando seu código mais modular e legível.
+
+Comece instalando o pacote:
+
+```
+npm install styled-components
+```
+
+Na pasta do componenete, crie um arquivo chamado styles.js e importe o pacote:
+
+```
+import styled from 'styled-components';
+```
+
+nesse arquivo, crie a estilização para o componenete:
+
+```
+export const StyledButton = styled.button`
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
+```
+
+Agora, no arquivo com a lógica do componenete (index.js), importe a estilização:
+
+```
+import { ButtonContainer } from './styles';
+
+const Button = ({label, onClick}) => {
+    return (
+      <ButtonContainer onClick={onClick} type="button">
+       {label}
+      </ButtonContainer>
+    );
+  }
+  
+  export default Button;
+```
+
+Nessa lógida, o componenete Button terá o css definido em ButtonContainer.
+
 ## Conseguindo componentes
 
 1. **npm (Node Package Manager):** O npm é o repositório de pacotes JavaScript mais utilizado. Você pode procurar por componentes React prontos, bibliotecas e pacotes relacionados ao seu projeto. Para instalar um pacote, você pode usar o comando `npm install`.

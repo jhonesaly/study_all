@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import BotaoContador from './components/BotaoContador';
+import Button from './components/Button';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         </a>
       </header>
       <BotaoContador title="Votos" />
+      <Button />
     </div>
   );
 }
