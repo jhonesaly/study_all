@@ -162,6 +162,19 @@ const Button = ({label, onClick}) => {
 
 Nessa lógida, o componenete Button terá o css definido em ButtonContainer.
 
+Também é possível criar styles globalmente oi meio de um arquivo global.js na raiz do projeto:
+
+```
+import { createGlobalStyle } from 'styled-components'
+
+export default createGlobalStyle`
+  *, body {
+    margin: 0;
+    padding: 0;
+  }
+`
+```
+
 ## Conseguindo componentes
 
 1. **npm (Node Package Manager):** O npm é o repositório de pacotes JavaScript mais utilizado. Você pode procurar por componentes React prontos, bibliotecas e pacotes relacionados ao seu projeto. Para instalar um pacote, você pode usar o comando `npm install`.
