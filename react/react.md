@@ -110,6 +110,42 @@ Para facilitar a integração com arquivo css posterior, o arquivo pode ser cria
 import Button from './components/Button'
 ```
 
+### Usando fonte especial
+
+**Passo 1: Preparando sua Fonte**
+
+Certifique-se de ter a fonte que deseja adicionar ao seu projeto no formato correto (normalmente .ttf ou .otf). Você deve ter a fonte pronta para uso.
+
+**Passo 2: Organizando a Estrutura do Projeto**
+
+Em seu projeto React, crie uma pasta chamada "fonts" na raiz do projeto. Esta pasta conterá seus arquivos de fonte.
+
+**Passo 3: Importando a Fonte no Estilo do Componente**
+
+No componente onde deseja usar a fonte, siga os seguintes passos:
+
+a. **Importe a Fonte:** No arquivo de estilos do seu componente (geralmente um arquivo .js ou .css), importe a fonte.
+
+```javascript
+import styled from 'styled-components';
+import SuaFonte from '../fonts/SuaFonte.ttf'; // Substitua pelo caminho correto
+```
+
+b. **Defina o `@font-face`:** Dentro das definições de estilo do seu componente, crie uma regra `@font-face` para a sua fonte.
+
+```javascript
+export const SeuComponenteContainer = styled.div`
+  font-family: 'SuaFonte', sans-serif;
+
+  @font-face {
+    font-family: 'SuaFonte';
+    src: url(${SuaFonte}) format('truetype'); // Substitua pelo nome da sua fonte
+  }
+
+  /* Outros estilos do seu componente aqui */
+`;
+```
+
 ## Biblioteca styled-components
 
 A biblioteca "styled-components" é popular para estilização de componentes em aplicações React. Ela permite que você defina estilos CSS diretamente em seus componentes React usando uma sintaxe similar ao CSS-in-JS. Com "styled-components", você pode criar componentes estilizados reutilizáveis que encapsulam seu estilo e lógica, tornando seu código mais modular e legível.
