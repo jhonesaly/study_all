@@ -27,10 +27,7 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
-## Tutorial
-
-
-### Iniciando o React
+## Iniciando o React
 
 Para começar um projeto em react, use no terminal:
 
@@ -53,7 +50,7 @@ E para rodar o react, use:
 ```
 npm run start
 ```
-### Criando componente
+## Criando componente
 
 Os componentes devem ser criados separadamente dentro da pasta /components dentro da pasta /src.
 
@@ -108,46 +105,6 @@ Para facilitar a integração com arquivo css posterior, o arquivo pode ser cria
 
 ```
 import Button from './components/Button'
-```
-
-### Usando fonte especial
-
-**Passo 1: Preparando sua Fonte**
-
-Certifique-se de ter a fonte que deseja adicionar ao seu projeto no formato correto (normalmente .ttf ou .otf). Você deve ter a fonte pronta para uso.
-
-**Passo 2: Organizando a Estrutura do Projeto**
-
-Em seu projeto React, crie uma pasta chamada "fonts" na raiz do projeto. Esta pasta conterá seus arquivos de fonte.
-
-**Passo 3: Adicionando a fonte ao Projeto**
-
-No arquivo global.js, em que são configurados os estilos globais, Siga os seguintes passos:
-
-a. **Importe a Fonte:** No arquivo de estilos do seu componente (geralmente um arquivo .js ou .css), importe a fonte.
-
-```javascript
-import { createGlobalStyle } from 'styled-components'
-import SuaFonte from './fonts/SuaFonte.ttf';
-```
-
-b. **Defina o `@font-face`:** Dentro das definições de estilo do seu componente, crie uma regra `@font-face` para a sua fonte.
-
-```javascript
-`...
-  @font-face {
-    font-family: 'SuaFonte';
-    src: url(${SuaFonte}) format('truetype');
-  }
-`
-```
-
-**Passo 3: Importando a Fonte no Estilo do Componente**
-
-No componente onde deseja usar a fonte, use a fonte normalmente:
-
-```javascript
-  font-family: 'LEDCalculator';
 ```
 
 ## Biblioteca styled-components
@@ -227,6 +184,45 @@ root.render(
     <App />
   </React.StrictMode>
 );
+```
+## Usando fonte especial
+
+**Passo 1: Preparando sua Fonte**
+
+Certifique-se de ter a fonte que deseja adicionar ao seu projeto no formato correto (normalmente .ttf ou .otf). Você deve ter a fonte pronta para uso.
+
+**Passo 2: Organizando a Estrutura do Projeto**
+
+Em seu projeto React, crie uma pasta chamada "fonts" na raiz do projeto. Esta pasta conterá seus arquivos de fonte.
+
+**Passo 3: Adicionando a fonte ao Projeto**
+
+No arquivo global.js, em que são configurados os estilos globais, Siga os seguintes passos:
+
+a. **Importe a Fonte:** No arquivo de estilos do seu componente (geralmente um arquivo .js ou .css), importe a fonte.
+
+```javascript
+import { createGlobalStyle } from 'styled-components'
+import SuaFonte from './fonts/SuaFonte.ttf';
+```
+
+b. **Defina o `@font-face`:** Dentro das definições de estilo do seu componente, crie uma regra `@font-face` para a sua fonte.
+
+```javascript
+`...
+  @font-face {
+    font-family: 'SuaFonte';
+    src: url(${SuaFonte}) format('truetype');
+  }
+`
+```
+
+**Passo 3: Importando a Fonte no Estilo do Componente**
+
+No componente onde deseja usar a fonte, use a fonte normalmente:
+
+```javascript
+  font-family: 'LEDCalculator';
 ```
 
 ## Conseguindo componentes
