@@ -10,6 +10,30 @@ As propriedades CSS determinam como os elementos serão estilizados. Cada propri
 - `font-size`: Define o tamanho da fonte.
 - `margin`: Define as margens de um elemento.
 
+### Preenchimento, Borda e Margem
+
+1. **Padding (Preenchimento):**
+   - O padding é a área entre o conteúdo de um elemento e sua borda.
+   - Ele define o espaço interno do elemento e afeta a distância entre o conteúdo e a borda do elemento.
+   - Assim como o margin, você pode definir valores de padding para os quatro lados do elemento individualmente ou em conjunto.
+   - Os valores de padding também podem ser especificados em diferentes unidades de medida.
+
+2. **Border (Borda):**
+   - A borda envolve o elemento e separa o conteúdo do elemento de sua margem.
+   - Você pode definir a espessura, estilo (como sólido, pontilhado, etc.) e cor da borda.
+   - As propriedades da borda incluem `border-width` (largura da borda), `border-style` (estilo da borda) e `border-color` (cor da borda).
+   - A borda é posicionada entre o padding e a margem.
+
+3. **Margin (Margem):**
+   - O margin representa o espaço em torno de um elemento HTML.
+   - Ele define a distância entre o elemento e os elementos circundantes.
+   - Os valores de margin podem ser definidos para os quatro lados do elemento (superior, direito, inferior e esquerdo) individualmente ou em conjunto.
+   - Você pode usar valores em pixels, porcentagens ou outras unidades de medida para ajustar o espaço de margem.
+
+Esses três conceitos são fundamentais para o design e o layout de elementos em páginas da web usando CSS. Eles permitem controlar o espaçamento e o visual dos elementos HTML em relação a outros elementos na página.
+
+![padding-border-margin](images/padding-border-margin.png)
+
 ## Cascata
 O "C" em CSS significa "Cascading", o que se refere à hierarquia de regras. As regras CSS podem ser aplicadas de diferentes maneiras, com base na especificidade e na ordem em que são definidas.
 
