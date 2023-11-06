@@ -120,30 +120,34 @@ Certifique-se de ter a fonte que deseja adicionar ao seu projeto no formato corr
 
 Em seu projeto React, crie uma pasta chamada "fonts" na raiz do projeto. Esta pasta conterá seus arquivos de fonte.
 
-**Passo 3: Importando a Fonte no Estilo do Componente**
+**Passo 3: Adicionando a fonte ao Projeto**
 
-No componente onde deseja usar a fonte, siga os seguintes passos:
+No arquivo global.js, em que são configurados os estilos globais, Siga os seguintes passos:
 
 a. **Importe a Fonte:** No arquivo de estilos do seu componente (geralmente um arquivo .js ou .css), importe a fonte.
 
 ```javascript
-import styled from 'styled-components';
-import SuaFonte from '../fonts/SuaFonte.ttf'; // Substitua pelo caminho correto
+import { createGlobalStyle } from 'styled-components'
+import SuaFonte from './fonts/SuaFonte.ttf';
 ```
 
 b. **Defina o `@font-face`:** Dentro das definições de estilo do seu componente, crie uma regra `@font-face` para a sua fonte.
 
 ```javascript
-export const SeuComponenteContainer = styled.div`
-  font-family: 'SuaFonte', sans-serif;
-
+`...
   @font-face {
     font-family: 'SuaFonte';
-    src: url(${SuaFonte}) format('truetype'); // Substitua pelo nome da sua fonte
+    src: url(${SuaFonte}) format('truetype');
   }
+`
+```
 
-  /* Outros estilos do seu componente aqui */
-`;
+**Passo 3: Importando a Fonte no Estilo do Componente**
+
+No componente onde deseja usar a fonte, use a fonte normalmente:
+
+```javascript
+  font-family: 'LEDCalculator';
 ```
 
 ## Biblioteca styled-components
