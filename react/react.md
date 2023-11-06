@@ -27,6 +27,77 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
+## Props de react
+
+Uma propriedade (ou "prop") é parte do modelo de programação do React para lidar com eventos como cliques em elementos, botões, etc. O React permite que você passe props para componentes, o que torna a personalização e o comportamento dos componentes altamente configuráveis.
+
+Existem várias props comumente usadas em elementos do React. Algumas das props importantes incluem:
+
+1.  `onClick`: A prop "onClick" é usada para definir uma função que será executada quando o elemento for clicado. Por exemplo, em um botão, você pode definir uma função que será chamada quando o botão for clicado.
+
+2.  `className`: A prop "className" é usada para definir a classe CSS do elemento. Ela permite que você aplique estilos personalizados a um elemento.
+
+3.  `style`: A prop "style" permite que você defina estilos inline para um elemento usando um objeto JavaScript. Isso é útil para estilos específicos que não são reutilizáveis.
+
+4.  `id`: A prop "id" define o ID do elemento, tornando-o acessível para seleção via JavaScript ou CSS.
+
+5.  `value`: Usada em elementos de entrada, como campos de texto, a prop "value" define ou obtém o valor do elemento. É comumente usado para controlar o estado desses elementos.
+
+6.  `disabled`: A prop "disabled" define se o elemento está desabilitado ou não. Por exemplo, pode ser usada para desabilitar um botão.
+
+7.  `onChange`: A prop "onChange" é usada para lidar com eventos de mudança, geralmente associados a elementos de entrada, como campos de texto. Ela permite que você execute código quando o valor do elemento é alterado.
+
+8.  `onSubmit`: Usada em formulários, a prop "onSubmit" é usada para lidar com eventos de envio do formulário. Ela permite que você execute código quando o formulário é enviado.
+
+9.  `key`: A prop "key" é usada em listas para ajudar o React a identificar elementos de maneira eficiente. Ela é frequentemente usada em iterações de lista para garantir que os elementos da lista sejam únicos.
+
+10. `src`: A prop "src" é comumente usada em elementos de imagem (por exemplo, `<img>`) para especificar a fonte da imagem.
+
+11. `href`: Usada em âncoras (por exemplo, `<a>`), a prop "href" define o URL de destino para o link.
+
+12. `target`: Em âncoras, a prop "target" especifica o destino da navegação, como "_blank" para abrir o link em uma nova guia.
+
+13. `alt`: Usada em elementos de imagem, a prop "alt" fornece um texto alternativo que é exibido se a imagem não puder ser carregada.
+
+14. `checked`: Usada em elementos de entrada de tipo "checkbox" e "radio" para determinar se o elemento está marcado como selecionado ou não.
+
+15. `defaultValue`: Usada em elementos de entrada para definir um valor padrão que será exibido inicialmente, mas não controlará o estado do elemento.
+
+Essas são apenas algumas das props mais comuns. A escolha de quais props usar depende da necessidade específica do seu componente. Além disso, você pode passar props personalizadas para seus próprios componentes para personalizá-los de acordo com sua lógica de aplicação. O React é altamente configurável e flexível nesse aspecto.
+
+## Hooks de react
+
+Os Hooks são uma característica introduzida no React 16.8 que permitem que você use o estado e outros recursos do React em componentes funcionais, em vez de componentes de classe. Isso tornou o desenvolvimento de componentes mais simples e reutilizáveis. Abaixo estão alguns dos principais Hooks do React:
+
+1. **useState**:
+   - O `useState` permite que os componentes funcionais tenham estado. Ele retorna um par de valores: o estado atual e uma função para atualizar esse estado.
+
+2. **useEffect**:
+   - O `useEffect` é usado para lidar com efeitos colaterais em componentes funcionais. Você pode realizar ações como buscar dados, inscrever-se em eventos e muito mais. Ele é executado após cada renderização do componente.
+
+3. **useContext**:
+   - O `useContext` é usado para acessar o contexto de um componente. O contexto permite compartilhar dados entre componentes sem precisar passá-los explicitamente por meio das propriedades.
+
+4. **useReducer**:
+   - O `useReducer` é uma alternativa ao `useState` quando se trata de gerenciar estados complexos. Ele é especialmente útil quando o estado depende do estado anterior e requer lógica mais avançada.
+
+5. **useRef**:
+   - O `useRef` permite criar uma referência para um elemento do DOM ou para qualquer valor que precise ser persistido entre renderizações. É útil para acessar diretamente elementos do DOM ou para manter valores mutáveis.
+
+6. **useMemo**:
+   - O `useMemo` é usado para memoizar o resultado de uma função caras em termos de desempenho. Ele retorna uma versão memorizada da função que só é recalculada quando as dependências mudam.
+
+7. **useCallback**:
+   - O `useCallback` é semelhante ao `useMemo`, mas é usado para memoizar funções. Ele retorna uma versão memorizada da função que só é recalculada quando as dependências mudam.
+
+8. **useLayoutEffect**:
+   - O `useLayoutEffect` é semelhante ao `useEffect`, mas é sincronizado com o processo de layout do navegador. Ele é útil em cenários em que você precisa realizar ações imediatamente após a renderização, antes da atualização da tela.
+
+9. **useCustomHook** (Hooks personalizados):
+   - Você também pode criar seus próprios Hooks personalizados, que são funções que combinam Hooks do React para encapsular a lógica específica do seu componente. Isso permite a reutilização de lógica em vários componentes.
+
+Esses são alguns dos principais Hooks do React, mas existem outros disponíveis, e você pode criar seus próprios Hooks personalizados para atender às necessidades específicas do seu aplicativo. O uso de Hooks torna os componentes funcionais uma opção poderosa e flexível no desenvolvimento de aplicações React.
+
 ## Iniciando o React
 
 Para começar um projeto em react, use no terminal:
@@ -224,44 +295,6 @@ No componente onde deseja usar a fonte, use a fonte normalmente:
 ```javascript
   font-family: 'LEDCalculator';
 ```
-
-## Props de react
-
-Uma propriedade (ou "prop") é parte do modelo de programação do React para lidar com eventos como cliques em elementos, botões, etc. O React permite que você passe props para componentes, o que torna a personalização e o comportamento dos componentes altamente configuráveis.
-
-Existem várias props comumente usadas em elementos do React. Algumas das props importantes incluem:
-
-1.  `onClick`: A prop "onClick" é usada para definir uma função que será executada quando o elemento for clicado. Por exemplo, em um botão, você pode definir uma função que será chamada quando o botão for clicado.
-
-2.  `className`: A prop "className" é usada para definir a classe CSS do elemento. Ela permite que você aplique estilos personalizados a um elemento.
-
-3.  `style`: A prop "style" permite que você defina estilos inline para um elemento usando um objeto JavaScript. Isso é útil para estilos específicos que não são reutilizáveis.
-
-4.  `id`: A prop "id" define o ID do elemento, tornando-o acessível para seleção via JavaScript ou CSS.
-
-5.  `value`: Usada em elementos de entrada, como campos de texto, a prop "value" define ou obtém o valor do elemento. É comumente usado para controlar o estado desses elementos.
-
-6.  `disabled`: A prop "disabled" define se o elemento está desabilitado ou não. Por exemplo, pode ser usada para desabilitar um botão.
-
-7.  `onChange`: A prop "onChange" é usada para lidar com eventos de mudança, geralmente associados a elementos de entrada, como campos de texto. Ela permite que você execute código quando o valor do elemento é alterado.
-
-8.  `onSubmit`: Usada em formulários, a prop "onSubmit" é usada para lidar com eventos de envio do formulário. Ela permite que você execute código quando o formulário é enviado.
-
-9.  `key`: A prop "key" é usada em listas para ajudar o React a identificar elementos de maneira eficiente. Ela é frequentemente usada em iterações de lista para garantir que os elementos da lista sejam únicos.
-
-10. `src`: A prop "src" é comumente usada em elementos de imagem (por exemplo, `<img>`) para especificar a fonte da imagem.
-
-11. `href`: Usada em âncoras (por exemplo, `<a>`), a prop "href" define o URL de destino para o link.
-
-12. `target`: Em âncoras, a prop "target" especifica o destino da navegação, como "_blank" para abrir o link em uma nova guia.
-
-13. `alt`: Usada em elementos de imagem, a prop "alt" fornece um texto alternativo que é exibido se a imagem não puder ser carregada.
-
-14. `checked`: Usada em elementos de entrada de tipo "checkbox" e "radio" para determinar se o elemento está marcado como selecionado ou não.
-
-15. `defaultValue`: Usada em elementos de entrada para definir um valor padrão que será exibido inicialmente, mas não controlará o estado do elemento.
-
-Essas são apenas algumas das props mais comuns. A escolha de quais props usar depende da necessidade específica do seu componente. Além disso, você pode passar props personalizadas para seus próprios componentes para personalizá-los de acordo com sua lógica de aplicação. O React é altamente configurável e flexível nesse aspecto.
 
 ## Conseguindo componentes
 
