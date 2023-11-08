@@ -108,7 +108,7 @@ Esse arquivo é como se fosse o roteiro da aplicação. Ele é criado dando o co
 npm init -y 
 ```
 
-Criando na pasta corrente o arquivo package.json, que diz o nome da aplicação/pasta/projeto, arquivo principal, pacotes utilizados, etc.
+Criando na pasta corrente o arquivo `package.json`, que diz o nome da aplicação/pasta/projeto, arquivo principal, pacotes utilizados, etc.
 
 ```json
 {
@@ -126,7 +126,7 @@ Criando na pasta corrente o arquivo package.json, que diz o nome da aplicação/
 
 ```
 
-Ao instalar pacotes, é criado o arquivo package-lock.json, que é usado para registrar e fixar as versões exatas das dependências do seu projeto. Ele desempenha um papel importante no gerenciamento de dependências e na garantia de que todas as pessoas que trabalham no projeto obtenham as mesmas versões de pacotes, evitando assim problemas de compatibilidade.
+Ao instalar pacotes, é criado o arquivo `package-lock.json`, que é usado para registrar e fixar as versões exatas das dependências do seu projeto. Ele desempenha um papel importante no gerenciamento de dependências e na garantia de que todas as pessoas que trabalham no projeto obtenham as mesmas versões de pacotes, evitando assim problemas de compatibilidade.
 
 ### Babel
 
@@ -157,6 +157,17 @@ Ao instalar, note que o arquivo package.json é alterado, adicionando o babel.
     "@babel/preset-react": "^7.22.15",
     "babel-loader": "^9.1.3"
   }
+```
+
+Depois, é necessário criar o arquivo de configuração do babel: `.babelrc`. Uma configuração básica seria:
+
+```
+{
+    "presets": [
+        "@babel/preset-env",
+        ["@babel/preset-react", {"runtime": "automatic"}]
+    ]
+}
 ```
 
 ### create-react-app
