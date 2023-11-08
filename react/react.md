@@ -573,6 +573,18 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 
 - Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
 
+## Eslint
+
+O ESLint é uma ferramenta de linting para JavaScript que ajuda a identificar e corrigir erros, padrões de código inconsistentes e problemas de estilo em seu código. Ele é comumente usado em projetos React (e outros projetos JavaScript) para manter um código limpo e consistente. Ele é adicionado automaticamente quando projeto é criado com `create-react-app`, mas pode ser feito manulamente com:
+
+```
+npm install eslint -D
+npx eslint --init
+```
+
+Siga os passos da configuração conforme for solicitado no terminal e então rode o comando `npx eslint .` para listar os erros no projeto.
+
+
 ## Conclusão
 
 O React é uma escolha popular para o desenvolvimento de aplicativos da web modernos devido à sua eficiência, flexibilidade e comunidade ativa. Com sua abordagem baseada em componentes e recursos avançados, ele continua a ser uma ferramenta poderosa para construir interfaces de usuário dinâmicas e interativas.
