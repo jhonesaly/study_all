@@ -193,7 +193,48 @@ O Webpack é uma ferramenta de empacotamento (bundling) amplamente usada no dese
 Para instalá-lo, use o comando:
 
 ```
+npm install html-loader html-webpack-plugin webpack webpack-cli webpack-dev-server style-loader css-loader -D
+```
 
+Então, crie o arquivo de configuração `webpack.config.js` com as seguintes instruções básicas:
+
+```
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+
+module.exports = {
+    devtool: "source-map",
+    entry: "./src/index.js",
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: { loader: "babel-loader"}
+            },
+            {
+                test: /\.html$/,
+                use: [{ loader: "html-loader"}]
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.(png|jpe?g|gif))$/i,
+                use: ["file-loader"]
+            },
+        ]
+    },
+    resolve: {
+        extensions: [".js", ".jsx"],
+    },
+    plugin: [
+        new HtmlWebpackPlugin({
+            template: '.public/index.html'
+        })
+    ]
+}
 ```
 
 ### create-react-app
