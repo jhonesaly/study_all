@@ -260,6 +260,78 @@ E para rodar o react, use:
 ```
 npm run start
 ```
+
+## jsx
+
+Um arquivo com a extensão `.jsx` é um tipo de arquivo utilizado em projetos React para definir componentes da interface do usuário. Essa extensão é uma convenção para indicar que o arquivo contém código JavaScript estendido (JSX), que é uma extensão da linguagem JavaScript usada no desenvolvimento de aplicativos React. A diferença principal entre um arquivo `.jsx` e um arquivo `.js` em um projeto React é a presença de código JSX e a integração com as funcionalidades do React.
+
+Aqui está um exemplo que destaca a diferença entre um arquivo `.jsx` e um arquivo `.js` em um projeto React:
+
+**Arquivo `.js` (sem JSX):**
+
+```javascript
+// app.js
+function App() {
+  return 'Hello, World!';
+}
+
+export default App;
+```
+
+Neste exemplo, o arquivo `.js` contém uma função `App` que retorna uma simples string.
+
+**Arquivo `.jsx` (com JSX):**
+
+```jsx
+// app.jsx
+import React from 'react';
+
+function App() {
+  return <div>Hello, World!</div>;
+}
+
+export default App;
+```
+
+Neste exemplo, o arquivo `.jsx` usa a biblioteca React, importada com `import React from 'react'`. Ele também usa código JSX, que é uma extensão da sintaxe JavaScript e permite que você escreva elementos de interface do usuário de forma declarativa. No retorno da função `App`, usamos elementos JSX, como `<div>`, para definir a estrutura do componente.
+
+A diferença fundamental entre os dois exemplos está no uso de JSX e na integração com o React. Os arquivos `.jsx` são usados para definir componentes React que incorporam JSX, enquanto os arquivos `.js` podem conter código JavaScript padrão, mas geralmente não são usados para definir componentes React.
+
+Em um projeto React, a convenção é usar arquivos `.jsx` para componentes React, pois eles facilitam a leitura e a escrita de código de interface do usuário. O React utiliza o processo de transpilação para converter código JSX em JavaScript válido para o navegador. Portanto, quando você escreve código em arquivos `.jsx`, ele é transpilado para JavaScript puro antes de ser executado no navegador.
+
+Vale notar que, o `create-react-app` foi projetado para tornar o processo de desenvolvimento React mais acessível e simplificado, e uma das decisões de design foi permitir que você use JSX diretamente em arquivos com extensão .js.
+
+No entanto, em muitos projetos React, a extensão .jsx é usada para indicar explicitamente que um arquivo contém código JSX. Em resumo, tanto .js quanto .jsx podem ser usados para arquivos com código JSX em projetos React, mas a convenção mais comum é usar .jsx para maior clareza.
+
+## Ciclo dos componenetes
+
+O ciclo de vida de um componente em uma aplicação React é uma série de eventos que ocorrem durante a vida útil desse componente, desde sua criação até sua remoção. Esses eventos permitem que você controle o comportamento e a interação do componente com o DOM e com os dados. Aqui está um resumo dos principais estágios do ciclo de vida de um componente React:
+
+1. **Montagem (Mounting):**
+   - `constructor()`: É chamado quando um componente é inicializado. Você pode configurar o estado inicial e vincular métodos aqui.
+   - `static getDerivedStateFromProps()`: Chamado antes da renderização quando as props são recebidas. Raramente usado, geralmente para computar um novo estado com base nas props.
+   - `render()`: Obrigatório. Renderiza o componente e seus elementos filhos no DOM virtual.
+   - `componentDidMount()`: Chamado após o componente ser inserido no DOM real. É o lugar apropriado para carregar dados externos ou executar operações que dependem do DOM.
+
+2. **Atualização (Updating):**
+   - `static getDerivedStateFromProps()`: Novamente, pode ser usado para atualizar o estado com base nas novas props.
+   - `shouldComponentUpdate()`: Permite otimizar o desempenho decidindo se a atualização e a renderização devem ocorrer. Pode retornar `true` ou `false`.
+   - `render()`: Re-renderiza o componente se `shouldComponentUpdate` retornar `true`.
+   - `getSnapshotBeforeUpdate()`: Pode ser usado para capturar informações do DOM antes de sofrer atualizações.
+   - `componentDidUpdate()`: Chamado após a renderização e atualização do componente. Útil para ações pós-atualização, como chamadas de API.
+
+3. **Desmontagem (Unmounting):**
+   - `componentWillUnmount()`: Chamado antes do componente ser removido do DOM. Útil para limpar recursos, cancelar assinaturas, etc.
+
+4. **Manejo de Erros (Error Handling):**
+   - `static getDerivedStateFromError()`: Usado para atualizar o estado quando ocorre um erro em qualquer componente filho.
+   - `componentDidCatch()`: Usado para lidar com erros em componentes filhos. Geralmente usado para registro de erros.
+
+É importante notar que com a introdução dos Hooks (a partir do React 16.8), como `useState`, `useEffect`, `useContext`, etc., o ciclo de vida dos componentes baseados em classe não é mais a única maneira de gerenciar o estado e os efeitos em componentes React. Hooks oferecem uma abordagem mais simples e funcional para alcançar os mesmos resultados, tornando o código mais legível e fácil de manter.
+
+Portanto, ao desenvolver em React, você pode escolher entre componentes baseados em classe com o ciclo de vida tradicional ou componentes funcionais com Hooks, dependendo das suas preferências e necessidades. Os Hooks têm se tornado a abordagem mais comum devido à sua simplicidade e flexibilidade.
+
+
 ## Criando componente
 
 Os componentes devem ser criados separadamente dentro da pasta /components dentro da pasta /src.
@@ -462,34 +534,6 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 - Tailwind CSS: Embora não seja uma biblioteca de componentes, o Tailwind CSS é um framework de estilo altamente configurável. Ele permite a criação rápida e personalizada de interfaces com base em classes CSS utilitárias.
 
 - Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
-
-## Ciclo dos componenetes
-
-O ciclo de vida de um componente em uma aplicação React é uma série de eventos que ocorrem durante a vida útil desse componente, desde sua criação até sua remoção. Esses eventos permitem que você controle o comportamento e a interação do componente com o DOM e com os dados. Aqui está um resumo dos principais estágios do ciclo de vida de um componente React:
-
-1. **Montagem (Mounting):**
-   - `constructor()`: É chamado quando um componente é inicializado. Você pode configurar o estado inicial e vincular métodos aqui.
-   - `static getDerivedStateFromProps()`: Chamado antes da renderização quando as props são recebidas. Raramente usado, geralmente para computar um novo estado com base nas props.
-   - `render()`: Obrigatório. Renderiza o componente e seus elementos filhos no DOM virtual.
-   - `componentDidMount()`: Chamado após o componente ser inserido no DOM real. É o lugar apropriado para carregar dados externos ou executar operações que dependem do DOM.
-
-2. **Atualização (Updating):**
-   - `static getDerivedStateFromProps()`: Novamente, pode ser usado para atualizar o estado com base nas novas props.
-   - `shouldComponentUpdate()`: Permite otimizar o desempenho decidindo se a atualização e a renderização devem ocorrer. Pode retornar `true` ou `false`.
-   - `render()`: Re-renderiza o componente se `shouldComponentUpdate` retornar `true`.
-   - `getSnapshotBeforeUpdate()`: Pode ser usado para capturar informações do DOM antes de sofrer atualizações.
-   - `componentDidUpdate()`: Chamado após a renderização e atualização do componente. Útil para ações pós-atualização, como chamadas de API.
-
-3. **Desmontagem (Unmounting):**
-   - `componentWillUnmount()`: Chamado antes do componente ser removido do DOM. Útil para limpar recursos, cancelar assinaturas, etc.
-
-4. **Manejo de Erros (Error Handling):**
-   - `static getDerivedStateFromError()`: Usado para atualizar o estado quando ocorre um erro em qualquer componente filho.
-   - `componentDidCatch()`: Usado para lidar com erros em componentes filhos. Geralmente usado para registro de erros.
-
-É importante notar que com a introdução dos Hooks (a partir do React 16.8), como `useState`, `useEffect`, `useContext`, etc., o ciclo de vida dos componentes baseados em classe não é mais a única maneira de gerenciar o estado e os efeitos em componentes React. Hooks oferecem uma abordagem mais simples e funcional para alcançar os mesmos resultados, tornando o código mais legível e fácil de manter.
-
-Portanto, ao desenvolver em React, você pode escolher entre componentes baseados em classe com o ciclo de vida tradicional ou componentes funcionais com Hooks, dependendo das suas preferências e necessidades. Os Hooks têm se tornado a abordagem mais comum devido à sua simplicidade e flexibilidade.
 
 ## Conclusão
 
