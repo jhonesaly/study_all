@@ -207,6 +207,8 @@ JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca 
 - **Instalação:** O `npm` é o gerenciador de pacotes padrão que vem junto com a instalação do Node.js. Portanto, quando você instala o Node.js, o `npm` é instalado automaticamente.
 - **Como usar:** Para instalar pacotes, você pode usar o comando `npm install <package-name>`. Para executar scripts definidos em seu arquivo `package.json`, você usa `npm run <script-name>`. Para desinstalar pacotes use `npm uninstall <package-name>` ou `npm un <package-name>`. Para atualizar um pacote, use `npm update <package-name>`.
 
+Quando isntalar algo com a tag `--save-dev` ou `-D`, é para indicar que o pacote instalado é só para o desenvolvimento e não deve ser incluso no pacote de produção.
+
 **npx:**
 
 - **Objetivo:** O `npx` é usado para executar pacotes instalados localmente ou globalmente sem a necessidade de instalá-los globalmente em seu sistema.
