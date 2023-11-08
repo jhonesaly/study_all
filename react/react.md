@@ -596,13 +596,17 @@ Ele é adicionado automaticamente quando projeto é criado com `create-react-app
    npm install --save-dev prettier
    ```
 
-2. Configure as opções do Prettier: Você pode criar um arquivo chamado `.prettierrc` na raiz do seu projeto para definir as opções de formatação que deseja. Por exemplo, você pode configurar a largura máxima da linha, o estilo de quebra de linha, entre outras coisas. Aqui está um exemplo de um arquivo `.prettierrc`:
+2. Configure as opções do Prettier: Você pode criar um arquivo chamado `.prettierrc` na raiz do seu projeto para definir as opções de formatação que deseja. Por exemplo, você pode configurar a largura máxima da linha, o estilo de quebra de linha, entre outras coisas. Aqui está um exemplo de uma configuração básica:
 
    ```json
-   {
-     "singleQuote": true,
-     "trailingComma": "es5"
-   }
+    {
+      "semi": true,
+      "tabWidth": 4,
+      "printWidth": 100,
+      "singleQuote": true,
+      "trailingComma": "none",
+      "jsxSingleQuote": true,
+    }
    ```
 
 3. Formate o código: Você pode usar o Prettier para formatar todo o código do seu projeto executando o seguinte comando no terminal:
@@ -612,7 +616,6 @@ Ele é adicionado automaticamente quando projeto é criado com `create-react-app
    ```
 
    Isso formatará todos os arquivos do projeto de acordo com as regras definidas no arquivo `.prettierrc`.
-
 
 ## Conclusão
 
