@@ -584,6 +584,35 @@ npx eslint --init
 
 Siga os passos da configuração conforme for solicitado no terminal e então rode o comando `npx eslint .` para listar os erros no projeto.
 
+## Prettier
+
+Prettier é uma ferramenta de formatação de código que ajuda a manter um estilo de código consistente em projetos. Ele pode ser usado em projetos React, bem como em muitas outras linguagens de programação. Prettier formata automaticamente o código de acordo com as regras de estilo predefinidas, o que ajuda a evitar debates sobre a formatação do código entre membros da equipe e torna o código mais legível.
+
+Ele é adicionado automaticamente quando projeto é criado com `create-react-app`, mas para adicionar o Prettier manualmente, siga estes passos:
+
+1. Instale o Prettier: Você pode instalá-lo globalmente ou localmente no projeto. É comum instalá-lo como uma dependência de desenvolvimento no projeto, assim:
+
+   ```
+   npm install --save-dev prettier
+   ```
+
+2. Configure as opções do Prettier: Você pode criar um arquivo chamado `.prettierrc` na raiz do seu projeto para definir as opções de formatação que deseja. Por exemplo, você pode configurar a largura máxima da linha, o estilo de quebra de linha, entre outras coisas. Aqui está um exemplo de um arquivo `.prettierrc`:
+
+   ```json
+   {
+     "singleQuote": true,
+     "trailingComma": "es5"
+   }
+   ```
+
+3. Formate o código: Você pode usar o Prettier para formatar todo o código do seu projeto executando o seguinte comando no terminal:
+
+   ```
+   npx prettier --write .
+   ```
+
+   Isso formatará todos os arquivos do projeto de acordo com as regras definidas no arquivo `.prettierrc`.
+
 
 ## Conclusão
 
