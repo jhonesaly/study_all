@@ -145,7 +145,7 @@ Aqui estão algumas coisas que você precisa saber sobre o Babel:
 Para instalar os pacotes básicos do babel, use o comando:
 
 ```
-npm install @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+npm install @babel/core @babel/preset-env @babel/preset-react @babel/cli babel-loader -D
 ```
 
 Ao instalar, note que o arquivo package.json é alterado, adicionando o babel.
@@ -168,6 +168,32 @@ Depois, é necessário criar o arquivo de configuração do babel: `.babelrc`. U
         ["@babel/preset-react", {"runtime": "automatic"}]
     ]
 }
+```
+
+Ou pode criar o arquivo automaticamente usando o comando:
+
+```
+npx @babel/cli init
+```
+
+### Webpack
+
+O Webpack é uma ferramenta de empacotamento (bundling) amplamente usada no desenvolvimento web. Sua principal função é gerenciar e otimizar os recursos de um projeto, como arquivos JavaScript, CSS, imagens e muito mais. Aqui estão algumas informações essenciais sobre o Webpack:
+
+1. **Empacotamento de Módulos**: O Webpack é especialmente útil para lidar com módulos em projetos JavaScript. Ele permite que você organize seu código em módulos separados e, em seguida, os agrupe em um ou mais pacotes (bundles) que podem ser carregados de forma eficiente pelo navegador.
+
+2. **Carregadores (Loaders)**: O Webpack utiliza carregadores para processar diferentes tipos de arquivos, como JavaScript, CSS, imagens e muito mais. Os carregadores permitem que você transforme e adapte esses arquivos antes de empacotá-los. Por exemplo, você pode usar carregadores para transpilar código ES6+ para ES5, minificar o código JavaScript, ou até mesmo carregar estilos CSS.
+
+3. **Plugins**: Além dos carregadores, o Webpack usa plugins para executar tarefas mais avançadas, como otimização de código, divisão de pacotes, geração de HTML e muito mais. Existem muitos plugins disponíveis na comunidade do Webpack para atender às necessidades específicas do seu projeto.
+
+4. **Code Splitting**: O Webpack suporta a divisão de código (code splitting), que é uma técnica para dividir seu código em vários pacotes menores. Isso pode melhorar o desempenho do carregamento da página, permitindo que partes do código sejam carregadas sob demanda.
+
+5. **Integração com Outras Ferramentas**: O Webpack é frequentemente integrado com outras ferramentas, como o Babel (mencionado anteriormente), para criar fluxos de desenvolvimento eficientes. Essas integrações permitem que você use JavaScript moderno, carregue automaticamente dependências e otimize o desempenho de seu aplicativo.
+
+Para instalá-lo, use o comando:
+
+```
+
 ```
 
 ### create-react-app
