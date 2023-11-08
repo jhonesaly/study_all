@@ -386,7 +386,46 @@ O ciclo de vida de um componente em uma aplicação React é uma série de event
 
 É importante notar que com a introdução dos Hooks (a partir do React 16.8), como `useState`, `useEffect`, `useContext`, etc., o ciclo de vida dos componentes baseados em classe não é mais a única maneira de gerenciar o estado e os efeitos em componentes React. Hooks oferecem uma abordagem mais simples e funcional para alcançar os mesmos resultados, tornando o código mais legível e fácil de manter.
 
-Portanto, ao desenvolver em React, você pode escolher entre componentes baseados em classe com o ciclo de vida tradicional ou componentes funcionais com Hooks, dependendo das suas preferências e necessidades. Os Hooks têm se tornado a abordagem mais comum devido à sua simplicidade e flexibilidade.
+Os dois Hooks mais importantes nesse contexto são `useState` e `useEffect`.
+
+1. **useState**:
+   - `useState` é um Hook que permite que os componentes funcionais tenham seu próprio estado interno. Isso é crucial para a manipulação de dados locais no componente, permitindo que ele reaja a mudanças de estado sem a necessidade de criar uma classe.
+   - No ciclo de vida de um componente, `useState` desempenha um papel fundamental na etapa de "Montagem". Você pode usá-lo para inicializar o estado do componente no momento em que ele é montado no DOM. Além disso, ele permite que você atualize e gerencie o estado ao longo do ciclo de vida do componente.
+
+2. **useEffect**:
+   - `useEffect` é um Hook que lida com efeitos colaterais, como busca de dados, interações com APIs externas, atualizações do DOM, etc. Ele é essencial na etapa de "Montagem" e "Atualização" do ciclo de vida do componente.
+   - Em um componente funcional, você pode usar `useEffect` para executar código após a renderização do componente e, opcionalmente, após atualizações do estado ou propriedades. Isso é semelhante aos métodos `componentDidMount`, `componentDidUpdate` e `componentWillUnmount` em componentes de classe.
+   - `useEffect` é importante para garantir que os efeitos colaterais ocorram no momento apropriado, evitando problemas de desempenho e comportamento inesperado.
+
+Aqui está um exemplo simples de como `useState` e `useEffect` são usados em um componente funcional:
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Este código é executado após a montagem do componente e sempre que 'count' for atualizado.
+    document.title = `Contagem: ${count}`;
+  }, [count]);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Contagem: {count}</p>
+      <button onClick={increment}>Incrementar</button>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
+
+Neste exemplo, `useState` é usado para manter o estado do contador, e `useEffect` é usado para atualizar o título da página toda vez que o estado `count` muda. Isso demonstra como Hooks simplificam o gerenciamento de estado e efeitos colaterais em componentes funcionais, tornando o código mais legível e fácil de manter.
 
 ## Biblioteca styled-components
 
