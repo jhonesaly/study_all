@@ -573,7 +573,9 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 
 - Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
 
-## Eslint
+## PAdronizações
+
+### Eslint
 
 O ESLint é uma ferramenta de linting para JavaScript que ajuda a identificar e corrigir erros, padrões de código inconsistentes e problemas de estilo em seu código. Ele é comumente usado em projetos React (e outros projetos JavaScript) para manter um código limpo e consistente. Ele é adicionado automaticamente quando projeto é criado com `create-react-app`, mas pode ser feito manulamente com:
 
@@ -584,7 +586,9 @@ npx eslint --init
 
 Siga os passos da configuração conforme for solicitado no terminal e então rode o comando `npx eslint .` para listar os erros no projeto.
 
-## Prettier
+Para mais informações, acesse: [eslint.org]
+
+### Prettier
 
 Prettier é uma ferramenta de formatação de código que ajuda a manter um estilo de código consistente em projetos. Ele pode ser usado em projetos React, bem como em muitas outras linguagens de programação. Prettier formata automaticamente o código de acordo com as regras de estilo predefinidas, o que ajuda a evitar debates sobre a formatação do código entre membros da equipe e torna o código mais legível.
 
@@ -616,6 +620,47 @@ Ele é adicionado automaticamente quando projeto é criado com `create-react-app
    ```
 
    Isso formatará todos os arquivos do projeto de acordo com as regras definidas no arquivo `.prettierrc`.
+
+Para mais informações, acesse: [prettier.io]
+
+### Editor Config
+
+O EditorConfig é um pacote que ajuda a manter a consistência no estilo de formatação do código-fonte em projetos. Ele não faz parte do Create React App, mas pode ser usado em projetos React ou em qualquer projeto que envolva código-fonte.
+
+Para utilizá-lo, siga estas etapas:
+
+1. **Instalação do EditorConfig:**
+   Primeiro, você precisa ter o EditorConfig instalado em seu ambiente de desenvolvimento. Você pode instalar o pacote globalmente com npm ou yarn:
+
+   ```bash
+   npm install editorconfig -D
+   ```
+
+2. **Configuração do arquivo .editorconfig:**
+   Crie um arquivo chamado `.editorconfig` na raiz do seu projeto. Este arquivo contém as regras de formatação que você deseja aplicar ao código. Aqui está um exemplo de um arquivo `.editorconfig`:
+
+   ```ini
+   # Arquivo de configuração EditorConfig
+   root = true
+
+   [*]
+   indent_style = space
+   indent_size = 4
+   end_of_line = lf
+   charset = utf-8
+   trim_trailing_whitespace = true
+   insert_final_newline = true
+
+   [*.md]
+   trim_trailing_whitespace = false
+   ```
+
+   Este exemplo define algumas regras básicas, como tamanho da indentação, estilo, fim de linha, charset e remoção de espaços em branco no final. Para mais informações, acesse: [editorconfig.org]
+
+3. **Integração com o Editor de Código:**
+   A maioria dos editores de código modernos tem suporte nativo para arquivos `.editorconfig`, o que significa que as regras definidas no arquivo serão automaticamente aplicadas ao seu código quando você o salvar. Não é necessário instalar nenhum plugin adicional no seu editor para que isso funcione.
+
+O EditorConfig é uma ferramenta útil para manter a consistência no estilo de código entre membros da equipe e ao colaborar em projetos de código aberto. Certifique-se de ajustar as configurações no arquivo `.editorconfig` de acordo com as convenções de estilo do seu projeto.
 
 ## Conclusão
 
