@@ -24,6 +24,7 @@ dist/
 build/
 .eggs/
 .tox/
+*/node_modules
 
 # virtualenv
 my_env/

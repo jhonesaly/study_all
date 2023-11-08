@@ -126,6 +126,39 @@ Criando na pasta corrente o arquivo package.json, que diz o nome da aplicação/
 
 ```
 
+Ao instalar pacotes, é criado o arquivo package-lock.json, que é usado para registrar e fixar as versões exatas das dependências do seu projeto. Ele desempenha um papel importante no gerenciamento de dependências e na garantia de que todas as pessoas que trabalham no projeto obtenham as mesmas versões de pacotes, evitando assim problemas de compatibilidade.
+
+### Babel
+
+O Babel é um transpilador de JavaScript que é amplamente utilizado no desenvolvimento web. Sua função principal é converter código JavaScript escrito em versões mais recentes (ES6, ES7, etc.) em código JavaScript compatível com versões mais antigas, para garantir que ele funcione em navegadores que não suportam os recursos mais recentes da linguagem.
+
+Aqui estão algumas coisas que você precisa saber sobre o Babel:
+
+1. **Transpilação**: O Babel realiza a transpilação, que é um processo de compilação de código de uma linguagem para outra. No caso do Babel, ele converte código JavaScript moderno em JavaScript compatível com versões mais antigas.
+
+2. **Ecossistema JavaScript**: O Babel é uma parte importante do ecossistema JavaScript, permitindo que os desenvolvedores usem recursos mais recentes da linguagem sem se preocupar com a compatibilidade com navegadores mais antigos.
+
+3. **Plugins e Presets**: O Babel é altamente configurável. Você pode adicionar plugins e presets que correspondem aos recursos específicos do JavaScript que deseja usar. Isso permite personalizar o comportamento do Babel de acordo com suas necessidades.
+
+4. **Integração com Ferramentas de Desenvolvimento**: O Babel é frequentemente integrado com outras ferramentas de desenvolvimento, como Webpack, citado a frente, para automatizar o processo de transpilação e criar um fluxo de desenvolvimento mais eficiente.
+
+Para instalar os pacotes básicos do babel, use o comando:
+
+```
+npm install @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+```
+
+Ao instalar, note que o arquivo package.json é alterado, adicionando o babel.
+
+```json
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "babel-loader": "^9.1.3"
+  }
+```
+
 ### create-react-app
 
 Para começar um projeto em react de forma mais automática (e usual), use no terminal:
