@@ -14,14 +14,14 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 
 - **Ecosistema Rico**: O React possui um ecossistema robusto de bibliotecas e ferramentas, incluindo o React Router para gerenciamento de rotas, o Redux para gerenciamento de estado global e muitos outros recursos.
 
-## Vantagens
+### Vantagens
 
 - Alta performance devido ao Virtual DOM.
 - Facilidade de teste de componentes isolados.
 - Comunidade ativa e vasta documentação.
 - Reutilização de componentes acelera o desenvolvimento.
 
-## Desvantagens
+### Desvantagens
 
 - Curva de aprendizado inicial, especialmente para iniciantes em JavaScript.
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
@@ -100,7 +100,35 @@ Esses são alguns dos principais Hooks do React, mas existem outros disponíveis
 
 ## Iniciando o React
 
-Para começar um projeto em react, use no terminal:
+### Package
+
+Esse arquivo é como se fosse o roteiro da aplicação. Ele é criado dando o comando:
+
+```
+npm init -y 
+```
+
+Criando na pasta corrente o arquivo package.json, que diz o nome da aplicação/pasta/projeto, arquivo principal, pacotes utilizados, etc.
+
+```json
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+```
+
+### create-react-app
+
+Para começar um projeto em react de forma mais automática (e usual), use no terminal:
 
 ```
 npx create-react-app nome_do_app
