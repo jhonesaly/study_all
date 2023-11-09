@@ -507,6 +507,8 @@ root.render(
 ```
 ## Usando fonte especial
 
+### Baixando a fonte
+
 **Passo 1: Preparando sua Fonte**
 
 Certifique-se de ter a fonte que deseja adicionar ao seu projeto no formato correto (normalmente .ttf ou .otf). Você deve ter a fonte pronta para uso.
@@ -544,6 +546,14 @@ No componente onde deseja usar a fonte, use a fonte normalmente:
 ```javascript
   font-family: 'LEDCalculator';
 ```
+
+### Fonte com API do Goggle
+
+É possível utilizar uma fonte disponível em [https://fonts.google.com/]. Para tal, escolha uma fonte de interesse no site fornecido e clique no mesmo. Então, uma janela lateral aparecerá com conteúdo html para ser copiado, como na imagem:
+
+![Google Fonts](images/google_fonts.png)
+
+Copie o conteúdo HTML na `<head>` do arquivo `index.html` da pasta public do projeto react e use o CSS especificado logo abaixo do HTML copiável para chamar essa fonte onde quiser.
 
 ## Conseguindo componentes
 
