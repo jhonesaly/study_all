@@ -42,15 +42,101 @@ JavaScript oferece diversos operadores para realizar operações em variáveis e
 
 ### Condicionais
 
-As estruturas condicionais permitem que você tome decisões em seu código com base em condições. O mais comum é o `if`, mas também existem outras opções, como `else if` e `switch`.
+As estruturas condicionais permitem que você tome decisões em seu código com base em condições. O mais comum é o `if`, mas também existem outras opções, como `else if`, `switch`, e a coalescência nula para tratamento mais conciso de valores potencialmente nulos ou indefinidos.
+
+```javascript
+const nota = 75;
+
+if (nota >= 90) {
+  console.log('A');
+} else if (nota >= 80) {
+  console.log('B');
+} else if (nota >= 70) {
+  console.log('C');
+} else {
+  console.log('F');
+}
+```
+
+#### Alternativa ao If-Else
+
+Além do padrão `if-else`, uma forma alternativa de fazer condicionais em JavaScript é utilizando o operador ternário (`? :`):
+
+```javascript
+const resultado = condição ? valorSeVerdadeiro : valorSeFalso;
+```
+
+Isso é equivalente a:
 
 ```javascript
 if (condição) {
-  // Bloco de código executado se a condição for verdadeira
-} else if (outra_condição) {
-  // Bloco de código executado se outra_condição for verdadeira
+  resultado = valorSeVerdadeiro;
 } else {
-  // Bloco de código executado se nenhuma das condições anteriores for verdadeira
+  resultado = valorSeFalso;
+}
+```
+
+O operador ternário (? :) é uma ferramenta poderosa para criar expressões condicionais concisas. No entanto, ao usar ternários em excesso, a legibilidade do código pode ser comprometida. Em alguns casos, a clareza do código pode ser favorecida usando instruções if-else mais tradicionais, especialmente em blocos de código mais extensos.
+
+#### Coalescência Nula
+
+A coalescência nula (`?.`) é uma forma moderna e concisa de verificar e acessar propriedades em objetos que podem ser nulos ou indefinidos, evitando erros.
+
+A expressão:
+
+```jsx
+gitUser?.name ? (
+  // Código a ser executado se gitUser?.name for verdadeiro
+) : null
+```
+
+É equivalente a:
+
+```jsx
+if (gitUser !== null && gitUser !== undefined && gitUser.name !== undefined) {
+  // Código a ser executado se gitUser?.name for verdadeiro
+} else {
+  null;
+}
+```
+
+Ambas as formas realizam a mesma verificação condicional: se `gitUser` não for nulo ou indefinido, e se `gitUser.name` não for indefinido, então o bloco de código dentro do `if` (ou o operador ternário `?`) é executado; caso contrário, o bloco dentro do `else` (ou o valor `null` no operador ternário) é executado.
+
+A expressão com o operador de coalescência nula (`?.`) é uma forma mais concisa e moderna de realizar essa verificação, enquanto o operador ternário `? :` é usado para criar uma expressão condicional mais compacta. Essa é a razão pela qual a expressão `gitUser?.name ? (...) : null` é frequentemente preferida em código React quando se lida com propriedades potencialmente nulas ou indefinidas.
+
+A coalescência nula (?.) é especialmente útil em código **React**, onde você frequentemente lida com propriedades de objetos que podem ser nulas ou indefinidas. Essa abordagem pode tornar o código mais limpo e conciso.
+
+#### Switch
+
+O `switch` é usado para comparar um valor com várias opções. Cada opção é chamada de "case" e o default é o resultado caso nenhuma opção seja encontrada. 
+
+Ao usar o switch, é importante lembrar de incluir a instrução break após cada case para evitar a execução contínua em casos subsequentes. Esquecer o break pode levar a resultados inesperados.
+
+O switch é uma escolha apropriada quando você está lidando com um valor que pode ter várias correspondências e deseja executar diferentes blocos de código com base nesse valor.
+
+Aqui está um exemplo:
+
+```javascript
+const diaDaSemana = 3;
+
+switch (diaDaSemana) {
+  case 1:
+    console.log('Segunda-feira');
+    break;
+  case 2:
+    console.log('Terça-feira');
+    break;
+  case 3:
+    console.log('Quarta-feira');
+    break;
+  case 4:
+    console.log('Quinta-feira');
+    break;
+  case 5:
+    console.log('Sexta-feira');
+    break;
+  default:
+    console.log('Fim de semana');
 }
 ```
 
