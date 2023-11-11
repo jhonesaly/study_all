@@ -36,9 +36,11 @@ JavaScript oferece diversos operadores para realizar operações em variáveis e
 | --- | --- |
 | Aritméticos | `+`, `-`, `*`, `/`, `%` (adição, subtração, multiplicação, divisão, módulo) |
 | Comparação | `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` (igualdade, desigualdade, maior, menor) |
-| Lógicos | `&&` (AND lógico), `||` (OR lógico), `!` (NOT lógico) |
+| Lógicos | `&&` (AND lógico), `\\(*)` (OR lógico), `!` (NOT lógico) |
 | Atribuição | `=`, `+=`, `-=`, `*=`, `/=` (atribuição simples e composta) |
 | Ternário | `? :` (operador ternário para condicionais) |
+
+(*): onde se vê "\\", entenda "||". Não foi feito na vertical porque quebraria a tabela.
 
 ### Condicionais
 
@@ -182,6 +184,8 @@ function nomeDaFunção(parametro1, parametro2) {
   return resultado;
 }
 ```
+
+#### 
 
 ### Classes
 
