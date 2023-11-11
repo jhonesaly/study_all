@@ -24,7 +24,7 @@ JavaScript é usado em várias áreas, incluindo:
 
 - **Jogos e Aplicações Desktop:** Com a ajuda de bibliotecas e frameworks, é possível criar jogos e aplicativos de desktop usando JavaScript.
 
-# Sintaxe
+## Sintaxe
 
 Neste guia, exploraremos os conceitos fundamentais de programação em JavaScript, incluindo operadores, condicionais, tipos de variáveis, laços de repetição, funções e classes.
 
@@ -229,11 +229,11 @@ const matriz = [
 ];
 ```
 
-## Manipulação com Métodos
+### Manipulação
 
 JavaScript oferece métodos para manipular vetores e matrizes de maneira eficiente. Alguns desses métodos incluem:
 
-### `filter`
+#### `filter`
 
 O método `filter` permite filtrar elementos com base em uma condição e criar um novo vetor com os elementos que atendem a essa condição.
 
@@ -246,7 +246,7 @@ const numerosPares = vetor.filter(numero => numero % 2 === 0);
 console.log(numerosPares); // Saída: [2, 4]
 ```
 
-### `find`
+#### `find`
 
 O método `find` é usado para encontrar o primeiro elemento que atende a uma determinada condição.
 
@@ -258,6 +258,73 @@ const vetor = [1, 2, 3, 4, 5];
 const primeiroPar = vetor.find(numero => numero % 2 === 0);
 console.log(primeiroPar); // Saída: 2
 ```
+
+## Objetos
+
+Em JavaScript, objetos são estruturas de dados fundamentais que permitem armazenar e organizar informações de forma flexível. Eles são coleções de pares chave-valor, onde cada chave é uma string única e cada valor pode ser de qualquer tipo de dado, incluindo outros objetos.
+
+**Características Principais:**
+
+1. **Chave-Valor:** Os objetos em JavaScript são formados por pares chave-valor, onde as chaves são strings e os valores podem ser de qualquer tipo.
+
+2. **Propriedades e Métodos:** Propriedades são os pares chave-valor de um objeto, e métodos são funções associadas a um objeto.
+
+3. **Sintaxe de Objeto Literal:** Objeto literal é uma forma conveniente de criar objetos na sintaxe de JavaScript.
+
+   ```javascript
+   const pessoa = {
+     nome: 'John',
+     idade: 30,
+     endereco: {
+       rua: 'Rua A',
+       cidade: 'Cidade B'
+     },
+     saudacao: function() {
+       console.log('Olá!');
+     }
+   };
+   ```
+
+4. **Acesso a Propriedades:** As propriedades podem ser acessadas usando a notação de ponto (`objeto.propriedade`) ou notação de colchetes (`objeto['propriedade']`).
+
+   ```javascript
+   console.log(pessoa.nome);         // 'John'
+   console.log(pessoa.endereco.rua); // 'Rua A'
+   ```
+
+5. **Dinamicidade:** Você pode adicionar, modificar e excluir propriedades de um objeto dinamicamente.
+
+   ```javascript
+   pessoa.telefone = '123-456-7890';
+   pessoa.idade = 31;
+   delete pessoa.endereco;
+   ```
+
+6. **Iteração:** É possível iterar sobre as propriedades de um objeto usando estruturas como loops `for...in`.
+
+   ```javascript
+   for (let chave in pessoa) {
+     console.log(chave, pessoa[chave]);
+   }
+   ```
+
+7. **Herança:** JavaScript suporta herança por meio de protótipos, permitindo a criação de hierarquias de objetos.
+
+   ```javascript
+   function Animal(nome) {
+     this.nome = nome;
+   }
+
+   function Cachorro(nome, raca) {
+     Animal.call(this, nome);
+     this.raca = raca;
+   }
+
+   Cachorro.prototype = Object.create(Animal.prototype);
+   ```
+
+Objetos desempenham um papel central em JavaScript, sendo amplamente utilizados para modelar dados, organizar código e interagir com o ambiente de execução. Eles fornecem uma base flexível e poderosa para o desenvolvimento em JavaScript.
+
 
 ## DOM
 
