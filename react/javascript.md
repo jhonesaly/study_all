@@ -174,18 +174,104 @@ while (condição) {
 }
 ```
 
-### Funções
+### Métodos e Funções
 
-Funções são blocos de código que podem ser reutilizados. Elas são definidas usando a palavra-chave `function`.
+Em JavaScript, os termos "funções" e "métodos" são frequentemente usados de forma intercambiável, mas há uma diferença sutil:
+
+- **Funções:** São blocos de código independentes que podem ser chamados para realizar uma tarefa específica. Elas podem ser declaradas ou expressas.
+
+  Exemplo de função:
+  ```javascript
+  function somar(a, b) {
+    return a + b;
+  }
+
+  const resultado = somar(3, 4);
+  ```
+
+- **Métodos:** São funções associadas a objetos. Eles são invocados em contextos específicos e geralmente realizam operações relacionadas ao objeto ao qual estão vinculados.
+
+  Exemplo de método:
+  ```javascript
+  const objeto = {
+    valor: 42,
+    dobrar: function() {
+      return this.valor * 2;
+    }
+  };
+
+  const resultado = objeto.dobrar();
+  ```
+
+A principal diferença é que métodos são funções associadas a objetos, enquanto funções podem existir independentemente.
+
+#### Funções Flecha:
+
+Funções flecha são uma forma concisa de escrever funções em JavaScript, introduzidas no ECMAScript 6. Elas têm algumas diferenças sintáticas e de comportamento em comparação com as funções normais.
 
 ```javascript
-function nomeDaFunção(parametro1, parametro2) {
-  // Bloco de código da função
-  return resultado;
-}
+const somar = (a, b) => a + b;
 ```
 
-#### 
+Comparação com Função Normal:
+
+```javascript
+// Função Normal
+function somarNormal(a, b) {
+  return a + b;
+}
+
+// Função Flecha
+const somarArrow = (a, b) => a + b;
+```
+
+**Diferenças Principais:**
+- `this` Lexical: Funções flecha não têm seu próprio `this`; elas herdam o `this` do contexto ao qual estão vinculadas.
+- Sintaxe Concisa: Quando a função flecha tem apenas uma expressão, você pode omitir as chaves e o `return`.
+
+Ambos os conceitos são essenciais em JavaScript, e a escolha entre função normal e função flecha depende do contexto e das necessidades específicas do código. Funções são fundamentais para organizar e reutilizar código, enquanto métodos são funções associadas a objetos, contribuindo para a programação orientada a objetos em JavaScript.
+
+**Exemplo de Uso:**
+
+```javascript
+const numeros = [1, 2, 3];
+
+// Função Normal
+const dobradosNormal = numeros.map(function(numero) {
+  return numero * 2;
+});
+
+// Função Flecha
+const dobradosArrow = numeros.map(numero => numero * 2);
+```
+
+As funções flecha são frequentemente preferidas em situações onde seu comportamento se encaixa bem, especialmente em operações mais concisas como mapeamento de arrays.
+
+#### Funções Assíncronas:
+
+Funções assíncronas em JavaScript permitem a execução de operações não bloqueantes, ideais para tarefas como chamadas de API, leitura de arquivos e outras operações de entrada/saída. Elas são definidas usando a palavra-chave `async`. Uma função assíncrona retorna uma Promise, permitindo o uso de `await` para esperar pela conclusão de operações assíncronas.
+
+Exemplo:
+
+```javascript
+  async function handleGetData() {
+    const userData = await fetch(`https://api.github.com/users/${user}`);
+    const newUser = await userData.json();
+    };
+```
+
+funções assíncronas permitem a utilização do `await`, tornando a gestão de código assíncrono mais fácil e legível. Se não fosse uma função assíncrona, você não poderia usar await e teria que lidar com Promises manualmente, o que pode levar a um código mais complexo.
+
+Caso a função não seja declarado como assíncrona, é necessário tratamento da função passo a passo utilizando `.then`
+
+```javascript flecha
+
+const handleGetData = () => {
+  fetch(`https://api.github.com/users/${user}`)
+    .then(userData => userData.json())
+  };
+
+```
 
 ### Classes
 
@@ -233,31 +319,100 @@ const matriz = [
 
 JavaScript oferece métodos para manipular vetores e matrizes de maneira eficiente. Alguns desses métodos incluem:
 
-#### `filter`
+1. **`map`:**
+   - **Descrição:** Cria um novo array com os resultados de chamar uma função para cada elemento do array.
+   - **Exemplo:**
+     ```javascript
+     const numeros = [1, 2, 3];
+     const dobrados = numeros.map(numero => numero * 2);
+     ```
 
-O método `filter` permite filtrar elementos com base em uma condição e criar um novo vetor com os elementos que atendem a essa condição.
+2. **`filter`:**
+   - **Descrição:** Cria um novo array contendo apenas os elementos que satisfazem a condição especificada em uma função.
+   - **Exemplo:**
+     ```javascript
+     const numeros = [1, 2, 3, 4, 5];
+     const pares = numeros.filter(numero => numero % 2 === 0);
+     ```
 
-Exemplo:
+3. **`reduce`:**
+   - **Descrição:** Aplica uma função cumulativa aos elementos do array, reduzindo-os a um único valor.
+   - **Exemplo:**
+     ```javascript
+     const numeros = [1, 2, 3, 4];
+     const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+     ```
 
-```javascript
-const vetor = [1, 2, 3, 4, 5];
+4. **`forEach`:**
+   - **Descrição:** Executa uma função para cada elemento do array.
+   - **Exemplo:**
+     ```javascript
+     const frutas = ['maçã', 'banana', 'uva'];
+     frutas.forEach(fruta => console.log(fruta));
+     ```
 
-const numerosPares = vetor.filter(numero => numero % 2 === 0);
-console.log(numerosPares); // Saída: [2, 4]
-```
+5. **`slice`:**
+   - **Descrição:** Retorna uma parte do array, especificada pelos índices de início e fim.
+   - **Exemplo:**
+     ```javascript
+     const numeros = [1, 2, 3, 4, 5];
+     const parte = numeros.slice(1, 4);
+     ```
 
-#### `find`
+6. **`splice`:**
+   - **Descrição:** Altera o conteúdo de um array, adicionando ou removendo elementos em posições específicas.
+   - **Exemplo:**
+     ```javascript
+     const numeros = [1, 2, 3, 4, 5];
+     numeros.splice(2, 1); // Remove o elemento na posição 2
+     ```
 
-O método `find` é usado para encontrar o primeiro elemento que atende a uma determinada condição.
+7. **`concat`:**
+   - **Descrição:** Concatena dois ou mais arrays, criando um novo array.
+   - **Exemplo:**
+     ```javascript
+     const array1 = [1, 2];
+     const array2 = [3, 4];
+     const concatenado = array1.concat(array2);
+     ```
 
-Exemplo:
+8. **`join`:**
+   - **Descrição:** Converte todos os elementos de um array em uma string, unidos por um separador.
+   - **Exemplo:**
+     ```javascript
+     const frutas = ['maçã', 'banana', 'uva'];
+     const stringFrutas = frutas.join(', ');
+     ```
 
-```javascript
-const vetor = [1, 2, 3, 4, 5];
+9. **`split`:**
+   - **Descrição:** Divide uma string em um array de substrings com base em um separador.
+   - **Exemplo:**
+     ```javascript
+     const frase = 'Olá, mundo!';
+     const palavras = frase.split(' ');
+     ```
 
-const primeiroPar = vetor.find(numero => numero % 2 === 0);
-console.log(primeiroPar); // Saída: 2
-```
+10. **`find`:**
+    - **Descrição:** usado para encontrar o primeiro elemento que atende a uma determinada condição.
+    - **Exemplo:**
+      ```javascript
+      const vetor = [1, 2, 3, 4, 5];
+
+      const primeiroPar = vetor.find(numero => numero % 2 === 0);
+      console.log(primeiroPar); // Saída: 2
+      ```
+
+11. **`pop`:**
+    - **Descrição:** Remove o último elemento de um array e retorna esse elemento.
+    - **Exemplo:**
+      ```javascript
+      const numeros = [1, 2, 3, 4, 5];
+      const ultimoElemento = numeros.pop();
+      ```
+
+Este método é útil quando você precisa remover o último elemento de um array em JavaScript, semelhante à função `pop` em Python.
+
+Essas funções são ferramentas poderosas para manipular vetores (arrays) e matrizes em JavaScript, proporcionando flexibilidade e expressividade na manipulação de dados.
 
 ## Objetos
 
@@ -369,6 +524,24 @@ console.log(cidade); // 'Cidade A'
 ```
 
 Em Python, o equivalente a um objeto em JavaScript seria geralmente um dicionário, mas o conceito de desestruturação de objetos é mais próximo da ideia de unpacking em Python, onde você extrai valores de uma estrutura, como uma lista ou tupla, e os atribui a variáveis individuais.
+
+## Função `fetch`:
+
+A função `fetch` é usada para fazer requisições HTTP assíncronas. Ela retorna uma **Promise** que resolve para o objeto `Response`. Para obter os dados, você precisa usar métodos como `json()` ou `text()` no objeto `Response`.
+
+Pode ser utilizado para fazer requisições para APIs.
+
+Exemplo:
+
+```javascript
+async function fetchData() {
+  const resposta = await fetch('https://api.exemplo.com/dados');
+  const dados = await resposta.json();
+  console.log(dados);
+}
+```
+
+Uma Promise é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona. É muito utilizada em JavaScript para lidar com operações que levam algum tempo para serem concluídas, como requisições de rede, leitura de arquivos e outras tarefas assíncronas.
 
 ## DOM
 
