@@ -352,7 +352,7 @@ O JSON é um formato de dados fácil de ler e escrever. Ele consiste em pares ch
 
 O JSON é uma escolha comum para estruturar e trocar dados, especialmente em ambientes web. Seu formato conciso, legibilidade e suporte universal o tornam uma opção poderosa para comunicação de dados entre sistemas heterogêneos.
 
-### Desestruturação de Objetos:
+### Desestruturação de Objetos
 
 A desestruturação de objetos em JavaScript é uma técnica que permite extrair propriedades de um objeto e atribuí-las a variáveis individuais. Isso simplifica a manipulação de objetos, tornando o código mais limpo e legível. A sintaxe básica envolve criar variáveis com os mesmos nomes das propriedades do objeto e, em seguida, usar a notação de objeto para indicar quais propriedades devem ser extraídas.
 
@@ -369,8 +369,6 @@ console.log(cidade); // 'Cidade A'
 ```
 
 Em Python, o equivalente a um objeto em JavaScript seria geralmente um dicionário, mas o conceito de desestruturação de objetos é mais próximo da ideia de unpacking em Python, onde você extrai valores de uma estrutura, como uma lista ou tupla, e os atribui a variáveis individuais.
-
-Não há um termo específico em JavaScript para um objeto que é semelhante a uma biblioteca em Python. Em JavaScript, objetos podem ser usados para organizar funcionalidades relacionadas, e essas estruturas são frequentemente chamadas apenas de "objetos" ou "módulos" quando contêm funcionalidades específicas. Se você estiver trabalhando com bibliotecas externas, elas são geralmente referidas como "bibliotecas" ou "pacotes".
 
 ## DOM
 
