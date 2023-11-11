@@ -325,6 +325,34 @@ Em JavaScript, objetos são estruturas de dados fundamentais que permitem armaze
 
 Objetos desempenham um papel central em JavaScript, sendo amplamente utilizados para modelar dados, organizar código e interagir com o ambiente de execução. Eles fornecem uma base flexível e poderosa para o desenvolvimento em JavaScript.
 
+### JSON
+
+O JSON (JavaScript Object Notation) é um formato de dados leve e independente de linguagem de programação. Ele é amplamente utilizado para transmitir e armazenar dados estruturados. Em JavaScript, objetos são frequentemente convertidos para JSON e vice-versa, facilitando a interoperabilidade entre sistemas e linguagens.
+
+**Resumo:**
+
+O JSON é um formato de dados fácil de ler e escrever. Ele consiste em pares chave-valor, semelhante à notação de objetos em JavaScript. Aqui estão algumas características-chave:
+
+- **Sintaxe Simples:** A estrutura do JSON é simples e fácil de entender, utilizando chaves `{}` para objetos e colchetes `[]` para arrays.
+
+- **Pares Chave-Valor:** Dados são representados como pares chave-valor. As chaves são strings e os valores podem ser strings, números, objetos, arrays, booleanos ou `null`.
+
+- **Interoperabilidade:** O JSON é amplamente adotado em APIs web para troca de dados entre cliente e servidor. Sua simplicidade facilita a interoperabilidade entre diferentes linguagens de programação.
+
+- **Métodos JavaScript:** Em JavaScript, o objeto global `JSON` fornece métodos para converter objetos para JSON (`JSON.stringify()`) e JSON para objetos (`JSON.parse()`).
+
+  Exemplo:
+  ```javascript
+  const objetoJS = { nome: 'John', idade: 30 };
+  const jsonTexto = JSON.stringify(objetoJS);
+  const objetoDeserializado = JSON.parse(jsonTexto);
+  ```
+
+- **Relação com Objetos JavaScript:** A notação de objetos em JavaScript é semelhante à sintaxe de JSON, tornando a conversão entre eles direta. A desestruturação de objetos em JavaScript é análoga à forma como os dados são representados em JSON.
+
+O JSON é uma escolha comum para estruturar e trocar dados, especialmente em ambientes web. Seu formato conciso, legibilidade e suporte universal o tornam uma opção poderosa para comunicação de dados entre sistemas heterogêneos.
+
+
 
 ## DOM
 
