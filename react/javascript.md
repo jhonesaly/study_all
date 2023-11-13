@@ -291,6 +291,18 @@ class NomeDaClasse {
 
 Este guia oferece uma visão geral dos principais conceitos de programação em JavaScript. À medida que você avança em seus estudos, poderá aprofundar-se em cada um desses tópicos e explorar ainda mais a linguagem.
 
+### Importação no Script
+
+Em JavaScript, ao navegar por pastas para importação de módulos, você utiliza caminhos relativos. Aqui estão algumas notações comuns:
+
+1. `./`: Representa a pasta atual. Por exemplo, se você está em "PastaA" e deseja importar um módulo de "PastaA/Subpasta", você usaria `./Subpasta/modulo`.
+
+2. `../`: Representa a pasta pai. Se você está em "PastaA" e deseja importar um módulo de "PastaB", você usaria `../PastaB/modulo`.
+
+3. `../../`: Representa a pasta avô. Se você está em "PastaA" e deseja importar um módulo de "PastaC", que está na pasta pai de "PastaB", você usaria `../../PastaB/PastaC/modulo`.
+
+Essas notações permitem navegar na estrutura de pastas de forma relativa, indicando a relação entre a localização do arquivo de script atual e a localização do módulo que você deseja importar. Certifique-se de ajustar os caminhos de acordo com a estrutura do seu projeto.
+
 ## Vetores e matrizes
 
 Em JavaScript, um vetor é uma coleção ordenada de elementos, enquanto uma matriz é uma coleção de vetores ou, mais precisamente, uma coleção de coleções. Ambos são usados para armazenar e manipular dados de forma estruturada.
