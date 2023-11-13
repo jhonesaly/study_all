@@ -602,6 +602,73 @@ JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca 
 
 O ecossistema JavaScript é dinâmico, com novos frameworks e bibliotecas surgindo regularmente para atender às diversas necessidades dos desenvolvedores. Essas ferramentas oferecem soluções eficazes para o desenvolvimento web em diferentes contextos e paradigmas.
 
+### Axios
+
+Axios é uma biblioteca JavaScript que facilita o envio de requisições HTTP para servidores. Ela é especialmente popular para trabalhar com APIs.
+
+**Principais Características:**
+
+1. **Simplicidade de Uso:**
+   Axios fornece uma API fácil de usar para fazer requisições HTTP. Seu design simples facilita a integração em projetos.
+
+2. **Suporte a Promessas:**
+   As requisições no Axios são tratadas como promessas, o que permite o uso de `then()` e `catch()` para lidar com o resultado da requisição de forma assíncrona.
+
+3. **Suporte a Navegadores e Node.js:**
+   Axios é versátil e pode ser utilizado tanto no navegador quanto no ambiente Node.js, tornando-o uma escolha consistente para desenvolvedores em diferentes contextos.
+
+4. **Interceptação de Requisições e Respostas:**
+   Uma característica poderosa do Axios é a capacidade de interceptar requisições e respostas. Isso significa que você pode modificar ou manipular dados antes do envio ou após o recebimento.
+
+5. **Cancelamento de Requisições:**
+   Axios suporta o cancelamento de requisições, o que pode ser útil em situações onde você precisa interromper uma requisição em andamento.
+
+6. **Transformação Automática de Dados:**
+   Axios pode automaticamente transformar dados para JSON, eliminando a necessidade de fazer isso manualmente.
+
+**Exemplo Básico de Uso:**
+
+Para usar o Axios, primeiro você precisa instalá-lo. Se você estiver usando o Node.js, pode instalá-lo via npm:
+
+```bash
+npm install axios
+```
+
+Aqui está um exemplo básico de como fazer uma requisição GET com o Axios à API do GitHub e obter a lista de repositórios de um usuário específico:
+
+```javascript
+const axios = require('axios');
+
+// Defina o nome de usuário do GitHub que você deseja consultar
+const username = 'username';
+
+// Configuração básica do Axios para a API do GitHub
+const axiosInstance = axios.create({
+  baseURL: 'https://api.github.com',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Fazendo a requisição para obter os repositórios do usuário
+axiosInstance.get(`/users/${username}/repos`)
+  .then(response => {
+    // Manipule os dados da resposta conforme necessário
+    const repositories = response.data;
+    console.log(`Repositórios de ${username}:`);
+    
+    repositories.forEach(repo => {
+      console.log(`${repo.name} - ${repo.description}`);
+    });
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error.message);
+  });
+
+```
+
+Esse é apenas um panorama geral, e há muito mais recursos no Axios que podem ser explorados dependendo das necessidades específicas do seu projeto.
+
 ## Gerenciadores de pacote
 
 **npm (Node Package Manager):**

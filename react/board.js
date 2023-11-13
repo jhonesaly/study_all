@@ -1,25 +1,27 @@
-const handleGetData = async () => {
-    const userData = await fetch(`https://api.github.com/users/${user}`);
-    const responseBody = await userData.text(); // Salvar o corpo da resposta como texto
-    const newUser = JSON.parse(responseBody); // Analisar o corpo como JSON
+const axios = require('axios');
+
+// Defina o nome de usuário do GitHub que você deseja consultar
+const username = 'username';
+
+// Configuração básica do Axios para a API do GitHub
+const axiosInstance = axios.create({
+  baseURL: 'https://api.github.com',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Fazendo a requisição para obter os repositórios do usuário
+axiosInstance.get(`/users/${username}/repos`)
+  .then(response => {
+    // Manipule os dados da resposta conforme necessário
+    const repositories = response.data;
+    console.log(`Repositórios de ${username}:`);
     
-    console.log("user:", user);
-//    console.log("userData (text):", responseBody);
-    console.log("newUser (JSON):", newUser);
-    
-
-    if(newUser.name){
-      const { avatar_url, name, bio, login } = newUser;
-      //setGitUser({avatar_url, name, bio, login});
-
-      const reposData = await fetch(`https://api.github.com/users/${user}/repos`);
-      const newRepos = await reposData.json();
-
-      if (newRepos.length){
-        //setRepos(newRepos);
-      }
-    }
-  };
-
-var user = 'jhonesaly'
-handleGetData()
+    repositories.forEach(repo => {
+      console.log(`${repo.name} - ${repo.description}`);
+    });
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error.message);
+  });
