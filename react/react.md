@@ -104,7 +104,7 @@ Esses são alguns dos principais Hooks do React, mas existem outros disponíveis
 
 Esse arquivo é como se fosse o roteiro da aplicação. Ele é criado dando o comando:
 
-```
+```bash
 npm init -y 
 ```
 
@@ -144,7 +144,7 @@ Aqui estão algumas coisas que você precisa saber sobre o Babel:
 
 Para instalar os pacotes básicos do babel, use o comando:
 
-```
+```bash
 npm install @babel/core @babel/preset-env @babel/preset-react @babel/cli babel-loader -D
 ```
 
@@ -192,13 +192,13 @@ O Webpack é uma ferramenta de empacotamento (bundling) amplamente usada no dese
 
 Para instalá-lo, use o comando:
 
-```
+```bash
 npm install html-loader html-webpack-plugin webpack webpack-cli webpack-dev-server style-loader css-loader -D
 ```
 
 Então, crie o arquivo de configuração `webpack.config.js` com as seguintes instruções básicas:
 
-```
+```javascript
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
@@ -241,7 +241,7 @@ module.exports = {
 
 Para começar um projeto em react de forma mais automática (e usual), use no terminal:
 
-```
+```bash
 npx create-react-app nome_do_app
 ```
 
@@ -251,13 +251,13 @@ em que nome_do_app é o nome do projeto e será o nome da pasta criada, que fica
 
 Então, mude o terminal para a pasta criada:
 
-```
+```bash
 cd nome_do_app
 ```
 
 E para rodar o react, use:
 
-```
+```bash
 npm run start
 ```
 
@@ -311,7 +311,7 @@ Os componentes devem ser criados separadamente dentro da pasta /components dentr
 
 Veja o conteúdo do BotaoContador.js:
 
-```
+```javascript
 import React, { useState } from 'react';
 
 function BotaoContador() {
@@ -339,7 +339,7 @@ function BotaoContador() {
 Com isso, o componente pode ser importado pelo index.js na raiz do projeto assim:
 
 
-```
+```javascript
 ...
 import BotaoContador from './components/BotaoContador';
 
@@ -356,7 +356,7 @@ root.render(
 
 Para facilitar a integração com arquivo css posterior, o arquivo pode ser criado dentro de uma pasta (ex: Button) e dentro dela o arquivo index.js de modo que, quando a pasta for indicada, o .js será usado automaticamente como em:
 
-```
+```bash
 import Button from './components/Button'
 ```
 
@@ -433,19 +433,19 @@ A biblioteca "styled-components" é popular para estilização de componentes em
 
 Comece instalando o pacote:
 
-```
+```bash
 npm install styled-components
 ```
 
 Na pasta do componenete, crie um arquivo chamado styles.js e importe o pacote:
 
-```
+```bash
 import styled from 'styled-components';
 ```
 
 nesse arquivo, crie a estilização para o componenete:
 
-```
+```javascript
 export const StyledButton = styled.button`
   background-color: #007bff;
   color: white;
@@ -463,7 +463,7 @@ export const StyledButton = styled.button`
 
 Agora, no arquivo com a lógica do componenete (index.js), importe a estilização:
 
-```
+```javascript
 import { ButtonContainer } from './styles';
 
 const Button = ({label, onClick}) => {
@@ -481,7 +481,7 @@ Nessa lógida, o componenete Button terá o css definido em ButtonContainer.
 
 Também é possível criar styles globalmente oi meio de um arquivo global.js na raiz do projeto:
 
-```
+```javascript
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
@@ -494,7 +494,7 @@ export default createGlobalStyle`
 
 Depois importando no index.js da raiz do projeto:
 
-```
+```javascript
 import GlobalStyles from './global';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -589,7 +589,7 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 
 O ESLint é uma ferramenta de linting para JavaScript que ajuda a identificar e corrigir erros, padrões de código inconsistentes e problemas de estilo em seu código. Ele é comumente usado em projetos React (e outros projetos JavaScript) para manter um código limpo e consistente. Ele é adicionado automaticamente quando projeto é criado com `create-react-app`, mas pode ser feito manulamente com:
 
-```
+```bash
 npm install eslint -D
 npx eslint --init
 ```
@@ -606,7 +606,7 @@ Ele é adicionado automaticamente quando projeto é criado com `create-react-app
 
 1. Instale o Prettier: Você pode instalá-lo globalmente ou localmente no projeto. É comum instalá-lo como uma dependência de desenvolvimento no projeto, assim:
 
-   ```
+   ```bash
    npm install --save-dev prettier
    ```
 
@@ -625,7 +625,7 @@ Ele é adicionado automaticamente quando projeto é criado com `create-react-app
 
 3. Formate o código: Você pode usar o Prettier para formatar todo o código do seu projeto executando o seguinte comando no terminal:
 
-   ```
+   ```bash
    npx prettier --write .
    ```
 
