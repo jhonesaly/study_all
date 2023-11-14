@@ -4,11 +4,47 @@ CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar
 
 O link entre um arquivo css e o html se dá pela inclusão da tag <link rel="stylesheet" type="text/css" href="file_name.css"> dentro da tag <header> do html.
 
-## Propriedades e Valores
-As propriedades CSS determinam como os elementos serão estilizados. Cada propriedade tem um valor associado. Exemplos de propriedades incluem:
-- `color`: Define a cor do texto.
-- `font-size`: Define o tamanho da fonte.
-- `margin`: Define as margens de um elemento.
+## Propriedades
+
+As propriedades CSS determinam como os elementos serão estilizados em um arquivo html
+
+### Propriedades Principais
+
+1. `color`: Define a cor do texto.
+2. `font-size`: Define o tamanho da fonte.
+3. `font-family`: Define a família de fontes para o texto.
+4. `font-weight`: Define a espessura da fonte (por exemplo, bold).
+5. `margin`: Define as margens externas de um elemento.
+6. `padding`: Define o preenchimento interno de um elemento.
+7. `border`: Define a borda de um elemento.
+8. `background-color`: Define a cor de fundo de um elemento.
+9. `text-align`: Define o alinhamento horizontal do texto.
+10. `line-height`: Define a altura da linha do texto.
+
+## Propriedades de Layout
+
+11. `width`: Define a largura de um elemento.
+12. `height`: Define a altura de um elemento.
+13. `display`: Define o tipo de exibição do elemento (block, inline, etc.).
+14. `position`: Define o método de posicionamento de um elemento.
+15. `top`, `right`, `bottom`, `left`: Define a posição de um elemento quando `position` é diferente de `static`.
+16. `float`: Define se um elemento deve flutuar à esquerda, à direita ou não flutuar.
+17. `clear`: Define como um elemento deve se comportar em relação aos elementos flutuantes.
+
+## Propriedades de Texto
+
+18. `text-decoration`: Define a decoração do texto (underline, line-through, etc.).
+19. `text-transform`: Define a transformação do texto (maiúsculas, minúsculas, etc.).
+20. `white-space`: Define como o espaço em branco dentro de um elemento é tratado.
+
+## Pseudo-classes e Pseudo-elementos
+
+21. `:hover`: Pseudo-classe que seleciona um elemento quando o mouse está sobre ele.
+22. `:active`: Pseudo-classe que seleciona um elemento quando está sendo clicado.
+23. `:focus`: Pseudo-classe que seleciona um elemento quando recebe foco.
+24. `::before` e `::after`: Pseudo-elementos que permitem adicionar conteúdo antes ou depois do conteúdo real do elemento.
+
+Estas são apenas algumas das propriedades CSS mais comuns. Existem muitas outras propriedades que oferecem uma ampla gama de opções para estilizar elementos em uma página web. Para saber mais, consulte a [Documentação](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
 ### Preenchimento, Borda e Margem
 
