@@ -617,6 +617,7 @@ Para esclarecer: npx é usado para executar comandos diretamente, enquanto npm r
 Em resumo, o `npm`, o `npx` e o `Yarn` são ferramentas essenciais no desenvolvimento Node.js e JavaScript. Você pode escolher o que melhor se adapte às suas necessidades e preferências. Cada um tem suas vantagens, e todos podem ser usados para gerenciar pacotes e executar comandos em projetos JavaScript.
 
 ## Ecossistema
+
 JavaScript possui uma vasta comunidade de desenvolvedores e uma rica biblioteca de pacotes e frameworks. Alguns dos principais frameworks incluem:
 
 - **React:** Uma biblioteca para construir interfaces de usuário. Desenvolvido e mantido pelo Facebook, o React é amplamente utilizado para criar componentes reutilizáveis e construir interfaces declarativas e eficientes.
@@ -690,7 +691,22 @@ Já vimos isso no seu código, mas é bom reforçar. Você pode criar uma instâ
 const api = axios.create({
   baseURL: 'http://api.example.com',
   timeout: 5000, // tempo máximo para a requisição em milissegundos
-  headers: {'Authorization': 'Bearer YOUR_TOKEN'}
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN', //Para autenticação
+    'Content-Type': 'application/json', 
+    'X-Custom-Header': 'valor personalizado',
+    },
+  validateStatus: function (status) {
+    return status >= 200 && status < 300; // Rejeita apenas se o status for fora dessa faixa
+    },
+  transformRequest: [(data, headers) => {
+    // Transformação de dados de requisição
+    return data;
+  }],
+  transformResponse: [(data) => {
+    // Transformação de dados de resposta
+    return data;
+  }],
 });
 ```
 
