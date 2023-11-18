@@ -427,6 +427,81 @@ export default MyComponent;
 
 Neste exemplo, `useState` é usado para manter o estado do contador, e `useEffect` é usado para atualizar o título da página toda vez que o estado `count` muda. Isso demonstra como Hooks simplificam o gerenciamento de estado e efeitos colaterais em componentes funcionais, tornando o código mais legível e fácil de manter.
 
+## Routers
+
+O `react-router-dom` é uma biblioteca popular no ecossistema React que facilita a navegação e a manipulação de rotas em aplicações web. Ele fornece um conjunto de componentes que ajudam a criar uma experiência de navegação eficiente em uma aplicação de página única (SPA). Aqui está um panorama geral e como você pode usá-lo em um projeto de software:
+
+### Panorama Geral:
+
+1. **BrowserRouter:** É o componente principal que deve envolver toda a aplicação. Ele utiliza a API de histórico do navegador para manter a UI sincronizada com a URL.
+
+2. **Route:** Define como os componentes da interface do usuário (UI) são renderizados com base na URL. Pode ser usado para mapear determinados caminhos para componentes específicos.
+
+3. **Link:** Substitui a tag `<a>` padrão do HTML e é usada para navegar entre diferentes rotas sem recarregar a página inteira.
+
+4. **Switch:** Renderiza apenas o primeiro `Route` ou `Redirect` que coincide com a localização atual. Isso é útil quando você quer garantir que apenas uma rota seja correspondida.
+
+5. **Redirect:** Renderiza um redirecionamento para outra rota.
+
+### Como Usar:
+
+1. **Instalação:**
+   Você pode instalar o `react-router-dom` usando o npm ou o yarn:
+
+   ```bash
+   npm install react-router-dom
+   # ou
+   yarn add react-router-dom
+   ```
+
+2. **Configuração:**
+   - Importe os componentes necessários:
+
+     ```javascript
+     import { BrowserRouter as Router, Switch, Routes, Route, Link } from 'react-router-dom';
+     ```
+
+3. **Estrutura do Componente:**
+   - Envolve a aplicação com o `Router`:
+
+     ```jsx
+     <Router>
+      
+       {/* Suas rotas e componentes aqui */}
+
+     </Router>
+     ```
+
+4. **Definindo Rotas:**
+   - Use o componente `Route` para mapear caminhos para componentes:
+
+     ```jsx
+      <Routes>
+        <Route path="/pagina1" component={Pagina1} />
+        <Route path="/pagina2" component={Pagina2} />
+      </Routes>
+     ```
+
+5. **Navegação:**
+   - Use o componente `Link` para criar links de navegação:
+
+     ```jsx
+     <Link to="/pagina1">Ir para a Página 1</Link>
+     ```
+
+6. **Renderização Condicional:**
+   - Use o componente `Switch` para garantir que apenas uma rota seja correspondida:
+
+     ```jsx
+     <Switch>
+       <Route path="/pagina1" component={Pagina1} />
+       <Route path="/pagina2" component={Pagina2} />
+       <Redirect to="/pagina1" />
+     </Switch>
+     ```
+
+Essas são apenas as bases. O `react-router-dom` oferece mais recursos, como parâmetros de rota, navegação programática e manipulação do histórico de navegação. Explore a documentação para obter informações mais detalhadas: [React Router Documentation](https://reactrouter.com/web/guides/quick-start).
+
 ## Biblioteca styled-components
 
 A biblioteca "styled-components" é popular para estilização de componentes em aplicações React. Ela permite que você defina estilos CSS diretamente em seus componentes React usando uma sintaxe similar ao CSS-in-JS. Com "styled-components", você pode criar componentes estilizados reutilizáveis que encapsulam seu estilo e lógica, tornando seu código mais modular e legível.
