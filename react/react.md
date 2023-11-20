@@ -88,7 +88,7 @@ Os Hooks são uma característica introduzida no React 16.8 que permitem que voc
    - O `useMemo` é usado para memoizar o resultado de uma função caras em termos de desempenho. Ele retorna uma versão memorizada da função que só é recalculada quando as dependências mudam.
 
 7. **useCallback**:
-   - O `useCallback` é semelhante ao `useMemo`, mas é usado para memoizar funções. Ele retorna uma versão memorizada da função que só é recalculada quando as dependências mudam.
+   - O `useCallback` é semelhante ao `useMemo`, mas é usado para memorizar funções. Ele retorna uma versão memorizada da função que só é recalculada quando as dependências mudam.
 
 8. **useLayoutEffect**:
    - O `useLayoutEffect` é semelhante ao `useEffect`, mas é sincronizado com o processo de layout do navegador. Ele é útil em cenários em que você precisa realizar ações imediatamente após a renderização, antes da atualização da tela.
