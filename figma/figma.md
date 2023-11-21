@@ -22,3 +22,26 @@ O Figma é uma ferramenta de design colaborativo baseada na nuvem. Ele é amplam
 
 10. **Gratuito e Pago:** Existem planos gratuitos e pagos, sendo que o gratuito oferece muitos recursos, tornando-o acessível para indivíduos e pequenas equipes.
 
+## Ferramentas
+
+O Figma é uma poderosa ferramenta de design colaborativo que oferece diversas funcionalidades para criar interfaces de usuário e protótipos. Abaixo estão algumas das principais ferramentas disponíveis:
+
+**Frames**
+
+Frames no Figma são elementos que representam áreas específicas da tela. Eles são usados para organizar e estruturar o conteúdo do design. Frames podem conter outros elementos, como formas, textos e imagens.
+
+**Slices**
+
+Slices são áreas específicas de um design que podem ser exportadas separadamente. Eles são úteis para exportar assets ou elementos específicos de uma interface.
+
+**Formas**
+
+O Figma oferece uma variedade de ferramentas de criação de formas, como retângulos, elipses, polígonos, entre outros. Essas formas podem ser estilizadas e combinadas para criar elementos complexos.
+
+**Componentes**
+
+Componentes são elementos reutilizáveis que facilitam a consistência do design. Alterações feitas em um componente são refletidas em todas as instâncias dele, promovendo eficiência e consistência no projeto.
+
+**Prototipagem**
+
+O Figma permite a criação de protótipos interativos para simular a experiência do usuário. É possível definir transições entre frames, criando fluxos de navegação realistas.
