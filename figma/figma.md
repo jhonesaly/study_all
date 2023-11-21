@@ -45,3 +45,19 @@ Componentes são elementos reutilizáveis que facilitam a consistência do desig
 **Prototipagem**
 
 O Figma permite a criação de protótipos interativos para simular a experiência do usuário. É possível definir transições entre frames, criando fluxos de navegação realistas.
+
+**Textos**
+
+No Figma, a ferramenta de texto permite adicionar e editar blocos de texto em seus designs. Você pode escolher fontes, tamanhos, cores e estilos para personalizar o texto de acordo com as necessidades do seu projeto. Além disso, é possível aplicar alinhamento, espaçamento e outras propriedades para garantir a legibilidade e o design visualmente atraente.
+
+**Add Comment**
+
+A função "Add Comment" no Figma é essencial para a colaboração em equipe. Permite adicionar comentários a elementos específicos do design, facilitando a comunicação e o feedback entre os membros da equipe. Comentários podem incluir menções a colegas, esclarecimentos ou sugestões de alterações.
+
+**Navegação Lateral**
+
+A navegação lateral no Figma refere-se à barra lateral que contém diferentes painéis, como camadas, estilos, efeitos, entre outros. Essa área oferece acesso rápido a informações e configurações importantes, tornando a experiência de design mais eficiente.
+
+**Componente Master**
+
+Os Componentes Masters são versões principais de elementos reutilizáveis no Figma. Ao criar instâncias desses componentes em seu design, qualquer alteração feita no Componente Master é refletida automaticamente em todas as instâncias. Isso é fundamental para manter a consistência do design.
