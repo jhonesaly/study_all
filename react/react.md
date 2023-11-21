@@ -98,6 +98,61 @@ Os Hooks são uma característica introduzida no React 16.8 que permitem que voc
 
 Esses são alguns dos principais Hooks do React, mas existem outros disponíveis, e você pode criar seus próprios Hooks personalizados para atender às necessidades específicas do seu aplicativo. O uso de Hooks torna os componentes funcionais uma opção poderosa e flexível no desenvolvimento de aplicações React.
 
+**Exemplo**
+
+```javascript
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+
+const Counter = () => {
+  // useState para controlar o estado do contador
+  const [count, setCount] = useState(0);
+
+  // useState para armazenar o número de multiplicação
+  const [multiplier, setMultiplier] = useState(2);
+
+  // useEffect para realizar ações após a renderização
+  useEffect(() => {
+    document.title = `Contador: ${count}`;
+  }, [count]); // Executa apenas quando 'count' muda
+
+  // useMemo para calcular um valor memorizado
+  const doubledCount = useMemo(() => count * 2, [count]);
+
+  // useCallback para memoizar a função de incremento
+  const increment = useCallback(() => {
+    setCount((prevCount) => prevCount + 1);
+  }, []);
+
+  return (
+    <div>
+      <p>Contador: {count}</p>
+      <p>Contador dobrado: {doubledCount}</p>
+      <p>Número de multiplicação: {multiplier}</p>
+
+      {/* Botão para incrementar o contador */}
+      <button onClick={increment}>Incrementar</button>
+
+      {/* Input para alterar o número de multiplicação */}
+      <input
+        type="number"
+        value={multiplier}
+        onChange={(e) => setMultiplier(Number(e.target.value))}
+      />
+    </div>
+  );
+};
+
+export default Counter;
+
+```
+
+Neste exemplo:
+
+- `useState` é usado para gerenciar o estado do contador e o número de multiplicação.
+- `useEffect` é utilizado para atualizar o título da página sempre que o contador muda.
+- `useMemo` é empregado para calcular o dobro do contador, evitando recálculos desnecessários.
+- `useCallback` é usado para memorizar a função de incremento, garantindo que ela não seja recriada em cada renderização.
+
 ## Iniciando o React
 
 ### Package
