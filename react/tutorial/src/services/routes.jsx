@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Page1 } from '../pages/page1';
 
-export const RoutesService = () => {
+const RoutesService = () => {
     return(
         <BrowserRouter>
             <Routes>
@@ -12,3 +12,5 @@ export const RoutesService = () => {
         </BrowserRouter>
     )
 }
+
+export { RoutesService }
