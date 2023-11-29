@@ -72,14 +72,14 @@ Os Hooks são uma característica introduzida no React 16.8 que permitem que voc
 1. **useState**:
    - O `useState` permite que os componentes funcionais tenham estado. Ele retorna um par de valores: o estado atual e uma função para atualizar esse estado.
 
-2. **useEffect**:
+2. **useReducer**:
+   - O `useReducer` é uma alternativa ao `useState` quando se trata de gerenciar estados complexos. Ele é especialmente útil quando o estado depende do estado anterior e requer lógica mais avançada.
+
+3. **useEffect**:
    - O `useEffect` é usado para lidar com efeitos colaterais em componentes funcionais. Você pode realizar ações como buscar dados, inscrever-se em eventos e muito mais. Ele é executado após cada renderização do componente.
 
-3. **useContext**:
+4. **useContext**:
    - O `useContext` é usado para acessar o contexto de um componente. O contexto permite compartilhar dados entre componentes sem precisar passá-los explicitamente por meio das propriedades.
-
-4. **useReducer**:
-   - O `useReducer` é uma alternativa ao `useState` quando se trata de gerenciar estados complexos. Ele é especialmente útil quando o estado depende do estado anterior e requer lógica mais avançada.
 
 5. **useRef**:
    - O `useRef` permite criar uma referência para um elemento do DOM ou para qualquer valor que precise ser persistido entre renderizações. É útil para acessar diretamente elementos do DOM ou para manter valores mutáveis.
