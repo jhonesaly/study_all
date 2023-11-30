@@ -15,7 +15,21 @@ Para mais informações, consulte a [documentação oficial do TypeScript](https
 Para começar a usar TypeScript, você pode instalá-lo via npm (Node Package Manager) usando o seguinte comando:
 
 ```bash
-npm install -g typescript
+npm install typescript  -D
+```
+
+A tag '-D' indica que é um pacote de desenvolvimento pois código em typescript não vai para produção e tudo que é produzido é transpilado para javascript.
+
+Após a instalação, dê o seguinte comando na pasta do projeto:
+
+```bash
+npx tsc --init
+```
+
+Dependendo do que for usar no projeto, instale as dependências específicas:
+
+```bash
+npm install @types/node @types/react @types/react-dom @types/jest @types/styled-components -D
 ```
 
 ## Compilação e Execução
