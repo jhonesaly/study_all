@@ -62,3 +62,38 @@ O código JavaScript resultante pode ser executado em um ambiente que suporte Ja
    ```
 
    Neste exemplo, a função `saudacao` espera um parâmetro do tipo `Pessoa` e retorna uma saudação personalizada.
+
+## Tipo Global
+
+Para criar um tipo global em TypeScript, você pode criar um arquivo de declaração de tipo (arquivo `.d.ts`) e colocá-lo em uma pasta chamada `@types` na raiz do seu projeto. Essa pasta `@types` é especial no TypeScript e será automaticamente reconhecida.
+
+Aqui estão os passos básicos para criar um tipo global:
+
+1. **Crie um arquivo de declaração de tipo:**
+   - Por exemplo, você pode criar um arquivo chamado `global.d.ts`. Este arquivo conterá suas declarações de tipo global.
+
+2. **Defina seus tipos globais:**
+   - No arquivo `global.d.ts`, você pode declarar os tipos globais que deseja adicionar. Por exemplo:
+
+     ```typescript
+     // global.d.ts
+
+     declare interface MeuTipoGlobal {
+       nome: string;
+       idade: number;
+     }
+     ```
+
+3. **Coloque o arquivo na pasta `@types`:**
+   - Mova o arquivo `global.d.ts` para uma pasta chamada `@types` na raiz do seu projeto.
+
+     ```
+     projeto/
+     ├── @types/
+     │   └── global.d.ts
+     └── outros-arquivos...
+     ```
+
+Após seguir esses passos, o TypeScript automaticamente reconhecerá os tipos definidos em `global.d.ts` como tipos globais no seu projeto. Agora você pode usar `MeuTipoGlobal` em qualquer lugar do seu código TypeScript sem a necessidade de importação.
+
+Lembre-se de que, ao criar tipos globais, é uma boa prática garantir que esses tipos não entrem em conflito com os existentes no ecossistema do TypeScript. Se você estiver criando tipos para bibliotecas de terceiros, considere verificar se já existem tipos disponíveis ou contribuir para definições de tipos existentes.
