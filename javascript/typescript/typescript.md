@@ -48,7 +48,7 @@ O código JavaScript resultante pode ser executado em um ambiente que suporte Ja
    // Definindo um tipo
    type Pessoa = {
      nome: string;
-     idade: number;
+     idade?: number; //? indica que é opcional
    };
 
    // Função que recebe um parâmetro do tipo Pessoa
