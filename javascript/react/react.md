@@ -415,6 +415,55 @@ export default RegistrationForm;
 
 Este é um exemplo básico, mas o React Hook Forms oferece recursos avançados, como validação de campos, campos dinâmicos e muitos outros. Vale a pena explorar a documentação oficial para obter informações mais detalhadas: [React Hook Forms](https://react-hook-form.com/).
 
+### Validação com yup
+
+O `yup` é uma biblioteca de validação de esquemas para JavaScript, frequentemente utilizada em conjunto com o React Hook Form para validação de formulários. Aqui está um resumo desde a instalação até a utilização do `yup` com o React Hook Forms:
+
+1. **Instalação:**
+   Certifique-se de ter o React Hook Forms e o Yup instalados no seu projeto. Você pode instalar ambos usando o npm ou yarn:
+   ```bash
+   npm install react-hook-form yup
+   ```
+
+2. **Importação:**
+   Importe as bibliotecas necessárias no seu componente:
+   ```javascript
+   import { useForm } from 'react-hook-form';
+   import { yupResolver } from '@hookform/resolvers/yup';
+   import * as yup from 'yup';
+   ```
+
+3. **Definição do Schema com Yup:**
+   Crie um esquema de validação utilizando o `yup`. Por exemplo:
+   ```javascript
+   const schema = yup.object().shape({
+     nome: yup.string().required('O nome é obrigatório'),
+     email: yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
+     idade: yup.number().typeError('Digite um número válido').positive('A idade deve ser um número positivo').integer('A idade deve ser um número inteiro'),
+   });
+   ```
+
+4. **Utilização do Yup Resolver:**
+   Configure o resolver do Yup ao criar o formulário com o React Hook Form:
+   ```javascript
+   const { register, handleSubmit, errors } = useForm({
+     resolver: yupResolver(schema),
+   });
+   ```
+
+5. **Aplicação de Validação nos Campos:**
+   Aplique a validação nos campos do formulário usando o `register`:
+   ```jsx
+   <input {...register('nome')} />
+   <span>{errors.nome?.message}</span>
+
+   <input {...register('email')} />
+   <span>{errors.email?.message}</span>
+
+   <input {...register('idade')} />
+   <span>{errors.idade?.message}</span>
+   ```
+
 ## Iniciando o React
 
 ### Package
