@@ -2,7 +2,9 @@
 
 O React é uma biblioteca JavaScript de código aberto amplamente utilizada para a criação de interfaces de usuário interativas e dinâmicas. Desenvolvido e mantido pelo Facebook, o React se destaca por sua abordagem baseada em componentes e sua capacidade de construir aplicativos da web eficientes e reativos.
 
-## Principais Características
+## Introdução
+
+### Principais Características
 
 - **Componentização**: O React permite que você divida a interface do usuário em componentes reutilizáveis e independentes. Cada componente representa uma parte específica da interface e pode ser facilmente composto para criar interfaces complexas.
 
@@ -27,7 +29,7 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
-## jsx
+### jsx
 
 Um arquivo com a extensão `.jsx` é um tipo de arquivo utilizado em projetos React para definir componentes da interface do usuário. Essa extensão é uma convenção para indicar que o arquivo contém código JavaScript estendido (JSX), que é uma extensão da linguagem JavaScript usada no desenvolvimento de aplicativos React. A diferença principal entre um arquivo `.jsx` e um arquivo `.js` em um projeto React é a presença de código JSX e a integração com as funcionalidades do React.
 
