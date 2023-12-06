@@ -27,6 +27,202 @@ O React é uma biblioteca JavaScript de código aberto amplamente utilizada para
 - Pode exigir configuração adicional usando ferramentas como o Create React App.
 - Gerenciamento de estado em aplicativos maiores pode ser complexo.
 
+## jsx
+
+Um arquivo com a extensão `.jsx` é um tipo de arquivo utilizado em projetos React para definir componentes da interface do usuário. Essa extensão é uma convenção para indicar que o arquivo contém código JavaScript estendido (JSX), que é uma extensão da linguagem JavaScript usada no desenvolvimento de aplicativos React. A diferença principal entre um arquivo `.jsx` e um arquivo `.js` em um projeto React é a presença de código JSX e a integração com as funcionalidades do React.
+
+Aqui está um exemplo que destaca a diferença entre um arquivo `.jsx` e um arquivo `.js` em um projeto React:
+
+**Arquivo `.js` (sem JSX):**
+
+```javascript
+// app.js
+function App() {
+  return 'Hello, World!';
+}
+
+export default App;
+```
+
+Neste exemplo, o arquivo `.js` contém uma função `App` que retorna uma simples string.
+
+**Arquivo `.jsx` (com JSX):**
+
+```jsx
+// app.jsx
+import React from 'react';
+
+function App() {
+  return <div>Hello, World!</div>;
+}
+
+export default App;
+```
+
+Neste exemplo, o arquivo `.jsx` usa a biblioteca React, importada com `import React from 'react'`. Ele também usa código JSX, que é uma extensão da sintaxe JavaScript e permite que você escreva elementos de interface do usuário de forma declarativa. No retorno da função `App`, usamos elementos JSX, como `<div>`, para definir a estrutura do componente.
+
+A diferença fundamental entre os dois exemplos está no uso de JSX e na integração com o React. Os arquivos `.jsx` são usados para definir componentes React que incorporam JSX, enquanto os arquivos `.js` podem conter código JavaScript padrão, mas geralmente não são usados para definir componentes React.
+
+Em um projeto React, a convenção é usar arquivos `.jsx` para componentes React, pois eles facilitam a leitura e a escrita de código de interface do usuário. O React utiliza o processo de transpilação para converter código JSX em JavaScript válido para o navegador. Portanto, quando você escreve código em arquivos `.jsx`, ele é transpilado para JavaScript puro antes de ser executado no navegador.
+
+Vale notar que, o `create-react-app` foi projetado para tornar o processo de desenvolvimento React mais acessível e simplificado, e uma das decisões de design foi permitir que você use JSX diretamente em arquivos com extensão .js.
+
+No entanto, em muitos projetos React, a extensão .jsx é usada para indicar explicitamente que um arquivo contém código JSX. Em resumo, tanto .js quanto .jsx podem ser usados para arquivos com código JSX em projetos React, mas a convenção mais comum é usar .jsx para maior clareza.
+
+## Componentes
+
+### Criando componente
+
+Os componentes devem ser criados separadamente dentro da pasta /components dentro da pasta /src.
+
+![Components](images/react_components.png)
+
+Veja o conteúdo do BotaoContador.js:
+
+```javascript
+import React, { useState } from 'react';
+
+function BotaoContador() {
+    const [contador, setContador] = useState(0);
+  
+    const aumentarContador = () => {
+      setContador(contador + 1);
+    };
+  
+    const diminuirContador = () => {
+      setContador(contador - 1);
+    };
+  
+    return (
+      <div>
+        <h1>Contador: {contador}</h1>
+        <button onClick={aumentarContador}>Aumentar</button>
+        <button onClick={diminuirContador}>Diminuir</button>
+      </div>
+    );
+  }
+  export default BotaoContador;
+```
+
+Com isso, o componente pode ser importado pelo index.js na raiz do projeto assim:
+
+
+```javascript
+...
+import BotaoContador from './components/BotaoContador';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+    <BotaoContador />
+  </React.StrictMode>
+);
+...
+
+```
+
+Para facilitar a integração com arquivo css posterior, o arquivo pode ser criado dentro de uma pasta (ex: Button) e dentro dela o arquivo index.js de modo que, quando a pasta for indicada, o .js será usado automaticamente como em:
+
+```bash
+import Button from './components/Button'
+```
+
+### Ciclo dos componenetes
+
+O ciclo de vida de um componente em uma aplicação React é uma série de eventos que ocorrem durante a vida útil desse componente, desde sua criação até sua remoção. Esses eventos permitem que você controle o comportamento e a interação do componente com o DOM e com os dados. Aqui está um resumo dos principais estágios do ciclo de vida de um componente React:
+
+1. **Montagem (Mounting):**
+   - `constructor()`: É chamado quando um componente é inicializado. Você pode configurar o estado inicial e vincular métodos aqui.
+   - `static getDerivedStateFromProps()`: Chamado antes da renderização quando as props são recebidas. Raramente usado, geralmente para computar um novo estado com base nas props.
+   - `render()`: Obrigatório. Renderiza o componente e seus elementos filhos no DOM virtual.
+   - `componentDidMount()`: Chamado após o componente ser inserido no DOM real. É o lugar apropriado para carregar dados externos ou executar operações que dependem do DOM.
+
+2. **Atualização (Updating):**
+   - `static getDerivedStateFromProps()`: Novamente, pode ser usado para atualizar o estado com base nas novas props.
+   - `shouldComponentUpdate()`: Permite otimizar o desempenho decidindo se a atualização e a renderização devem ocorrer. Pode retornar `true` ou `false`.
+   - `render()`: Re-renderiza o componente se `shouldComponentUpdate` retornar `true`.
+   - `getSnapshotBeforeUpdate()`: Pode ser usado para capturar informações do DOM antes de sofrer atualizações.
+   - `componentDidUpdate()`: Chamado após a renderização e atualização do componente. Útil para ações pós-atualização, como chamadas de API.
+
+3. **Desmontagem (Unmounting):**
+   - `componentWillUnmount()`: Chamado antes do componente ser removido do DOM. Útil para limpar recursos, cancelar assinaturas, etc.
+
+4. **Manejo de Erros (Error Handling):**
+   - `static getDerivedStateFromError()`: Usado para atualizar o estado quando ocorre um erro em qualquer componente filho.
+   - `componentDidCatch()`: Usado para lidar com erros em componentes filhos. Geralmente usado para registro de erros.
+
+É importante notar que com a introdução dos Hooks (a partir do React 16.8), como `useState`, `useEffect`, `useContext`, etc., o ciclo de vida dos componentes baseados em classe não é mais a única maneira de gerenciar o estado e os efeitos em componentes React. Hooks oferecem uma abordagem mais simples e funcional para alcançar os mesmos resultados, tornando o código mais legível e fácil de manter.
+
+Os dois Hooks mais importantes nesse contexto são `useState` e `useEffect`.
+
+1. **useState**:
+   - `useState` é um Hook que permite que os componentes funcionais tenham seu próprio estado interno. Isso é crucial para a manipulação de dados locais no componente, permitindo que ele reaja a mudanças de estado sem a necessidade de criar uma classe.
+   - No ciclo de vida de um componente, `useState` desempenha um papel fundamental na etapa de "Montagem". Você pode usá-lo para inicializar o estado do componente no momento em que ele é montado no DOM. Além disso, ele permite que você atualize e gerencie o estado ao longo do ciclo de vida do componente.
+
+2. **useEffect**:
+   - `useEffect` é um Hook que lida com efeitos colaterais, como busca de dados, interações com APIs externas, atualizações do DOM, etc. Ele é essencial na etapa de "Montagem" e "Atualização" do ciclo de vida do componente.
+   - Em um componente funcional, você pode usar `useEffect` para executar código após a renderização do componente e, opcionalmente, após atualizações do estado ou propriedades. Isso é semelhante aos métodos `componentDidMount`, `componentDidUpdate` e `componentWillUnmount` em componentes de classe.
+   - `useEffect` é importante para garantir que os efeitos colaterais ocorram no momento apropriado, evitando problemas de desempenho e comportamento inesperado.
+
+Aqui está um exemplo simples de como `useState` e `useEffect` são usados em um componente funcional:
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Este código é executado após a montagem do componente e sempre que 'count' for atualizado.
+    document.title = `Contagem: ${count}`;
+  }, [count]);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Contagem: {count}</p>
+      <button onClick={increment}>Incrementar</button>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
+
+Neste exemplo, `useState` é usado para manter o estado do contador, e `useEffect` é usado para atualizar o título da página toda vez que o estado `count` muda. Isso demonstra como Hooks simplificam o gerenciamento de estado e efeitos colaterais em componentes funcionais, tornando o código mais legível e fácil de manter.
+
+### Conseguindo componentes
+
+1. **npm (Node Package Manager):** O npm é o repositório de pacotes JavaScript mais utilizado. Você pode procurar por componentes React prontos, bibliotecas e pacotes relacionados ao seu projeto. Para instalar um pacote, você pode usar o comando `npm install`.
+
+2. **GitHub:** O GitHub é uma plataforma de hospedagem de código fonte que contém muitos projetos open source. Você pode procurar por repositórios de componentes React e baixar o código-fonte ou instalar as bibliotecas diretamente em seu projeto.
+
+3. **npmjs.com:** O site do npm, npmjs.com, possui uma interface de busca amigável para encontrar pacotes JavaScript, incluindo componentes React.
+
+4. **React Components Websites:** Existem sites dedicados a listar e compartilhar componentes React. Alguns exemplos incluem "React Awesome" (https://github.com/enaqx/awesome-react) e "React Components" (https://reactjs.org/community/ui-components.html).
+
+5. **Material-UI, Ant Design, Bootstrap, etc.:** Muitas bibliotecas populares de design e UI, como Material-UI, Ant Design e Bootstrap, oferecem componentes React prontos para uso. Você pode encontrar essas bibliotecas em seus respectivos sites e documentações.
+
+6. **Plataformas de Componentes:** Algumas plataformas online oferecem componentes React personalizáveis e prontos para uso, como Bit (https://bit.dev/), Storybook (https://storybook.js.org/), e mais.
+
+Lembre-se sempre de verificar a documentação e as instruções de instalação de qualquer componente que você escolher para entender como usá-lo em seu projeto. Certifique-se de que os componentes escolhidos são compatíveis com a versão do React que você está usando.
+
+Além disso, ao usar componentes de terceiros, considere verificar sua popularidade, manutenção ativa e compatibilidade com seu projeto, para garantir uma integração suave e um desenvolvimento eficiente.
+
+#### Biblioteca de componentes
+
+- Chakra: Chakra UI é uma biblioteca de componentes para React que facilita a criação de interfaces bonitas e acessíveis. Ele é altamente personalizável e oferece uma ampla variedade de componentes prontos para uso.
+
+- Material UI: Material UI é uma popular biblioteca de componentes baseada no design Material, desenvolvido pelo Google. Ela fornece um conjunto completo de componentes estilizados, seguindo as diretrizes de design do Material.
+
+- Tailwind CSS: Embora não seja uma biblioteca de componentes, o Tailwind CSS é um framework de estilo altamente configurável. Ele permite a criação rápida e personalizada de interfaces com base em classes CSS utilitárias.
+
+- Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
+
 ## Props de react
 
 Uma propriedade (ou "prop") é parte do modelo de programação do React para lidar com eventos como cliques em elementos, botões, etc. O React permite que você passe props para componentes, o que torna a personalização e o comportamento dos componentes altamente configuráveis.
@@ -65,7 +261,7 @@ Existem várias props comumente usadas em elementos do React. Algumas das props 
 
 Essas são apenas algumas das props mais comuns. A escolha de quais props usar depende da necessidade específica do seu componente. Além disso, você pode passar props personalizadas para seus próprios componentes para personalizá-los de acordo com sua lógica de aplicação. O React é altamente configurável e flexível nesse aspecto.
 
-## Hooks de react
+## Hooks
 
 Os Hooks são uma característica introduzida no React 16.8 que permitem que você use o estado e outros recursos do React em componentes funcionais, em vez de componentes de classe. Isso tornou o desenvolvimento de componentes mais simples e reutilizáveis. Abaixo estão alguns dos principais Hooks do React:
 
@@ -358,7 +554,7 @@ module.exports = {
 }
 ```
 
-## create-react-app
+### create-react-app
 
 Para começar um projeto em react de forma mais automática (e usual), use no terminal:
 
@@ -381,172 +577,6 @@ E para rodar o react, use:
 ```bash
 npm run start
 ```
-
-## jsx
-
-Um arquivo com a extensão `.jsx` é um tipo de arquivo utilizado em projetos React para definir componentes da interface do usuário. Essa extensão é uma convenção para indicar que o arquivo contém código JavaScript estendido (JSX), que é uma extensão da linguagem JavaScript usada no desenvolvimento de aplicativos React. A diferença principal entre um arquivo `.jsx` e um arquivo `.js` em um projeto React é a presença de código JSX e a integração com as funcionalidades do React.
-
-Aqui está um exemplo que destaca a diferença entre um arquivo `.jsx` e um arquivo `.js` em um projeto React:
-
-**Arquivo `.js` (sem JSX):**
-
-```javascript
-// app.js
-function App() {
-  return 'Hello, World!';
-}
-
-export default App;
-```
-
-Neste exemplo, o arquivo `.js` contém uma função `App` que retorna uma simples string.
-
-**Arquivo `.jsx` (com JSX):**
-
-```jsx
-// app.jsx
-import React from 'react';
-
-function App() {
-  return <div>Hello, World!</div>;
-}
-
-export default App;
-```
-
-Neste exemplo, o arquivo `.jsx` usa a biblioteca React, importada com `import React from 'react'`. Ele também usa código JSX, que é uma extensão da sintaxe JavaScript e permite que você escreva elementos de interface do usuário de forma declarativa. No retorno da função `App`, usamos elementos JSX, como `<div>`, para definir a estrutura do componente.
-
-A diferença fundamental entre os dois exemplos está no uso de JSX e na integração com o React. Os arquivos `.jsx` são usados para definir componentes React que incorporam JSX, enquanto os arquivos `.js` podem conter código JavaScript padrão, mas geralmente não são usados para definir componentes React.
-
-Em um projeto React, a convenção é usar arquivos `.jsx` para componentes React, pois eles facilitam a leitura e a escrita de código de interface do usuário. O React utiliza o processo de transpilação para converter código JSX em JavaScript válido para o navegador. Portanto, quando você escreve código em arquivos `.jsx`, ele é transpilado para JavaScript puro antes de ser executado no navegador.
-
-Vale notar que, o `create-react-app` foi projetado para tornar o processo de desenvolvimento React mais acessível e simplificado, e uma das decisões de design foi permitir que você use JSX diretamente em arquivos com extensão .js.
-
-No entanto, em muitos projetos React, a extensão .jsx é usada para indicar explicitamente que um arquivo contém código JSX. Em resumo, tanto .js quanto .jsx podem ser usados para arquivos com código JSX em projetos React, mas a convenção mais comum é usar .jsx para maior clareza.
-
-## Criando componente
-
-Os componentes devem ser criados separadamente dentro da pasta /components dentro da pasta /src.
-
-![Components](images/react_components.png)
-
-Veja o conteúdo do BotaoContador.js:
-
-```javascript
-import React, { useState } from 'react';
-
-function BotaoContador() {
-    const [contador, setContador] = useState(0);
-  
-    const aumentarContador = () => {
-      setContador(contador + 1);
-    };
-  
-    const diminuirContador = () => {
-      setContador(contador - 1);
-    };
-  
-    return (
-      <div>
-        <h1>Contador: {contador}</h1>
-        <button onClick={aumentarContador}>Aumentar</button>
-        <button onClick={diminuirContador}>Diminuir</button>
-      </div>
-    );
-  }
-  export default BotaoContador;
-```
-
-Com isso, o componente pode ser importado pelo index.js na raiz do projeto assim:
-
-
-```javascript
-...
-import BotaoContador from './components/BotaoContador';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-    <BotaoContador />
-  </React.StrictMode>
-);
-...
-
-```
-
-Para facilitar a integração com arquivo css posterior, o arquivo pode ser criado dentro de uma pasta (ex: Button) e dentro dela o arquivo index.js de modo que, quando a pasta for indicada, o .js será usado automaticamente como em:
-
-```bash
-import Button from './components/Button'
-```
-
-## Ciclo dos componenetes
-
-O ciclo de vida de um componente em uma aplicação React é uma série de eventos que ocorrem durante a vida útil desse componente, desde sua criação até sua remoção. Esses eventos permitem que você controle o comportamento e a interação do componente com o DOM e com os dados. Aqui está um resumo dos principais estágios do ciclo de vida de um componente React:
-
-1. **Montagem (Mounting):**
-   - `constructor()`: É chamado quando um componente é inicializado. Você pode configurar o estado inicial e vincular métodos aqui.
-   - `static getDerivedStateFromProps()`: Chamado antes da renderização quando as props são recebidas. Raramente usado, geralmente para computar um novo estado com base nas props.
-   - `render()`: Obrigatório. Renderiza o componente e seus elementos filhos no DOM virtual.
-   - `componentDidMount()`: Chamado após o componente ser inserido no DOM real. É o lugar apropriado para carregar dados externos ou executar operações que dependem do DOM.
-
-2. **Atualização (Updating):**
-   - `static getDerivedStateFromProps()`: Novamente, pode ser usado para atualizar o estado com base nas novas props.
-   - `shouldComponentUpdate()`: Permite otimizar o desempenho decidindo se a atualização e a renderização devem ocorrer. Pode retornar `true` ou `false`.
-   - `render()`: Re-renderiza o componente se `shouldComponentUpdate` retornar `true`.
-   - `getSnapshotBeforeUpdate()`: Pode ser usado para capturar informações do DOM antes de sofrer atualizações.
-   - `componentDidUpdate()`: Chamado após a renderização e atualização do componente. Útil para ações pós-atualização, como chamadas de API.
-
-3. **Desmontagem (Unmounting):**
-   - `componentWillUnmount()`: Chamado antes do componente ser removido do DOM. Útil para limpar recursos, cancelar assinaturas, etc.
-
-4. **Manejo de Erros (Error Handling):**
-   - `static getDerivedStateFromError()`: Usado para atualizar o estado quando ocorre um erro em qualquer componente filho.
-   - `componentDidCatch()`: Usado para lidar com erros em componentes filhos. Geralmente usado para registro de erros.
-
-É importante notar que com a introdução dos Hooks (a partir do React 16.8), como `useState`, `useEffect`, `useContext`, etc., o ciclo de vida dos componentes baseados em classe não é mais a única maneira de gerenciar o estado e os efeitos em componentes React. Hooks oferecem uma abordagem mais simples e funcional para alcançar os mesmos resultados, tornando o código mais legível e fácil de manter.
-
-Os dois Hooks mais importantes nesse contexto são `useState` e `useEffect`.
-
-1. **useState**:
-   - `useState` é um Hook que permite que os componentes funcionais tenham seu próprio estado interno. Isso é crucial para a manipulação de dados locais no componente, permitindo que ele reaja a mudanças de estado sem a necessidade de criar uma classe.
-   - No ciclo de vida de um componente, `useState` desempenha um papel fundamental na etapa de "Montagem". Você pode usá-lo para inicializar o estado do componente no momento em que ele é montado no DOM. Além disso, ele permite que você atualize e gerencie o estado ao longo do ciclo de vida do componente.
-
-2. **useEffect**:
-   - `useEffect` é um Hook que lida com efeitos colaterais, como busca de dados, interações com APIs externas, atualizações do DOM, etc. Ele é essencial na etapa de "Montagem" e "Atualização" do ciclo de vida do componente.
-   - Em um componente funcional, você pode usar `useEffect` para executar código após a renderização do componente e, opcionalmente, após atualizações do estado ou propriedades. Isso é semelhante aos métodos `componentDidMount`, `componentDidUpdate` e `componentWillUnmount` em componentes de classe.
-   - `useEffect` é importante para garantir que os efeitos colaterais ocorram no momento apropriado, evitando problemas de desempenho e comportamento inesperado.
-
-Aqui está um exemplo simples de como `useState` e `useEffect` são usados em um componente funcional:
-
-```jsx
-import React, { useState, useEffect } from 'react';
-
-function MyComponent() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    // Este código é executado após a montagem do componente e sempre que 'count' for atualizado.
-    document.title = `Contagem: ${count}`;
-  }, [count]);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  return (
-    <div>
-      <p>Contagem: {count}</p>
-      <button onClick={increment}>Incrementar</button>
-    </div>
-  );
-}
-
-export default MyComponent;
-```
-
-Neste exemplo, `useState` é usado para manter o estado do contador, e `useEffect` é usado para atualizar o título da página toda vez que o estado `count` muda. Isso demonstra como Hooks simplificam o gerenciamento de estado e efeitos colaterais em componentes funcionais, tornando o código mais legível e fácil de manter.
 
 ## Routers
 
@@ -623,7 +653,9 @@ O `react-router-dom` é uma biblioteca popular no ecossistema React que facilita
 
 Essas são apenas as bases. O `react-router-dom` oferece mais recursos, como parâmetros de rota, navegação programática e manipulação do histórico de navegação. Explore a documentação para obter informações mais detalhadas: [React Router Documentation](https://reactrouter.com/web/guides/quick-start).
 
-## Biblioteca styled-components
+## Design
+
+### Biblioteca styled-components
 
 A biblioteca "styled-components" é popular para estilização de componentes em aplicações React. Ela permite que você defina estilos CSS diretamente em seus componentes React usando uma sintaxe similar ao CSS-in-JS. Com "styled-components", você pode criar componentes estilizados reutilizáveis que encapsulam seu estilo e lógica, tornando seu código mais modular e legível.
 
@@ -702,9 +734,9 @@ root.render(
 );
 ```
 
-## Usando fonte especial
+### Fonte especial
 
-### Baixando a fonte
+#### Baixando a fonte
 
 **Passo 1: Preparando sua Fonte**
 
@@ -744,41 +776,13 @@ No componente onde deseja usar a fonte, use a fonte normalmente:
   font-family: 'LEDCalculator';
 ```
 
-### Fonte com API do Goggle
+#### Fonte com API do Goggle
 
 É possível utilizar uma fonte disponível em [https://fonts.google.com/]. Para tal, escolha uma fonte de interesse no site fornecido e clique no mesmo. Então, uma janela lateral aparecerá com conteúdo html para ser copiado, como na imagem:
 
 ![Google Fonts](images/google_fonts.png)
 
 Copie o conteúdo HTML na `<head>` do arquivo `index.html` da pasta public do projeto react e use o CSS especificado logo abaixo do HTML copiável para chamar essa fonte onde quiser.
-
-## Conseguindo componentes
-
-1. **npm (Node Package Manager):** O npm é o repositório de pacotes JavaScript mais utilizado. Você pode procurar por componentes React prontos, bibliotecas e pacotes relacionados ao seu projeto. Para instalar um pacote, você pode usar o comando `npm install`.
-
-2. **GitHub:** O GitHub é uma plataforma de hospedagem de código fonte que contém muitos projetos open source. Você pode procurar por repositórios de componentes React e baixar o código-fonte ou instalar as bibliotecas diretamente em seu projeto.
-
-3. **npmjs.com:** O site do npm, npmjs.com, possui uma interface de busca amigável para encontrar pacotes JavaScript, incluindo componentes React.
-
-4. **React Components Websites:** Existem sites dedicados a listar e compartilhar componentes React. Alguns exemplos incluem "React Awesome" (https://github.com/enaqx/awesome-react) e "React Components" (https://reactjs.org/community/ui-components.html).
-
-5. **Material-UI, Ant Design, Bootstrap, etc.:** Muitas bibliotecas populares de design e UI, como Material-UI, Ant Design e Bootstrap, oferecem componentes React prontos para uso. Você pode encontrar essas bibliotecas em seus respectivos sites e documentações.
-
-6. **Plataformas de Componentes:** Algumas plataformas online oferecem componentes React personalizáveis e prontos para uso, como Bit (https://bit.dev/), Storybook (https://storybook.js.org/), e mais.
-
-Lembre-se sempre de verificar a documentação e as instruções de instalação de qualquer componente que você escolher para entender como usá-lo em seu projeto. Certifique-se de que os componentes escolhidos são compatíveis com a versão do React que você está usando.
-
-Além disso, ao usar componentes de terceiros, considere verificar sua popularidade, manutenção ativa e compatibilidade com seu projeto, para garantir uma integração suave e um desenvolvimento eficiente.
-
-### Biblioteca de componentes
-
-- Chakra: Chakra UI é uma biblioteca de componentes para React que facilita a criação de interfaces bonitas e acessíveis. Ele é altamente personalizável e oferece uma ampla variedade de componentes prontos para uso.
-
-- Material UI: Material UI é uma popular biblioteca de componentes baseada no design Material, desenvolvido pelo Google. Ela fornece um conjunto completo de componentes estilizados, seguindo as diretrizes de design do Material.
-
-- Tailwind CSS: Embora não seja uma biblioteca de componentes, o Tailwind CSS é um framework de estilo altamente configurável. Ele permite a criação rápida e personalizada de interfaces com base em classes CSS utilitárias.
-
-- Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
 
 ## Padronizações
 
