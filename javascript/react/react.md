@@ -153,7 +153,7 @@ Neste exemplo:
 - `useMemo` é empregado para calcular o dobro do contador, evitando recálculos desnecessários.
 - `useCallback` é usado para memorizar a função de incremento, garantindo que ela não seja recriada em cada renderização.
 
-### React Hook Forms
+## React Hook Forms
 
 React Hook Forms é uma biblioteca para gerenciar formulários em React utilizando hooks. Ele oferece uma abordagem simples e eficiente para lidar com a lógica de formulários no React, utilizando hooks como `useForm`, `useFieldArray`, entre outros.
 
@@ -249,7 +249,7 @@ Criando na pasta corrente o arquivo `package.json`, que diz o nome da aplicaçã
 
 Ao instalar pacotes, é criado o arquivo `package-lock.json`, que é usado para registrar e fixar as versões exatas das dependências do seu projeto. Ele desempenha um papel importante no gerenciamento de dependências e na garantia de que todas as pessoas que trabalham no projeto obtenham as mesmas versões de pacotes, evitando assim problemas de compatibilidade.
 
-### Babel
+## Babel
 
 O Babel é um transpilador de JavaScript que é amplamente utilizado no desenvolvimento web. Sua função principal é converter código JavaScript escrito em versões mais recentes (ES6, ES7, etc.) em código JavaScript compatível com versões mais antigas, para garantir que ele funcione em navegadores que não suportam os recursos mais recentes da linguagem.
 
@@ -297,7 +297,7 @@ Ou pode criar o arquivo automaticamente usando o comando:
 npx @babel/cli init
 ```
 
-### Webpack
+## Webpack
 
 O Webpack é uma ferramenta de empacotamento (bundling) amplamente usada no desenvolvimento web. Sua principal função é gerenciar e otimizar os recursos de um projeto, como arquivos JavaScript, CSS, imagens e muito mais. Aqui estão algumas informações essenciais sobre o Webpack:
 
@@ -358,7 +358,7 @@ module.exports = {
 }
 ```
 
-### create-react-app
+## create-react-app
 
 Para começar um projeto em react de forma mais automática (e usual), use no terminal:
 
@@ -701,6 +701,7 @@ root.render(
   </React.StrictMode>
 );
 ```
+
 ## Usando fonte especial
 
 ### Baixando a fonte
@@ -779,7 +780,7 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 
 - Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
 
-## PAdronizações
+## Padronizações
 
 ### Eslint
 
