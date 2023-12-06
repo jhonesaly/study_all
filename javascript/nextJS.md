@@ -2,6 +2,10 @@
 
 Next.js é um framework de desenvolvimento web em React que visa facilitar a criação de aplicativos React com renderização do lado do servidor (SSR) e geração de páginas estáticas. Ele simplifica a construção de aplicações web, oferecendo uma estrutura que suporta SSR, pré-renderização e roteamento simplificado. Com o Next.js, você pode criar páginas estáticas que são geradas de forma antecipada durante o build ou páginas dinâmicas que são geradas no momento da solicitação do cliente. Isso resulta em melhor desempenho e uma experiência mais rápida para os usuários. Além disso, o Next.js oferece suporte integrado para API routes, facilitando a criação de APIs junto com o desenvolvimento da interface do usuário. Essa abordagem integrada faz do Next.js uma escolha popular para desenvolvedores que buscam eficiência e desempenho em seus projetos web.
 
+A documentação oficial do Next.js é um recurso valioso para aprender mais:
+
+- [Documentação do Next.js](https://nextjs.org/docs/getting-started)
+
 ## Principais Funcionalidades
 
 1. **Renderização do Lado do Servidor (SSR):** As páginas são renderizadas no servidor, melhorando o desempenho e a SEO.
@@ -112,8 +116,85 @@ function Navegacao() {
 export default Navegacao;
 ```
 
-## Documentação
+## NextAuth
 
-A documentação oficial do Next.js é um recurso valioso para aprender mais:
+**NextAuth.js - Resumo:**
 
-- [Documentação do Next.js](https://nextjs.org/docs/getting-started)
+NextAuth.js é uma biblioteca de autenticação para Next.js que simplifica a implementação de autenticação em aplicativos web. Ela oferece suporte a vários provedores de autenticação, como GitHub, Google, Facebook, entre outros, além de suportar autenticação local.
+
+**Tutorial com Exemplo usando GitHub como Provedor:**
+
+1. **Instalação:**
+   - Instale o NextAuth.js e o pacote `@next-auth/github`:
+
+     ```bash
+     npm install next-auth @next-auth/github
+     ```
+
+2. **Configuração:**
+   - Crie um arquivo `pages/api/auth/[...nextauth].js`:
+
+     ```javascript
+     import NextAuth from 'next-auth';
+     import Providers from 'next-auth/providers';
+
+     export default NextAuth({
+       providers: [
+         Providers.GitHub({
+           clientId: process.env.GITHUB_CLIENT_ID,
+           clientSecret: process.env.GITHUB_CLIENT_SECRET,
+         }),
+       ],
+       pages: {
+         signIn: '/auth/signin',
+       },
+     });
+     ```
+
+3. **Configuração do GitHub:**
+   - Vá para o [GitHub Developer Settings](https://github.com/settings/developers).
+   - Crie uma nova aplicação OAuth.
+   - Configure a URL de autorização para `http://localhost:3000/api/auth/callback/github`.
+   - Obtenha o Client ID e Client Secret e adicione ao seu arquivo de ambiente ou diretamente no código.
+
+4. **Página de Login:**
+   - Crie uma página `pages/auth/signin.js`:
+
+     ```javascript
+     import { signIn } from 'next-auth/react';
+
+     export default function SignIn() {
+       return (
+         <div>
+           <button onClick={() => signIn('github')}>Sign in with GitHub</button>
+         </div>
+       );
+     }
+     ```
+
+5. **Página Protegida:**
+   - Crie uma página `pages/protected.js` que requer autenticação:
+
+     ```javascript
+     import { useSession } from 'next-auth/react';
+
+     export default function Protected() {
+       const { data: session } = useSession();
+
+       if (!session) {
+         return <p>Acesso não autorizado. Faça login primeiro.</p>;
+       }
+
+       return (
+         <div>
+           <h1>Página Protegida</h1>
+           <p>Bem-vindo, {session.user.name}!</p>
+         </div>
+       );
+     }
+     ```
+
+6. **Uso nas Páginas:**
+   - Utilize `useSession` para acessar informações de sessão em qualquer página.
+
+Este é um exemplo básico para começar com NextAuth.js usando o GitHub como provedor de autenticação. Certifique-se de ajustar as configurações conforme necessário e consulte a [documentação oficial do NextAuth.js](https://next-auth.js.org/) para informações detalhadas e opções avançadas.
