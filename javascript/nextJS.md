@@ -8,6 +8,31 @@ Next.js é um framework de desenvolvimento web em React que visa facilitar a cri
 2. **Geração de Páginas Estáticas:** Possibilidade de gerar páginas estáticas durante o build.
 3. **API Routes:** Crie API endpoints de forma simples.
 
+### Renderização
+
+O Next.js oferece suporte a vários métodos de renderização, incluindo Server-Side Rendering (SSR), Single-Page Application (SPA), e Static Site Generation (SSG). Cada um desses métodos tem suas próprias características e casos de uso. Vamos explorar cada um deles:
+
+1. **Server-Side Rendering (SSR):**
+   - **O que é:** SSR envolve a renderização das páginas no servidor, entregando páginas totalmente renderizadas ao cliente.
+   - **Como Funciona:** Quando um usuário acessa uma página, o servidor gera a página dinamicamente, incluindo dados específicos do usuário, e envia o HTML resultante para o cliente.
+   - **Next.js e SSR:** Next.js facilita o SSR com a pasta `pages`. Páginas em `pages` são automaticamente tratadas como rotas e podem ser renderizadas do lado do servidor.
+
+2. **Single-Page Application (SPA):**
+   - **O que é:** SPA carrega uma página inicial e, em seguida, atualiza dinamicamente o conteúdo conforme o usuário interage com a aplicação sem recarregar a página.
+   - **Como Funciona:** A aplicação é carregada uma vez, e as transições de página ocorrem no lado do cliente, geralmente usando JavaScript para manipular o DOM.
+   - **Next.js e SPA:** Embora Next.js ofereça SSR por padrão, você pode optar por criar páginas que funcionem como SPAs se necessário, mas isso geralmente envolve mais configuração manual.
+
+3. **Static Site Generation (SSG):**
+   - **O que é:** SSG envolve a geração de páginas estáticas durante o processo de build, eliminando a necessidade de renderização no servidor ou no cliente durante a solicitação.
+   - **Como Funciona:** As páginas são geradas antecipadamente durante o build, tornando-as prontas para serem entregues aos usuários sem a necessidade de processamento adicional no servidor.
+   - **Next.js e SSG:** Next.js facilita o SSG com a geração de páginas estáticas durante o build. Páginas em `pages` podem ser configuradas para serem geradas estaticamente com a função `getStaticProps`.
+
+**Relação com Next.js:**
+- **SSR com Next.js:** Páginas em `pages` são por padrão renderizadas do lado do servidor, proporcionando SSR.
+- **SPA com Next.js:** Embora o Next.js favoreça SSR, você pode optar por carregar dados no lado do cliente para criar páginas que se comportam como SPAs.
+- **SSG com Next.js:** Utilizando a função `getStaticProps`, você pode gerar páginas estáticas durante o build, proporcionando benefícios de desempenho.
+
+A escolha entre SSR, SPA e SSG dependerá dos requisitos específicos do seu projeto, considerando fatores como SEO, desempenho, e interatividade. O Next.js fornece uma flexibilidade notável para implementar esses métodos de renderização conforme necessário.
 
 ## Configuração
 
