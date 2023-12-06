@@ -1,0 +1,4 @@
+# Next JS
+
+Next.js é um framework de desenvolvimento web em React que visa facilitar a criação de aplicativos React com renderização do lado do servidor (SSR) e geração de páginas estáticas. Ele simplifica a construção de aplicações web, oferecendo uma estrutura que suporta SSR, pré-renderização e roteamento simplificado. Com o Next.js, você pode criar páginas estáticas que são geradas de forma antecipada durante o build ou páginas dinâmicas que são geradas no momento da solicitação do cliente. Isso resulta em melhor desempenho e uma experiência mais rápida para os usuários. Além disso, o Next.js oferece suporte integrado para API routes, facilitando a criação de APIs junto com o desenvolvimento da interface do usuário. Essa abordagem integrada faz do Next.js uma escolha popular para desenvolvedores que buscam eficiência e desempenho em seus projetos web.
+
