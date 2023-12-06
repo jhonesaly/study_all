@@ -223,7 +223,7 @@ Além disso, ao usar componentes de terceiros, considere verificar sua popularid
 
 - Theme UI: Theme UI é uma biblioteca de estilização para React que permite a fácil personalização de temas em aplicativos. Ele funciona bem com outras bibliotecas, como Gatsby e Next.js.
 
-## Props de react
+## Props
 
 Uma propriedade (ou "prop") é parte do modelo de programação do React para lidar com eventos como cliques em elementos, botões, etc. O React permite que você passe props para componentes, o que torna a personalização e o comportamento dos componentes altamente configuráveis.
 
@@ -445,7 +445,7 @@ Criando na pasta corrente o arquivo `package.json`, que diz o nome da aplicaçã
 
 Ao instalar pacotes, é criado o arquivo `package-lock.json`, que é usado para registrar e fixar as versões exatas das dependências do seu projeto. Ele desempenha um papel importante no gerenciamento de dependências e na garantia de que todas as pessoas que trabalham no projeto obtenham as mesmas versões de pacotes, evitando assim problemas de compatibilidade.
 
-## Babel
+### Babel
 
 O Babel é um transpilador de JavaScript que é amplamente utilizado no desenvolvimento web. Sua função principal é converter código JavaScript escrito em versões mais recentes (ES6, ES7, etc.) em código JavaScript compatível com versões mais antigas, para garantir que ele funcione em navegadores que não suportam os recursos mais recentes da linguagem.
 
@@ -493,7 +493,7 @@ Ou pode criar o arquivo automaticamente usando o comando:
 npx @babel/cli init
 ```
 
-## Webpack
+### Webpack
 
 O Webpack é uma ferramenta de empacotamento (bundling) amplamente usada no desenvolvimento web. Sua principal função é gerenciar e otimizar os recursos de um projeto, como arquivos JavaScript, CSS, imagens e muito mais. Aqui estão algumas informações essenciais sobre o Webpack:
 
