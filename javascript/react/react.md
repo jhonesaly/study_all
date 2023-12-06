@@ -351,6 +351,67 @@ Neste exemplo:
 - `useMemo` é empregado para calcular o dobro do contador, evitando recálculos desnecessários.
 - `useCallback` é usado para memorizar a função de incremento, garantindo que ela não seja recriada em cada renderização.
 
+### Custom Hooks
+
+Criar custom hooks no React é uma prática poderosa para reutilizar lógicas de componentes em diferentes partes da sua aplicação. Aqui está um resumo sobre como criar custom hooks:
+
+1. **Nomeação:**
+   - Nomeie seu custom hook com o prefixo "use" para indicar que é um hook. Por exemplo, `useCustomHook`.
+
+2. **Estrutura Básica:**
+   - Um custom hook é uma função JavaScript que pode usar hooks internos do React. A estrutura básica é semelhante à de uma função de componente.
+   ```javascript
+   import { useState, useEffect } from 'react';
+
+   const useCustomHook = () => {
+     // Lógica do hook aqui
+
+     return /* Valor ou objeto que você quer fornecer para quem usar o hook */;
+   };
+   ```
+
+3. **Utilização de Hooks Internos:**
+   - Dentro do seu custom hook, você pode utilizar hooks como `useState`, `useEffect`, e outros, da mesma forma que faria em um componente.
+   ```javascript
+   import { useState, useEffect } from 'react';
+
+   const useCustomHook = () => {
+     const [estado, setEstado] = useState('Valor Inicial');
+
+     useEffect(() => {
+       // Lógica do efeito colateral aqui
+     }, [estado]);
+
+     return { estado, setEstado };
+   };
+   ```
+
+4. **Retorno:**
+   - O que você retorna do seu custom hook é o que estará disponível para quem o utilizar. Pode ser um valor, um objeto, ou até mesmo funções.
+
+5. **Utilização do Custom Hook:**
+   - Para usar o custom hook em um componente, basta chamá-lo como uma função regular e utilizar o que foi retornado.
+   ```javascript
+   import React from 'react';
+   import useCustomHook from './useCustomHook';
+
+   const MeuComponente = () => {
+     const { estado, setEstado } = useCustomHook();
+
+     // Use estado e setEstado conforme necessário
+
+     return <div>{estado}</div>;
+   };
+   ```
+
+6. **Regras de Hooks:**
+   - Lembre-se das regras de hooks: utilize hooks apenas no nível superior de um componente React ou dentro de custom hooks. Não os use em loops, condições ou funções aninhadas.
+
+7. **Compartilhamento de Lógica:**
+   - Use custom hooks para compartilhar lógica entre componentes. Isso ajuda na reutilização e na manutenção do código.
+
+Ao seguir esses passos, você estará apto a criar custom hooks eficientes e reutilizáveis para encapsular lógicas específicas e facilitar o desenvolvimento de componentes em sua aplicação React.
+
 ## React Hook Forms
 
 React Hook Forms é uma biblioteca para gerenciar formulários em React utilizando hooks. Ele oferece uma abordagem simples e eficiente para lidar com a lógica de formulários no React, utilizando hooks como `useForm`, `useFieldArray`, entre outros.
