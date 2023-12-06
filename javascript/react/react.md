@@ -415,6 +415,79 @@ export default RegistrationForm;
 
 Este é um exemplo básico, mas o React Hook Forms oferece recursos avançados, como validação de campos, campos dinâmicos e muitos outros. Vale a pena explorar a documentação oficial para obter informações mais detalhadas: [React Hook Forms](https://react-hook-form.com/).
 
+### useForm
+
+Dentro do `useForm` do React Hook Form, você pode passar diversas opções para personalizar o comportamento do formulário. Aqui estão algumas das principais tags e props que podem ser utilizadas:
+
+1. **mode:**
+   - **Opções:** `'onSubmit' | 'onBlur' | 'onChange' | 'onTouched' | 'all'`
+   - **Descrição:** Define quando a validação do formulário deve ocorrer. Por exemplo, se você definir como `'onBlur'`, a validação será acionada quando o usuário sair de um campo.
+
+```javascript
+const { useForm } = require('react-hook-form');
+
+const { register, handleSubmit, formState } = useForm({
+  mode: 'onBlur', // Pode ser 'onChange', 'onSubmit', 'onTouched', 'all'
+});
+```
+
+2. **reValidateMode:**
+   - **Opções:** `'onSubmit' | 'onChange' | 'onBlur' | 'onTouched'`
+   - **Descrição:** Define quando os campos devem ser revalidados.
+
+```javascript
+const { useForm } = require('react-hook-form');
+
+const { register, handleSubmit, formState } = useForm({
+  reValidateMode: 'onChange', // Pode ser 'onSubmit', 'onBlur', 'onTouched'
+});
+```
+
+3. **resolver:**
+   - **Descrição:** Define o resolver a ser usado para validar os campos. No caso de uso com Yup, utiliza-se `yupResolver`.
+
+```javascript
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+  // Defina seu esquema Yup aqui
+});
+
+const { useForm } = require('react-hook-form');
+
+const { register, handleSubmit, formState } = useForm({
+  resolver: yupResolver(schema),
+});
+```
+
+4. **defaultValues:**
+   - **Descrição:** Define os valores padrão dos campos do formulário.
+
+```javascript
+const { useForm } = require('react-hook-form');
+
+const { register, handleSubmit, setValue } = useForm({
+  defaultValues: {
+    nome: 'Seu Nome',
+    email: 'seu@email.com',
+  },
+});
+```
+
+5. **shouldUnregister:**
+   - **Descrição:** Controla se os campos não montados (não renderizados) devem ou não ser removidos automaticamente do estado.
+
+```javascript
+const { useForm } = require('react-hook-form');
+
+const { register, handleSubmit } = useForm({
+  shouldUnregister: false, // Pode ser true para remover automaticamente campos não renderizados
+});
+```
+
+Estas são algumas das opções principais que você pode utilizar com `useForm`. Cada uma delas permite que você ajuste o comportamento do formulário de acordo com as necessidades específicas do seu projeto.
+
 ### Validação com yup
 
 O `yup` é uma biblioteca de validação de esquemas para JavaScript, frequentemente utilizada em conjunto com o React Hook Form para validação de formulários. Aqui está um resumo desde a instalação até a utilização do `yup` com o React Hook Forms:
