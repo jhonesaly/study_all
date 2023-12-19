@@ -1,4 +1,4 @@
-# Gerenciando repositório local
+# Git
 
 ## Comandos
 
@@ -15,7 +15,7 @@
 > 'unset' remove algo das configurações
 
 - git config --global user.email "example@email.com"
-- git config --global user.name namexample
+- git config --global user.name "namexample"
 
 > atribui um e-mail e apelido para o usuário do git
 
