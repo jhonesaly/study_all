@@ -2,6 +2,8 @@
 
 ## Autenticando máquina
 
+### Token Classic
+
 1. **Crie um Token de Acesso Pessoal no GitHub:**
    - Acesse o GitHub e faça login na sua conta.
    - No canto superior direito, clique na sua foto de perfil e vá em "Settings" (Configurações).
@@ -26,6 +28,55 @@
    - Agora, você deve conseguir clonar, fazer push e pull dos seus repositórios usando o Git sem ser solicitado a inserir suas credenciais toda vez.
 
 Lembre-se de manter seu token seguro e não compartilhá-lo publicamente. Se precisar revogar ou regenerar um token, você pode fazer isso nas configurações do GitHub.
+
+### SSH
+
+1. **Verifique se você já possui uma chave SSH:**
+   - Abra o terminal ou prompt de comando.
+   - Digite o seguinte comando para verificar se você já possui uma chave SSH: 
+     ```bash
+     ls -al ~/.ssh
+     ```
+   - Se você já tiver uma chave chamada `id_rsa` (chave privada) e `id_rsa.pub` (chave pública), você pode pular para o próximo passo. Caso contrário, continue com o próximo passo.
+
+2. **Gere um novo par de chaves SSH:**
+   - Se você não tem uma chave SSH, você pode gerar uma nova usando o seguinte comando:
+     ```bash
+     ssh-keygen -t ed25519 -C "your_email@example.com"
+     ```
+   - Pressione Enter para aceitar o local padrão para salvar a chave (normalmente `~/.ssh/id_rsa`), e configure uma senha se desejar.
+
+3. **Adicione a chave SSH ao agente SSH (opcional, mas recomendado):**
+   - Para adicionar a chave ao agente SSH e evitar ter que digitar a senha toda vez que usar a chave, execute os seguintes comandos:
+     ```bash
+     eval "$(ssh-agent -s)"
+     ssh-add ~/.ssh/id_ed23319
+     ```
+
+4. **Adicione a chave SSH à sua conta do GitHub:**
+   - Copie a chave pública para a área de transferência:
+     ```bash
+     cat ~/.ssh/id_ed23319.pub | pbcopy  # para sistemas macOS
+     ```
+
+     ou
+
+     ```bash
+     cat ~/.ssh/id_ed23319.pub | clip  # para sistemas Windows
+     ```
+
+   - Acesse o GitHub, vá em "Settings" (Configurações) -> "SSH and GPG keys" (Chaves SSH e GPG) -> "New SSH key" (Nova chave SSH).
+   - Cole a chave que você copiou e dê um nome significativo para a chave.
+
+5. **Teste a conexão SSH:**
+   - Execute o seguinte comando para verificar se a autenticação SSH está funcionando corretamente:
+     ```bash
+     ssh -T git@github.com
+     ```
+
+   - Se tudo estiver configurado corretamente, você verá uma mensagem indicando que você foi autenticado com sucesso.
+
+Agora, sua máquina está configurada para autenticar com o GitHub usando SSH. Você pode usar o Git normalmente sem precisar digitar suas credenciais a cada operação.
 
 ## Criando repositório remoto
 
