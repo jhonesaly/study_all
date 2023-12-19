@@ -1,4 +1,31 @@
-# Gerenciando repositório remoto no GitHub
+# GitHub
+
+## Autenticando máquina
+
+1. **Crie um Token de Acesso Pessoal no GitHub:**
+   - Acesse o GitHub e faça login na sua conta.
+   - No canto superior direito, clique na sua foto de perfil e vá em "Settings" (Configurações).
+   - No menu à esquerda, selecione "Developer settings" (Configurações de desenvolvedor) e, em seguida, clique em "Personal access tokens" (Tokens de acesso pessoal).
+   - Clique em "Generate token" (Gerar token), insira sua senha e configure as permissões necessárias para o token (geralmente, `repo` é suficiente para operações de repositório). Depois, clique em "Generate token" no final da página.
+
+2. **Configurar o Git na sua Máquina:**
+   - Abra o terminal ou prompt de comando.
+   - Execute os seguintes comandos, substituindo `SEU_TOKEN_AQUI` pelo token que você gerou e `SEU_USUÁRIO_GIT` pelo seu nome de usuário no GitHub.
+
+   ```bash
+   git config --global user.name "SEU_USUÁRIO_GIT"
+   git config --global user.email "SEU_EMAIL_GIT"
+
+   git config --global credential.helper store
+   git config --global credential.helper cache 
+   ```
+
+   Certifique-se de substituir `seu_usuario` e `seu_repositorio` pelos seus valores reais.
+
+3. **Realizar Operações no GitHub:**
+   - Agora, você deve conseguir clonar, fazer push e pull dos seus repositórios usando o Git sem ser solicitado a inserir suas credenciais toda vez.
+
+Lembre-se de manter seu token seguro e não compartilhá-lo publicamente. Se precisar revogar ou regenerar um token, você pode fazer isso nas configurações do GitHub.
 
 ## Criando repositório remoto
 
