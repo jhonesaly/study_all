@@ -97,61 +97,19 @@ Agora, sua máquina está configurada para autenticar com o GitHub usando SSH. V
    - procure por "gpg"
    - habilite a caixa "Git: Enable Commit Signing"
 
-1. Geração da Chave GPG com o Kleopatra:
+2. Geração da Chave GPG com o gitbash:
 
-2.1. Abra o Kleopatra:
-   - Após a instalação, abra o Kleopatra.
-
-2.2. Crie uma Nova Chave:
-   - No Kleopatra, clique em "File" (Arquivo) -> "New Certificate" (Novo Certificado).
-   - Siga as instruções para gerar uma nova chave. Insira seu nome e endereço de e-mail.
-
-2.3. Exporte a Chave Pública:
-   - Selecione a chave criada.
-   - Clique com o botão direito e escolha "Export Certificates" (Exportar Certificados).
-   - Guarde o arquivo com a extensão ".asc".
-
-3. Adição da Chave GPG ao GitHub:
-
-3.1. Copie a Chave Pública:
-   - Abra o arquivo ".asc" gerado anteriormente com um editor de texto.
+   - Abra o gitbash
+   - gpg --full-generate-key
+   - gpg --list-secret-keys --keyid-format=long
+   - Da lista de chaves GPG, copie a forma longa do ID da chave GPG que você gostaria de usar.
+   - gpg --armor --export <ID da chave>.
    - Copie o conteúdo da chave pública.
-
-3.2. Adicione a Chave ao GitHub:
    - Acesse o GitHub e vá para "Settings" (Configurações) -> "SSH and GPG keys" (Chaves SSH e GPG) -> "New GPG key" (Nova chave GPG).
    - Cole a chave pública copiada e adicione.
-
-4. Configuração do Git para Assinatura de Commits:
-
-4.1. Abra o Terminal ou Prompt de Comando:
-   - Abra o terminal ou prompt de comando onde você costuma interagir com o Git.
-
-4.2. Configure o Git:
-   - Execute o seguinte comando, substituindo `<SUA_CHAVE>` pela ID da chave GPG ou pelo endereço de e-mail associado à chave:
-     ```bash
-     git config --global user.signingkey <SUA_CHAVE>
-     ```
-
-4.3. Ative a Assinatura Automática de Commits:
-   - Execute o seguinte comando para configurar o Git para assinar automaticamente todos os commits:
-     ```bash
-     git config --global commit.gpgSign true
-     ```
-
-5. Teste a Configuração:
-
-5.1. Faça um Novo Commit:
-   - Realize um novo commit em um repositório Git.
-
-5.2. Verifique o Status do Commit:
-   - Execute o seguinte comando para verificar o status do commit:
-     ```bash
-     git log --show-signature
-     ```
-   - Se a configuração estiver correta, você verá a informação de assinatura no log do commit.
-
-5.3. Verificação no GitHub:
-   - Vá para o GitHub e verifique se o commit aparece como "Verified" (Verificado).
+   - volte ao git bash
+   - git config --global user.signingkey <ID da chave>
+   - git config --global commit.gpgSign true
 
 Com isso, seu ambiente está configurado para assinar e verificar commits usando GPG no Git e GitHub.
 
