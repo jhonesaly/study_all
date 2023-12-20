@@ -111,7 +111,7 @@ Agora, sua máquina está configurada para autenticar com o GitHub usando SSH. V
    - git config --global user.signingkey <ID da chave>
    - git config --global commit.gpgSign true
 
-Com isso, seu ambiente está configurado para assinar e verificar commits usando GPG no Git e GitHub.
+Com isso, seu ambiente está configurado para assinar e verificar commits usando GPG no Git e GitHub. Teste de GPG agent
 
 ## Criando repositório remoto
 
