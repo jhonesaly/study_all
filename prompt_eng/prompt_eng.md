@@ -1,5 +1,7 @@
 # Engenharia de Prompt
 
+A engenharia de prompt é uma abordagem utilizada em modelos de linguagem, como o GPT, para ajustar o comportamento do modelo através da manipulação dos prompts de entrada. Ao projetar prompts de maneira específica, os usuários podem influenciar as respostas do modelo, buscando resultados desejados. Essa prática envolve experimentação com a formulação de perguntas ou instruções para obter saídas mais precisas e úteis. É uma técnica valiosa para personalizar a interação com modelos de linguagem, adaptando-se às necessidades específicas de cada usuário.
+
 ## FTAE
 
 Me [função] um [tipo_de_texto] sobre [assunto] nesse [estilo]
