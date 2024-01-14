@@ -10,3 +10,21 @@ Me [função] um [tipo_de_texto] sobre [assunto] nesse [estilo]
 - Tipo de texto: (roteiro/post para blog/artigo/poema/postagem para [rede_social])
 - Assunto: (I.A, futebol, música, filme... etc)
 - Estilo: (como se fosse [personalidade], como se fosse para [público_alvo], como se estivesse [sentimento])
+
+## 3R
+
+use os itens em {RESUMO} para compor o {ROTEIRO} seguindo as {REGRAS}.
+
+- Resumo: refere-se a uma síntese concisa e informativa de um texto ou conceito.
+- Roteiro: Envolve a elaboração de um conjunto de instruções ou passos a serem seguidos.
+- Regras: São diretrizes ou princípios estabelecidos para orientar o comportamento ou processo.
+
+{RESUMO}
+[Variável1]: Nome do autor
+[Variável2]: nome do destinatário
+
+{ROTEIRO}
+Olá, eu sou [Variável1] e vou ajudar [Variável2].
+
+{REGRAS}
+> Siga o {ROTEIRO} acima e substitua os emlementos entre [ ] por aqules listados em {RESUMO} acima.
