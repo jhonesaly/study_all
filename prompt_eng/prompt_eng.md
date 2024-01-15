@@ -73,3 +73,24 @@ Alguns exemplos funcionais:
 - Act as a Cyber Security Specialist 
 
 Para ver a lista completa com seus respectivos comandos, acesse: https://www.godofprompt.ai/awesome-chatgpt-prompts
+
+## Codando com IA
+
+Foque em módulos menores para poder explorar bem IA, como funções de single-responsability. Especifique no prompt a linguagem e as bibliotecas que devem ser utilizadas.
+
+ex:
+
+```
+Desenvolva a seguinte função:
+
+# faça a regressão linear de uma lista de dados
+def reg_lin([dados]):
+
+    return data_reg
+
+{REGRAS}
+> linguagem: python
+> biblioteca: pandas
+> utilize boas práticas de clean-code 
+
+```
