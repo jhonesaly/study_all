@@ -80,3 +80,49 @@ Aqui está uma explicação mais detalhada:
 4. **Jogos de Estratégia (Deep Q-Learning):** Redes neurais são empregadas em jogos para aprender estratégias e tomar decisões.
 
 As redes neurais artificiais, especialmente em sua forma profunda, têm mostrado sucesso em diversas áreas devido à sua capacidade de aprender representações complexas e abstratas dos dados. No entanto, seu treinamento pode ser computacionalmente intensivo, exigindo recursos significativos, como GPU, para modelos grandes.
+
+### Algoritmos Genéticos
+
+Algoritmos Genéticos (AGs) são uma técnica de otimização e busca inspirada no processo de evolução natural. Eles são utilizados para encontrar soluções aproximadas ou ótimas para problemas de otimização e busca, especialmente em espaços de busca complexos ou mal definidos. A ideia fundamental é simular o processo de seleção natural para evoluir soluções melhores ao longo do tempo.
+
+**Algoritmo Básico de Algoritmos Genéticos:**
+O algoritmo genético básico consiste em várias etapas:
+
+1. **Inicialização da População:**
+   - Geração aleatória de uma população inicial de soluções candidatas.
+
+2. **Avaliação:**
+   - Cada solução é avaliada quanto à sua adequação (fitness) para resolver o problema em questão.
+
+3. **Seleção:**
+   - Soluções mais aptas têm maior probabilidade de serem selecionadas para a reprodução. Isso simula a seleção natural.
+
+4. **Recombinação (Crossover):**
+   - Pares de soluções são combinados para criar descendentes utilizando operadores de crossover. Esse processo mistura características de dois pais para gerar novas soluções.
+
+5. **Mutação:**
+   - Algumas das novas soluções podem sofrer mutação, onde partes de suas características são alteradas aleatoriamente.
+
+6. **Substituição:**
+   - Os descendentes gerados substituem parte da população original. A seleção do próximo conjunto de soluções é baseada em sua aptidão.
+
+7. **Critério de Parada:**
+   - O algoritmo continua iterando até que um critério de parada seja atingido, como um número fixo de gerações, convergência ou atingimento de um determinado nível de aptidão.
+
+**Exemplos de Aplicação:**
+1. **Otimização de Parâmetros:**
+   - AGs podem ser usados para encontrar a combinação ideal de parâmetros em modelos complexos, como em redes neurais.
+
+2. **Problema do Caixeiro Viajante:**
+   - Encontrar a rota mais curta que visita todas as cidades uma vez e retorna à cidade de origem.
+
+3. **Problema da Mochila:**
+   - Maximizar o valor total dos itens em uma mochila, considerando limitações de peso.
+
+4. **Projeto de Antenas:**
+   - Otimizar a geometria e a configuração de antenas para obter melhor desempenho.
+
+5. **Design de Circuitos:**
+   - Encontrar a melhor disposição de componentes para otimizar o desempenho de circuitos eletrônicos.
+
+Os AGs são versáteis e podem ser aplicados a uma ampla variedade de problemas de otimização. No entanto, sua eficácia depende da escolha adequada de parâmetros, operadores genéticos e representação adequada das soluções no espaço de busca. Experimentação cuidadosa é muitas vezes necessária para obter resultados ótimos.
