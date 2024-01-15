@@ -28,3 +28,21 @@ Olá, eu sou [Variável1] e vou ajudar [Variável2].
 
 {REGRAS}
 > Siga o {ROTEIRO} acima e substitua os emlementos entre [ ] por aqules listados em {RESUMO} acima.
+
+## Funções úteis
+
+[função] o seguinte [alvo]:
+
+Alvo:
+
+- código
+- projeto
+
+Funções:
+
+- refatore
+- mude o paradigma para [paradigma]
+- simplifique
+- modularize
+- limpe
+- sugira organização de pastas
