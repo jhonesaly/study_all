@@ -46,3 +46,30 @@ Funções:
 - modularize
 - limpe
 - sugira organização de pastas
+
+## Acting commands
+
+“Act As” é uma maneira notável de aproveitar o ChatGPT para obter aconselhamento e informações especializadas. Ao utilizar o comando “atue como”, você pode transformar o ChatGPT em um consultor virtual, capacitado em diversas profissões e áreas.
+
+Alguns exemplos funcionais:
+
+- Act as a Linux Terminal 
+- Act as an English Translator and Improver 
+- Act as a Spoken English Teacher and Improver
+- Act as Position Interviewer
+- Act as a Recruiter
+- Act as a Travel Guide
+- Act as a Career Counselor
+- Act as a Personal Trainer 
+- Act as a Doctor 
+- Act As a Chef 
+- Act as ‘Character’ from ‘Movie/Book/Anything’
+- Act as an Advertiser
+- Act as a Storyteller 
+- Act asa Math Teacher 
+- Act as an AI Writing Tutor 
+- Act as a Prompt Enhancer
+- Act as a UX/UI Developer
+- Act as a Cyber Security Specialist 
+
+Para ver a lista completa com seus respectivos comandos, acesse: https://www.godofprompt.ai/awesome-chatgpt-prompts
