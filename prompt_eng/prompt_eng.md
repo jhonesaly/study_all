@@ -74,7 +74,9 @@ Alguns exemplos funcionais:
 
 Para ver a lista completa com seus respectivos comandos, acesse: https://www.godofprompt.ai/awesome-chatgpt-prompts
 
-## Codando com IA
+## Usos
+
+### Codando com IA
 
 Foque em módulos menores para poder explorar bem IA, como funções de single-responsability. Especifique no prompt a linguagem e as bibliotecas que devem ser utilizadas.
 
@@ -94,3 +96,7 @@ def reg_lin([dados]):
 > utilize boas práticas de clean-code 
 
 ```
+
+### Interpretando com IA
+
+Utilize a IA para depurar conhecimento alheio. Resuma artigos, comente código ou interprete textos.
