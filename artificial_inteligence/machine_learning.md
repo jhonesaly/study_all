@@ -54,3 +54,29 @@ Existem vários algoritmos de aprendizado de máquina, cada um projetado para re
 3. **Redes Neurais Generativas Adversariais (GAN):** Utilizadas para gerar dados sintéticos realistas.
 
 Estes são apenas alguns exemplos, e a escolha do algoritmo depende do problema específico que você está tentando resolver, bem como das características dos seus dados. Cada algoritmo tem suas vantagens e limitações, e a experimentação é muitas vezes necessária para determinar qual é o mais adequado para uma tarefa específica.
+
+### Redes Neurais Artificiais (RNA)
+
+As redes neurais artificiais (RNAs) são uma categoria de algoritmos de aprendizado de máquina inspirados na estrutura e funcionamento do cérebro humano. Elas consistem em unidades chamadas neurônios, organizadas em camadas interconectadas. Cada conexão entre neurônios tem um peso associado, que é ajustado durante o treinamento para melhorar o desempenho da rede. As RNAs são a base do campo mais amplo conhecido como aprendizado profundo (deep learning), onde modelos mais complexos são construídos com várias camadas.
+
+Aqui está uma explicação mais detalhada:
+
+**Estrutura Básica de uma RNA:**
+1. **Camada de Entrada:** Neurônios nesta camada representam as características de entrada do modelo.
+2. **Camadas Ocultas:** Camadas intermediárias entre a entrada e a saída, onde ocorre o processamento. Redes com múltiplas camadas são chamadas de redes neurais profundas.
+3. **Camada de Saída:** Produz a saída final da rede.
+
+**Algoritmo Básico - Feedforward:**
+1. **Inicialização:** Inicialização aleatória dos pesos das conexões.
+2. **Propagação para Frente (Feedforward):** Os dados de entrada são passados através das camadas até a camada de saída, com os pesos ajustados multiplicando as entradas.
+3. **Cálculo do Erro:** Compara a saída prevista com a saída real para calcular o erro.
+4. **Retropropagação (Backpropagation):** Os pesos são ajustados de volta através da rede, minimizando o erro. O algoritmo de otimização, como o gradiente descendente, é frequentemente utilizado para essa atualização dos pesos.
+5. **Iteração:** Os passos 2-4 são repetidos por várias iterações (épocas) até que a rede alcance um desempenho desejado.
+
+**Exemplos de Aplicações:**
+1. **Reconhecimento de Imagens (CNNs):** Redes neurais convolucionais são amplamente usadas para tarefas como reconhecimento facial, classificação de objetos e segmentação de imagens.
+2. **Processamento de Linguagem Natural (RNNs e LSTM):** Redes neurais recorrentes e Long Short-Term Memory são aplicadas em tradução automática, análise de sentimentos e geração de texto.
+3. **Reconhecimento de Voz (Redes Neurais Densas):** Para identificação de padrões em sinais de áudio.
+4. **Jogos de Estratégia (Deep Q-Learning):** Redes neurais são empregadas em jogos para aprender estratégias e tomar decisões.
+
+As redes neurais artificiais, especialmente em sua forma profunda, têm mostrado sucesso em diversas áreas devido à sua capacidade de aprender representações complexas e abstratas dos dados. No entanto, seu treinamento pode ser computacionalmente intensivo, exigindo recursos significativos, como GPU, para modelos grandes.
