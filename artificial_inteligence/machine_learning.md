@@ -126,3 +126,30 @@ O algoritmo genético básico consiste em várias etapas:
    - Encontrar a melhor disposição de componentes para otimizar o desempenho de circuitos eletrônicos.
 
 Os AGs são versáteis e podem ser aplicados a uma ampla variedade de problemas de otimização. No entanto, sua eficácia depende da escolha adequada de parâmetros, operadores genéticos e representação adequada das soluções no espaço de busca. Experimentação cuidadosa é muitas vezes necessária para obter resultados ótimos.
+
+### Algoritmos de SVM (Support Vector Machine)
+
+As Máquinas de Vetores de Suporte (SVM, do inglês Support Vector Machines) são um conjunto de algoritmos de aprendizado supervisionado utilizados tanto para classificação quanto para regressão. Essa técnica é particularmente eficaz em espaços de alta dimensão, sendo bastante utilizada em problemas complexos, como reconhecimento de padrões e categorização de texto.
+
+**Princípio Básico:**
+O objetivo principal das SVMs é encontrar um hiperplano de decisão que melhor separe os dados em classes distintas. Esse hiperplano é aquele que maximiza a margem entre as classes, sendo a margem a distância entre o hiperplano e os pontos mais próximos de cada classe, chamados de vetores de suporte. A ideia é escolher o hiperplano que melhor generaliza para novos dados, minimizando assim o risco de classificação incorreta.
+
+**Algoritmo Básico:**
+Dado um conjunto de treinamento com exemplos rotulados, a SVM procura otimizar os pesos e o viés (bias) do hiperplano de decisão. Isso é feito através de um processo de otimização que visa maximizar a margem, sujeito à condição de que os exemplos de treinamento sejam classificados corretamente.
+
+1. **Escolha do Kernel:** A SVM utiliza uma função kernel para mapear os dados para um espaço de características de alta dimensão, onde a separação linear é mais eficiente. Exemplos comuns de funções kernel incluem o kernel linear, polinomial e radial (RBF).
+
+2. **Otimização da Margem:** A SVM formula o problema de otimização de forma a maximizar a margem entre as classes, enquanto penaliza a classificação incorreta dos exemplos de treinamento.
+
+3. **Classificação:** Uma vez treinada, a SVM pode classificar novos exemplos atribuindo-os à classe de acordo com o lado do hiperplano em que se encontram.
+
+**Exemplos de Aplicação:**
+1. **Classificação de Documentos Textuais:** SVMs podem ser usadas para classificar documentos em categorias, como spam ou não spam, com base no conteúdo do texto.
+  
+2. **Reconhecimento de Imagens:** SVMs são eficazes em tarefas de reconhecimento de padrões em imagens, podendo ser usadas para categorizar objetos ou rostos.
+
+3. **Diagnóstico Médico:** Em medicina, SVMs podem ser aplicadas para diagnosticar condições médicas com base em dados como imagens de exames ou marcadores biológicos.
+
+4. **Previsão de Mercado Financeiro:** SVMs também são utilizadas em finanças para prever tendências de mercado com base em dados históricos.
+
+Esses são apenas alguns exemplos, e a versatilidade das SVMs as torna aplicáveis em uma variedade de domínios. Vale ressaltar que a escolha adequada do kernel e a configuração dos parâmetros são críticas para o desempenho eficaz do algoritmo.
