@@ -40,3 +40,33 @@ Os diagramas de Venn são uma ferramenta visual útil para representar relaçõe
 - Design Visual: Abrange a estética e a aparência do produto, incluindo cores, tipografia, layout e imagens.
 - Arquitetura da Informação: Refere-se à organização e rotulagem do conteúdo do produto, de modo que seja fácil de encontrar e entender.
 - Acessibilidade: Garante que o produto seja acessível a todos os usuários, incluindo aqueles com deficiências.
+
+## Pesquisa
+
+A pesquisa de UX é um processo fundamental para entender as necessidades, comportamentos e expectativas dos usuários em relação a um software. Ela fornece insights valiosos que guiam o processo de desenvolvimento e garantem que o produto final atenda às expectativas do público-alvo.
+
+Perguntas-chave a serem respondidas:
+
+1. Quem são os usuários?
+
+Perfil: Demografia, localização, renda, educação, etc.
+Comportamento: Hábitos de uso de software, necessidades e expectativas.
+Objetivos: O que os usuários desejam alcançar com o software.
+
+2. Quais são os problemas que os usuários enfrentam?
+
+Pontos de dor: Frustrações e dificuldades com softwares existentes.
+Necessidades não atendidas: Funcionalidades ou recursos que faltam em softwares.
+Oportunidades: Áreas em que o software pode melhorar a experiência do usuário.
+
+3. Como os usuários interagem com o software?
+
+Processos: Tarefas que os usuários desejam realizar com o software.
+Navegação: Como os usuários se locomovem pelo software.
+Feedback: Como os usuários interpretam as mensagens e feedbacks do software.
+
+4. O que os usuários pensam do software?
+
+Satisfação: Nível de contentamento com o software.
+Usabilidade: Facilidade de uso e compreensão do software.
+Percepção geral: Impressão geral do software.
