@@ -70,3 +70,65 @@ Feedback: Como os usuários interpretam as mensagens e feedbacks do software.
 Satisfação: Nível de contentamento com o software.
 Usabilidade: Facilidade de uso e compreensão do software.
 Percepção geral: Impressão geral do software.
+
+### Métodos de pesquisa
+
+Existem diversos métodos de pesquisa em UX, cada um com suas vantagens e desvantagens. A escolha do método mais adequado dependerá dos objetivos da pesquisa, do tempo e dos recursos disponíveis.
+
+Alguns dos métodos mais utilizados são:
+
+1. Entrevistas com usuários:
+
+Consiste em realizar entrevistas individuais com usuários para entender suas motivações, necessidades e experiências.
+É um método qualitativo que permite obter insights profundos sobre os usuários.
+Pode ser realizado de forma presencial ou online.
+Vantagens: Permite explorar em detalhes as experiências e os pensamentos dos usuários, alta flexibilidade para adaptar as perguntas, boa para entender motivações e comportamentos.
+Desvantagens: Demorado e trabalhoso, pode ser difícil encontrar os entrevistados certos, pode ser influenciado pelo entrevistador.
+
+2. Testes de usabilidade:
+
+Consiste em observar como os usuários interagem com um software ou protótipo para identificar problemas e oportunidades de melhoria.
+É um método quantitativo que permite avaliar a usabilidade de um produto.
+Pode ser realizado em laboratório ou em ambiente real.
+Vantagens: Permite observar diretamente o comportamento dos usuários, identificar problemas de usabilidade, fornece dados concretos sobre a usabilidade.
+Desvantagens: Pode ser caro e demorado, pode ser difícil encontrar os participantes certos, pode ser influenciado pelo ambiente de teste.
+
+3. Análise de dados:
+
+Consiste em coletar e analisar dados de uso de um software para entender como os usuários interagem com ele.
+É um método quantitativo que permite identificar padrões de comportamento.
+Pode ser realizado através de ferramentas de análise de dados.
+Vantagens: Fornece dados concretos sobre o uso do software, identifica padrões de comportamento, pode ser realizado de forma contínua.
+Desvantagens: Pode ser difícil de interpretar os dados, pode não fornecer insights sobre as motivações dos usuários, pode ser influenciado pela qualidade dos dados.
+
+4. Pesquisas online:
+
+Consiste em realizar questionários online para coletar feedback de um grande número de usuários.
+É um método quantitativo que permite obter uma visão geral das necessidades e expectativas dos usuários.
+Pode ser realizado através de ferramentas de pesquisa online.
+Vantagens: Rápido e barato, permite alcançar um grande número de usuários, fácil de analisar os dados.
+Desvantagens: Superficial, pode não fornecer insights profundos, pode ser influenciado pelo design da pesquisa.
+
+5. Observação:
+
+Consiste em observar os usuários em seu ambiente natural para entender como eles usam produtos e serviços.
+É um método qualitativo que permite obter insights contextuais sobre os usuários.
+Pode ser realizado de forma direta ou indireta.
+Vantagens: Permite observar o comportamento dos usuários em seu contexto natural, identifica problemas que os usuários podem não ter consciência, fornece insights valiosos sobre as necessidades dos usuários.
+Desvantagens: Pode ser demorado e trabalhoso, pode ser difícil obter permissão para observar os usuários, pode ser influenciado pelo observador.
+
+6. Card Sorting:
+
+Consiste em pedir aos usuários que organizem um conjunto de cards em categorias que façam sentido para eles.
+É um método qualitativo que permite entender como os usuários categorizam e organizam informações.
+Pode ser usado para estruturar a navegação de um website ou aplicativo.
+Vantagens: Permite entender como os usuários pensam sobre a informação, ajuda a estruturar a informação de forma intuitiva, pode ser realizado com um grande número de usuários.
+Desvantagens: Pode ser demorado e trabalhoso, pode ser difícil analisar os dados, pode ser influenciado pelo número de participantes.
+
+7. Mapas de Jornada do Cliente:
+
+Consiste em mapear as etapas que um cliente percorre ao interagir com uma empresa.
+É um método qualitativo que permite identificar pontos de dor e oportunidades de melhoria na experiência do cliente.
+Pode ser usado para melhorar a experiência do cliente em todos os pontos de contato.
+Vantagens: Permite visualizar a experiência do cliente do início ao fim, identifica pontos de dor e oportunidades de melhoria, ajuda a criar uma experiência do cliente mais coesa.
+Desvantagens: Pode ser demorado e trabalhoso, pode ser difícil obter dados precisos.
