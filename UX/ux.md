@@ -295,3 +295,46 @@ A escolha da melhor técnica de prototipagem depende de diversos fatores, como:
 * **Envolva os stakeholders no processo de prototipagem:** Obtenha feedback dos stakeholders para melhorar o protótipo.
 * **Teste o protótipo com usuários reais:** Observe como os usuários interagem com o protótipo para identificar problemas e oportunidades de melhoria.
 * **Use a prototipagem para comunicar suas ideias:** Crie protótipos que sejam fáceis de entender e que transmitam suas ideias de forma eficaz.
+
+## Testes
+
+**Existem diversas técnicas para testar a UX de um protótipo, cada uma com suas vantagens e desvantagens.** A escolha da melhor técnica dependerá dos seus objetivos, do tempo e dos recursos disponíveis.
+
+**Técnicas de teste:**
+
+**1. Testes de usabilidade:**
+
+* **Observação:** Observe como os usuários interagem com o protótipo para identificar problemas e oportunidades de melhoria.
+* **Tarefas:** Peça aos usuários para realizar tarefas específicas com o protótipo para avaliar a facilidade de uso.
+* **Feedback:** Obtenha feedback dos usuários sobre suas percepções e impressões do protótipo.
+
+**2. Testes A/B:**
+
+* **Comparação:** Compare duas versões diferentes do protótipo para determinar qual delas oferece uma melhor experiência do usuário.
+* **Métricas:** Utilize métricas como tempo de tarefa, taxa de erros e taxa de sucesso para comparar as duas versões.
+
+**3. Testes de guerrilha:**
+
+* **Informal:** Realize testes rápidos e informais com um pequeno número de usuários.
+* **Feedback:** Obtenha feedback rápido e qualitativo dos usuários sobre o protótipo.
+* **Custo:** Baixo custo, pois pode ser realizado em qualquer lugar.
+
+**4. Mapas de calor:**
+
+* **Visualização:** Visualize como os usuários interagem com o protótipo através de mapas de calor que indicam as áreas mais clicadas.
+* **Problemas:** Identifique áreas do protótipo que causam dificuldades aos usuários.
+* **Ferramentas:** Utilize ferramentas online para gerar mapas de calor.
+
+**5. Testes de acessibilidade:**
+
+* **Verificação:** Verifique se o protótipo é acessível a usuários com deficiências.
+* **Diretrizes:** Utilize as diretrizes de acessibilidade WCAG para garantir que o protótipo seja acessível.
+* **Ferramentas:** Utilize ferramentas online para verificar a acessibilidade do protótipo.
+
+**Dicas para testes eficazes:**
+
+* **Defina os objetivos do teste:** Determine o que você deseja testar antes de iniciar o teste.
+* **Recrute os participantes certos:** Selecione participantes que representem o seu público-alvo.
+* **Crie um ambiente de teste confortável:** Faça com que os usuários se sintam à vontade para fornecer feedback honesto.
+* **Observe e anote os resultados:** Observe como os usuários interagem com o protótipo e anote suas dúvidas, comentários e sugestões.
+* **Analise os resultados e faça alterações:** Utilize os resultados do teste para identificar problemas e melhorar o protótipo.
