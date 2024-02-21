@@ -31,3 +31,12 @@ O modelo UX Umbrella, também conhecido como "O Guarda-Chuva da UX", foi criado 
 5. Pesquisa com Usuários: É o processo de coleta de feedback e insights dos usuários para entender suas necessidades e expectativas.
 6. Estratégia de Conteúdo: Envolve a criação e o gerenciamento do conteúdo do produto, incluindo textos, imagens e vídeos.
 
+### Diagrama de Venn
+
+Os diagramas de Venn são uma ferramenta visual útil para representar relações entre conjuntos. No contexto da experiência do usuário (UX), os diagramas de Venn podem ser usados para ilustrar as relações entre diferentes áreas da UX, como:
+
+- Usabilidade: Refere-se à facilidade com que o usuário pode usar o produto para realizar suas tarefas.
+- Interação: Envolve o comportamento do produto e como o usuário interage com ele, incluindo elementos como botões, menus e feedback.
+- Design Visual: Abrange a estética e a aparência do produto, incluindo cores, tipografia, layout e imagens.
+- Arquitetura da Informação: Refere-se à organização e rotulagem do conteúdo do produto, de modo que seja fácil de encontrar e entender.
+- Acessibilidade: Garante que o produto seja acessível a todos os usuários, incluindo aqueles com deficiências.
