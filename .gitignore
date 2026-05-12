@@ -104,3 +104,20 @@ sql/database
 linux/verification
 linux/distros
 docker/app
+
+# Jupyter / JupyterLab
+# Ignorar checkpoints, runtime e workspaces locais do Jupyter
+.ipynb_checkpoints/
+.ipynb_checkpoints/*
+.jupyter/
+.jupyter/*/lab/workspaces/
+.jupyter/lab/workspaces/
+# Jupyter runtime (arquivos temporários de execução)
+jupyter_runtime/
+runtime/
+# JupyterLab workspace local/state
+workspace/
+lab-workspace
+# IPython
+profile_default/
+ipython_config.py
