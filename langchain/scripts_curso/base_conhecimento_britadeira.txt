@@ -1,0 +1,56 @@
+Base de Conhecimento Aprimorada para a Britadeira XP500
+Britadeira XP500
+
+Especificações:
+
+Motor: Elétrico de alta potência (1500W).
+Impactos por minuto: 0-4000 ipm.
+Força de impacto: 20J.
+Peso: 5 kg.
+Conectividade: Wi-Fi (para monitoramento e diagnóstico).
+Solução de problemas:
+
+Não liga:
+Verifique se a bateria está carregada e conectada corretamente.
+Aguarde 30 segundos após conectar a bateria para que o sistema inicialize.
+Verifique se o interruptor liga/desliga está na posição correta.
+Se o problema persistir, contate o suporte técnico pelo 0800 555 5555.
+Não dá ré:
+Verifique se a alavanca de ré está engatada.
+Verifique se há alguma obstrução impedindo o movimento da broca.
+Se o problema persistir, desligue a britadeira e contate o suporte técnico.
+Wi-Fi não conecta:
+Verifique se o Wi-Fi da britadeira está ligado.
+Verifique se você está inserindo a senha correta da rede Wi-Fi.
+Reinicie a britadeira e tente conectar novamente.
+Se o problema persistir, consulte o manual para obter instruções de solução de problemas de conectividade.
+Superaquecimento:
+Desligue a britadeira e deixe-a esfriar por alguns minutos.
+Verifique se as entradas de ar não estão obstruídas.
+Evite uso contínuo por longos períodos. Faça pausas regulares.
+Vibração excessiva:
+Verifique se a broca está presa corretamente.
+Verifique se a superfície de trabalho está nivelada e estável.
+Se a vibração persistir, desligue a britadeira e contate o suporte técnico.
+Manual de Uso Simplificado:
+
+Carregamento da bateria:
+Conecte o carregador à britadeira e a uma tomada.
+Aguarde até que a luz indicadora de carga fique verde.
+Instalação da broca:
+Insira a broca no mandril e aperte-a firmemente com a chave.
+Operação:
+Segure a britadeira firmemente com ambas as mãos.
+Ligue a britadeira e posicione a broca na superfície de trabalho.
+Aplique pressão gradual para iniciar a perfuração.
+Utilize a alavanca de ré para inverter o sentido de rotação da broca.
+Faça pausas regulares para evitar o superaquecimento.
+Manutenção:
+Limpe a britadeira após cada uso.
+Verifique periodicamente o estado da broca e substitua-a se necessário.
+Armazene a britadeira em local seco e seguro.
+Observações:
+
+Utilize sempre equipamentos de proteção individual (EPI) ao operar a britadeira.
+Consulte o manual completo para obter informações detalhadas sobre o uso e manutenção da britadeira XP500.
+Em caso de dúvidas ou problemas, entre em contato com o suporte técnico pelo 0800 555 5555.
